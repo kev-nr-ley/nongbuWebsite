@@ -1,30 +1,57 @@
 import { extendTheme } from "@chakra-ui/react";
-
+import { HeaderStyles as Header } from "./components/HeaderStyles";
 import "@fontsource/mulish";
 import "@fontsource/mulish/500.css";
 import "@fontsource/mulish/600.css";
 import "@fontsource/mulish/700.css";
 import "@fontsource/mulish/800.css";
+
 export const theme = extendTheme({
   styles: {
     global: {
       "*": {
-        boxSizing: "border-box",
+        margin: 0,
+        padding: 0,
+        color: "inherit",
         fontFamily: "Mulish, sans-serif",
+        boxSizing: "border-box",
         // border: "1px solid red"
       },
+
 
       body: {
         bg: "brand.backgroundLight",
         color: "brand.fontLight",
       },
 
+      'h1, h2, h3, h4, h5, h6': {
+            letterSpacing: '3px',
+            fontWeight: '600',
+            lineHeight: '1.2',
+
+        
+      },
       a: {
         color: "brand.highlight",
+        border: "4px solid orange",
         _hover: {
           textDecoration: "none",
           color: "inherit",
         },
+      },
+
+      Text: {
+        color: "black",
+        bg: "red",
+        backgroundColor: "red",
+        fontSize: "16px",
+      },
+
+      img: {
+        h: "100%",
+        w: "100%",
+        objectFit: "cover",
+        objectPosition: "center",
       },
     },
   },
@@ -34,6 +61,7 @@ export const theme = extendTheme({
       header: "#051621",
       footer: "#051621",
       backgroundDark: "#12212b",
+      backgroundDark50: "#12212b50",
       backgroundLight: "#d9d9d9",
       fontHeader: "#f5f5f5",
       fontLight: "#f5f5f5",
@@ -55,33 +83,40 @@ export const theme = extendTheme({
   },
 
   fonts: {
-    /* Font: Mulish
-      import "fontsource/mulish";
-      fontWeights: [200,300,400,500,600,700,800,900]
-      Styles: [italic,normal]
-     */
+    body: "Mulish, sans-serif",
+    bodySize: "16px",
+    bodySizeMd: "18px",
+    bodySizeLg: "20px",
+    bodySizeXl: "22px",
+    bodySize2Xl: "24px",
+    bodyWeight: "500",
+    bodyLineHeight: "30px",
+    bodyLetterSpacing: "1.25px",
 
-    heading: {
-      font: "Mulish, sans-serif",
-      fontSize: "20px",
-      fontSizeMd: "24px",
-      fontSizeLg: "28px",
-      fontSizeXl: "32px",
-      fontSize2Xl: "48px",
-      fontWeight: "600",
-      letterSpacing: "3px",
-      lineHeight: "30px",
-    },
+    heading: "Mulish, sans-serif",
+    headingSize: "20px",
+    headingWeight: "600",
+    headingLineHeight: "30px",
+    headingLetterSpacing: "30px",
+    headingSizeMd: "24px",
+    headingSizeLg: "28px",
+    headingSizeXl: "32px",
+    headingSize2Xl: "48px",
 
-    body: {
-      font: "Mulish, sans-serif",
-      fontSize: "16px",
-      fontSizeMd: "18px",
-      fontSizeLg: "20px",
-      fontSizeXl: "22px",
-      fontWeight: "400",
-      letterSpacing: "10%",
-      lineHeight: "30px",
-    },
+    iconSize: "24px",
+    iconSizeMd: "32px",
+    iconSizeLg: "48px",
+    iconSizeXl: "64px",
+    iconSize2Xl: "96px",
+    
+  },
+
+  components: {
+    Header,
+  },
+
+  config: {
+    initialColorMode: "light",
+    useSystemColorMode: false,
   },
 });

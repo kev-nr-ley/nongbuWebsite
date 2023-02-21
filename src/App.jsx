@@ -1,11 +1,11 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
+import Navbar from "./sections/Navbar";
 import Home from "./pages/Home";
-import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbar  />
       <Home />
     </>
   );
