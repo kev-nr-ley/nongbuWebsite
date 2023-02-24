@@ -1,24 +1,17 @@
 import React from "react";
 import {
-  Box,
-  Heading,
-  Text,
-  Stack,
   Link,
   Flex,
-  Button,
-  Menu,
-  Image,
   useColorMode,
 } from "@chakra-ui/react";
 import BigMenuItem from "../components/BigMenuItem";
 import { useTheme } from "@chakra-ui/react";
 import Logo from "../components/Logo";
 
+
 export default function Navbar() {
   const { colors, fonts } = useTheme();
   const { colorMode, toggleColorMode } = useColorMode();
-
 
   const MenuItem = ({ props, children }) => (
     <Link
@@ -48,31 +41,24 @@ export default function Navbar() {
         flexDirection={"row"}
         justifyContent={"space-between"}
         alignItems={"center"}
-        gap='4'
-        lineHeight={fonts.heading.lineHeight}
-        fontWeight={fonts.heading.fontWeight}
-        fontSize={fonts.heading.fontSizeMd}
-        color={colors.brand.fontHeader}>
+        gap='4'>
         <Logo src='nongbu-logo.png' width='52' height='52' />
-        <BigMenuItem>Menu</BigMenuItem>
+        <BigMenuItem variant='fancyLink'>Menu</BigMenuItem>
         <BigMenuItem>Reservations</BigMenuItem>
       </Flex>
 
-      <Flex p='1' gap='4'>
-        <Menu
-          // colorScheme='brand'
-          flexDirection={"row"}
-          justifyContent={"space-between"}
-          alignItems={"center"}
-          lineHeight={fonts.heading.lineHeight}
-          color={colors.brand.fontHeader}
-          fontSize={fonts.heading.fontSize}
-          gap='4'>
-          <MenuItem>About</MenuItem>
-          <MenuItem>Events & Catering</MenuItem>
-          <MenuItem>Takeout & Delivery</MenuItem>
-          <MenuItem>Contact</MenuItem>
-        </Menu>
+      <Flex
+        display='flex'
+        flexDirection='row'
+        p='1'
+        gap='6'
+        justifyContent='space-between'
+        alignItems='center'
+        lineHeight={fonts.headingLineHeight}>
+        <Link>About</Link>
+        <Link>Events & Catering</Link>
+        <Link>Takeout & Delivery</Link>
+        <Link>Contact</Link>
         <Logo src='ear-logo.png' width='64' height='32' />
       </Flex>
     </Flex>

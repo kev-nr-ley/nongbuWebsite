@@ -6,17 +6,20 @@ function BigMenuItem({ props, children }) {
   const { colors, fonts } = useTheme();
   return (
     <Link
-      {...props}
-      colorScheme='brand'
+      variant='fancyNav'
       mx='2'
       w='fit-content'
-      letterSpacing={fonts.heading.letterSpacing}
-      fontWeight={fonts.heading.fontWeight}
+      fontSize={fonts.headingSize}
+      letterSpacing={fonts.headingLetterSpacing}
+      lineHeight={fonts.headingLineHeight}
+      fontWeight='bold'
+      {...props}
       _after={{
         content: '" "',
         display: "block",
         width: "0%",
-        height: "3px",
+        mt: "2px",
+        height: "2px",
         backgroundColor: "brand.highlight",
         transition: "width 0.3s",
       }}

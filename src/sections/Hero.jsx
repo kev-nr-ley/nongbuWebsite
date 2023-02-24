@@ -2,13 +2,22 @@ import React from "react";
 import { FaBeer, FaFacebook, FaInstagram } from "react-icons/fa";
 import { useTheme } from "@chakra-ui/react";
 import { AddIcon, ArrowForwardIcon } from "@chakra-ui/icons";
-import { Box, Heading, Text, Flex, Button, Image } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Text,
+  Flex,
+  Button,
+  Image,
+  Link,
+} from "@chakra-ui/react";
+import BigMenuItem from "../components/BigMenuItem";
 
 function Hero() {
   const { colors, fonts } = useTheme();
   return (
     <Box // Section container
-      bg={colors.brand.backgroundDark}
+      bg={colors.backgroundDark}
       w='100vw'
       h={["100vh", "100vh", "100vh", "100vh"]}
       mt='80px' //for navbar seperationF
@@ -31,22 +40,29 @@ function Hero() {
           </Box>
 
           <Box // Link button container
+            width='fit-content'
             flexDirection='column'
-            gap='4'
             position='relative'
             zIndex={8}
-            width='fit-content'
+            gap='4'
             pl='4'
-            letterSpacing={fonts.heading.letterSpacing}
-            textAlign={["left", "left", "right"]}
-            color={colors.brand.highlight}>
-            <Text my='10%' noOfLines={1}>
-              Our menu <ArrowForwardIcon fontSize={fonts.heading.fontSizeXl} />
-            </Text>
-            <Text my='10%' noOfLines={1}>
+            textAlign={["left", "left", "right"]}>
+            <Link
+              variant='heroLink'
+              textAlign={["left", "left", "right"]}
+              my='10%'
+              noOfLines={1}>
+              Our menu <ArrowForwardIcon />
+            </Link>
+
+            <Link
+              variant='heroLink'
+              textAlign={["left", "left", "right"]}
+              my='10%'
+              noOfLines={1}>
               Book a table
-              <ArrowForwardIcon fontSize={fonts.heading.fontSizeXl} />
-            </Text>
+              <ArrowForwardIcon />
+            </Link>
           </Box>
         </Box>
         <Flex // Social media container

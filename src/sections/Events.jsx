@@ -27,10 +27,7 @@ function Events() {
       <Box //image container
         w={["100vw", "100vw", "75vw", "75vw"]}
         h={["30vh", "30vh", "80vh", "80vh"]}>
-        <Image
-       
-          zIndex={1}
-          src='/src/assets/images/nongbu-3.jpg'></Image>
+        <Image zIndex={1} src='/src/assets/images/nongbu-3.jpg'></Image>
       </Box>
 
       <Flex //section content
@@ -53,9 +50,8 @@ function Events() {
         letterSpacing={fonts.body.letterSpacing}
         fontWeight={fonts.body.fontWeight}>
         <Heading
-          as='h3'
-          size='md'
-          w='100%'
+  variant='sectionHeading'
+            w='100%'
           fontSize={fonts.heading.fontSize}
           overflow='show'
           whiteSpace={"nowrap"}>
