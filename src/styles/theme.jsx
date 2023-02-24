@@ -27,10 +27,10 @@ export const theme = extendTheme({
       'h1, h2, h3, h4, h5, h6': {
             letterSpacing: '3px',
             fontWeight: '600',
-            lineHeight: '1.2',
-
-        
+            lineHeight: '1.2',        
       },
+
+      
       a: {
         color: "brand.highlight",
         border: "4px solid orange",
