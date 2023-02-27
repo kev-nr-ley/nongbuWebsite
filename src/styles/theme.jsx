@@ -19,7 +19,7 @@ export const theme = extendTheme({
         color: "inherit",
         fontFamily: "Mulish, sans-serif",
         boxSizing: "border-box",
-        border: "1px solid red"
+        // border: "1px solid red"
       },
 
       img: {

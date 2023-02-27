@@ -13,8 +13,16 @@ export const HeadingStyles: ComponentStyleConfig = {
         fontSize:'20px',
         lineHeight:'30px',
         fontWeight:'700',
-        color: 'red'
     },
+
+    footerHeading:{
+        letterSpacing: '2px',
+        fontSize:'20px',
+        lineHeight: '30px',
+        fontWeight: '500',
+        mb: '8'
+        
+    }
    
   },
   // default values for 'size', 'variant' and 'colorScheme'

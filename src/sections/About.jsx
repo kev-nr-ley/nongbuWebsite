@@ -8,27 +8,24 @@ function About() {
 
   return (
     <Flex //section container
-      justifyContent={["flex-start", "flex-start", "center", "center"]}
-      alignItems={"center"}
+      justifyContent={["flex-start", "center", "center", "center"]}
+      alignItems={["center", "center", "flex-start"]}
       flexDirection={["column", "column", "row", "row"]}
       p={["0vw", "0vw", "5vw", "5vw"]}
       gap='5vw'
       bg={colors.backgroundLight}
+      // bg={["red", "green", "blue", "yellow"]}
       color={colors.brand.fontDark}>
       <Box //image container
-        w={["100%", "100%", "30%", "30%"]}
-        h={["40vh", "40vh", "auto", "auto"]}>
+        w={["100%", "100%", "40vh", "40vh"]}
+        h={["30vh", "30vh", "60vh", "60vh"]}>
         <Image src='/src/assets/images/nongbu-2.jpg'></Image>
       </Box>
 
       <Flex //section content
         flexDirection={"column"}
-        w={["100%", "50%", "30%", "25%"]}
-        justifyContent={"center"}
-        alignItems={"center"}
-        gap='5'
-        p={["5vh 10vw", "5vh 0vw", "0", "0"]}
-        bg={colors.backgroundLight}>
+        w={["100%", "50%", "30%", "30%"]}
+        gap='5'>
         <Heading variant='sectionHeader' w='100%' whiteSpace={"wrap"}>
           Welcome to NongBu.
         </Heading>
@@ -49,7 +46,7 @@ function About() {
         </Text>
 
         <Link variant='sectionLink'>
-            Our Menu <ArrowForwardIcon fontSize={fonts.iconSizeMd} />
+          Our Menu <ArrowForwardIcon fontSize={fonts.iconSizeMd} />
         </Link>
       </Flex>
     </Flex>

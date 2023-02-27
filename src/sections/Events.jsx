@@ -20,7 +20,8 @@ function Events() {
       flexDirection={["column3", "column", "row-reverse", "row-reverse"]}
       position='relative'
       alignItems={"center"}
-      bg={colors.brand.backgroundDark}
+      bg={colors.backgroundDark}
+      color={colors.light}
       border='100px'
       h={["100vh", "100vh", "70vh"]}
       overflow='hidden'>
@@ -42,18 +43,10 @@ function Events() {
         p={["0vh 5vw", "0vh 5vw", "10vh 5vw", "10vh 5vw"]}
         // ml='5vw'
         top={["40%", "40%", "0"]}
-        left='0'
-        // bg={colors.brand.backgroundDark}
-        // color={colors.brand.fontLight}
-        fontSize={fonts.body.fontSize}
-        lineHeight={fonts.body.lineHeight}
-        letterSpacing={fonts.body.letterSpacing}
-        fontWeight={fonts.body.fontWeight}>
+        left='0'>
         <Heading
-  variant='sectionHeading'
-            w='100%'
-          fontSize={fonts.heading.fontSize}
-          overflow='show'
+          variant='sectionHeading'
+          color={colors.light}
           whiteSpace={"nowrap"}>
           Use our space and services.
         </Heading>
