@@ -11,10 +11,10 @@ function App() {
 
   return (
     <>
-      {/* <Navbar /> */}
-      {/* <Menu objectToArray={objectToArray} /> */}
+      <Navbar />
+      <Menu objectToArray={objectToArray} />
       {/* <Home /> */}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
