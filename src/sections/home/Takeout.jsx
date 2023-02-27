@@ -1,9 +1,9 @@
 import React from "react";
 import { useTheme } from "@chakra-ui/react";
 import { Flex, Image, Box, Text, Heading } from "@chakra-ui/react";
-import BigMenuItem from "../components/BigMenuItem";
+import BigMenuItem from "@components/BigMenuItem";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
-import Logo from "../components/Logo";
+import Logo from "@components/Logo";
 function Takeout(props) {
   const { colors, fonts } = useTheme();
 

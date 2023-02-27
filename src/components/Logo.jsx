@@ -15,7 +15,9 @@ function Logo(props) {
   return (
     <Box
       w={`${props.width}px`}
+      minW={`${props.width}px`}
       h={`${props.height}px`}
+      minH={`${props.height}px`}
       >
 
       <Image

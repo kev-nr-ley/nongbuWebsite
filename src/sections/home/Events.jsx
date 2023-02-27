@@ -2,7 +2,7 @@ import React from "react";
 
 import { useTheme } from "@chakra-ui/react";
 import { Flex, Image, Box, Text, Heading } from "@chakra-ui/react";
-import BigMenuItem from "../components/BigMenuItem";
+import BigMenuItem from "@components/BigMenuItem";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 
 function Events() {

@@ -11,7 +11,7 @@ import {
   Image,
   Link,
 } from "@chakra-ui/react";
-import BigMenuItem from "../components/BigMenuItem";
+import BigMenuItem from "@components/BigMenuItem";
 
 function Hero() {
   const { colors, fonts } = useTheme();

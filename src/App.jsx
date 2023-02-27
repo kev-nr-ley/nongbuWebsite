@@ -1,14 +1,20 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import Navbar from "./sections/Navbar";
 import Home from "./pages/Home";
+import Menu from "./pages/Menu";
 import Footer from "./sections/Footer";
 function App() {
+  function objectToArray(object) {
+    return Object.keys(object).map((key) => {
+      return object[key];
+    });
+  }
+
   return (
     <>
-      <Navbar  />
-      <Home />
-      <Footer  />
+      {/* <Navbar /> */}
+      {/* <Menu objectToArray={objectToArray} /> */}
+      {/* <Home /> */}
+      {/* <Footer /> */}
     </>
   );
 }
