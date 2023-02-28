@@ -39,8 +39,8 @@ function Menu(props) {
         w='100%'
         gridTemplateColumns={["1fr", "1fr", "1fr 1fr", "1fr 1fr"]}>
         {renderMenuPage(streetEats)}
-        {renderMenuPage(meatSsam)}
         {renderMenuPage(bowls)}
+        {renderMenuPage(meatSsam)}
         {renderMenuPage(sharing)}
       </Grid>
     </Box>

@@ -40,8 +40,17 @@ export const theme = extendTheme({
     black: "#242a29",
     backgroundDark: "#12212b",
     backgroundDark50: "#12212b50",
+    backgroundDark80: "#12212b80",
+    backgroundDark95: "#12212b95",
+    backgroundDark98: "#12212b98",
+    backgroundDark99: "#12212b99",
     backgroundLight: "#d9d9d9",
-
+    backgroundLight50: "#d9d9d950",
+    backgroundLight80: "#d9d9d980",
+    backgroundLight95: "#d9d9d995",
+    backgroundLight98: "#d9d9d998",
+    backgroundLight99: "#d9d9d999",
+    footer: "#051621",
     brand: {
       header: "#051621",
       footer: "#051621",

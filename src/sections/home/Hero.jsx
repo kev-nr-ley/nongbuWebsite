@@ -10,6 +10,7 @@ import {
   Button,
   Image,
   Link,
+  Grid,
 } from "@chakra-ui/react";
 import BigMenuItem from "@components/BigMenuItem";
 
@@ -20,17 +21,15 @@ function Hero() {
       bg={colors.backgroundDark}
       w='100vw'
       h={["100vh", "100vh", "100vh", "100vh"]}
-      mt='80px' //for navbar seperationF
       position='relative'>
       <Flex // Hero text container
         flexDirection={"column"}
         justifyContent='space-between'
-        px={["5%"]}
-        pt={["45%", "30%", "10%", "10%"]}
-        // bg={["red.400", "blue.400", "green.400", "yellow.400"]}
-        h='80%' //same as image
-        zIndex={99}
-        position='relative'>
+        position='absolute'
+        top={["35%", "35%", "20%", "20%"]}
+        left={["5%", "5%", "5%", "10%"]}
+        w={["fit-content", "fit-content", "fit-content", "fit-content"]}
+        zIndex={9}>
         <Box //Logo and link container top stay top
         >
           <Box //NongBu Logo
@@ -45,7 +44,7 @@ function Hero() {
             position='relative'
             zIndex={8}
             gap='4'
-            pl='4'
+            mt='4'
             textAlign={["left", "left", "right"]}>
             <Link
               variant='heroLink'
@@ -65,21 +64,46 @@ function Hero() {
             </Link>
           </Box>
         </Box>
-        <Flex // Social media container
-          pl='4'
-          gap='4'
-          fontSize={fonts.iconSizeLg}>
-          <FaInstagram />
-          <FaFacebook />
-        </Flex>
       </Flex>
+
+      <Grid
+        gap='2vh'
+        position='absolute'
+        bottom={["5%", "5%", "5%", "10%"]}
+        right={["50%", "5%", "5%", "10%"]}
+        h='25%'
+        w='300px'
+        p='24px'
+        transform={[
+          "translateX(50%)",
+          "translateX(0%)",
+          "translateX(0)",
+          "translateX(0)",
+        ]}
+        zIndex='99'
+        bg={colors.backgroundLight}
+        color={colors.dark}>
+        <Heading variant='footerHeading'>HOURS</Heading>
+
+        <Flex flexDirection='column'>
+          <Flex justifyContent={"space-between"} letterSpacing='2px'>
+            <span>Tue - Thu</span> <span>4pm - 9pm</span>
+          </Flex>
+          <Flex justifyContent={"space-between"} letterSpacing='2px'>
+            <span>Fri & Sat</span> <span>4pm - 10pm</span>
+          </Flex>
+          <Flex justifyContent={"space-between"} letterSpacing='2px'>
+            <span>Sun & Mon</span> <span>Closed</span>
+          </Flex>
+        </Flex>
+      </Grid>
 
       <Box // Image background container
         position='absolute'
         top='0'
         right='0'
-        w={["100%", "100%", "78%"]}
-        h={["20%", "25%", "80%"]}>
+        w={["100%", "100%", "80%"]}
+        h={["30%", "30%", "100%"]}>
         <Image
           src='/src/assets/images/nongbu-1.png'
           fallbackSrc='https://via.placeholder.com/1126x710'></Image>
