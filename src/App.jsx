@@ -1,6 +1,7 @@
 import Navbar from "@sections/Navbar";
 import Home from "@pages/Home";
 import Menu from "@pages/Menu";
+import About from "@pages/About";
 import Footer from "@sections/Footer";
 import Events from "@pages/Events";
 function App() {
@@ -13,10 +14,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <Home />
-
+      {/* <Home /> */}
       {/* <Menu objectToArray={objectToArray} /> */}
-      <Events />
+      <About />
+      {/* <Events /> */}
       <Footer />
     </>
   );

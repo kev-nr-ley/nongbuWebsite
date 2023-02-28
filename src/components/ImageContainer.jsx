@@ -6,7 +6,7 @@ function ImageContainer(props) {
     <Box //image container
     w={["100%", "100%", "clamp(400px, 30vw, 450px)"]}
     h={["30vh", "30vh", "clamp(600px, 45vh, 700px)"]}
-    bg='red'
+    // bg='red'
     {...props}
       
     >
