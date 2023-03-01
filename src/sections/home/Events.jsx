@@ -17,18 +17,22 @@ function Events() {
 
   return (
     <Flex //section container,
-      flexDirection={["column3", "column", "row-reverse", "row-reverse"]}
-      position='relative'
-      alignItems={"center"}
+      flexDirection={["column", "row-reverse", "row-reverse", "row-reverse"]}
       bg={colors.backgroundDark}
       color={colors.light}
-      border='100px'
-      h={["100vh", "100vh", "70vh"]}
+      gap={["0", "12", "12", "12"]}
+      h={["auto", "80vh", "80vh", "80vh"]}
+      pb='10vh'
       overflow='hidden'>
       <Box //image container
-        w={["100vw", "100vw", "75vw", "75vw"]}
-        h={["30vh", "30vh", "80vh", "80vh"]}>
-        <Image zIndex={1} src='/src/assets/images/nongbu-3.jpg'></Image>
+        w={["100vw", "auto", "70vw", "70vw"]}
+        h={["30vh", "80vh", "80vh", "80vh"]}
+        overflow='hidden'>
+        <Image
+          h='100%'
+          src='/src/assets/images/nongbu-3.jpg'
+          objectPosition={["0% 50%", "20% 50%", "0% 0%", "0% 0%"]}
+          objectFit='cover'></Image>
       </Box>
 
       <Flex //section content
@@ -36,22 +40,18 @@ function Events() {
         justifyContent='center'
         justifySelf='center'
         alignself='center'
-        gap='2vh'
-        w={["80%", "80%", "30%", "30%"]}
-        h={["auto", "auto", "100%", "100%"]}
-        position='absolute'
-        p={["0vh 5vw", "0vh 5vw", "10vh 5vw", "10vh 5vw"]}
-        // ml='5vw'
-        top={["40%", "40%", "0"]}
-        left='0'>
-        <Heading
-          variant='sectionHeading'
-          color={colors.light}
-          whiteSpace={"nowrap"}>
+        gap='8'
+        mt='8'
+        px='5vw'
+        w={["100%", "30%", "30%", "30%"]}
+        minW='300px'
+        // pb='10vh'
+        h={["auto", "100%", "100%", "100%"]}>
+        <Heading variant='sectionHeading' color={colors.light}>
           Use our space and services.
         </Heading>
 
-        <Text>
+        <Text variant='bodyText'>
           Are you looking for a private and modern space for your event? Do you
           have guests to feed? We might be able to help with your venue and
           catering needs.
@@ -60,7 +60,9 @@ function Events() {
         <BigMenuItem>
           <Text
             color={colors.brand.highlight}
-            fontSize={fonts.heading.fontSize}>
+            fontSize={fonts.heading.fontSize}
+            whiteSpace='nowrap'
+            >
             Get in touch
             <ArrowForwardIcon fontSize={fonts.heading.fontSizeXl} />
           </Text>

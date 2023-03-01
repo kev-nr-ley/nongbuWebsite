@@ -7,7 +7,6 @@ function BigMenuItem({ props, children }) {
   return (
     <Link
       variant='fancyNav'
-      mx='2'
       w='fit-content'
       fontSize={fonts.headingSize}
       letterSpacing={fonts.headingLetterSpacing}

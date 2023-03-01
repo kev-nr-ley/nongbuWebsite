@@ -15,6 +15,7 @@ function ImageContainer(props) {
       w='100%'
       objectFit='cover'
       objectPosition={"center"}
+      {...props}
       src={`/src/assets/images/${props.image}`}></Image>
   </Box>
   )

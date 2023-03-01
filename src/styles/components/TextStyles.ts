@@ -27,6 +27,13 @@ export const TextStyles: ComponentStyleConfig = {
       lineHeight: "20px",
       fontWeight: "400",
     },
+    bigText: {
+      letterSpacing: "2px",
+      fontSize: "20px",
+      lineHeight: "30px",
+      fontWeight: "700",
+    },
+
     menuItalic: {
       letterSpacing: "1.25px",
       fontSize: "16px",

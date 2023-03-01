@@ -33,7 +33,7 @@ export const theme = extendTheme({
 
   colors: {
     primary: "#de5b2c",
-    secondary: "#051621",
+    backgroundDarker: "#051621",
     dark: "#12212b",
     light: "#d9d9d9",
     white: "#f5f5f5",

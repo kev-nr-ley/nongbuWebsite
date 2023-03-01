@@ -8,27 +8,32 @@ function About() {
 
   return (
     <Flex //section container
-      justifyContent={["flex-start", "center", "center", "center"]}
-      alignItems={["center", "center", "flex-start"]}
-      flexDirection={["column", "column", "row", "row"]}
-      p={["0vw", "0vw", "5vw", "5vw"]}
-      gap='5vw'
+      alignItems={["center", "flex-start", "flex-start", "flex-start"]}
+      flexDirection={["column", "row", "row", "row"]}
+      position='relative'
+      justifyContent={"center"}
+      h={["100%", "auto", "auto", "auto"]}
+      p={["0", "5vw", "5vw", "5vw"]}
+      pb='10vh'
+      gap='8'
       bg={colors.backgroundLight}
-      // bg={["red", "green", "blue", "yellow"]}
       color={colors.brand.fontDark}>
-      <Box //image container
-        w={["100%", "100%", "40vh", "40vh"]}
-        h={["30vh", "30vh", "60vh", "60vh"]}>
-        <Image src='/src/assets/images/nongbu-2.jpg'></Image>
+      <Box w={["100vw", "35vw"]} h={["30vh", "80vh"]}>
+        <Image
+          zIndex={1}
+          src='/src/assets/images/nongbu-2.jpg'
+          objectFit='cover'></Image>
       </Box>
 
       <Flex //section content
         flexDirection={"column"}
-        w={["100%", "50%", "30%", "30%"]}
-        gap='5'>
-        <Heading variant='sectionHeader' w='100%' whiteSpace={"wrap"}>
-          Welcome to NongBu.
-        </Heading>
+        height='100%'
+        w={["100%", "50vw", "50vw", "50vw"]}
+        maxW='280px'
+        gap='4'
+        px={['5vw', '0vw', '0vw', '0vw']}
+        pb='10vh'>
+        <Heading variant='sectionHeader'>Welcome to NongBu.</Heading>
 
         <Text variant='bodyText'>
           NongBu resurrects Korean cuisine from bygone generations and

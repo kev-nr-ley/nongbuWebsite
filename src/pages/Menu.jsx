@@ -8,42 +8,53 @@ import MenuPage from "@components/Menu/MenuPage";
 
 function Menu(props) {
   const { colors } = theme;
+
   function renderMenuPage(menuPage) {
     return <MenuPage {...menuPage} objectToArray={props.objectToArray} />;
   }
 
   return (
-    <Box bg={colors.backgroundDark} px='5vw' py='5vh' mt='80px'>
-      <Flex w='100%' justifyContent='space-between' mb='12'>
+    <Flex
+      bg={colors.backgroundDark}
+      p='5vw'
+      gap='8'
+      flexDirection='column'
+      {...props}
+      mt={["0", "80px"]}>
+      <Flex
+        w='100%'
+        justifyContent='space-between'
+        gap='8'
+        flexDirection={["column", "row"]}>
         <Flex alignItems={"center"} w='30%' gap='4'>
           <Logo src='/nongbu-logo.png' width='52' height='52' />
           <Heading
-            as='h1'
+            as='h2'
             color={colors.light}
-            fontSize='32px'
-            fontWeight='700'
-            lineHeight='40px'
-            letterSpacing='3px'>
-            {" "}
-            Menu{" "}
+            variant='sectionHeading'
+            fontSize='32px'>
+            MENU
           </Heading>
         </Flex>
-        <Text color={colors.light} w='50%' variant='bodyText' textAlign='right'>
+        <Text
+          color={colors.light}
+          variant='bodyText'
+          textAlign={["left", "right"]}
+          w='100%'
+          minW='240px'>
           *Please note, our food and drink menus involve ingredients and
           beverages that are both seasonal and hard to reliably procure. Menus
           are therefore subject to change without notice.
         </Text>
       </Flex>
-      <Grid
-        gap='5vw'
-        w='100%'
-        gridTemplateColumns={["1fr", "1fr", "1fr 1fr", "1fr 1fr"]}>
+
+      <Grid gap='5vw' w='100%' gridTemplateColumns={["1fr", "1fr", "1fr 1fr"]}>
         {renderMenuPage(streetEats)}
         {renderMenuPage(bowls)}
         {renderMenuPage(meatSsam)}
         {renderMenuPage(sharing)}
       </Grid>
-    </Box>
+    </Flex>
   );
 }
 
