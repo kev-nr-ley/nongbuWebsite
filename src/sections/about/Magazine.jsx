@@ -48,12 +48,9 @@ function Magazine() {
       </Grid>
 
       <Image
-        src='/src/assets/images/nongbu-magazine.jpg'
+        src='/assets/images/nongbu-magazine.jpg'
         w={["100%", "320px", "440px", "480px"]}
-        h={['auto']}
-
-        // minW='220px'
-        // maxW='500px'
+        h={["auto"]}
       />
     </Flex>
   );
