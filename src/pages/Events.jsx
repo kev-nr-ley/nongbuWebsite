@@ -24,7 +24,7 @@ export default function Events(props) {
           top={["none", "0", "0"]}
           zIndex='4'
           objectPosition='10% 10%'
-          image='nongbu-event-1.jpg'
+          image='nongbu-event-1.webp'
         />
 
         <Flex //Text block
@@ -77,7 +77,7 @@ export default function Events(props) {
           zIndex='4'
           w={["100%", "60vw"]}
           h={["30vh", "60vh"]}
-          image='nongbu-event-2.jpg'
+          image='nongbu-event-2.webp'
         />
 
         <Flex //text block

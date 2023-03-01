@@ -48,7 +48,7 @@ function Magazine() {
       </Grid>
 
       <Image
-        src='/assets/images/nongbu-magazine.jpg'
+        src='/images/nongbu-magazine.webp'
         w={["100%", "320px", "440px", "480px"]}
         h={["auto"]}
       />

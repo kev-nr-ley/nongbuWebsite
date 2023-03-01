@@ -21,7 +21,7 @@ function About() {
       <Box w={["100vw", "35vw"]} h={["30vh", "80vh"]}>
         <Image
           zIndex={1}
-          src='/src/assets/images/nongbu-2.jpg'
+          src='/images/nongbu-2.webp'
           objectFit='cover'></Image>
       </Box>
 

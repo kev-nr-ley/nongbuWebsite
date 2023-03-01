@@ -55,7 +55,7 @@ export default function Hero() {
           <ImageContainer
             w={["100%", "100%", "30vw", "30vw"]}
             h={["100%", "100%", "25vw", "25vw"]}
-            image='nongbu-about-1.jpg'
+            image='nongbu-about-1.webp'
             flexShrink='1'
           />
           <ImageContainer
@@ -63,13 +63,13 @@ export default function Hero() {
             top={["0", "0", "-5vh", "-5vh"]}
             w={["240px", "400px", "30vw", "30vw"]}
             h={["100%", "100%", "25vw", "25vw"]}
-            image='nongbu-about-2.jpg'
+            image='nongbu-about-2.webp'
             flexShrink='0'
           />
           <ImageContainer
             w={["100%", "100%", "30vw", "30vw"]}
             h={["100%", "100%", "25vw", "25vw"]}
-            image='nongbu-about-3.jpg'
+            image='nongbu-about-3.webp'
             flexShrink='1'
           />
         </Flex>

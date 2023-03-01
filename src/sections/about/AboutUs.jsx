@@ -11,33 +11,23 @@ export default function AboutUs() {
     <>
 
       <Box
-        // position='relative'
         bg={colors.backgroundLight}
-        // h={["100vh", "100vh", "100vh", "80vh"]}
         minH='100vh'
         w='100vw'
         zIndex='9'
         overflow='hidden'>
         <Flex
-          //Text block
           flexDirection='column'
-          //   position={["absolute", "absolute", "absolute"]}
-          //   w={["100%", "100%", "50%", '30%']}
-          //   right={["0%", "0%", "10%", "10%"]}
-          //   mx={["0%", "0%", "0%", "0%"]}
+       
           px={["5%", "5%", "10%", "20%"]}
           py={["10%", "10%", "5%", "5%"]}
           gap='5vh'
-          //   top={["50%", "50%", "50%"]}
-          //   transform={["none", "none", "translateY(-50%)"]}
-          //   h={["fit-content", "fit-content", "100%"]}
-          //   justifyContent='center'
+       
           bg={colors.backgroundLight}
           color={colors.dark}
           zIndex='8'
           h='fit-content'>
-          {/* <Heading as='h3' variant='sectionHeading'>
-          </Heading> */}
+
 
           <Flex flexDirection={"column"} gap='8' w='100%' minW='240px' >
             <Heading as='h3' variant='sectionHeading'>

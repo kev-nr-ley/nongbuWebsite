@@ -30,9 +30,9 @@ function Events() {
         overflow='hidden'>
         <Image
           h='100%'
-          src='/src/assets/images/nongbu-3.jpg'
+          src='/images/nongbu-3.webp'
           objectPosition={["0% 50%", "20% 50%", "0% 0%", "0% 0%"]}
-          objectFit='cover'></Image>
+          objectFit='cover'/>
       </Box>
 
       <Flex //section content
@@ -61,8 +61,7 @@ function Events() {
           <Text
             color={colors.brand.highlight}
             fontSize={fonts.heading.fontSize}
-            whiteSpace='nowrap'
-            >
+            whiteSpace='nowrap'>
             Get in touch
             <ArrowForwardIcon fontSize={fonts.heading.fontSizeXl} />
           </Text>

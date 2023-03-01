@@ -1,5 +1,5 @@
 import React from "react";
-import { streetEats, meatSsam, bowls, sharing } from "../sections/menu/Menu";
+import { streetEats, meatSsam, bowls, sharing } from "@assets/data/Menu";
 import { Flex, Box, Text, Heading, Grid } from "@chakra-ui/react";
 import { theme } from "@styles/theme";
 import Logo from "@components/Logo";

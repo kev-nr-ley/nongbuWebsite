@@ -38,9 +38,9 @@ function Takeout(props) {
         <Heading variant='sectionHeading'>Get NongBu to-go or delivered right to your door.</Heading>
 
         <Flex gap='4' flexDirection='column' alignItems={'center'}>
-          <Logo src='skipthedishes.png' width='180' height='60' />
-          <Logo src='ubereats.png' width='180' height='60' />
-          <Logo src='fantuan.png' width='180' height='60' />
+          <Logo src='skipthedishes.webp' width='180' height='60' />
+          <Logo src='ubereats.webp' width='180' height='60' />
+          <Logo src='fantuan.webp' width='180' height='60' />
         </Flex>
       </Flex>
     </Flex>

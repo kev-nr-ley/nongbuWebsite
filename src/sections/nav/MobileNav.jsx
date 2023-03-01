@@ -4,16 +4,16 @@ import BigMenuItem from "@components/BigMenuItem";
 import { useTheme } from "@chakra-ui/react";
 import Logo from "@components/Logo";
 import NavButton from "@sections/nav/NavButton";
-import { CloseIcon } from "@chakra-ui/icons";
+import { useState, useEffect } from "react";
 
 export default function MobileNav(props) {
   const { colors } = useTheme();
-  const isMenuOpen = props.isMenuOpen;
-  const setIsMenuOpen = props.setIsMenuOpen;
 
-  // const handleNavButton = () => {
-  //   setIsMenuOpen(!isMenuOpen);
-  // };
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleNavButtonClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <Box
@@ -25,7 +25,7 @@ export default function MobileNav(props) {
       zIndex='999999999999'
       bg={colors.backgroundDark50}
       p='2vw'>
-      <Logo src='nongbu-logo.png' width='52' height='52' position='fixed' />
+      <Logo src='nongbu-logo.webp' width='52' height='52' position='fixed' />
 
       {isMenuOpen ? (
         <Flex
@@ -45,21 +45,21 @@ export default function MobileNav(props) {
           py='2vw'
           gap='12'
           color='black'>
-          <Box
+          <NavButton
             bg='transparent'
-            onClick={setIsMenuOpen(!isMenyOpen)}
             cursor='pointer'
             position='fixed'
             top='0'
             right='0'
-            p='2vw'>
-            <CloseIcon fontSize='32px' color={colors.light} />
-          </Box>
+            p='2vw'
+            onClick={handleNavButtonClick}
+            isMenuOpen={isMenuOpen}
+          />
 
           <Flex flexDirection='column' gap='12'>
             <BigMenuItem>Menu</BigMenuItem>
             <BigMenuItem>Reservations</BigMenuItem>
-            <Logo src='ear-logo.png' width='52' height='26' />
+            <Logo src='ear-logo.webp' width='52' height='26' />
           </Flex>
 
           <Flex flexDirection='column' gap='8'>
@@ -70,7 +70,14 @@ export default function MobileNav(props) {
           </Flex>
         </Flex>
       ) : (
-        <NavButton setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
+        <NavButton
+          position='fixed'
+          top='0'
+          right='0'
+          p='1vw'
+          onClick={handleNavButtonClick}
+          isMenuOpen={isMenuOpen}
+        />
       )}
     </Box>
   );

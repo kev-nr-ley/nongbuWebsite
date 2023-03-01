@@ -36,7 +36,7 @@ export default function Order(props, styleProps) {
         h={["30vh", "auto", "auto", "auto"]}>
         <Image
           zIndex={1}
-          src='/src/assets/images/nongbu-4.jpg'
+          src='/images/nongbu-4.webp'
           objectFit='cover'></Image>
       </Box>
 

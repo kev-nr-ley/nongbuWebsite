@@ -46,7 +46,7 @@ function Contact(props) {
         </Link> */}
       </Flex>
 
-      <ImageContainer zIndex='4'  minW='220px' maxW='320px' h='auto' image='open-table-1.png' />
+      <ImageContainer zIndex='4'  minW='220px' maxW='320px' h='auto' image='open-table-1.webp' />
     </Flex>
   );
 }

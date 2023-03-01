@@ -25,7 +25,7 @@ function Logo(props) {
         height='100%'
         objectFit='contain'
         objectPosition='center'
-        src={`/src/assets/images/logos/${props.src}`}
+        src={`/logos/${props.src}`}
         placeholder={`url('https://via.placeholder.com/${props.width}x${props.height}')`}
         alt={`${props.src} logo`}
       />

@@ -34,7 +34,7 @@ function Contact(props) {
         top={["none", "0", "0"]}
         zIndex='4'
         // objectPosition='10% 10%'
-        image='nongbu-contact-1.jpg'
+        image='nongbu-contact-1.webp'
       />
 
       <Flex //Text block

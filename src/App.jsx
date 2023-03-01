@@ -19,27 +19,13 @@ function App() {
   }
 
   const { colors, fonts } = useTheme();
-  const [isMobile, setIsMobile] = useState(false);
-
-  function checkIsMobile() {
-    const checkMobile = window.innerWidth < 600;
-    return setIsMobile(checkMobile);
-  }
-
-  useEffect(() => {
-    checkIsMobile();
-    window.addEventListener("resize", checkIsMobile);
-    return () => {
-      window.removeEventListener("resize", checkIsMobile);
-    };
-  }, []);
 
   return (
     <Box bg={colors.backgroundDark}>
-      <Navbar isMobile={isMobile} />
+      <Navbar />
       <Home />
       <About />
-      <Contact  />
+      <Contact />
       <Events />
       <Order />
       <Menu objectToArray={objectToArray} />

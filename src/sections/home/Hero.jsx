@@ -21,7 +21,7 @@ function Hero() {
         <Box //NongBu Logo
           zIndex={9}
           w={["300px", "340px", "380px", "420px"]}>
-          <Image src='./assets/images/nongbu-banner.png'></Image>
+          <Image src='/images/nongbu-banner.webp'></Image>
         </Box>
 
         <Box // Link button container
@@ -65,8 +65,8 @@ function Hero() {
         w={["100%", "70vw"]}
         h={["30vh", "100%", "100%"]}>
         <Image
-          src='./assets/images/nongbu-1.png'
-          fallbackSrc='https://via.placeholder.com/1126x710'></Image>
+          src='./images/nongbu-1.png'
+          fallbackSrc='https://via.placeholder.com/1120x710'></Image>
       </Box>
     </Box>
   );

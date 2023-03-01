@@ -1,23 +1,23 @@
 import React from "react";
 import { useState, useEffect } from "react";
-
-import { useTheme } from "@chakra-ui/react";
 import MobileNav from "@sections/nav/MobileNav";
 import DesktopNav from "@sections/nav/DesktopNav";
 
 export default function Navbar(props) {
-  const isMobile = props.isMobile;
+  const [isMobile, setIsMobile] = useState(false);
+  const [windowResize, setWindowResize] = useState(false);
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  }, [windowResize]);
+  
 
 
-  return (
-    <>
-      {isMobile ? (
-        <MobileNav isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      ) : (
-        <DesktopNav />
-      )}
-    </>
-  );
+
+
+  return isMobile ? <MobileNav /> : <DesktopNav />;
 }
