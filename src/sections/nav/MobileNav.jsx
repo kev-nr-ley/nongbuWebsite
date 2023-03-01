@@ -1,9 +1,8 @@
 import React from "react";
-import { Link, Flex, Box, Image } from "@chakra-ui/react";
+import { Link, Flex, Box } from "@chakra-ui/react";
 import BigMenuItem from "@components/BigMenuItem";
 import { useTheme } from "@chakra-ui/react";
 import Logo from "@components/Logo";
-import { FaBars, FaWindowClose } from "react-icons/fa";
 import NavButton from "@sections/nav/NavButton";
 import { CloseIcon } from "@chakra-ui/icons";
 
@@ -12,9 +11,9 @@ export default function MobileNav(props) {
   const isMenuOpen = props.isMenuOpen;
   const setIsMenuOpen = props.setIsMenuOpen;
 
-  const handleNavButton = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  // const handleNavButton = () => {
+  //   setIsMenuOpen(!isMenuOpen);
+  // };
 
   return (
     <Box
@@ -48,7 +47,7 @@ export default function MobileNav(props) {
           color='black'>
           <Box
             bg='transparent'
-            onClick={handleNavButton}
+            onClick={setIsMenuOpen(!isMenyOpen)}
             cursor='pointer'
             position='fixed'
             top='0'
@@ -71,7 +70,7 @@ export default function MobileNav(props) {
           </Flex>
         </Flex>
       ) : (
-        <NavButton handleNavButton={handleNavButton} />
+        <NavButton setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
       )}
     </Box>
   );
