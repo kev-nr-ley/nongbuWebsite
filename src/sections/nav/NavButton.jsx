@@ -6,7 +6,7 @@ import { FaBars } from "react-icons/fa";
 export default function NavButton(props) {
   const { colors } = useTheme();
 
-  const handleNavButton = props.handleNavButton;
+
 
   return (
     <Box
@@ -17,7 +17,7 @@ export default function NavButton(props) {
       zIndex={9999999}
       //   bg={colors.dark}
       cursor='pointer'
-      onClick={handleNavButton}
+      onClick={props.setIsMenuOpen(!props.isMenuOpen)}
       {...props}>
       <FaBars
         fontSize='52px'
