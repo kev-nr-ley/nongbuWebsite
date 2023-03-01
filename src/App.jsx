@@ -37,12 +37,12 @@ function App() {
   return (
     <Box bg={colors.backgroundDark}>
       <Navbar isMobile={isMobile} />
-      {/* <Home /> */}
-      {/* <About /> */}
-      {/* <Contact  /> */}
-      {/* <Events /> */}
-      {/* <Order /> */}
-      {/* <Menu objectToArray={objectToArray} /> */}
+      <Home />
+      <About />
+      <Contact  />
+      <Events />
+      <Order />
+      <Menu objectToArray={objectToArray} />
       <Reservations />
       <Footer />
     </Box>
