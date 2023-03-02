@@ -1,11 +1,11 @@
 import React from "react";
-import { Link, Flex, Box } from "@chakra-ui/react";
+import { Flex, Menu, Box, Link as ChakraLink } from "@chakra-ui/react";
 import BigMenuItem from "@components/BigMenuItem";
 import { useTheme } from "@chakra-ui/react";
 import Logo from "@components/Logo";
 import NavButton from "@sections/nav/NavButton";
 import { useState, useEffect } from "react";
-
+import { Route, Routes, Link } from "react-router-dom";
 export default function MobileNav(props) {
   const { colors } = useTheme();
 
@@ -22,14 +22,17 @@ export default function MobileNav(props) {
       top='0'
       left='0'
       h='80px'
-      zIndex='999999999999'
+      zIndex='10'
       bg={colors.backgroundDark50}
+      color={colors.light}
       p='2vw'>
-      <Logo src='nongbu-logo.webp' width='52' height='52' position='fixed' />
-
+      <Link to='/'>
+        <Logo src='nongbu-logo.webp' width='52' height='52' position='fixed' />
+      </Link>
       {isMenuOpen ? (
         <Flex
           as='nav'
+          color={colors.light}
           flexDirection='column'
           w='70vw'
           minW='200px'
@@ -43,8 +46,7 @@ export default function MobileNav(props) {
           justifyContent={"center"}
           px='5vw'
           py='2vw'
-          gap='12'
-          color='black'>
+          gap='12'>
           <NavButton
             bg='transparent'
             cursor='pointer'
@@ -57,16 +59,22 @@ export default function MobileNav(props) {
           />
 
           <Flex flexDirection='column' gap='12'>
-            <BigMenuItem>Menu</BigMenuItem>
-            <BigMenuItem>Reservations</BigMenuItem>
-            <Logo src='ear-logo.webp' width='52' height='26' />
+            <Link to='/Menu'>
+              <BigMenuItem>Menu</BigMenuItem>
+            </Link>
+            <Link to='/Reservations'>
+              <BigMenuItem>Reservations</BigMenuItem>
+            </Link>
+            <Link to='/ears'>
+              <Logo src='ear-logo.webp' width='52' height='26' />
+            </Link>
           </Flex>
 
           <Flex flexDirection='column' gap='8'>
-            <Link>About</Link>
-            <Link>Contact</Link>
-            <Link>Events</Link>
-            <Link>Order</Link>
+          <ChakraLink as={Link} to='/About'>About</ChakraLink>
+          <ChakraLink as={Link} to='/Contact'>Contact</ChakraLink>
+          <ChakraLink as={Link} to='/Events'>Events</ChakraLink>
+          <ChakraLink as={Link} to='/Order'>Order</ChakraLink>
           </Flex>
         </Flex>
       ) : (

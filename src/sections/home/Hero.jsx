@@ -55,7 +55,7 @@ function Hero() {
         maxW='380px'
         bg={colors.backgroundLight}
         color={colors.dark}
-        zIndex='999'
+        zIndex='9'
       />
 
       <Box // Image background container

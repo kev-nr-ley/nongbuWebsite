@@ -16,18 +16,23 @@ function Menu(props) {
   return (
     <Flex
       bg={colors.backgroundDark}
-      p={['5vw', '5vw', '10vw']}
+      p={["5vw", "5vw", "10vw"]}
       gap='8'
       flexDirection='column'
       {...props}
-      mt={["0", "80px"]}>
+      mt={["0", "80px"]}
+    
+
+      >
       <Flex
         w='100%'
         justifyContent='space-between'
         gap='8'
         flexDirection={["column", "row"]}>
-        <Flex alignItems={"center"} w='30%' gap='4'>
-          <Logo src='/nongbu-logo.png' width='52' height='52' />
+        <Flex alignItems={"center"} 
+          justifyContent='center'
+        w='30%' gap='4'>
+          {/* <Logo src='/nongbu-logo.png' width='52' height='52' /> */}
           <Heading
             as='h2'
             color={colors.light}

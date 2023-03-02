@@ -5,9 +5,9 @@ import { theme } from "../theme";
 export const LinkStyles: ComponentStyleConfig = {
   // style object for base or default style
   baseStyle: {
-    color: "white",
+    color: "light",
     fontWeight: "500",
-    fontSize: "16px",
+    fontSize: "20px",
     lineHeight: "20px",
     letterSpacing: "1.25px",
 

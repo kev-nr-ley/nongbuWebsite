@@ -18,14 +18,14 @@ function Contact(props) {
     <Flex
       flexDirection={["column", "row"]}
       position='relative'
-      h='100vh'
+      minH='80vh'
       bg={colors.backgroundDark}
       color={colors.light}
       px='5vw'
       gap='12'
       py='10vh'
       
-      alignItems='center'
+      // alignItems='center'
       mt={['0', '80px']}
       w={["100%"]}
       // alignItems={["center", "flex-start"]}

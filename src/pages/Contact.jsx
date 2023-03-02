@@ -21,7 +21,7 @@ function Contact(props) {
       alignItems='center'
       position='relative'
       flexDirection={["column", "row"]}
-      h={["auto", "100vh", "100vh", "100vh"]}
+      h={["100vh", "100vh", "100vh", "100vh"]}
       gap='8'
       color={colors.light}
       {...props}>
@@ -45,7 +45,7 @@ function Contact(props) {
         gap='8'
         px={["5vw"]}
         pb='10vh'
-        mt={["0", "80px"]}
+        pt={['0', '80px']}
         // minW='240px'
         maxW='400px'
         bg={colors.backgroundDark} //for desktop

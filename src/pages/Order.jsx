@@ -48,7 +48,7 @@ export default function Order(props, styleProps) {
         w={["100%", "30%", "30%", "25%"]}>
         <Heading variant='sectionHeading'>Get it to-go or delivered</Heading>
 
-        <Text variant='bodyText' lineHeight='30px' minW='220px'>
+        <Text variant='bodyText' lineHeight='30px' minW='200px'>
           Look at our menu and give us a call to pick up your order, or get
           NongBu delivered right to your door using one of these apps:
         </Text>

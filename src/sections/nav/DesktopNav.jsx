@@ -1,9 +1,9 @@
 import React from "react";
-import { Link, Flex, Menu } from "@chakra-ui/react";
+import { Flex, Menu, Box, Link as ChakraLink } from "@chakra-ui/react";
 import BigMenuItem from "@components/BigMenuItem";
 import { useTheme } from "@chakra-ui/react";
 import Logo from "@components/Logo";
-
+import { Route, Routes, Link } from "react-router-dom";
 export default function DesktopNav() {
   const { colors, fonts } = useTheme();
 
@@ -12,6 +12,7 @@ export default function DesktopNav() {
       className='desktop-nav'
       as='nav'
       bg={colors.backgroundDarker}
+      color={colors.light}
       flexDirection='row'
       justifyContent='space-between'
       alignItems='center'
@@ -26,28 +27,43 @@ export default function DesktopNav() {
         display='flex'
         flexDirection='row'
         p='1'
-        gap='6'
+        gap='4vw'
         justifyContent='space-between'
         alignItems='center'
         lineHeight={fonts.headingLineHeight}>
-        <Logo src='nongbu-logo.png' width='52' height='52' />
+        <Link to='/'>
+          <Logo
+            src='nongbu-logo.webp'
+            width='52'
+            height='52'
+            position='fixed'
+          />
+        </Link>
         <Menu>
-          <Link>About</Link>
-          <Link>Contact</Link>
-          <Link>Events</Link>
-          <Link>Order</Link>
+          <ChakraLink as={Link} to='/About'>About</ChakraLink>
+          <ChakraLink as={Link} to='/Contact'>Contact</ChakraLink>
+          <ChakraLink as={Link} to='/Events'>Events</ChakraLink>
+          <ChakraLink as={Link} to='/Order'>Order</ChakraLink>
         </Menu>
       </Flex>
 
-      <Flex
-        p='1'
-        flexDirection={"row"}
-        justifyContent={"space-between"}
-        alignItems={"center"}
-        gap='4'>
-        <BigMenuItem variant='fancyLink'>Menu</BigMenuItem>
-        <BigMenuItem>Reservations</BigMenuItem>
-        <Logo src='ear-logo.png' width='64' height='32' />
+      <Flex flexDirection={"row"} h='100%'>
+        <Flex
+          flexDirection='row'
+          gap='5vw'
+          mt='1'
+          alignItems='center'
+          justifyContent='center'>
+          <Link to='/Menu'>
+            <BigMenuItem>Menu</BigMenuItem>
+          </Link>
+          <Link to='/Reservations'>
+            <BigMenuItem>Reservations</BigMenuItem>
+          </Link>
+          <Link to='/ears'>
+            <Logo src='ear-logo.webp' width='52' height='26' />
+          </Link>
+        </Flex>
       </Flex>
     </Flex>
   );
