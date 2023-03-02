@@ -18,7 +18,8 @@ function Logo(props) {
       minW={`${props.width}px`}
       h={`${props.height}px`}
       minH={`${props.height}px`}
-      >
+      bg={`${props.bg}`}
+>
 
       <Image
         width='100%'
@@ -27,7 +28,7 @@ function Logo(props) {
         objectPosition='center'
         src={`/logos/${props.src}`}
         placeholder={`url('https://via.placeholder.com/${props.width}x${props.height}')`}
-        alt={`${props.src} logo`}
+        alt={`${props.src} logo`}        
       />
     </Box>
   );

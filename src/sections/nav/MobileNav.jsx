@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Menu, Box, Link as ChakraLink } from "@chakra-ui/react";
+import { Flex, Box } from "@chakra-ui/react";
 import BigMenuItem from "@components/BigMenuItem";
 import { useTheme } from "@chakra-ui/react";
 import Logo from "@components/Logo";
@@ -22,13 +22,10 @@ export default function MobileNav(props) {
       top='0'
       left='0'
       h='80px'
-      zIndex='10'
+      zIndex='999'
       bg={colors.backgroundDark50}
       color={colors.light}
       p='2vw'>
-      <Link to='/'>
-        <Logo src='nongbu-logo.webp' width='52' height='52' position='fixed' />
-      </Link>
       {isMenuOpen ? (
         <Flex
           as='nav'
@@ -71,10 +68,10 @@ export default function MobileNav(props) {
           </Flex>
 
           <Flex flexDirection='column' gap='8'>
-          <ChakraLink as={Link} to='/About'>About</ChakraLink>
-          <ChakraLink as={Link} to='/Contact'>Contact</ChakraLink>
-          <ChakraLink as={Link} to='/Events'>Events</ChakraLink>
-          <ChakraLink as={Link} to='/Order'>Order</ChakraLink>
+            <Link to='/About'>About</Link>
+            <Link to='/Contact'>Contact</Link>
+            <Link to='/Events'>Events</Link>
+            <Link to='/Order'>Order</Link>
           </Flex>
         </Flex>
       ) : (
@@ -87,6 +84,10 @@ export default function MobileNav(props) {
           isMenuOpen={isMenuOpen}
         />
       )}
+
+      <Link to='/'>
+        <Logo src='nongbu-logo.webp' width='52' height='52' position='fixed' />
+      </Link>
     </Box>
   );
 }

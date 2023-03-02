@@ -26,9 +26,9 @@ function About() {
         flexDirection={"column"}
         height='100%'
         w={["100%", "50vw", "50vw", "50vw"]}
-        maxW='280px'
+        px={['5vw', '0']}
         gap='8'
-        px={["5vw", "0vw", "0vw", "0vw"]}
+        // px={["5vw", "0vw", "0vw", "0vw"]}
         pb='10vh'>
         <Heading variant='sectionHeading'>Welcome to NongBu.</Heading>
 

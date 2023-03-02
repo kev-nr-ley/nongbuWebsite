@@ -38,6 +38,7 @@ function Footer() {
       <Grid
         // border='2px'
         gap='4'
+        minW='300px'
         p='4'
         h='240px'>
         <Heading variant='footerHeading'>CONTACT</Heading>
@@ -55,6 +56,7 @@ function Footer() {
         // border='2px'
         gap='4'
         p='4'
+        minW='300px'
         h='240px'>
         <Heading variant='footerHeading'>LOCATION</Heading>
         <Flex flexDirection='column' letterSpacing='2px'>
