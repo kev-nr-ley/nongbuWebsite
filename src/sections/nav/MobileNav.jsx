@@ -17,7 +17,6 @@ export default function MobileNav(props) {
     console.log("navClick");
   };
 
-
   const handleLink = () => {
     setIsMenuOpen(false);
   };
