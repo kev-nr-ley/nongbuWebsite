@@ -28,7 +28,8 @@ function About() {
         flexDirection={"column"}
         height='100%'
         w={["100%", "50vw", "50vw", "50vw"]}
-        maxW='320px'
+        // maxW='320px'
+        maxW={['100%, 320px']}
         px={['5vw', '0']}
         gap='8'
         // px={["5vw", "0vw", "0vw", "0vw"]}
