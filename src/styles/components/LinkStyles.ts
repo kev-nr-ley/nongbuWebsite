@@ -50,7 +50,7 @@ export const LinkStyles: ComponentStyleConfig = {
     heroLink: {
       bg: "transparent",
       color: "primary",
-      fontSize: "20px",
+      fontSize: "28px",
       fontWeight: "700",
       _hover: {
         color: "white",
@@ -65,7 +65,7 @@ export const LinkStyles: ComponentStyleConfig = {
       color: "primary",
       fontSize: "20px",
       fontWeight: "700",
-      pr:'2',
+      pr: "2",
 
       _hover: {
         color: "white",

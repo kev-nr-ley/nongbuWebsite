@@ -8,21 +8,18 @@ function About() {
 
   return (
     <Flex //section container
-      alignItems={["center", "flex-start", "flex-start", "flex-start"]}
+      alignItems={["center", "center"]}
       flexDirection={["column", "row", "row", "row"]}
       position='relative'
       justifyContent={"center"}
       h={["100%", "auto", "auto", "auto"]}
       p={["0", "5vw", "5vw", "5vw"]}
       pb='10vh'
-      gap='8'
+        gap='8'
       bg={colors.backgroundLight}
       color={colors.brand.fontDark}>
       <Box w={["100vw", "35vw"]} h={["30vh", "80vh"]}>
-        <Image
-          zIndex={1}
-          src='/images/nongbu-2.webp'
-          objectFit='cover'></Image>
+        <Image zIndex={1} src='/images/nongbu-2.webp' objectFit='cover'></Image>
       </Box>
 
       <Flex //section content
@@ -30,10 +27,10 @@ function About() {
         height='100%'
         w={["100%", "50vw", "50vw", "50vw"]}
         maxW='280px'
-        gap='4'
-        px={['5vw', '0vw', '0vw', '0vw']}
+        gap='8'
+        px={["5vw", "0vw", "0vw", "0vw"]}
         pb='10vh'>
-        <Heading variant='sectionHeader'>Welcome to NongBu.</Heading>
+        <Heading variant='sectionHeading'>Welcome to NongBu.</Heading>
 
         <Text variant='bodyText'>
           NongBu resurrects Korean cuisine from bygone generations and

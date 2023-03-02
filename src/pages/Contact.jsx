@@ -2,6 +2,7 @@ import React from "react";
 import { TagLeftIcon, useTheme } from "@chakra-ui/react";
 import { Flex, Image, Box, Text, Heading, Link, Grid } from "@chakra-ui/react";
 import BigMenuItem from "@components/BigMenuItem";
+import Hours from "@components/Hours";
 import ImageContainer from "@components/ImageContainer";
 import {
   ArrowForwardIcon,
@@ -33,21 +34,18 @@ function Contact(props) {
         right={["none", "0", "0"]}
         top={["none", "0", "0"]}
         zIndex='4'
+        p={["0", "0", "5vw"]}
         // objectPosition='10% 10%'
         image='nongbu-contact-1.webp'
       />
 
       <Flex //Text block
         flexDirection='column'
-        // w={["auto"]}
         h={["100%", "100%"]}
         justifyContent='center'
         gap='8'
-        px={["5vw"]}
-        pb='10vh'
-        pt={['0', '80px']}
-        // minW='240px'
-        maxW='400px'
+        p={["5vw"]}
+        pt={["0", "0px", "80px"]}
         bg={colors.backgroundDark} //for desktop
         zIndex='5'>
         <Heading as='h3' variant='sectionHeading'>
@@ -60,40 +58,41 @@ function Contact(props) {
         </Text>
 
         <Grid
-          gap='4'
+          // gap='4'
           w='100%'
           //  minW='240px'
+          // border='2px'
+          gap='8'
+          p='2'
           maxW='400px'>
           {/* <Heading variant='footerHeading'>CONTACT</Heading> */}
-          <Flex justifyContent={"space-between"} letterSpacing='2px'>
-            <Text>Call </Text>
-            <Text variant='bigText'> (780) 989 0997</Text>
-          </Flex>
-          <Flex justifyContent={"space-between"} letterSpacing='2px'>
-            <Text>Email </Text>
-            <Text variant='bigText'> jahn@nongbu.ca</Text>
-          </Flex>
-          <Flex justifyContent={"space-between"} letterSpacing='2px'>
-            <Text>Reservation</Text>
-            <Text variant='bigText'>OpenTable</Text>
-          </Flex>
+          <Link w='100%' letterSpacing='2px'>
+            <Flex justifyContent={"space-between"}>
+              <Text as='span'>Call</Text>
+              <Text as='span'>
+                (780) 989 0997 <ArrowForwardIcon fontSize='24px' />
+              </Text>
+            </Flex>
+          </Link>
+          <Link as='Flex' justifyContent={"space-between"} letterSpacing='2px'>
+            <Flex justifyContent={"space-between"}>
+              <Text as='span'>Email</Text>
+              <Text as='span'>
+                jahn@nongbu.ca <ArrowForwardIcon fontSize='24px' />
+              </Text>
+            </Flex>
+          </Link>
+          <Link as='Flex' justifyContent={"space-between"} letterSpacing='2px'>
+            <Flex justifyContent={"space-between"}>
+              <Text as='span'>Reservations</Text>
+              <Text as='span'>
+                OpenTable <ArrowForwardIcon fontSize='24px' />
+              </Text>
+            </Flex>
+          </Link>
         </Grid>
 
-        <Grid gap='4' maxW='400px'>
-          <Heading variant='footerHeading'>HOURS</Heading>
-          <Flex justifyContent={"space-between"} letterSpacing='2px'>
-            <Text>Tue - Thu</Text>
-            <Text>4pm - 9pm</Text>
-          </Flex>
-          <Flex justifyContent={"space-between"} letterSpacing='2px'>
-            <Text>Fri & Sat</Text>
-            <Text>4pm - 10pm</Text>
-          </Flex>
-          <Flex justifyContent={"space-between"} letterSpacing='2px'>
-            <Text>Sun & Mon</Text>
-            <Text> Closed </Text>
-          </Flex>
-        </Grid>
+        <Hours border='2px' gap='8' p='4' w='100%' maxW='400px' />
       </Flex>
     </Flex>
   );

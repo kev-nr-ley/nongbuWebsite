@@ -2,21 +2,15 @@ import React from "react";
 import { useTheme } from "@chakra-ui/react";
 import {
   Flex,
-  Image,
-  Box,
   Text,
   Heading,
-  Stack,
-  SimpleGrid,
   Grid,
-  GridItem,
   Button,
+  Link as ChakraLink,
 } from "@chakra-ui/react";
 import { FaBeer, FaFacebook, FaInstagram } from "react-icons/fa";
-import BigMenuItem from "../components/BigMenuItem";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
-import Logo from "../components/Logo";
 import Hours from "../components/Hours";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const { colors, fonts } = useTheme();
@@ -25,22 +19,32 @@ function Footer() {
     <Flex
       flexDirection={["column", "column", "row", "row"]}
       justifyContent='center'
-      alignItems={["center", "center", "flex-start"]}
-      h={["auto", "auto"]}
+      alignItems={["center", "center"]}
       bg={colors.brand.footer}
-      p='5'
+      px='8vw'
+      py='2vw'
       w='100vw'
-      gap='8'
+      gap='5vw'
+      minH='360px'
       color={colors.white}>
-      <Hours gap='8' h='100%' minH='200px' w='100%' maxW='300px' />
+      <Hours
+        // border='2px'
+        gap='4'
+        p='4'
+        w='100%'
+        minW='300px'
+        maxW='360px'
+        h='240px'
+      />
 
       <Grid
+        // border='2px'
         gap='4'
-        h='100%'
-        minH='200px'
+        p='4'
         w='100%'
-        maxW='300px'
-        flexDirection='column'>
+        minW='300px'
+        maxW='360px'
+        h='240px'>
         <Heading variant='footerHeading'>CONTACT</Heading>
         <Flex flexDirection='column' letterSpacing='2px'>
           <Text letterSpacing='2px'>(780) 989-0997</Text>
@@ -52,7 +56,14 @@ function Footer() {
         </Flex>
       </Grid>
 
-      <Grid gap='4' h='100%' minH='200px' w='100%' maxW='300px'>
+      <Grid
+        // border='2px'
+        gap='4'
+        p='4'
+        w='100%'
+        minW='300px'
+        maxW='360px'
+        h='240px'>
         <Heading variant='footerHeading'>LOCATION</Heading>
         <Flex flexDirection='column' letterSpacing='2px'>
           <Text letterSpacing='2px'>8115 104 St NW.</Text>
@@ -66,7 +77,9 @@ function Footer() {
             letterSpacing='2px'
             mt='2'
             fontWeight='700'>
-            Directions
+            <Link to='https://goo.gl/maps/YtM2K31WNjdT84tU9' target='_blank'>
+              Directions!!
+            </Link>
           </Button>
         </Flex>
       </Grid>

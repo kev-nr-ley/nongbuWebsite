@@ -40,10 +40,18 @@ export default function DesktopNav() {
           />
         </Link>
         <Menu>
-          <ChakraLink as={Link} to='/About'>About</ChakraLink>
-          <ChakraLink as={Link} to='/Contact'>Contact</ChakraLink>
-          <ChakraLink as={Link} to='/Events'>Events</ChakraLink>
-          <ChakraLink as={Link} to='/Order'>Order</ChakraLink>
+          <ChakraLink as={Link} to='/About'>
+            About
+          </ChakraLink>
+          <ChakraLink as={Link} to='/Contact'>
+            Contact
+          </ChakraLink>
+          <ChakraLink as={Link} to='/Events'>
+            Events
+          </ChakraLink>
+          <ChakraLink as={Link} to='/Order'>
+            Order
+          </ChakraLink>
         </Menu>
       </Flex>
 
@@ -60,7 +68,7 @@ export default function DesktopNav() {
           <Link to='/Reservations'>
             <BigMenuItem>Reservations</BigMenuItem>
           </Link>
-          <Link to='/ears'>
+          <Link to='https://www.instagram.com/ear_yeg' target='_blank'>
             <Logo src='ear-logo.webp' width='52' height='26' />
           </Link>
         </Flex>

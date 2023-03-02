@@ -33,7 +33,8 @@ function Hero() {
           mt='8'
           textAlign={["left", "right", "right"]}>
           <Link variant='heroLink' my='10%' noOfLines={1}>
-            Our menu <ArrowForwardIcon fontSize='32px' />
+            Our menu
+            <ArrowForwardIcon fontSize='32px' />
           </Link>
 
           <Link variant='heroLink' my='10%' noOfLines={1}>
