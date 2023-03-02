@@ -1,35 +1,27 @@
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { Box, Flex, Heading, Link, Text, Grid, Image } from "@chakra-ui/react";
-import ImageContainer from "@components/ImageContainer";
 import React from "react";
-import Magazine from "@sections/about/Magazine";
 import { useTheme } from "@chakra-ui/react";
 
 export default function AboutUs() {
   const { colors, fonts } = useTheme();
   return (
     <>
-
       <Box
         bg={colors.backgroundLight}
+        color={colors.dark}
         minH='100vh'
         w='100vw'
         zIndex='9'
         overflow='hidden'>
         <Flex
           flexDirection='column'
-       
-          px={["5%", "5%", "10%", "20%"]}
+          px={["5%", "5%", "10%", "25%"]}
           py={["10%", "10%", "5%", "5%"]}
           gap='5vh'
-       
-          bg={colors.backgroundLight}
-          color={colors.dark}
           zIndex='8'
           h='fit-content'>
-
-
-          <Flex flexDirection={"column"} gap='8' w='100%' minW='240px' >
+          <Flex flexDirection={"column"} gap='8' w='100%' minW='240px'>
             <Heading as='h3' variant='sectionHeading'>
               Food
             </Heading>
@@ -85,7 +77,6 @@ export default function AboutUs() {
           </Flex>
         </Flex>
       </Box>
-
     </>
   );
 }

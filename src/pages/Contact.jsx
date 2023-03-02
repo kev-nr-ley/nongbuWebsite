@@ -39,32 +39,31 @@ function Contact(props) {
 
       <Flex //Text block
         flexDirection='column'
-        w={["auto"]}
+        // w={["auto"]}
         h={["100%", "100%"]}
         justifyContent='center'
         gap='8'
         px={["5vw"]}
         pb='10vh'
-        mt={['0', '80px']}
-        minW='240px'
-        maxW='440px'
+        mt={["0", "80px"]}
+        // minW='240px'
+        maxW='400px'
         bg={colors.backgroundDark} //for desktop
         zIndex='5'>
         <Heading as='h3' variant='sectionHeading'>
           Contact us
         </Heading>
 
-        <Text
-          variant='bodyText'
-          lineHeight='30px'
-          w='100%'
-          minW='240px'
-          maxW='320px'>
+        <Text variant='bodyText' lineHeight='30px' maxW='400px'>
           Book a table, order takeout, inquire about private events and
           catering, ask about our menu... etc.
         </Text>
 
-        <Grid gap='4' w='100%' minW='240px' maxW='320px'>
+        <Grid
+          gap='4'
+          w='100%'
+          //  minW='240px'
+          maxW='400px'>
           {/* <Heading variant='footerHeading'>CONTACT</Heading> */}
           <Flex justifyContent={"space-between"} letterSpacing='2px'>
             <Text>Call </Text>
@@ -80,7 +79,7 @@ function Contact(props) {
           </Flex>
         </Grid>
 
-        <Grid gap='4'>
+        <Grid gap='4' maxW='400px'>
           <Heading variant='footerHeading'>HOURS</Heading>
           <Flex justifyContent={"space-between"} letterSpacing='2px'>
             <Text>Tue - Thu</Text>

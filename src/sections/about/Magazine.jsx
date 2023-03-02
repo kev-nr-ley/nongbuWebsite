@@ -16,8 +16,8 @@ function Magazine() {
       h={["auto", "auto", "80vh", "80vh"]}
       w='100vw'
       overflow='hidden'
-      justifyContent='flex-start'
-      alignItems='flex-start'
+      justifyContent={['flex-start', 'center']}
+      alignItems={['flex-start', 'center']}
       gap='5vw'
       p='5vw'>
       <Grid color={colors.light} textAlign={["left", "right", "right"]}>

@@ -16,7 +16,7 @@ function Menu(props) {
   return (
     <Flex
       bg={colors.backgroundDark}
-      p='5vw'
+      p={['5vw', '5vw', '10vw']}
       gap='8'
       flexDirection='column'
       {...props}
