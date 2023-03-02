@@ -24,16 +24,14 @@ function Footer() {
       px='8vw'
       py='2vw'
       w='100vw'
-      gap='5vw'
+      gap='8vw'
       minH='360px'
       color={colors.white}>
       <Hours
         // border='2px'
         gap='4'
         p='4'
-        w='100%'
-        minW='300px'
-        maxW='360px'
+      minW='300px'
         h='240px'
       />
 
@@ -41,9 +39,6 @@ function Footer() {
         // border='2px'
         gap='4'
         p='4'
-        w='100%'
-        minW='300px'
-        maxW='360px'
         h='240px'>
         <Heading variant='footerHeading'>CONTACT</Heading>
         <Flex flexDirection='column' letterSpacing='2px'>
@@ -60,9 +55,6 @@ function Footer() {
         // border='2px'
         gap='4'
         p='4'
-        w='100%'
-        minW='300px'
-        maxW='360px'
         h='240px'>
         <Heading variant='footerHeading'>LOCATION</Heading>
         <Flex flexDirection='column' letterSpacing='2px'>
