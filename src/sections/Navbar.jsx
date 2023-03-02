@@ -23,6 +23,7 @@ export default function Navbar(props) {
 
   return (
     <>
+    
       {isMobile ? (
         <MobileNav />
       ) : (
