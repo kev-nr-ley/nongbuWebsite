@@ -1,20 +1,19 @@
 import React from "react";
-import { Flex, Box, Link as ChakraLink } from "@chakra-ui/react";
+import { Flex, Box, Text, Image, Link as ChakraLink } from "@chakra-ui/react";
 import BigMenuItem from "@components/BigMenuItem";
 import { useTheme } from "@chakra-ui/react";
 import Logo from "@components/Logo";
 import NavButton from "@sections/nav/NavButton";
 import { useState, useEffect, useRef } from "react";
 import { Route, Routes, Link } from "react-router-dom";
-
+import { FaInstagram } from "react-icons/fa";
 export default function MobileNav(props) {
-  const { colors } = useTheme();
+  const { colors, fonts } = useTheme();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleNavButtonClick = () => {
     setIsMenuOpen(!isMenuOpen);
-    console.log("navClick");
   };
 
   const handleLink = () => {
@@ -71,14 +70,24 @@ export default function MobileNav(props) {
             <Link onClick={handleLink} to='/Reservations'>
               <BigMenuItem>Reservations</BigMenuItem>
             </Link>
-            <Link
+            <ChakraLink
+              as={Link}
               onClick={handleLink}
               to='https://www.instagram.com/ear_yeg'
               target='_blank'>
-              <Logo src='ear-logo.webp' width='52' height='26' />
-            </Link>
+              <Text
+                fontFamily={fonts.ear}
+                fontSize='52px'
+                fontWeight={"200"}
+                >
+                ear
+              </Text>
+            </ChakraLink>
           </Flex>
           <Flex flexDirection='column' gap='8'>
+            <ChakraLink as={Link} onClick={handleLink} to='/'>
+              Home
+            </ChakraLink>
             <ChakraLink as={Link} onClick={handleLink} to='/About'>
               About
             </ChakraLink>
@@ -105,7 +114,7 @@ export default function MobileNav(props) {
       )}
 
       <Link to='/'>
-        <Logo src='nongbu-logo.webp' width='52' height='52' position='fixed' />
+        <Logo src='nongbu-logo.png' width='52' height='52' />
       </Link>
     </Box>
   );

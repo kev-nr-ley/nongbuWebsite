@@ -16,11 +16,12 @@ function Menu(props) {
   return (
     <Flex
       bg={colors.backgroundDark}
-      p={["5vw", "5vw", "10vw"]}
+      px={["5vw", "5vw", "5vw"]}
+      py='10vw'
       gap='8'
       flexDirection='column'
       {...props}
-      mt={["0", "80px"]}
+      // mt={["0", "80px"]}
     
 
       >
@@ -33,13 +34,13 @@ function Menu(props) {
           justifyContent='center'
         w='30%' gap='4'>
           {/* <Logo src='/nongbu-logo.png' width='52' height='52' /> */}
-          <Heading
+          {/* <Heading
             as='h2'
             color={colors.light}
             variant='sectionHeading'
             fontSize='32px'>
             MENU
-          </Heading>
+          </Heading> */}
         </Flex>
         <Text
           color={colors.light}

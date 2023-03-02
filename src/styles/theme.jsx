@@ -9,6 +9,7 @@ import "@fontsource/mulish/500.css";
 import "@fontsource/mulish/600.css";
 import "@fontsource/mulish/700.css";
 import "@fontsource/mulish/800.css";
+import "@fontsource/pt-sans-narrow"
 
 export const theme = extendTheme({
   styles: {
@@ -63,6 +64,7 @@ export const theme = extendTheme({
   },
 
   fonts: {
+    ear: "Source sans pro, sans-serif",
     body: "Mulish, sans-serif",
     bodySize: "16px",
     bodySizeMd: "18px",

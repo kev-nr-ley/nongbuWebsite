@@ -27,13 +27,12 @@ function Footer(props) {
       gap='8vw'
       minH='360px'
       color={colors.white}
-        {...props}
-      >
+      {...props}>
       <Hours
         // border='2px'
         gap='4'
         p='4'
-      minW='300px'
+        minW='300px'
         h='240px'
       />
 
@@ -74,7 +73,7 @@ function Footer(props) {
             mt='2'
             fontWeight='700'>
             <Link to='https://goo.gl/maps/YtM2K31WNjdT84tU9' target='_blank'>
-              Directions!!
+              Directions
             </Link>
           </Button>
         </Flex>
