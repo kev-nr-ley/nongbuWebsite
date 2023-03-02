@@ -26,7 +26,7 @@ function Contact(props) {
       py='10vh'
       
       // alignItems='center'
-      mt={['0', '80px']}
+      mt={['0', '0px']}
       w={["100%"]}
       // alignItems={["center", "flex-start"]}
       justifyContent={["center"]}

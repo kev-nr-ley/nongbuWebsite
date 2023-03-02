@@ -74,7 +74,7 @@ function Contact(props) {
               </Text>
             </Flex>
           </Link>
-          <Link as='Flex' justifyContent={"space-between"} letterSpacing='2px'>
+          <Link justifyContent={"space-between"} letterSpacing='2px'>
             <Flex justifyContent={"space-between"}>
               <Text as='span'>Email</Text>
               <Text as='span'>
@@ -82,7 +82,7 @@ function Contact(props) {
               </Text>
             </Flex>
           </Link>
-          <Link as='Flex' justifyContent={"space-between"} letterSpacing='2px'>
+          <Link justifyContent={"space-between"} letterSpacing='2px'>
             <Flex justifyContent={"space-between"}>
               <Text as='span'>Reservations</Text>
               <Text as='span'>

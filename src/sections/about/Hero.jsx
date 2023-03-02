@@ -9,10 +9,12 @@ import { useTheme } from "@chakra-ui/react";
 export default function Hero() {
   const { colors, fonts } = useTheme();
   return (
-    <>
+  
       <Box
         position='relative'
         h='100vh'
+        w='100vw'
+        maxW='100%'
         bg={colors.backgroundDark}
         overflowX='hidden'>
         <Box
@@ -75,6 +77,6 @@ export default function Hero() {
         </Flex>
       </Box>
     
-    </>
+   
   );
 }

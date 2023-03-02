@@ -13,6 +13,8 @@ function About() {
       position='relative'
       justifyContent={"center"}
       h={["100%", "auto", "auto", "auto"]}
+      w='100vw'
+      maxW='100%'
       p={["0", "5vw", "5vw", "5vw"]}
       pb='10vh'
         gap='8'
@@ -26,6 +28,7 @@ function About() {
         flexDirection={"column"}
         height='100%'
         w={["100%", "50vw", "50vw", "50vw"]}
+        maxW='320px'
         px={['5vw', '0']}
         gap='8'
         // px={["5vw", "0vw", "0vw", "0vw"]}

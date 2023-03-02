@@ -12,7 +12,7 @@ import { FaBeer, FaFacebook, FaInstagram } from "react-icons/fa";
 import Hours from "../components/Hours";
 import { Link } from "react-router-dom";
 
-function Footer() {
+function Footer(props) {
   const { colors, fonts } = useTheme();
 
   return (
@@ -26,7 +26,9 @@ function Footer() {
       w='100vw'
       gap='8vw'
       minH='360px'
-      color={colors.white}>
+      color={colors.white}
+        {...props}
+      >
       <Hours
         // border='2px'
         gap='4'

@@ -25,9 +25,9 @@ export default function Navbar(props) {
     <>
     
       {isMobile ? (
-        <MobileNav />
+        <MobileNav {...props} />
       ) : (
-        <DesktopNav />
+        <DesktopNav {...props} />
       )}
     </>
   );

@@ -4,7 +4,7 @@ import BigMenuItem from "@components/BigMenuItem";
 import { useTheme } from "@chakra-ui/react";
 import Logo from "@components/Logo";
 import { Route, Routes, Link } from "react-router-dom";
-export default function DesktopNav() {
+export default function DesktopNav(props) {
   const { colors, fonts } = useTheme();
 
   return (
@@ -18,11 +18,14 @@ export default function DesktopNav() {
       alignItems='center'
       px='4'
       w={["100vw"]}
+      maxW='100%'
       h='80px'
       position='fixed'
       top='0'
       left='0'
-      zIndex='999'>
+      zIndex='11'
+      {...props}
+      >
       <Flex
         display='flex'
         flexDirection='row'
@@ -58,7 +61,7 @@ export default function DesktopNav() {
       <Flex flexDirection={"row"} h='100%'>
         <Flex
           flexDirection='row'
-          gap='5vw'
+          gap='3vw'
           mt='1'
           alignItems='center'
           justifyContent='center'>

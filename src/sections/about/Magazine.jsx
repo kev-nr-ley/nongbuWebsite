@@ -15,6 +15,7 @@ function Magazine() {
       bg={colors.backgroundDark}
       h={["auto", "auto", "80vh", "80vh"]}
       w='100vw'
+      maxW='100%'
       overflow='hidden'
       justifyContent={['flex-start', 'center']}
       alignItems={['flex-start', 'center']}

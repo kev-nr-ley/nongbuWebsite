@@ -12,6 +12,7 @@ export default function AboutUs() {
         color={colors.dark}
         minH='100vh'
         w='100vw'
+        maxW='100%'
         zIndex='9'
         overflow='hidden'>
         <Flex

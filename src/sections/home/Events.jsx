@@ -23,6 +23,8 @@ function Events() {
       gap={["0", "12", "12", "12"]}
       h={["auto", "80vh", "80vh", "80vh"]}
       pb='10vh'
+      w='100vw'
+      maxW='100%'
       overflow='hidden'>
       <Box //image container
         w={["100vw", "auto", "70vw", "70vw"]}

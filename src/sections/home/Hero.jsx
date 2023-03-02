@@ -9,6 +9,7 @@ function Hero() {
     <Box // Section container
       bg={colors.backgroundDark}
       w='100vw'
+      maxW='100%'
       h={["100vh", "100vh", "100vh", "100vh"]}
       position='relative'>
       <Flex // Hero text container
@@ -16,7 +17,8 @@ function Hero() {
         justifyContent='center'
         px='5vw'
         h='100%'
-        w={["100%"]}
+        w='100vw'
+        maxW='100%'
         zIndex={9}>
         <Box //NongBu Logo
           zIndex={9}
