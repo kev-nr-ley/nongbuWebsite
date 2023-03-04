@@ -15,44 +15,26 @@ function Menu(props) {
 
   return (
     <Flex
-      bg={colors.backgroundDark}
-      px={["5vw", "5vw", "5vw"]}
-      py='10vw'
+      w='100%'
+      justifyContent='space-between'
       gap='8'
-      flexDirection='column'
-      {...props}
-      // mt={["0", "80px"]}
-    
+      px='10vw'
+      flexDirection={["column"]}
+    py='100px'
 
+      {...props}
       >
-      <Flex
+ 
+      <Text
+        color={colors.light}
+        variant='bodyText'
+        textAlign={["left", "right"]}
         w='100%'
-        justifyContent='space-between'
-        gap='8'
-        flexDirection={["column", "row"]}>
-        <Flex alignItems={"center"} 
-          justifyContent='center'
-        w='30%' gap='4'>
-          {/* <Logo src='/nongbu-logo.png' width='52' height='52' /> */}
-          {/* <Heading
-            as='h2'
-            color={colors.light}
-            variant='sectionHeading'
-            fontSize='32px'>
-            MENU
-          </Heading> */}
-        </Flex>
-        <Text
-          color={colors.light}
-          variant='bodyText'
-          textAlign={["left", "right"]}
-          w='100%'
-          minW='240px'>
-          *Please note, our food and drink menus involve ingredients and
-          beverages that are both seasonal and hard to reliably procure. Menus
-          are therefore subject to change without notice.
-        </Text>
-      </Flex>
+        minW='240px'>
+        *Please note, our food and drink menus involve ingredients and beverages
+        that are both seasonal and hard to reliably procure. Menus are therefore
+        subject to change without notice.
+      </Text>
 
       <Grid gap='5vw' w='100%' gridTemplateColumns={["1fr", "1fr", "1fr 1fr"]}>
         {renderMenuPage(streetEats)}

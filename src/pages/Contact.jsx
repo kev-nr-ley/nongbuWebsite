@@ -1,24 +1,17 @@
 import React from "react";
-import { TagLeftIcon, useTheme } from "@chakra-ui/react";
-import { Flex, Image, Box, Text, Heading, Link, Grid } from "@chakra-ui/react";
-import BigMenuItem from "@components/BigMenuItem";
+import {  useTheme } from "@chakra-ui/react";
+import { Flex,  Text, Heading, Link, Grid } from "@chakra-ui/react";
 import Hours from "@components/Hours";
 import ImageContainer from "@components/ImageContainer";
 import {
   ArrowForwardIcon,
-  AtSignIcon,
-  CheckIcon,
-  EmailIcon,
-  PhoneIcon,
 } from "@chakra-ui/icons";
-import Logo from "@components/Logo";
 function Contact(props) {
-  const { colors, fonts } = useTheme();
+  const { colors } = useTheme();
 
   return (
     <Flex //body
       bg={colors.backgroundDark}
-      // justifyContent='center'
       alignItems='center'
       position='relative'
       flexDirection={["column", "row"]}
@@ -35,7 +28,6 @@ function Contact(props) {
         top={["none", "0", "0"]}
         zIndex='4'
         p={["0", "0", "5vw"]}
-        // objectPosition='10% 10%'
         image='nongbu-contact-1.webp'
       />
 
@@ -58,14 +50,10 @@ function Contact(props) {
         </Text>
 
         <Grid
-          // gap='4'
           w='100%'
-          //  minW='240px'
-          // border='2px'
           gap='8'
           p='2'
           maxW='400px'>
-          {/* <Heading variant='footerHeading'>CONTACT</Heading> */}
           <Link w='100%' letterSpacing='2px'>
             <Flex justifyContent={"space-between"}>
               <Text as='span'>Call</Text>
