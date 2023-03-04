@@ -13,9 +13,9 @@ function Logo(props) {
       h={`${props.height}px`}
       minH={`${props.height}px`}
       bg={`${props.bg}`}
-      _hover={{
-        bg: colors.primary,
-      }}
+      cursor='pointer'
+
+      {...props}
 
 >
 

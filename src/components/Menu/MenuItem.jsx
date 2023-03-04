@@ -1,27 +1,17 @@
 import React from "react";
 
-import {
-  Flex,
-  Box,
-  Text,
-  Image,
-  Heading,
-  Button,
-  Stack,
-  Link,
-} from "@chakra-ui/react";
-import { theme } from "@styles/theme";
+import { Flex, Box, Text } from "@chakra-ui/react";
 
 export default function MenuItem(props) {
   function renderPrices(prices) {
     return Object.keys(prices).map((key) => {
-      return <span>{`$${prices[key]}`}</span>;
+      return <Text as='span' key={key}>{`$${prices[key]}`}</Text>;
     });
   }
 
   function renderModifiers(modifiers) {
     return Object.keys(modifiers).map((key) => {
-      return <span>{`| ${key} $${modifiers[key]} |`}</span>;
+      return <Text as='span' key={key}>{`| ${key} $${modifiers[key]} |`}</Text>;
     });
   }
 

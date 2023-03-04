@@ -12,6 +12,8 @@ function BigMenuItem({ props, children }) {
       letterSpacing={fonts.headingLetterSpacing}
       lineHeight={fonts.headingLineHeight}
       fontWeight='bold'
+      aria-label={`${children} link `}
+      
       {...props}
       _after={{
         content: '" "',

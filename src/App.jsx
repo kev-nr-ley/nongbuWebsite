@@ -24,6 +24,7 @@ function App() {
   return (
     <Box bg={colors.backgroundDark}>
       <Navbar w={["100vw"]} maxW='100%' />
+
       <Routes>
         <Route path='/' element={<Home />} w={["100vw"]} maxW='100%' />
         <Route path='/About' element={<About />} w={["100vw"]} maxW='100%' />

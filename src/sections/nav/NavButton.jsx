@@ -10,7 +10,6 @@ export default function NavButton(props) {
   return (
     <Box cursor='pointer' zIndex={10} {...props}>
       {props.isMenuOpen ? (
-        // <FaBars fontSize='52px' color={colors.primary} />
         <CloseIcon fontSize='40px' color={colors.primary} />
       ) : (
         <FaBars fontSize='52px' color={colors.primary} />

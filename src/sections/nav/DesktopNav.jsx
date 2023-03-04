@@ -1,80 +1,19 @@
 import React from "react";
-import { Flex, Menu, Box, Link as ChakraLink } from "@chakra-ui/react";
-import BigMenuItem from "@components/BigMenuItem";
-import { useTheme } from "@chakra-ui/react";
-import Logo from "@components/Logo";
-import { Route, Routes, Link } from "react-router-dom";
+import { Flex } from "@chakra-ui/react";
+import EarLogoLink from "@components/EarLogoLink";
+import NongbuLogoLink from "@components/NongbuLogoLink";
+import BigNavLink from "../../components/BigNavLink";
+
 export default function DesktopNav(props) {
-  const { colors, fonts } = useTheme();
-
   return (
-    <Flex
-      className='desktop-nav'
-      as='nav'
-      bg={colors.backgroundDarker}
-      color={colors.light}
-      flexDirection='row'
-      justifyContent='space-between'
-      alignItems='center'
-      px='4'
-      w={["100vw"]}
-      maxW='100%'
-      h='80px'
-      position='fixed'
-      top='0'
-      left='0'
-      zIndex='11'
-      {...props}
-      >
-      <Flex
-        display='flex'
-        flexDirection='row'
-        p='1'
-        gap='4vw'
-        justifyContent='space-between'
-        alignItems='center'
-        lineHeight={fonts.headingLineHeight}>
-        <Link to='/'>
-          <Logo
-            src='nongbu-logo.webp'
-            width='52'
-            height='52'
-            position='fixed'
-          />
-        </Link>
-        <Menu>
-          <ChakraLink as={Link} to='/About'>
-            About
-          </ChakraLink>
-          <ChakraLink as={Link} to='/Contact'>
-            Contact
-          </ChakraLink>
-          <ChakraLink as={Link} to='/Events'>
-            Events
-          </ChakraLink>
-          <ChakraLink as={Link} to='/Order'>
-            Order
-          </ChakraLink>
-        </Menu>
-      </Flex>
-
-      <Flex flexDirection={"row"} h='100%'>
-        <Flex
-          flexDirection='row'
-          gap='3vw'
-          mt='1'
-          alignItems='center'
-          justifyContent='center'>
-          <Link to='/Menu'>
-            <BigMenuItem>Menu</BigMenuItem>
-          </Link>
-          <Link to='/Reservations'>
-            <BigMenuItem>Reservations</BigMenuItem>
-          </Link>
-          <Link to='https://www.instagram.com/ear_yeg' target='_blank'>
-            <Logo src='ear-logo.webp' width='52' height='26' />
-          </Link>
-        </Flex>
+    <Flex {...props}>
+      <NongbuLogoLink />
+      <BigNavLink to='/Menu' name='Menu' />
+      <BigNavLink to='/Reservations' name='Reservations' />
+      <Flex flexDirection='row' gap='8'>
+        {props.renderNavLinks(props.navLinks)}
+        {props.renderSocialLinks(props.socialLinks)}
+        <EarLogoLink />
       </Flex>
     </Flex>
   );

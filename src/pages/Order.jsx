@@ -34,10 +34,7 @@ export default function Order(props, styleProps) {
         mt={["0", "80px"]}
         w={["100vw", "60vw", "50vw", "50vw"]}
         h={["30vh", "auto", "auto", "auto"]}>
-        <Image
-          zIndex={1}
-          src='/images/nongbu-4.webp'
-          objectFit='cover'></Image>
+        <Image zIndex={1} src='/images/nongbu-4.webp' objectFit='cover'></Image>
       </Box>
 
       <Flex //section content
@@ -54,9 +51,9 @@ export default function Order(props, styleProps) {
         </Text>
 
         <Flex gap='4' flexDirection='column' alignItems={"center"}>
-          <Logo src='skipthedishes.png' width='180' height='60' />
-          <Logo src='ubereats.png' width='180' height='60' />
-          <Logo src='fantuan.png' width='180' height='60' />
+          <Logo src='skipthedishes.png' width='180px' height='60px' />
+          <Logo src='ubereats.png' width='180px' height='60px' />
+          <Logo src='fantuan.png' width='180px' height='60px' />
         </Flex>
       </Flex>
     </Flex>

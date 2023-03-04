@@ -4,6 +4,7 @@ import { Flex, Image, Box, Text, Heading } from "@chakra-ui/react";
 function ImageContainer(props) {
   return (
     <Box //image container
+    className='image-container'
     w={["100%", "100%", "clamp(400px, 30vw, 450px)"]}
     h={["30vh", "30vh", "clamp(600px, 45vh, 700px)"]}
     // bg='red'
@@ -16,7 +17,7 @@ function ImageContainer(props) {
       objectFit='cover'
       objectPosition={"center"}
       {...props}
-      src={`/images/${props.image}`}></Image>
+      src={`/images/${props.image}`} alt='restaurant image'></Image>
   </Box>
   )
 }
