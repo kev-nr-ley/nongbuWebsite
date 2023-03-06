@@ -7,7 +7,11 @@ import { useTheme } from "@chakra-ui/react";
 export default function Events(props) {
   const { colors } = useTheme();
   return (
-    <Box bg={colors.backgroundDark} {...props}>
+    <Box bg={colors.backgroundDark} 
+    
+    {...props}
+    
+    >
       <Box position='relative'>
         <ImageContainer
           position={["static", "absolute", "absolute"]}

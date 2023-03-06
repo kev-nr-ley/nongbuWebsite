@@ -28,7 +28,7 @@ function Logo(props) {
           objectPosition='center'
           src={`/logos/${props.src}`}
           placeholder={`url('https://via.placeholder.com/${props.width}x${props.height}')`}
-          alt={`${props.src} logo`}
+          alt={`${props.name} logo`}
         />
       </NewLink>
     </Box>

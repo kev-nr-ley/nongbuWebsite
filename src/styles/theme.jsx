@@ -35,6 +35,8 @@ export const theme = extendTheme({
 
   colors: {
     primary: "#de5b2c",
+    primaryOnLight: "##c64b1f",
+    primaryOnDark: "##e88764",
     backgroundDarker: "#051621",
     dark: "#12212b",
     light: "#d9d9d9",
@@ -54,13 +56,16 @@ export const theme = extendTheme({
     backgroundLight99: "#d9d9d999",
     footer: "#051621",
     brand: {
-      header: "#051621",
-      footer: "#051621",
-
-      fontHeader: "#f5f5f5",
-      fontLight: "#f5f5f5",
-      fontDark: "#242a29",
-      highlight: "#de5b2c",
+      50: "#ffebe1",
+      100: "#facbb9",
+      200: "#f0a88f",
+      300: "#e88764",
+      400: "#e06539",
+      500: "#c64b1f",
+      600: "#9b3a17",
+      700: "#6f290f",
+      800: "#451705",
+      900: "#1e0400",
     },
   },
 

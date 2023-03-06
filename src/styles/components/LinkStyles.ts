@@ -44,7 +44,7 @@ export const LinkStyles: ComponentStyleConfig = {
     heroLink: {
       color: "primary",
       width: "fit-content",
-      fontSize: '1.25em',
+      fontSize: "1.25em",
       _after: {
         content: '" "',
         display: "block",

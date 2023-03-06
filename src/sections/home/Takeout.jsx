@@ -45,6 +45,7 @@ function Takeout(props) {
             <LogoLink
               to='/contact'
               name='Skip The Dishes'
+            
               src='skipthedishes.webp'
               width={["200px", "200px", "240px", "260px"]}
             />
