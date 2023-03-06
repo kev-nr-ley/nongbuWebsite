@@ -23,34 +23,19 @@ function App() {
 
   return (
     <Box bg={colors.backgroundDark}>
-      <Navbar w={["100vw"]} maxW='100%' />
+      <Navbar w="100vw" maxW='100%' mb='300px' />
 
       <Routes>
-        <Route path='/' element={<Home />} w={["100vw"]} maxW='100%' />
-        <Route path='/About' element={<About />} w={["100vw"]} maxW='100%' />
-        <Route
-          path='/Contact'
-          element={<Contact />}
-          w={["100vw"]}
-          maxW='100%'
-        />
-        <Route path='/Events' element={<Events />} w={["100vw"]} maxW='100%' />
-        <Route path='/Order' element={<Order />} w={["100vw"]} maxW='100%' />
-        <Route
-          path='/Menu'
-          element={<Menu objectToArray={objectToArray} />}
-          w={["100vw"]}
-          maxW='100%'
-        />
-        <Route
-          path='/Reservations'
-          element={<Reservations />}
-          w={["100vw"]}
-          maxW='100%'
-        />
+        <Route path='/' element={<Home />} w='100vw' maxW='100%' />
+        <Route path='/About' element={<About />} w='100vw' maxW='100%' />
+        <Route path='/Contact' element={<Contact />} w='100vw' maxW='100%' />
+        <Route path='/Events' element={<Events />} w='100vw' maxW='100%' />
+        <Route path='/Order' element={<Order />} w='100vw' maxW='100%' />
+        <Route path='/Menu' element={<Menu />} w='100vw' maxW='100%' />
+        <Route path='/Contact' element={<Contact />} w='100vw' maxW='100%' />
       </Routes>
 
-      <Footer w={["100vw"]} maxW='100%' />
+      <Footer w='100vw' maxW='100%' />
     </Box>
   );
 }

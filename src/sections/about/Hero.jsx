@@ -1,12 +1,10 @@
-import { Box, Flex, Heading, Link, Text, Grid, Image } from "@chakra-ui/react";
-import ImageContainer from "@components/ImageContainer";
 import React from "react";
-import Magazine from "@sections/about/Magazine";
-import AboutUs from "@sections/about/AboutUs";
+import { Box, Flex, Heading } from "@chakra-ui/react";
 import { useTheme } from "@chakra-ui/react";
+import ImageContainer from "@components/ImageContainer";
 
-export default function Hero() {
-  const { colors, fonts } = useTheme();
+export default function Hero(props) {
+  const { colors } = useTheme();
   return (
     <Flex
       flexDirection='column'
@@ -19,7 +17,8 @@ export default function Hero() {
       overflow='hidden'
       alignItems='center'
       justifyContent='center'
-      gap='20vh'>
+      gap='20vh'
+      {...props}>
       <Box
         flexDirection='column'
         position='relative'
@@ -27,11 +26,10 @@ export default function Hero() {
         left={["0%", "-5%", "-5%", "-10%"]}
         px='5vw'
         h={["fit-content", "fit-content", "fit-content"]}
-        // bg='red'
         zIndex='8'>
         <Heading
           as='h3'
-          variant='sectionHeading'
+          fontWeight='700'
           fontSize={["24px", "28px", "32px", "36px"]}
           lineHeight={["30px", "36px", "40px", "40px"]}
           letterSpacing='4px'>

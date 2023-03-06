@@ -7,8 +7,7 @@ const streetEats = {
       name: "Kimbap (Korean Rice Rolls)",
       description:
         "Kimbap is a popular Korean dish made of cooked rice, vegetables, and meat, rolled in gim (dried seaweed).",
-      footer:
-        "Don’t forget to order a bottle of Makguli with your Kimbap. Makguli (a light Korean rice wine) is the traditional pairing for Kimbap.",
+      footer: "",
       items: [
         {
           english: "NongBu Kimbap",
@@ -60,8 +59,7 @@ const streetEats = {
       name: "Ddeokbokki (Rice Cakes)",
       description:
         "Ddeokbokki is a popular Korean dish made of rice cakes, fish cakes, and vegetables, simmered in a spicy, red chili sauce.",
-      footer:
-        "Don’t forget to order a bottle of Makguli with your Ddeokbokki. Makguli (a light Korean rice wine) is the traditional pairing for Ddeokbokki.",
+      footer: "",
       items: [
         {
           english: "Spicy Ddeokbokki",

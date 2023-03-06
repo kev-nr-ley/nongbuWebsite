@@ -3,40 +3,27 @@ import { Flex } from "@chakra-ui/react";
 import EarLogoLink from "@components/EarLogoLink";
 import NongbuLogoLink from "@components/NongbuLogoLink";
 import ChakraLink from "@components/ChakraLink";
-import SocialLink from "@components/SocialLink";
-import BigNavLink from "../../components/BigNavLink";
-
-function NavLinks(props) {
-  return props.links.map((link) => (
-    <ChakraLink key={link.name} name={link.name} to={link.path} />
-  ));
-}
-
-function SocialLinks(props) {
-  return props.links.map((link) => (
-    <SocialLink
-      key={link.name}
-      name={link.name}
-      path={link.path}
-      icon={link.icon}
-      size='32px'
-    />
-  ));
-}
 
 export default function DesktopNav(props) {
   return (
     <Flex {...props}>
-      <NongbuLogoLink />
-      <Flex gap='4' w='100%' ml='4'>
-        <BigNavLink to='/Menu' name='Menu' />
-        <BigNavLink to='/Reservations' name='Reservations' />
+      <NongbuLogoLink w='14' />
+      <Flex gap='12' px='8'>
+        <ChakraLink name='About' to='/About' />
+        <ChakraLink name='Contact' to='/Contact' />
+        <ChakraLink name='Events' to='/Events' />
+        <ChakraLink name='Order' to='/Order' />
       </Flex>
-      <Flex flexDirection='row' gap='4'>
-        <NavLinks links={props.navLinks} />
-        {/* <SocialLinks links={props.socialLinks} /> */}
-        <EarLogoLink />
+      <Flex
+        gap='12'
+        w='100%'
+        m='4'
+        alignItems={"center"}
+        justifyContent={"right"}>
+        <ChakraLink variant='bigNavLink' to='/Menu' name='Menu' />
+        <ChakraLink variant='bigNavLink' to='/contact' name='Reservations' />
       </Flex>
+      <EarLogoLink />
     </Flex>
   );
 }

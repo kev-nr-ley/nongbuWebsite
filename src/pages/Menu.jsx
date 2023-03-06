@@ -1,16 +1,20 @@
 import React from "react";
 import { streetEats, meatSsam, bowls, sharing } from "@assets/data/Menu";
-import { Flex, Box, Text, Heading, Grid } from "@chakra-ui/react";
+import { Flex, Text, Grid } from "@chakra-ui/react";
 import { theme } from "@styles/theme";
-import Logo from "@components/Logo";
 
 import MenuPage from "@components/Menu/MenuPage";
 
 function Menu(props) {
   const { colors } = theme;
   function renderMenuPage(menuPage) {
-    return <MenuPage {...menuPage} objectToArray={props.objectToArray} name={props.name}
-       />;
+    return (
+      <MenuPage
+        {...menuPage}
+        objectToArray={props.objectToArray}
+        name={props.name}
+      />
+    );
   }
 
   return (
@@ -22,9 +26,6 @@ function Menu(props) {
       flexDirection={["column"]}
       py='100px'
       {...props}>
-
-
-
       <Text
         color={colors.light}
         variant='bodyText'
@@ -37,7 +38,11 @@ function Menu(props) {
       </Text>
 
       <Grid gap='5vw' w='100%' gridTemplateColumns={["1fr", "1fr", "1fr 1fr"]}>
-          <MenuPage {...streetEats} objectToArray={props.objectToArray} name={'streetEats'} />
+        <MenuPage
+          {...streetEats}
+          objectToArray={props.objectToArray}
+          name={"streetEats"}
+        />
         {renderMenuPage(bowls)}
         {renderMenuPage(meatSsam)}
         {renderMenuPage(sharing)}

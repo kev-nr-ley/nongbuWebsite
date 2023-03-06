@@ -1,17 +1,19 @@
 import React from "react";
 import { useTheme } from "@chakra-ui/react";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
-import { Box, Flex, Image, Link } from "@chakra-ui/react";
+import { Box, Flex, Image } from "@chakra-ui/react";
+import ChakraLinkArrow from "@components/ChakraLinkArrow";
+
 import Hours from "@components/Hours";
-function Hero() {
-  const { colors, fonts } = useTheme();
+function Hero(props) {
+  const { colors } = useTheme();
   return (
     <Box // Section container
       bg={colors.backgroundDark}
       w='100vw'
       maxW='100%'
       h={["100vh", "100vh", "100vh", "100vh"]}
-      position='relative'>
+      position='relative'
+      {...props}>
       <Flex // Hero text container
         flexDirection='column'
         justifyContent='center'
@@ -26,24 +28,17 @@ function Hero() {
           <Image src='/images/nongbu-banner.webp'></Image>
         </Box>
 
-        <Box // Link button container
+        <Flex // Link button container
           width='fit-content'
           flexDirection='column'
           position='relative'
           zIndex={9}
-          gap='8'
+          gap='4'
           mt='8'
           textAlign={["left", "right", "right"]}>
-          <Link variant='heroLink' my='10%' noOfLines={1}>
-            Our menu
-            <ArrowForwardIcon fontSize='32px' />
-          </Link>
-
-          <Link variant='heroLink' my='10%' noOfLines={1}>
-            Book a table
-            <ArrowForwardIcon fontSize='32px' />
-          </Link>
-        </Box>
+          <ChakraLinkArrow to='/menu' name='View Menu' />
+          <ChakraLinkArrow to='/contact' name='Book a table' />
+        </Flex>
       </Flex>
 
       <Hours
@@ -54,7 +49,7 @@ function Hero() {
         gap='4'
         p='4'
         w={["90%", "fit-content"]}
-        minW='280px'
+        minW='300px'
         maxW='380px'
         bg={colors.backgroundLight}
         color={colors.dark}

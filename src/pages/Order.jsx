@@ -1,59 +1,65 @@
 import React from "react";
-import {
-  Flex,
-  Box,
-  Text,
-  Heading,
-  Button,
-  Image,
-  Link,
-  color,
-} from "@chakra-ui/react";
-import BigMenuItem from "@components/BigMenuItem";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
-import ImageContainer from "@components/ImageContainer";
-import Logo from "@components/Logo";
+import { Flex, Box, Text, Heading, Image } from "@chakra-ui/react";
+import LogoLink from "@components/LogoLink";
 import { useTheme } from "@chakra-ui/react";
+import ImageContainer from "@components/ImageContainer";
 
-export default function Order(props, styleProps) {
-  const { colors, fonts } = useTheme();
+export default function Order(props) {
+  const { colors } = useTheme();
   return (
     <Flex
-      flexDirection={["column", "row", "row", "row"]}
+      flexDirection={["column", "column", "row", "row"]}
       bg={colors.backgroundDark} //section container,
       color={colors.brand.fontLight}
       position='relative'
       justifyContent={"center"}
-      alignItems='flex-start'
-      h={["100%", "auto", "auto", "auto"]}
-      p={["0", "5vw", "5vw", "5vw"]}
+      alignItems='center'
+      p={["0", "0", "5vw", "5vw"]}
       pb='10vh'
       gap='12'
       {...props}>
-      <Box
-        mt={["0", "80px"]}
-        w={["100vw", "60vw", "50vw", "50vw"]}
-        h={["30vh", "auto", "auto", "auto"]}>
-        <Image zIndex={1} src='/images/nongbu-4.webp' objectFit='cover'></Image>
-      </Box>
+     
+        <ImageContainer
+          zIndex={1}
+          w={["100vw", "100vw", "60vw", "50vw"]}
+          h={["30vh", "40vh", "auto", "auto"]}
+          image='nongbu-4.webp'
+          objectFit='cover'/>
 
       <Flex //section content
-        flexDirection={["column", "column", "column", "column"]}
+        flexDirection={["column", "row", "column", "column"]}
         gap='8'
-        mt={["0", "80px"]}
-        px={["5vw", "0vw", "0vw", "0vw"]}
-        w={["100%", "30%", "30%", "25%"]}>
-        <Heading variant='sectionHeading'>Get it to-go or delivered</Heading>
+        px={["5vw", "5vw", "0vw", "0vw"]}
+        py='5vw'
+        w={["100%", "100%", "30%", "25%"]}>
+        <Box>
+          <Heading variant='mediumHeading'>Get it to-go or delivered</Heading>
 
-        <Text variant='bodyText' lineHeight='30px' minW='200px'>
-          Look at our menu and give us a call to pick up your order, or get
-          NongBu delivered right to your door using one of these apps:
-        </Text>
+          <Text minW='200px' mt='8'>
+            Look at our menu and give us a call to pick up your order, or get
+            NongBu delivered right to your door using one of these apps:
+          </Text>
+        </Box>
 
-        <Flex gap='4' flexDirection='column' alignItems={"center"}>
-          <Logo src='skipthedishes.png' width='180px' height='60px' />
-          <Logo src='ubereats.png' width='180px' height='60px' />
-          <Logo src='fantuan.png' width='180px' height='60px' />
+        <Flex gap='8' flexDirection='column' alignItems={"center"}>
+          <LogoLink
+            to='/contact'
+            name='Skip The Dishes'
+            src='skipthedishes.png'
+            width={["200px", "240px", "260px", "300px"]}
+          />
+          <LogoLink
+            to='/contact'
+            name='Uber Eats'
+            src='ubereats.png'
+            width={["200px", "240px", "260px", "300px"]}
+          />
+          <LogoLink
+            to='/contact'
+            name='Fantuan'
+            src='fantuan.png'
+            width={["200px", "240px", "260px", "300px"]}
+          />
         </Flex>
       </Flex>
     </Flex>

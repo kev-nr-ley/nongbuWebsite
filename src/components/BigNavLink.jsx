@@ -9,31 +9,14 @@ export default function BigNavLink(props) {
 
   return (
     <ChakraLink
-      as={Link}
       to={props.to}
       onClick={props.onClick}
+      name={props.name}
       variant='fancyNav'
-      w='fit-content'
       fontSize={fonts.headingSize}
       letterSpacing={fonts.headingLetterSpacing}
       lineHeight={fonts.headingLineHeight}
-      fontWeight='bold'
-      aria-label={`${props.name} link `}
-      _after={{
-        content: '" "',
-        display: "block",
-        width: "0%",
-        mt: "2px",
-        height: "2px",
-        backgroundColor: "brand.highlight",
-        transition: "width 0.3s",
-      }}
-      _hover={{
-        _after: {
-          width: "100%",
-        },
-      }}>
-      <Text>{props.name}</Text>
-    </ChakraLink>
+      fontWeight={fonts.headingFontWeight}
+   />
   );
 }

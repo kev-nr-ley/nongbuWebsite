@@ -1,19 +1,13 @@
 import React from "react";
 import { useTheme } from "@chakra-ui/react";
-import {
-  Flex,
-  Text,
-  Heading,
-  Grid,
-  Button,
-  Link as ChakraLink,
-} from "@chakra-ui/react";
-import { FaBeer, FaFacebook, FaInstagram } from "react-icons/fa";
-import Hours from "../components/Hours";
+import { Flex, Text, Heading, Grid, Button } from "@chakra-ui/react";
+import ChakraLink from "@components/ChakraLink";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import Hours from "@components/Hours";
 import { Link } from "react-router-dom";
 
 function Footer(props) {
-  const { colors, fonts } = useTheme();
+  const { colors } = useTheme();
 
   return (
     <Flex
@@ -28,37 +22,25 @@ function Footer(props) {
       minH='360px'
       color={colors.white}
       {...props}>
-      <Hours
-        // border='2px'
-        gap='4'
-        p='4'
-        minW='300px'
-        h='240px'
-      />
+      <Hours />
 
-      <Grid
-        // border='2px'
-        gap='4'
-        minW='300px'
-        p='4'
-        h='240px'>
+      <Grid minW='300px' h='240px' gap='8' p='4' w='100%' maxW='400px'>
         <Heading variant='footerHeading'>CONTACT</Heading>
         <Flex flexDirection='column' letterSpacing='2px'>
-          <Text letterSpacing='2px'>(780) 989-0997</Text>
-          <Text letterSpacing='2px'>john@nongbu.ca</Text>
+          <ChakraLink to='tel:7809890997' name='(780) 989 0997' />
+          <ChakraLink to='mailto:jahn@nongbu.ca' name='jahn@nongbu.ca' />
           <Flex fontSize='32px' mt='2' gap='2'>
-            <FaInstagram />
-            <FaFacebook />
+            <Link to='https://www.instagram.com/nongbu_korean/' target='_blank'>
+              <FaInstagram />
+            </Link>
+            <Link to='https://www.facebook.com/nongbukorean' target='_blank'>
+              <FaFacebook />
+            </Link>
           </Flex>
         </Flex>
       </Grid>
 
-      <Grid
-        // border='2px'
-        gap='4'
-        p='4'
-        minW='300px'
-        h='240px'>
+      <Grid minW='300px' h='240px' gap='8' p='4' w='100%' maxW='400px'>
         <Heading variant='footerHeading'>LOCATION</Heading>
         <Flex flexDirection='column' letterSpacing='2px'>
           <Text letterSpacing='2px'>8115 104 St NW.</Text>

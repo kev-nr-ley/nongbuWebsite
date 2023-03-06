@@ -8,6 +8,13 @@ export default function MenuSection(props) {
   const { colors, fonts } = theme;
 
   function renderMenuItems(items) {
+
+    function objectToArray(object) {
+      return Object.keys(object).map((key) => {
+        return object[key];
+      });
+    }
+  
     return objectToArray(items).map((item, index) => {
       return <MenuItem {...item} objectToArray={props.objectToArray} key={index} />;
     });

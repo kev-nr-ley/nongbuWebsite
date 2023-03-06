@@ -1,11 +1,9 @@
 import React from "react";
 import { useTheme } from "@chakra-ui/react";
-import { Flex, Image, Box, Text, Heading } from "@chakra-ui/react";
-import BigMenuItem from "@components/BigMenuItem";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
-import Logo from "@components/Logo";
+import { Flex, Image, Box, Heading } from "@chakra-ui/react";
+import LogoLink from "@components/LogoLink";
 function Takeout(props) {
-  const { colors, fonts } = useTheme();
+  const { colors } = useTheme();
 
   return (
     <Flex
@@ -20,7 +18,8 @@ function Takeout(props) {
       pb='10vh'
       w={["100%"]}
       maxW='100%'
-      gap='12'>
+      gap='12'
+      {...props}>
       <Box
         w={["100vw", "60vw", "50vw", "50vw"]}
         h={["30vh", "auto", "auto", "auto"]}>
@@ -30,16 +29,38 @@ function Takeout(props) {
       <Flex //section content
         flexDirection={["column", "column", "column", "column"]}
         gap='8'
+        mt={["0", "80px"]}
         px={["5vw", "0vw", "0vw", "0vw"]}
-        w={["100%", "30%", "30%", "25%"]}>
+        w={["100%", "30%", "30%", "25%"]}
+        justifyContent='flex-start'
+        alignItems={"flex-start"}
+        h='100%'>
         <Heading variant='sectionHeading'>
           Get NongBu to-go or delivered right to your door.
         </Heading>
 
         <Flex gap='4' flexDirection='column' alignItems={"center"}>
-          <Logo src='skipthedishes.webp' width='180' height='60' />
-          <Logo src='ubereats.webp' width='180' height='60' />
-          <Logo src='fantuan.webp' width='180' height='60' />
+          <LogoLink
+            to='/contact'
+            name='Skip The Dishes'
+            src='skipthedishes.png'
+            width='180px'
+            height='60px'
+          />
+          <LogoLink
+            to='/contact'
+            name='Uber Eats'
+            src='ubereats.png'
+            width='180px'
+            height='60px'
+          />
+          <LogoLink
+            to='/contact'
+            name='Fantuan'
+            src='fantuan.png'
+            width='180px'
+            height='60px'
+          />
         </Flex>
       </Flex>
     </Flex>

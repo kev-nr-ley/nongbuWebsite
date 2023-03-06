@@ -1,25 +1,18 @@
 import React from "react";
-import { Flex, Box, Text, Heading, Link, Image } from "@chakra-ui/react";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
+import { Flex, Box, Text, Heading } from "@chakra-ui/react";
 import ImageContainer from "@components/ImageContainer";
-
+import ChakraLinkArrow from "@components/ChakraLinkArrow";
 import { useTheme } from "@chakra-ui/react";
 
 export default function Events(props) {
-  const { colors, fonts } = useTheme();
+  const { colors } = useTheme();
   return (
-    <Box bg={colors.backgroundDark}>
-      <Flex
-        position='relative'
-        flexDirection={["column", "row"]}
-        h={["auto", "100vh", "100vh", "100vh"]}
-        gap='12'
-        color={colors.light}
-        {...props}>
+    <Box bg={colors.backgroundDark} {...props}>
+      <Box position='relative'>
         <ImageContainer
           position={["static", "absolute", "absolute"]}
           w={["100vw", "100%", "80vw", "70vw"]}
-          h={["30vh", "100%", "100%", "100%"]}
+          h={["30vh", "100vh", "100vh", "100vh"]}
           right={["none", "0", "0"]}
           top={["none", "0", "0"]}
           zIndex='4'
@@ -28,79 +21,85 @@ export default function Events(props) {
         />
 
         <Flex //Text block
-          flexDirection='column'
-          w={["100%", "auto"]}
-          h={["100%", "100%"]}
-          alignItems={["center", "flex-start"]}
-          justifyContent={["flex-start", "center"]}
-          gap='8'
-          px={["5vw"]}
-          pb='10vh'
+          position='relative'
+          flexDirection={["column", "row"]}
+          h={['100%', '100vh']}
+          gap='12'
+          alignItems={"center"}
+          color={colors.light}
+          w={["100%", "fit-content"]}
+          // px={["5vw"]}
+          // pb='10vh'
+          p={["5vh 5vw 5vh", "5vh 5vw 5vh", "0vh 5vw 5vh", "0vh 5vw 5vh"]}
           bg={colors.backgroundDark} //for desktop
           zIndex='5'>
-          <Heading
-            as='h3'
-            variant='sectionHeading'
+          <Flex
+            flexDirection={"column"}
+            gap='8'
             w='100%'
             minW='240px'
             maxW='320px'>
-            Use our space and services.
-          </Heading>
+            <Heading as='h3' variant='mediumHeading'>
+              Use our space and services.
+            </Heading>
 
-          <Text
-            variant='bodyText'
-            lineHeight='30px'
-            w='100%'
-            minW='240px'
-            maxW='320px'>
-            Are you looking for a private and modern space for your event? Do
-            you have guests to feed? We might be able to help with your venue
-            and catering needs.
-          </Text>
+            <Text w='100%' minW='240px' maxW='320px'>
+              Are you looking for a private and modern space for your event? Do
+              you have guests to feed? We might be able to help with your venue
+              and catering needs.
+            </Text>
 
-          <Link variant='sectionLink' w='100%' minW='240px' maxW='320px'>
-            Get in touch <ArrowForwardIcon fontSize='24px' />
-          </Link>
+            <ChakraLinkArrow to='/contact' name='Get in touch' />
+          </Flex>
         </Flex>
-      </Flex>
+      </Box>
 
-      <Flex
-        flexDirection={["column", "row"]}
+      <Box
         position='relative'
-        h={["auto", "80vh", "80vh", "80vh"]}
-        bg={colors.backgroundLight}
-        px={["0", "5vw"]}
-        gap='12'
-        pb='10vh'
-        alignItems='center'>
+        bg={[colors.backgroundDark, colors.backgroundLight]}>
         <ImageContainer
+          position={["static", "absolute", "absolute"]}
+          w={["100vw", "100vw", "100vw", "100vw"]}
+          h={["30vh", "100vh", "100vh", "100vh"]}
+          right={["none", "0", "0"]}
+          top={["none", "0", "0"]}
           zIndex='4'
-          w={["100%", "60vw"]}
-          h={["30vh", "60vh"]}
+          p={["0", "5vw"]}
+          objectPosition='50% 100%'
           image='nongbu-event-2.webp'
         />
+        <Flex //Text block
+          position='relative'
+          flexDirection={["column", "row"]}
+          h={['100%', '100vh']}
+          alignItems={"center"}
+          color={colors.light}
+          w={["100%", "fit-content"]}
 
-        <Flex //text block
-          flexDirection='column'
-          w={["100%", "50%", "50%", "30%"]}
-          px={["5vw", "0"]}
-          h={["fit-content", "100%", "100%"]}
-          alignItems={["center", "flex-start"]}
-          justifyContent={["center"]}
-          zIndex='5'
-          gap='8'>
-          <Text variant='bodyText' lineHeight='30px' minW='220px' maxW='320px'>
-            We host all kinds of events, from birthday parties to low-key
-            weddings. Our minimalist and modern space allow you and your guests
-            to be the focus. Get in touch with some details about your event if
-            you are interested in our space or services.
-          </Text>
+          p={["5vh 5vw 5vh", "5vh 5vw 5vh", "0vh 5vw 5vh", "0vh 5vw 5vh"]}
+          zIndex='5'>
+          <Flex
+            flexDirection={"column"}
+            gap='8'
+            w='100%'
+            minW='240px'
+            maxW='320px'
+            pl={[0, "5vw"]}>
+            <Heading as='h3' variant='mediumHeading'>
+              We host all kinds of events.
+            </Heading>
 
-          <Link variant='sectionLink' w='100%' minW='240px' maxW='320px'>
-            Contact us <ArrowForwardIcon fontSize='24px' />
-          </Link>
+            <Text w='100%' minW='240px' maxW='320px'>
+              From birthday parties to low-key weddings. Our minimalist and
+              modern space allow you and your guests to be the focus. Get in
+              touch with some details about your event if you are interested in
+              our space or services.
+            </Text>
+
+            <ChakraLinkArrow to='/contact' name='Contact Us' />
+          </Flex>
         </Flex>
-      </Flex>
+      </Box>
     </Box>
   );
 }

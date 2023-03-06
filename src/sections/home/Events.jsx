@@ -1,19 +1,10 @@
 import React from "react";
-
 import { useTheme } from "@chakra-ui/react";
 import { Flex, Image, Box, Text, Heading } from "@chakra-ui/react";
-import BigMenuItem from "@components/BigMenuItem";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
+import ChakraLinkArrow from "@components/ChakraLinkArrow";
 
-function Events() {
-  const { colors, fonts } = useTheme();
-  const [gradientEndPercent, setGradientEndPercent] = React.useState("40%");
-  const [gradientEnd, setGradientEnd] = React.useState(
-    "brand.backgroundDark50"
-  );
-  const [gradientStart, setGradientStart] = React.useState(
-    "brand.backgroundDark"
-  );
+function Events(props) {
+  const { colors } = useTheme();
 
   return (
     <Flex //section container,
@@ -25,7 +16,8 @@ function Events() {
       pb='10vh'
       w='100vw'
       maxW='100%'
-      overflow='hidden'>
+      overflow='hidden'
+      {...props}>
       <Box //image container
         w={["100vw", "auto", "70vw", "70vw"]}
         h={["30vh", "80vh", "80vh", "80vh"]}
@@ -34,7 +26,8 @@ function Events() {
           h='100%'
           src='/images/nongbu-3.webp'
           objectPosition={["0% 50%", "20% 50%", "0% 0%", "0% 0%"]}
-          objectFit='cover'/>
+          objectFit='cover'
+        />
       </Box>
 
       <Flex //section content
@@ -47,7 +40,6 @@ function Events() {
         px='5vw'
         w={["100%", "30%", "30%", "30%"]}
         minW='300px'
-        // pb='10vh'
         h={["auto", "100%", "100%", "100%"]}>
         <Heading variant='sectionHeading' color={colors.light}>
           Use our space and services.
@@ -59,15 +51,7 @@ function Events() {
           catering needs.
         </Text>
 
-        <BigMenuItem>
-          <Text
-            color={colors.brand.highlight}
-            fontSize={fonts.heading.fontSize}
-            whiteSpace='nowrap'>
-            Get in touch
-            <ArrowForwardIcon fontSize={fonts.heading.fontSizeXl} />
-          </Text>
-        </BigMenuItem>
+        <ChakraLinkArrow to='/contact' name='Get in touch' />
       </Flex>
     </Flex>
   );

@@ -1,6 +1,6 @@
-import { ArrowForwardIcon } from "@chakra-ui/icons";
-import { Flex, Heading, Link, Text } from "@chakra-ui/react";
 import React from "react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
+import ChakraLinkArrow from "@components/ChakraLinkArrow";
 import { useTheme } from "@chakra-ui/react";
 
 export default function AboutUs() {
@@ -20,10 +20,10 @@ export default function AboutUs() {
       zIndex='8'
       h='fit-content'>
       <Flex flexDirection={"column"} gap='8' w='100%' minW='240px'>
-        <Heading as='h3' variant='sectionHeading'>
+        <Heading as='h3' variant='mediumHeading'>
           Food
         </Heading>
-        <Text variant='bodyText'>
+        <Text>
           NongBu Korean Eatery opened with the mission to re-introduce
           traditional Korean food to Edmontonians. From its conception, NongBu
           wanted to fill a void in the Korean food offerings in our city. Our
@@ -34,7 +34,7 @@ export default function AboutUs() {
           focused menu.
         </Text>
 
-        <Text variant='bodyText'>
+        <Text>
           At NongBu, we prepare all our dishes using only the best and freshest
           ingredients available to us. We do not add flavour additives or MSG
           into any of our food. We believe traditional Korean cooking should be
@@ -46,16 +46,14 @@ export default function AboutUs() {
           diverse flavours and textures found in Korean cuisine.
         </Text>
 
-        <Link variant='sectionLink'>
-          Contact us <ArrowForwardIcon fontSize='24px' />
-        </Link>
+        <ChakraLinkArrow to='/menu' name='View Menu' />
       </Flex>
 
       <Flex flexDirection={"column"} gap='8' w='100%' minW='240px'>
-        <Heading as='h3' variant='sectionHeading'>
+        <Heading as='h3' variant='mediumHeading'>
           Culture
         </Heading>
-        <Text variant='bodyText' lineHeight='30px'>
+        <Text>
           NongBu wants to expand on what people already know about Korean
           culture. It is not just a traditional dining experience but a complete
           cultural experience. The space we designed is minimalist and
@@ -66,9 +64,7 @@ export default function AboutUs() {
           Korea’s long history in film. Interested in using our space?
         </Text>
 
-        <Link variant='sectionLink'>
-          Contact us <ArrowForwardIcon fontSize='24px' />
-        </Link>
+        <ChakraLinkArrow to='/contact' name='Contact Us' />
       </Flex>
     </Flex>
   );

@@ -1,8 +1,6 @@
 import React from "react";
 import { Flex, Box, Text, IconButton } from "@chakra-ui/react";
 import EditMenuItem from "@components/Menu/EditMenu/EditMenuItem";
-import { theme } from "@styles/theme";
-import { useState } from "react";
 import { EditIcon } from "@chakra-ui/icons";
 import {
   Modal,
@@ -22,19 +20,16 @@ export default function MenuItem(props) {
 
   const modalOpen = () => {
     onOpen();
-    console.log(props)
+    console.log(props);
     console.log("modal open");
-
   };
 
   return (
     <Box w='100%' mt='1' position='relative'>
-   
-   
       <IconButton
         // Will come back to this later
-      display='none' 
-// Remove to enable edit button
+        display='none'
+        // Remove to enable edit button
 
         top='0'
         right='0'

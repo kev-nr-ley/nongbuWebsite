@@ -3,7 +3,7 @@ import { Heading, Flex, Grid, Text } from "@chakra-ui/react";
 
 export default function Hours(props) {
   return (
-    <Grid {...props}>
+    <Grid {...props} gap='8' p='4' w='100%' maxW='400px'>
       <Heading variant='footerHeading'>HOURS</Heading>
       <Flex flexDirection='column' gap='1'>
         <Flex justifyContent={"space-between"} letterSpacing='2px'>

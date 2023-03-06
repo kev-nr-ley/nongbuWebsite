@@ -5,14 +5,14 @@ import Events from "@sections/home/Events";
 import Takeout from "@sections/home/Takeout";
 import { Box } from "@chakra-ui/react";
 import { useTheme } from "@chakra-ui/react";
-function Home() {
+function Home(props) {
   const { colors } = useTheme();
   return (
-    <Box bg={colors.backgroundDark}>
+    <Box bg={colors.backgroundDark} {...props}>
       <Hero />
       <About />
-      <Events  />
-      <Takeout  />
+      <Events />
+      <Takeout />
     </Box>
   );
 }

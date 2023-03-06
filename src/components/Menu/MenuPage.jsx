@@ -7,6 +7,8 @@ import EditMenuSection from "@components/Menu/EditMenu/EditMenuSection";
 import { useState } from "react";
 // Modal Imports
 
+
+
 import {
   Modal,
   ModalOverlay,
@@ -24,7 +26,14 @@ import {
 // -------------------------------
 
 export default function MenuPage(props) {
-  const objectToArray = props.objectToArray;
+
+  function objectToArray(object) {
+    return Object.keys(object).map((key) => {
+      return object[key];
+    });
+  }
+
+
   const { colors } = theme;
   const [currentSection, setCurrentSection] = useState("");
   // Modal Code
