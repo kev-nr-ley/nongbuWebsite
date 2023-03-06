@@ -17,6 +17,7 @@ function Events(props) {
       w='100vw'
       maxW='100%'
       overflow='hidden'
+      // fix
       {...props}>
       <Box //image container
         w={["100vw", "auto", "70vw", "70vw"]}
