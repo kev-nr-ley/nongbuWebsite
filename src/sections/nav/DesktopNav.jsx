@@ -17,13 +17,13 @@ export default function DesktopNav(props) {
       <Flex
         gap='12'
         w='100%'
-        m='4'
+        mx='4'
         alignItems={"center"}
         justifyContent={"right"}>
         <ChakraLink variant='bigNavLink' to='/Menu' name='Menu' />
         <ChakraLink variant='bigNavLink' to='/contact' name='Reservations' />
       </Flex>
-      <EarLogoLink />
+      <EarLogoLink px='8'/>
     </Flex>
   );
 }

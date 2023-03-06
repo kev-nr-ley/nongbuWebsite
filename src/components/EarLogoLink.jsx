@@ -9,10 +9,10 @@ export default function EarLogoLink(props) {
       name='ear'
       target='_blank'
       fontSize='52px'
+      lineHeight='69px'
       fontFamily={fonts.ear}
       h='100%'
       fontWeight='200'
-      {...props}
-      ></ChakraLink>
+      {...props}></ChakraLink>
   );
 }

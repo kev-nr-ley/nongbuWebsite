@@ -9,7 +9,8 @@ function Takeout(props) {
     <Flex
       flexDirection={["column", "row", "row", "row"]}
       bg={colors.backgroundLight} //section container,
-      color={colors.brand.fontDark}
+      color={colors.dark}
+
       position='relative'
       justifyContent={"center"}
       alignItems='center'
@@ -29,35 +30,37 @@ function Takeout(props) {
       <Flex //section content
         flexDirection={["column", "column", "column", "column"]}
         gap='8'
-        mt={["0", "80px"]}
         px={["5vw", "0vw", "0vw", "0vw"]}
         w={["100%", "30%", "30%", "25%"]}
         justifyContent='flex-start'
         alignItems={"flex-start"}
         h='100%'>
-        <Heading variant='sectionHeading'>
-          Get NongBu to-go or delivered right to your door.
-        </Heading>
 
-        <Flex gap='4' flexDirection='column' alignItems={"center"}>
-          <LogoLink
-            to='/contact'
-            name='Skip The Dishes'
-            src='skipthedishes.png'
-            width={["200px", "220px", "240px", "260px"]}
-          />
-          <LogoLink
-            to='/contact'
-            name='Uber Eats'
-            src='ubereats.png'
-            width={["200px", "220px", "240px", "260px"]}
-          />
-          <LogoLink
-            to='/contact'
-            name='Fantuan'
-            src='fantuan.png'
-            width={["200px", "220px", "240px", "260px"]}
-          />
+        <Flex flexDirection='column'  h='100%' justifyContent={'center'} gap='8'>
+          <Heading variant='smallHeading'>
+            Get NongBu to-go or delivered right to your door.
+          </Heading>
+
+          <Flex gap='4' flexDirection='column' alignItems={"center"}>
+            <LogoLink
+              to='/contact'
+              name='Skip The Dishes'
+              src='skipthedishes.png'
+              width={["200px", "200px", "240px", "260px"]}
+            />
+            <LogoLink
+              to='/contact'
+              name='Uber Eats'
+              src='ubereats.png'
+              width={["200px", "200px", "240px", "260px"]}
+            />
+            <LogoLink
+              to='/contact'
+              name='Fantuan'
+              src='fantuan.png'
+              width={["200px", "200px", "240px", "260px"]}
+            />
+          </Flex>
         </Flex>
       </Flex>
     </Flex>

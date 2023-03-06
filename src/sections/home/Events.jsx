@@ -31,35 +31,27 @@ function Events(props) {
         />
       </Box>
 
-
-
-
-
-
-
-
       <Flex //section content
         flexDirection={"column"}
         justifyContent='center'
-        justifySelf='center'
-        alignself='center'
-        gap='8'
+        alignContent='center'
         mt='8'
         px='5vw'
         w={["100%", "30%", "30%", "30%"]}
         minW='300px'
-        h={["auto", "100%", "100%", "100%"]}>c
-        <Heading variant='sectionHeading' color={colors.light}>
-          Use our space and services.
-        </Heading>
-
-        <Text variant='bodyText'>
-          Are you looking for a private and modern space for your event? Do you
-          have guests to feed? We might be able to help with your venue and
-          catering needs.
-        </Text>
-
-        <ChakraLinkArrow to='/contact' name='Get in touch' />
+        h={["auto", "100%", "100%", "100%"]}
+        color={colors.light}>
+        <Flex flexDirection='column' gap='8' color={colors.light}>
+          <Heading variant='sectionHeading'>
+            Use our space and services.
+          </Heading>
+          <Text variant='bodyText'>
+            Are you looking for a private and modern space for your event? Do
+            you have guests to feed? We might be able to help with your venue
+            and catering needs.
+          </Text>
+          <ChakraLinkArrow to='/contact' name='Get in touch' />
+        </Flex>
       </Flex>
     </Flex>
   );

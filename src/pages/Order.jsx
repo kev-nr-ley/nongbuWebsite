@@ -10,7 +10,7 @@ export default function Order(props) {
     <Flex
       flexDirection={["column", "column", "row", "row"]}
       bg={colors.backgroundDark} //section container,
-      color={colors.brand.fontLight}
+      color={colors.light}
       position='relative'
       justifyContent={"center"}
       alignItems='center'
@@ -41,7 +41,9 @@ export default function Order(props) {
           </Text>
         </Box>
 
-        <Flex gap='8' flexDirection='column' alignItems={"center"}>
+        <Flex gap='8' flexDirection='column' alignItems={"center"}
+        
+        >
           <LogoLink
             to='/contact'
             name='Skip The Dishes'

@@ -18,7 +18,7 @@ function About(props) {
       pb='10vh'
       gap='8'
       bg={colors.backgroundLight}
-      color={colors.brand.fontDark}
+      color={colors.dark}
       {...props}>
       <Box w={["100vw", "35vw"]} h={["30vh", "80vh"]}>
         <Image zIndex={1} src='/images/nongbu-2.webp' objectFit='cover'></Image>
@@ -26,30 +26,30 @@ function About(props) {
 
       <Flex //section content
         flexDirection={"column"}
-        height='100%'
+        h='100%'
         w={["100%", "50vw", "50vw", "50vw"]}
-        maxW={["auto", "autko", "320px"]}
-        px={["5vw", "0"]}
-        gap='8'
-        pb='10vh'>
-        <Heading variant='mediumHeading'>Welcome to NongBu.</Heading>
+        maxW={["auto", "300px", "300px"]}
+        px={["5vw", "0"]}>
+        <Flex flexDirection='column' h='100%' justifyContent={"center"} gap='8'>
+          <Heading variant='mediumHeading'>Welcome to NongBu.</Heading>
 
-        <Text>
-          NongBu resurrects Korean cuisine from bygone generations and
-          reintroduces it to the Canadian and Korean palate alike.
-        </Text>
+          <Text>
+            NongBu resurrects Korean cuisine from bygone generations and
+            reintroduces it to the Canadian and Korean palate alike.
+          </Text>
 
-        <Text>
-          At NongBu, the menu is always evolving, always reaching back into
-          childhood memory and rustic, rural Korean dishes.
-        </Text>
+          <Text>
+            At NongBu, the menu is always evolving, always reaching back into
+            childhood memory and rustic, rural Korean dishes.
+          </Text>
 
-        <Text>
-          The result is a menu as nourishing and comforting as it is pioneering
-          and imaginative.
-        </Text>
+          <Text>
+            The result is a menu as nourishing and comforting as it is
+            pioneering and imaginative.
+          </Text>
 
-        <ChakraLinkArrow to='/menu' name='View Menu' />
+          <ChakraLinkArrow to='/menu' name='View Menu' />
+        </Flex>
       </Flex>
     </Flex>
   );
