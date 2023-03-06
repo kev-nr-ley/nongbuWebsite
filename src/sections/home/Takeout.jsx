@@ -44,22 +44,19 @@ function Takeout(props) {
             to='/contact'
             name='Skip The Dishes'
             src='skipthedishes.png'
-            width='180px'
-            height='60px'
+            width={["200px", "220px", "240px", "260px"]}
           />
           <LogoLink
             to='/contact'
             name='Uber Eats'
             src='ubereats.png'
-            width='180px'
-            height='60px'
+            width={["200px", "220px", "240px", "260px"]}
           />
           <LogoLink
             to='/contact'
             name='Fantuan'
             src='fantuan.png'
-            width='180px'
-            height='60px'
+            width={["200px", "220px", "240px", "260px"]}
           />
         </Flex>
       </Flex>

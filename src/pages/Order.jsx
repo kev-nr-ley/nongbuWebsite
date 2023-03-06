@@ -18,13 +18,13 @@ export default function Order(props) {
       pb='10vh'
       gap='12'
       {...props}>
-     
-        <ImageContainer
-          zIndex={1}
-          w={["100vw", "100vw", "60vw", "50vw"]}
-          h={["30vh", "40vh", "auto", "auto"]}
-          image='nongbu-4.webp'
-          objectFit='cover'/>
+      <ImageContainer
+        zIndex={1}
+        w={["100vw", "100vw", "60vw", "50vw"]}
+        h={["30vh", "40vh", "auto", "auto"]}
+        image='nongbu-4.webp'
+        objectFit='cover'
+      />
 
       <Flex //section content
         flexDirection={["column", "row", "column", "column"]}
@@ -46,19 +46,19 @@ export default function Order(props) {
             to='/contact'
             name='Skip The Dishes'
             src='skipthedishes.png'
-            width={["200px", "240px", "260px", "300px"]}
+            width={["200px", "220px", "240px", "260px"]}
           />
           <LogoLink
             to='/contact'
             name='Uber Eats'
             src='ubereats.png'
-            width={["200px", "240px", "260px", "300px"]}
+            width={["200px", "220px", "240px", "260px"]}
           />
           <LogoLink
             to='/contact'
             name='Fantuan'
             src='fantuan.png'
-            width={["200px", "240px", "260px", "300px"]}
+            width={["200px", "220px", "240px", "260px"]}
           />
         </Flex>
       </Flex>
