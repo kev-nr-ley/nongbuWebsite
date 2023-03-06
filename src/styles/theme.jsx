@@ -1,8 +1,9 @@
 import { extendTheme } from "@chakra-ui/react";
 // import { ButtonStyles as Button } from "./components/ButtonStyles";
-import { LinkStyles as Link } from "./components/LinkStyles";
-import { TextStyles as Text } from "./components/TextStyles";
-import { HeadingStyles as Heading } from "./components/HeadingStyles";
+import { LinkStyles as Link } from "@styles/components/LinkStyles";
+import { TextStyles as Text } from "@styles/components/TextStyles";
+import { HeadingStyles as Heading } from "@styles/components/HeadingStyles";
+import { InputStyles as Input } from "@styles/components/InputStyles";
 // import Button from "./Button";
 import "@fontsource/mulish";
 import "@fontsource/mulish/500.css";
@@ -93,6 +94,7 @@ export const theme = extendTheme({
     Link,
     Text,
     Heading,
+    Input,
   },
 
   config: {

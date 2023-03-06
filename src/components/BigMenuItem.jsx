@@ -13,7 +13,6 @@ function BigMenuItem({ props, children }) {
       lineHeight={fonts.headingLineHeight}
       fontWeight='bold'
       aria-label={`${children} link `}
-      
       {...props}
       _after={{
         content: '" "',

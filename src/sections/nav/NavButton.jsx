@@ -6,10 +6,11 @@ import { CloseIcon } from "@chakra-ui/icons";
 
 export default function NavButton(props) {
   const { colors } = useTheme();
+  const isMenuOpen  = props.isMenuOpen;
 
   return (
     <Box cursor='pointer' zIndex={10} {...props}>
-      {props.isMenuOpen ? (
+      {isMenuOpen ? (
         <CloseIcon fontSize='40px' color={colors.primary} />
       ) : (
         <FaBars fontSize='52px' color={colors.primary} />

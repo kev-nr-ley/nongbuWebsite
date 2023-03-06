@@ -12,7 +12,7 @@ import NongbuLogoLink from "@components/NongbuLogoLink";
 
 export default function Navbar(props) {
   const [isMobile, setIsMobile] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { colors } = useTheme();
 
   const navLinks = [
@@ -60,9 +60,9 @@ export default function Navbar(props) {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const handleLink = () => {
-    setIsMenuOpen(false);
-  };
+  // const handleLink = () => {
+  //   setIsMenuOpen(false);
+  // };
 
   const renderNavLinks = (links) => {
     return links.map((link) => (
@@ -70,7 +70,7 @@ export default function Navbar(props) {
         key={link.name}
         name={link.name}
         to={link.path}
-        onClick={handleLink}
+        // onClick={handleLink}
       />
     ));
   };
@@ -104,15 +104,8 @@ export default function Navbar(props) {
           color={colors.light}
           px='5vw'
           py='2vw'
-          EarLogoLink={<EarLogoLink />}
-          NongbuLogoLink={<NongbuLogoLink />}
-          handleLink={handleLink}
-          isMenuOpen={isMenuOpen}
-          setIsMenuOpen={setIsMenuOpen}
           navLinks={navLinks}
           socialLinks={socialLinks}
-          renderNavLinks={renderNavLinks}
-          renderSocialLinks={renderSocialLinks}
         />
       ) : (
         <DesktopNav
@@ -130,11 +123,8 @@ export default function Navbar(props) {
           position='fixed'
           top='0'
           zIndex='11'
-          EarLogoLink={<EarLogoLink />}
           navLinks={navLinks}
           socialLinks={socialLinks}
-          renderNavLinks={renderNavLinks}
-          renderSocialLinks={renderSocialLinks}
         />
       )}
     </>

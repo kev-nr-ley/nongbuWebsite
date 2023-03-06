@@ -1,0 +1,69 @@
+{
+  "ssam": {
+    "title": "Meat & Ssam",
+    "description": "A bowl of rice and ssam (lettuce wraps) are an essential part of a Korean meal. Don’t forget to add them!",
+    "footer": "Meat & Ssam are delicious footers to demonstrate the use of the footer property.",
+    "sections": {
+      "MeatSsam": {
+        "items": [
+          {
+            "english": "Bulgogi",
+            "korean": "불고기",
+            "description": "Thinly sliced beef with mushrooms, onions, carrots and cabbage.",
+            "price": 5.99,
+            "notes": "...notes",
+            "modifiers": "...modifiers"
+          },
+          {
+            "english": "Fire Chicken (Buldak)",
+            "korean": "불닭",
+            "description": "Chicken, vegetables, Korean sweet potato, rice cakes, and perilla leaves in a spicy sauce.",
+            "price": 5.99,
+            "notes": "...notes",
+            "modifiers": "...modifiers"
+          },
+          {
+            "english": "Kimchi Jjim",
+            "korean": "김치찜",
+            "description": "Pork belly, stewed with Kimchi.",
+            "price": 5.99,
+            "notes": "...notes",
+            "modifiers": "...modifiers"
+          },
+          {
+            "english": "Pork Bulgogi",
+            "korean": "돼지불고기",
+            "description": "Porkbelly pan friend in a sweet and spicy sauce.",
+            "price": 5.99,
+            "notes": "...notes",
+            "modifiers": "...modifiers"
+          },
+          {
+            "english": "Spicy Squid (Ojingeo Bokkeum)",
+            "korean": "오징어볶음",
+            "description": "Panfried squid and vegetables in a sweet and spicy sauce.",
+            "price": 5.99,
+            "notes": "...notes",
+            "modifiers": "...modifiers"
+          },
+          {
+            "english": "Spicy O-Sam",
+            "korean": "오삼",
+            "description": "Prk bellly and squid pan fried in a sweet and spicy sauce with perilla.",
+            "price": 5.99,
+            "notes": "...notes",
+            "modifiers": "...modifiers"
+          },
+          {
+            "english": "Make it a Ssam (Lettuce Wrap)",
+            "korean": "쌈",
+            "description": "Green leaf lettuce, fresh garlic, serrano peppers, and our very special Ssamjang.",
+            "price": 5.99,
+            "notes": "...notes",
+            "modifiers": "...modifiers"
+          }
+        ]
+      }
+    }
+  }
+}

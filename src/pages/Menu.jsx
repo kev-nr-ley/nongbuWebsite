@@ -8,9 +8,9 @@ import MenuPage from "@components/Menu/MenuPage";
 
 function Menu(props) {
   const { colors } = theme;
-
   function renderMenuPage(menuPage) {
-    return <MenuPage {...menuPage} objectToArray={props.objectToArray} />;
+    return <MenuPage {...menuPage} objectToArray={props.objectToArray} name={props.name}
+       />;
   }
 
   return (
@@ -20,11 +20,11 @@ function Menu(props) {
       gap='8'
       px='10vw'
       flexDirection={["column"]}
-    py='100px'
+      py='100px'
+      {...props}>
 
-      {...props}
-      >
- 
+
+
       <Text
         color={colors.light}
         variant='bodyText'
@@ -37,7 +37,7 @@ function Menu(props) {
       </Text>
 
       <Grid gap='5vw' w='100%' gridTemplateColumns={["1fr", "1fr", "1fr 1fr"]}>
-        {renderMenuPage(streetEats)}
+          <MenuPage {...streetEats} objectToArray={props.objectToArray} name={'streetEats'} />
         {renderMenuPage(bowls)}
         {renderMenuPage(meatSsam)}
         {renderMenuPage(sharing)}
