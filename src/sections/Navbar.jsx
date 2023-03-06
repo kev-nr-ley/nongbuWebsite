@@ -112,6 +112,7 @@ export default function Navbar(props) {
           className='desktop-nav'
           as='nav'
           bg={colors.backgroundDarker}
+          
           color={colors.light}
           flexDirection='row'
           justifyContent='space-between'

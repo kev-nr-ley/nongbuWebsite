@@ -60,6 +60,7 @@ export default function MobileNav(props) {
         path={link.path}
         icon={link.icon}
         size='32px'
+
       />
     ));
   }
@@ -102,7 +103,9 @@ export default function MobileNav(props) {
           {/* <NongbuLogoLink />
           <EarLogoLink /> */}
           <NavLinks links={props.navLinks} />
+          <Flex gap='4'>
           <SocialLinks links={props.socialLinks} />
+          </Flex>
         </Flex>
       ) : (
         <NavButton

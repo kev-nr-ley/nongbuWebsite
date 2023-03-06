@@ -7,7 +7,7 @@ function ChakraLink(props, children) {
     <NewLink
       as={Link}
       to={props.to || "/"}
-      onClick={props.onClick || console.log("no click handler")}
+      onClick={props.onClick || null}
       aria-label={`link to ${props.name} page`}
       {...props}>
       <Text

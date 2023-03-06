@@ -1,7 +1,7 @@
 import React from "react";
 import ChakraLink from "@components/ChakraLink";
 import { useTheme } from "@chakra-ui/react";
-export default function EarLogoLink() {
+export default function EarLogoLink(props) {
   const { fonts } = useTheme();
   return (
     <ChakraLink
@@ -10,6 +10,9 @@ export default function EarLogoLink() {
       target='_blank'
       fontSize='52px'
       fontFamily={fonts.ear}
-      fontWeight='200'></ChakraLink>
+      h='100%'
+      fontWeight='200'
+      {...props}
+      ></ChakraLink>
   );
 }

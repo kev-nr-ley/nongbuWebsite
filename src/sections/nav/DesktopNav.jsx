@@ -28,11 +28,13 @@ export default function DesktopNav(props) {
   return (
     <Flex {...props}>
       <NongbuLogoLink />
-      <BigNavLink to='/Menu' name='Menu' />
-      <BigNavLink to='/Reservations' name='Reservations' />
-      <Flex flexDirection='row' gap='8'>
+      <Flex gap='4' w='100%' ml='4'>
+        <BigNavLink to='/Menu' name='Menu' />
+        <BigNavLink to='/Reservations' name='Reservations' />
+      </Flex>
+      <Flex flexDirection='row' gap='4'>
         <NavLinks links={props.navLinks} />
-        <SocialLinks links={props.socialLinks} />
+        {/* <SocialLinks links={props.socialLinks} /> */}
         <EarLogoLink />
       </Flex>
     </Flex>
