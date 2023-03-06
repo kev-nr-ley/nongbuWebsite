@@ -29,7 +29,13 @@ export default function MenuItem(props) {
 
   return (
     <Box w='100%' mt='1' position='relative'>
+   
+   
       <IconButton
+        // Will come back to this later
+      display='none' 
+// Remove to enable edit button
+
         top='0'
         right='0'
         position='absolute'
