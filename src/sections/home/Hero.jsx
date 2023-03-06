@@ -63,7 +63,7 @@ function Hero(props) {
         w={["100%", "70vw"]}
         h={["30vh", "100%", "100%"]}>
         <Image
-          src='./images/nongbu-1.png'
+          src='./images/nongbu-1.webp'
           fallbackSrc='https://via.placeholder.com/1120x710'></Image>
       </Box>
     </Box>
