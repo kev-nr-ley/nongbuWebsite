@@ -49,7 +49,7 @@ function Events(props) {
         w={["100%", "30%", "30%", "30%"]}
         minW='300px'
         h={["auto", "100%", "100%", "100%"]}>c
-        <Heading variant='sectionHeading' color={olors.light}>
+        <Heading variant='sectionHeading' color={colors.light}>
           Use our space and services.
         </Heading>
 
