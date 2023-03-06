@@ -30,6 +30,13 @@ function Events(props) {
         />
       </Box>
 
+
+
+
+
+
+
+
       <Flex //section content
         flexDirection={"column"}
         justifyContent='center'
@@ -40,8 +47,8 @@ function Events(props) {
         px='5vw'
         w={["100%", "30%", "30%", "30%"]}
         minW='300px'
-        h={["auto", "100%", "100%", "100%"]}>
-        <Heading variant='sectionHeading' color={colors.light}>
+        h={["auto", "100%", "100%", "100%"]}>c
+        <Heading variant='sectionHeading' color={olors.light}>
           Use our space and services.
         </Heading>
 
