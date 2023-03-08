@@ -14,7 +14,7 @@ function Footer(props) {
       flexDirection={["column", "column", "row", "row"]}
       justifyContent='center'
       alignItems={["center", "center"]}
-      bg={colors.brand.footer}
+      bg={colors.backgroundDarker}
       px='8vw'
       py='2vw'
       w='100vw'

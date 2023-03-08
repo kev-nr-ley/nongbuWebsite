@@ -20,6 +20,7 @@ function Logo(props) {
         name={props.name}
         onClick={props.onClick || null}
         aria-label={`link to ${props.name}`}
+        target='_blank'
         {...props}>
         <Image
           width='100%'

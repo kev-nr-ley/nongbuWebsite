@@ -43,20 +43,20 @@ function Takeout(props) {
 
           <Flex gap='4' flexDirection='column' alignItems={"center"}>
             <LogoLink
-              to='/contact'
+              to='https://www.skipthedishes.com/nongbu-korean-eatery'
               name='Skip The Dishes'
             
               src='skipthedishes.webp'
               width={["200px", "200px", "240px", "260px"]}
             />
             <LogoLink
-              to='/contact'
+              to='https://www.ubereats.com/ca/store/nongbu-korean-eatery-104-st/1Y-WFnTDTZ2yh5xB01bLaw'
               name='Uber Eats'
               src='ubereats.webp'
               width={["200px", "200px", "240px", "260px"]}
             />
             <LogoLink
-              to='/contact'
+              to='https://www.fantuanorder.com/store/nongbu-korean-eatery/ca-9090'
               name='Fantuan'
               src='fantuan.webp'
               width={["200px", "200px", "240px", "260px"]}

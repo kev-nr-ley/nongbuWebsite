@@ -41,26 +41,24 @@ export default function Order(props) {
           </Text>
         </Box>
 
-        <Flex gap='8' flexDirection='column' alignItems={"center"}
-        
-        >
+        <Flex gap='8' flexDirection='column' alignItems={"center"}>
           <LogoLink
-            to='/contact'
+            to='https://www.skipthedishes.com/nongbu-korean-eatery'
             name='Skip The Dishes'
-            src='skipthedishes.png'
-            width={["200px", "220px", "240px", "260px"]}
+            src='skipthedishes.webp'
+            width={["200px", "200px", "240px", "260px"]}
           />
           <LogoLink
-            to='/contact'
+            to='https://www.ubereats.com/ca/store/nongbu-korean-eatery-104-st/1Y-WFnTDTZ2yh5xB01bLaw'
             name='Uber Eats'
-            src='ubereats.png'
-            width={["200px", "220px", "240px", "260px"]}
+            src='ubereats.webp'
+            width={["200px", "200px", "240px", "260px"]}
           />
           <LogoLink
-            to='/contact'
+            to='https://www.fantuanorder.com/store/nongbu-korean-eatery/ca-9090'
             name='Fantuan'
-            src='fantuan.png'
-            width={["200px", "220px", "240px", "260px"]}
+            src='fantuan.webp'
+            width={["200px", "200px", "240px", "260px"]}
           />
         </Flex>
       </Flex>

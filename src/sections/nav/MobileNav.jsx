@@ -29,8 +29,6 @@ export default function MobileNav(props) {
       w={isMenuOpen ? "70vw" : "100vw"}
       h={isMenuOpen ? "100vh" : "80px"}
       {...props}>
-     
-
       <Box //menu icon container
         position='absolute'
         top='0'
@@ -56,10 +54,7 @@ export default function MobileNav(props) {
         justifyContent='center'
         gap='8'
         px='5vw'>
-
-     <NongbuLogoLink position={['static']} zIndex='999999999' />
-
-
+        <NongbuLogoLink position={["static"]} zIndex='999999999' />
 
         <ChakraLink
           variant='heroLink'
@@ -76,6 +71,8 @@ export default function MobileNav(props) {
 
         <EarLogoLink />
         <Flex flexDirection='column' gap='4'>
+          <ChakraLink name='Home' to='/' />
+
           <ChakraLink to='/About' name='About' onClick={handleLink} />
           <ChakraLink to='/Contact' name='Contact' onClick={handleLink} />
           <ChakraLink to='/Events' name='Events' onClick={handleLink} />
