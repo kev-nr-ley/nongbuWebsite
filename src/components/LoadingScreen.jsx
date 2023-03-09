@@ -38,7 +38,7 @@ export default function LoadingScreen() {
         <ChakraBox
           initial={{ y: 50 }}
           animate={{ y: 100 }}
-          exit={{ y: 0,  }}
+          exit={{ y: 0, opacity: 0}}
           duration={1}
           transition={{ type: "spring", stiffness: 1000 }}>
           <Image
@@ -48,7 +48,7 @@ export default function LoadingScreen() {
             src='/images/nongbu-loading-logo.png'
             alt='loading'
             position='relative'
-            top={'-20vh'}
+            top={"-20vh"}
           />
         </ChakraBox>
       </Box>
