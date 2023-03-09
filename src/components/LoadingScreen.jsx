@@ -39,7 +39,7 @@ export default function LoadingScreen() {
           initial={{ y: 50 }}
           animate={{ y: 100 }}
           exit={{ y: 0, opacity: 0}}
-          duration={1}
+          duration={1.6}
           transition={{ type: "spring", stiffness: 1000 }}>
           <Image
             w='20vw'

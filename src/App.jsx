@@ -30,22 +30,10 @@ function App() {
     loadingContext.setLoading(false);
   };
 
-  const isPageLoaded = () => {
-    if (loadingContext.loading) {
-      return <LoadingScreen />;
-    }
-  };
-
   useEffect(() => {
-    if (isPageLoaded()) {
-      setIsLoading(true);
-    } else {
+    setTimeout(() => {
       setIsLoading(false);
-    }
-  }, [isPageLoaded]);
-
-  useEffect(() => {
-    loading();
+    }, 1500);
   }, []);
 
   if (isLoading) {
