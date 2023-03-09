@@ -1,4 +1,4 @@
-import React from "react";
+import React, {lazy, Suspense} from "react";
 import Home from "@pages/Home";
 import Menu from "@pages/Menu";
 import About from "@pages/About";
