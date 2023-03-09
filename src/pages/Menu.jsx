@@ -2,6 +2,7 @@ import React from "react";
 import { streetEats, meatSsam, bowls, sharing } from "@assets/data/Menu";
 import { Flex, Text, Grid } from "@chakra-ui/react";
 import { theme } from "@styles/theme";
+import ScrollToTop from "@components/ScrollToTop";
 
 import MenuPage from "@components/Menu/MenuPage";
 
@@ -47,6 +48,7 @@ function Menu(props) {
         {renderMenuPage(meatSsam)}
         {renderMenuPage(sharing)}
       </Grid>
+      <ScrollToTop />
     </Flex>
   );
 }

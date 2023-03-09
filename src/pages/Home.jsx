@@ -5,6 +5,8 @@ import Events from "@sections/home/Events";
 import Takeout from "@sections/home/Takeout";
 import { Box } from "@chakra-ui/react";
 import { useTheme } from "@chakra-ui/react";
+import ScrollToTop from "@components/ScrollToTop";
+
 function Home(props) {
   const { colors } = useTheme();
   return (
@@ -13,6 +15,7 @@ function Home(props) {
       <About />
       <Events />
       <Takeout />
+      <ScrollToTop />
     </Box>
   );
 }

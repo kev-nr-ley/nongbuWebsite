@@ -5,6 +5,8 @@ import Hours from "@components/Hours";
 import ImageContainer from "@components/ImageContainer";
 import ChakraLink from "@components/ChakraLink";
 import ChakraLinkArrow from "@components/ChakraLinkArrow";
+import ScrollToTop from "@components/ScrollToTop";
+
 
 function Contact(props) {
   const { colors } = useTheme();
@@ -94,6 +96,7 @@ function Contact(props) {
         </Grid>
         <Hours border='2px' gap='8' p='4' w='100%' maxW='400px' />
       </Flex>
+      <ScrollToTop />
     </Flex>
   );
 }

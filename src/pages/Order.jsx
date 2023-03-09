@@ -3,6 +3,7 @@ import { Flex, Box, Text, Heading, Image } from "@chakra-ui/react";
 import LogoLink from "@components/LogoLink";
 import { useTheme } from "@chakra-ui/react";
 import ImageContainer from "@components/ImageContainer";
+import ScrollToTop from "@components/ScrollToTop";
 
 export default function Order(props) {
   const { colors } = useTheme();
@@ -62,6 +63,7 @@ export default function Order(props) {
           />
         </Flex>
       </Flex>
+      <ScrollToTop />
     </Flex>
   );
 }

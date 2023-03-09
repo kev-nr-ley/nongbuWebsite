@@ -3,6 +3,7 @@ import { Flex, Box, Text, Heading } from "@chakra-ui/react";
 import ImageContainer from "@components/ImageContainer";
 import ChakraLinkArrow from "@components/ChakraLinkArrow";
 import { useTheme } from "@chakra-ui/react";
+import ScrollToTop from "@components/ScrollToTop";
 
 export default function Events(props) {
   const { colors } = useTheme();
@@ -104,6 +105,7 @@ export default function Events(props) {
           </Flex>
         </Flex>
       </Box>
+      <ScrollToTop />
     </Box>
   );
 }

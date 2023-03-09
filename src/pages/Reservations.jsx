@@ -2,6 +2,7 @@ import React from "react";
 import { useTheme } from "@chakra-ui/react";
 import { Flex, Text, Heading } from "@chakra-ui/react";
 import ImageContainer from "@components/ImageContainer";
+import ScrollToTop from "@components/ScrollToTop";
 
 function Contact(props) {
   const { colors } = useTheme();
@@ -39,6 +40,7 @@ function Contact(props) {
         h='auto'
         image='open-table-1.webp'
       />
+      <ScrollToTop />
     </Flex>
   );
 }
