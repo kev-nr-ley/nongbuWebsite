@@ -5,18 +5,16 @@ import Events from "@sections/home/Events";
 import Takeout from "@sections/home/Takeout";
 import { Box } from "@chakra-ui/react";
 import { useTheme } from "@chakra-ui/react";
-import ScrollToTop from "@components/ScrollToTop";
-
+import Page from "@components/Page";
 function Home(props) {
   const { colors } = useTheme();
   return (
-    <Box bg={colors.backgroundDark} {...props}>
+    <Page bg={colors.backgroundDark} {...props}>
       <Hero />
       <About />
       <Events />
       <Takeout />
-      <ScrollToTop />
-    </Box>
+    </Page>
   );
 }
 

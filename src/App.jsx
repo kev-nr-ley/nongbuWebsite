@@ -10,8 +10,9 @@ import Events from "@pages/Events";
 import { Box } from "@chakra-ui/react";
 import { useTheme } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLoadingContext } from "react-router-loading";
 import LoadingScreen from "@components/LoadingScreen";
+import AnimatedRoutes from "@components/AnimatedRoutes";
 
 function App() {
   function objectToArray(object) {
@@ -21,33 +22,28 @@ function App() {
   }
 
   const [isLoading, setIsLoading] = useState(true);
+  const { colors, fonts } = useTheme();
+  const loadingContext = useLoadingContext();
+
+  const loading = async () => {
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    loadingContext.setLoading(false);
+  };
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 2000);
   }, []);
 
   if (isLoading) {
     return <LoadingScreen />;
   }
 
-  const { colors, fonts } = useTheme();
-
   return (
     <Box bg={colors.backgroundDark}>
       <Navbar w='100vw' maxW='100%' mb='300px' />
-
-      <Routes>
-        <Route path='/' element={<Home />} w='100vw' maxW='100%' />
-
-        <Route path='/About' element={<About />} w='100vw' maxW='100%' />
-        <Route path='/Contact' element={<Contact />} w='100vw' maxW='100%' />
-        <Route path='/Events' element={<Events />} w='100vw' maxW='100%' />
-        <Route path='/Order' element={<Order />} w='100vw' maxW='100%' />
-        <Route path='/Menu' element={<Menu />} w='100vw' maxW='100%' />
-        <Route path='/Contact' element={<Contact />} w='100vw' maxW='100%' />
-      </Routes>
+      <AnimatedRoutes />
 
       <Footer w='100vw' maxW='100%' />
     </Box>

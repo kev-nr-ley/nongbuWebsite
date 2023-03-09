@@ -12,6 +12,7 @@ import {
   chakra,
   shouldForwardProp,
 } from "@chakra-ui/react";
+import Page from "@components/Page";
 import { useTheme } from "@emotion/react";
 
 const ChakraBox = chakra(motion.div, {
@@ -23,27 +24,35 @@ const ChakraBox = chakra(motion.div, {
 });
 
 export default function LoadingScreen() {
-    const { colors, fonts } = useTheme();
+  const { colors, fonts } = useTheme();
   return (
-    <Box
-    bg='dark'
-      w='100vw'
-      h='100vh'
-      display='flex'
-      justifyContent='center'
-      alignItems='center'>
-      <ChakraBox
-  animate={{ y: 100 }}
-  transition={{ type: "spring", stiffness: 1000 }}
-        
-        >
-        <Image
-          w='20vw'
-          h='auto'
-          src='/images/nongbu-loading-logo.png'
-          alt='loading'
-        />
-      </ChakraBox>
-    </Box>
+    <Page>
+      <Box
+        bg='dark'
+        w='100vw'
+        h='100vh'
+        display='flex'
+        justifyContent='center'
+        alignItems='center'
+        position='relative'>
+        <ChakraBox
+          initial={{ y: 50 }}
+          animate={{ y: 100 }}
+          exit={{ y: 0, scale:1.2 }}
+          duration={1}
+          transition={{ type: "spring", stiffness: 1000 }}>
+          <Image
+            w='20vw'
+            h='auto'
+            src='/images/nongbu-loading-logo.png'
+            alt='loading'
+            position='relative'
+            top='50%'
+            left='50%'
+            transform='translate(-50%, -50%)'
+          />
+        </ChakraBox>
+      </Box>
+    </Page>
   );
 }
