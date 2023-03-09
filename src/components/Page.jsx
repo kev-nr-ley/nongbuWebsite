@@ -1,7 +1,4 @@
-import React from "react";
-import Magazine from "@sections/about/Magazine";
-import AboutUs from "@sections/about/AboutUs";
-import Hero from "@sections/about/Hero";
+import React, { lazy, Suspense } from "react";
 import { chakra, Box, shouldForwardProp } from "@chakra-ui/react";
 import ScrollToTop from "@components/ScrollToTop";
 import { motion, isValidMotionProp } from "framer-motion";
@@ -17,15 +14,17 @@ const ChakraBox = chakra(motion.div, {
 
 export default function About(props) {
   return (
-    <Box {...props}>
-      <ChakraBox
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.3 }}>
-        {props.children}
-        <ScrollToTop />
-      </ChakraBox>
-    </Box>
+    <Suspense fallback={<LoadingScreen />}>
+      <Box {...props}>
+        <ChakraBox
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.3 }}>
+          {props.children}
+          <ScrollToTop />
+        </ChakraBox>
+      </Box>
+    </Suspense>
   );
 }
