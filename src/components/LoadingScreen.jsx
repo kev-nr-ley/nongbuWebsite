@@ -13,7 +13,7 @@ import {
   shouldForwardProp,
 } from "@chakra-ui/react";
 import Page from "@components/Page";
-import { useTheme } from "@emotion/react";
+import { useTheme } from "@chakra-ui/react";
 
 const ChakraBox = chakra(motion.div, {
   /**
