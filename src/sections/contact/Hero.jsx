@@ -77,7 +77,7 @@ export default function Hero(props) {
             />
           </Flex>
 
-          <Flex
+          {/* <Flex
             flexDirection={["column", "row"]}
             justifyContent={"space-between"}>
             <Text as='span' variant='mediumText' letterSpacing='2px'>
@@ -89,7 +89,7 @@ export default function Hero(props) {
               name='Book a table'
               color={colors.primary}
             />
-          </Flex>
+          </Flex> */}
         </Grid>
         <Hours border='2px' gap='8' p='4' w='100%' maxW='400px' />
       </Flex>

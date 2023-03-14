@@ -2,30 +2,28 @@ import React from "react";
 import { useTheme } from "@chakra-ui/react";
 import { Flex, Image, Box, Heading } from "@chakra-ui/react";
 import LogoLink from "@components/LogoLink";
+
+import SectionFlexContentContainer from "@components/SectionFlexContentContainer";
+import SectionFlexContainer from "@components/SectionFlexContainer";
+import NongbuImageContainer from "@components/NongbuImageContainer";
+
 function Takeout(props) {
   const { colors } = useTheme();
 
   return (
-    <Flex
-      flexDirection={["column", "row", "row", "row"]}
+    <SectionFlexContainer
       bg={colors.backgroundLight} //section container,
       color={colors.dark}
-
-      position='relative'
-      justifyContent={"center"}
-      alignItems='center'
-      h={["100%", "auto", "auto", "auto"]}
       p={["0", "5vw", "5vw", "5vw"]}
-      pb='10vh'
-      w={["100%"]}
-      maxW='100%'
-      gap='12'
       {...props}>
-      <Box
+      <NongbuImageContainer
         w={["100vw", "60vw", "50vw", "50vw"]}
-        h={["30vh", "auto", "auto", "auto"]}>
-        <Image zIndex={1} src='/images/nongbu-4.webp' objectFit='cover'></Image>
-      </Box>
+        h={["30vh", "auto", "auto", "auto"]}
+        filename='nongbu-4'
+        name='plate of ddeokbbokki'
+      />
+
+    
 
       <Flex //section content
         flexDirection={["column", "column", "column", "column"]}
@@ -35,17 +33,15 @@ function Takeout(props) {
         justifyContent='flex-start'
         alignItems={"flex-start"}
         h='100%'>
-
-        <Flex flexDirection='column'  h='100%' justifyContent={'center'} gap='8'>
+        <Flex flexDirection='column' h='100%' justifyContent={"center"} gap='8'>
           <Heading variant='smallHeading'>
             Get NongBu to-go or delivered right to your door.
           </Heading>
 
-          <Flex gap='4' flexDirection='column' alignItems={"center"}>
+          <Flex gap='8' flexDirection='column' alignItems={"center"}>
             <LogoLink
               to='https://www.skipthedishes.com/nongbu-korean-eatery'
               name='Skip The Dishes'
-            
               src='skipthedishes.webp'
               width={["200px", "200px", "240px", "260px"]}
             />
@@ -64,7 +60,7 @@ function Takeout(props) {
           </Flex>
         </Flex>
       </Flex>
-    </Flex>
+    </SectionFlexContainer>
   );
 }
 

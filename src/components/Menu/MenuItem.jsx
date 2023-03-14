@@ -65,9 +65,12 @@ export default function MenuItem(props) {
         <Text className='menu-item-name' variant='menuCaps'>
           {props.english} {props.korean}
         </Text>
-        <Text className='menu-item-price' variant='menuCaps'>
+
+{/* disable until we get prices */}
+        {/* <Text className='menu-item-price' variant='menuCaps'>
           ${props.price ? props.price : "Market Price"}
-        </Text>
+        </Text> */}
+
       </Flex>
       <Text className='menu-item-description' variant='menuBody'>
         {props.description} <br />

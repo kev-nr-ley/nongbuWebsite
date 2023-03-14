@@ -6,13 +6,13 @@ function ChakraLink(props, children) {
   return (
     <NewLink
       as={Link}
-      variant={props.variant}
+      variant={props.variant || "fancyLink"}
       to={props.to || "/"}
       name={props.name}
       onClick={props.onClick || null}
-      aria-label={`link to ${children} page`}
+      aria-label={`link to ${props.name} page`}
       {...props}>
-      <Text>{props.name}</Text>
+      {props.children ? props.children : props.name}
     </NewLink>
   );
 }

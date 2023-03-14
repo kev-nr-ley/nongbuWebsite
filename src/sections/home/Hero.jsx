@@ -1,43 +1,41 @@
 import React from "react";
 import { useTheme } from "@chakra-ui/react";
-import { Box, Flex, Image } from "@chakra-ui/react";
+import { Box, Flex, Image, Heading, Text } from "@chakra-ui/react";
 import ChakraLinkArrow from "@components/ChakraLinkArrow";
-
+import NongbuImageContainer from "@components/NongbuImageContainer";
 import Hours from "@components/Hours";
+import SectionHeroContainer from "@components/SectionHeroContainer";
 function Hero(props) {
   const { colors } = useTheme();
   return (
-    <Box // Section container
-      bg={colors.backgroundDark}
-      w='100vw'
-      maxW='100%'
-      h={["100vh", "100vh", "100vh", "100vh"]}
-      position='relative'
-      {...props}>
-      <Flex // Hero text container
+    <SectionHeroContainer h={["100vh", "100vh", "90vh", "90vh"]} {...props}>
+      <Flex
         flexDirection='column'
-        justifyContent='center'
-        px='5vw'
-        h='100%'
-        w='100vw'
-        maxW='100%'
-        zIndex={9}>
-        <Box //NongBu Logo
-          zIndex={9}
-          w={["300px", "340px", "380px", "420px"]}>
-          <Image src='/images/nongbu-banner.webp'></Image>
-        </Box>
-
-        <Flex // Link button container
-          width='fit-content'
+        bg={colors.backgroundDark}
+        h='auto'
+        zIndex='2'
+        px={["1rem", "1rem", "10vw", "20vw"]}
+        py='2rem'>
+        <Heading variant='heroHeading' color='light'>
+          Welcome To NongBu Korean Eatery.
+        </Heading>
+        <Text mt='2rem' variant='mediumText' color='light'>
+          It is our desire to have our guests leaver NongBu experience happy,
+          full and a little more knowledgeable about our little country.{" "}
+        </Text>
+        <Flex
+          w='100%'
           flexDirection='column'
-          position='relative'
-          zIndex={9}
-          gap='4'
-          mt='8'
-          textAlign={["left", "right", "right"]}>
-          <ChakraLinkArrow to='/menu' name='View Menu' />
-          <ChakraLinkArrow to='/contact' name='Book a table' />
+          justifyContent='flex-end'
+          alignItems={"flex-end"}
+          gap='1rem'
+          my='1rem'>
+          <ChakraLinkArrow to='/menu' name='View Menu' variant='heroLink' />
+          <ChakraLinkArrow
+            to='/contact'
+            name='Book a table'
+            variant='heroLink'
+          />
         </Flex>
       </Flex>
 
@@ -46,27 +44,22 @@ function Hero(props) {
         bottom={["5vw", "5vw"]}
         right={["50%", "5vw"]}
         transform={["translateX(50%)", "translateX(0%)"]}
-        gap='4'
-        p='4'
-        w={["90%", "fit-content"]}
-        minW='300px'
-        maxW='380px'
         bg={colors.backgroundLight}
         color={colors.dark}
+        opacity='0.9'
         zIndex='9'
       />
 
-      <Box // Image background container
-        position='absolute'
+      <NongbuImageContainer
         top='0'
-        right='0'
-        w={["100%", "70vw"]}
-        h={["30vh", "100%", "100%"]}>
-        <Image
-          src='./images/nongbu-1.webp'
-          fallbackSrc='https://via.placeholder.com/1120x710'></Image>
-      </Box>
-    </Box>
+        left='0'
+        // w='100vw'
+        h='auto'
+        zIndex='0'
+        filename='nongbu-1'
+        name='table with korean dishes'
+      />
+    </SectionHeroContainer>
   );
 }
 

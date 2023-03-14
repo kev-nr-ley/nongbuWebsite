@@ -8,15 +8,13 @@ function ChakraLinkArrow(props, children) {
   return (
     <NewLink
       as={Link}
-      variant='heroLink'
+      variant={props.variant || "fancyLink"}
       to={props.to || "/"}
       name={props.name}
       onClick={props.onClick || null}
-      aria-label={`link to ${children} page`}>
-      <Text as='span' {...props}>
-        {props.name}
-        <ArrowForwardIcon />
-      </Text>
+      aria-label={`link to ${props.name || props.children} page`}>
+      {props.name}
+      <ArrowForwardIcon />
     </NewLink>
   );
 }

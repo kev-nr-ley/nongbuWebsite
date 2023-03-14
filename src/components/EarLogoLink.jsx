@@ -1,18 +1,23 @@
 import React from "react";
-import ChakraLink from "@components/ChakraLink";
+import { Text, Link as NewLink } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { useTheme } from "@chakra-ui/react";
+
 export default function EarLogoLink(props) {
-  const { fonts } = useTheme();
+  const { colors, fonts } = useTheme();
   return (
-    <ChakraLink
+    <NewLink
       to='https://www.instagram.com/ear_yeg'
       name='ear'
+      variant='fancyLink'
       target='_blank'
-      fontSize='52px'
-      lineHeight='69px'
+      h='fit-content'
       fontFamily={fonts.ear}
-      h='100%'
       fontWeight='200'
-      {...props}></ChakraLink>
+      fontSize='2.5rem'
+      {...props}>
+      ear
+    </NewLink>
   );
 }

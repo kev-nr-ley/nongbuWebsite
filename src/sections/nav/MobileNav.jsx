@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, IconButton, Text } from "@chakra-ui/react";
+import { Box, Flex, IconButton, Text, HStack } from "@chakra-ui/react";
 import EarLogoLink from "@components/EarLogoLink";
 import ChakraLink from "@components/ChakraLink";
 import NongbuLogoLink from "@components/NongbuLogoLink";
@@ -9,6 +9,9 @@ import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { CloseIcon } from "@chakra-ui/icons";
 import { useTheme } from "@chakra-ui/react";
+import InstagramLink from "../../components/InstagramLink";
+import FacebookLink from "../../components/FacebookLink";
+import NongbuBannerLink from "../../components/NongbuBannerLink";
 export default function MobileNav(props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { colors } = useTheme();
@@ -54,25 +57,31 @@ export default function MobileNav(props) {
         justifyContent='center'
         gap='8'
         px='5vw'>
-        <NongbuLogoLink position={["static"]} zIndex='999999999' />
+        <HStack gap='4' mb={'10vh'}>
+          <NongbuLogoLink
+            position={["static"]}
+            zIndex='999999999'
+            onClick={handleLink}
+          />
 
+          <NongbuBannerLink />
+        </HStack>
         <ChakraLink
-          variant='heroLink'
+          variant='bigNavLink'
           to='/Menu'
           name='Menu'
           onClick={handleLink}
         />
         <ChakraLink
-          variant='heroLink'
-          to='/Reservations'
+          variant='bigNavLink'
+          to='/contact'
           name='Reservations'
           onClick={handleLink}
         />
 
         <EarLogoLink />
         <Flex flexDirection='column' gap='4'>
-          <ChakraLink name='Home' to='/' />
-
+          <ChakraLink name='Home' to='/' onClick={handleLink} />
           <ChakraLink to='/About' name='About' onClick={handleLink} />
           <ChakraLink to='/Contact' name='Contact' onClick={handleLink} />
           <ChakraLink to='/Events' name='Events' onClick={handleLink} />
@@ -80,13 +89,8 @@ export default function MobileNav(props) {
         </Flex>
 
         <Flex gap='4'>
-          <Link>
-            <FaFacebook />
-          </Link>
-
-          <Link to=''>
-            <FaInstagram />
-          </Link>
+          <FacebookLink />
+          <InstagramLink />
         </Flex>
       </Flex>
     </Flex>

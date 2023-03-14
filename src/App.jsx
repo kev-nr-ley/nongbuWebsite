@@ -41,11 +41,11 @@ function App() {
   }
 
   return (
-    <Box bg={colors.backgroundDark}>
-      <Navbar w='100vw' maxW='100%' mb='300px' />
+    <Box bg={colors.backgroundLight}>
+      <Navbar />
       <AnimatedRoutes />
 
-      <Footer w='100vw' maxW='100%' />
+      <Footer />
     </Box>
   );
 }

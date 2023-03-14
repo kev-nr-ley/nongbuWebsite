@@ -19,7 +19,7 @@ function Magazine(props) {
       gap='5vw'
       p='5vw'
       {...props}>
-      <Grid color={colors.light} textAlign={["left", "right", "right"]}>
+      <Grid color={colors.light} my='2rem' textAlign={["left", "right", "right"]}>
         <Heading as='h3' variant='mediumHeading'>
           Awards
         </Heading>

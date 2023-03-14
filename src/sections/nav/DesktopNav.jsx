@@ -8,7 +8,7 @@ export default function DesktopNav(props) {
   return (
     <Flex {...props}>
       <NongbuLogoLink w='14' />
-      <Flex gap='12' px='8'>
+      <Flex gap='8' px='8'>
         <ChakraLink name='Home' to='/' />
         <ChakraLink name='About' to='/About' />
         <ChakraLink name='Contact' to='/Contact' />
@@ -24,7 +24,7 @@ export default function DesktopNav(props) {
         <ChakraLink variant='bigNavLink' to='/Menu' name='Menu' />
         <ChakraLink variant='bigNavLink' to='/contact' name='Reservations' />
       </Flex>
-      <EarLogoLink px='8'/>
+      <EarLogoLink px='8' />
     </Flex>
   );
 }
