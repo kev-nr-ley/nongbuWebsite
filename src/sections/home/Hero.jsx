@@ -1,6 +1,6 @@
 import React from "react";
 import { useTheme } from "@chakra-ui/react";
-import { Box, Flex, Image, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Heading, Text, Grid } from "@chakra-ui/react";
 import ChakraLinkArrow from "@components/ChakraLinkArrow";
 import NongbuImageContainer from "@components/NongbuImageContainer";
 import Hours from "@components/Hours";
@@ -15,8 +15,12 @@ function Hero(props) {
         h='auto'
         zIndex='2'
         px={["1rem", "1rem", "10vw", "20vw"]}
-        py='2rem'>
-        <Heading variant='heroHeading' color='light'>
+        py='2rem'
+        >
+        <Heading
+          variant='heroHeading'
+          mt={["4rem", "4rem", "2rem", "0rem"]}
+          color='light'>
           Welcome To NongBu Korean Eatery.
         </Heading>
         <Text mt='2rem' variant='mediumText' color='light'>
@@ -39,16 +43,33 @@ function Hero(props) {
         </Flex>
       </Flex>
 
-      <Hours
+      <Grid
         position='absolute'
         bottom={["5vw", "5vw"]}
         right={["50%", "5vw"]}
         transform={["translateX(50%)", "translateX(0%)"]}
+        gap='4'
+        p='1rem'
+        w='100%'
+        maxW='300px'
         bg={colors.backgroundLight}
         color={colors.dark}
         opacity='0.9'
         zIndex='9'
-      />
+        {...props}>
+        <Heading variant='footerHeading'>HOURS</Heading>
+        <Flex flexDirection='column' gap='1'>
+          <Flex justifyContent={"space-between"} letterSpacing='2px'>
+            <Text as='span'>Tue - Thu</Text> <Text as='span'>4pm - 9pm</Text>
+          </Flex>
+          <Flex justifyContent={"space-between"} letterSpacing='2px'>
+            <Text as='span'>Fri & Sat</Text> <Text as='span'>4pm - 10pm</Text>
+          </Flex>
+          <Flex justifyContent={"space-between"} letterSpacing='2px'>
+            <Text as='span'>Sun & Mon</Text> <Text as='span'>Closed</Text>
+          </Flex>
+        </Flex>
+      </Grid>
 
       <NongbuImageContainer
         top='0'

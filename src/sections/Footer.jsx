@@ -1,9 +1,11 @@
 import React from "react";
 import { useTheme } from "@chakra-ui/react";
-import { Flex, Text, Heading, Grid, Button } from "@chakra-ui/react";
+import { Flex, Text, Heading, Grid, Button, Box } from "@chakra-ui/react";
 import ChakraLink from "@components/ChakraLink";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import Hours from "@components/Hours";
+import InstagramLink from "@components/InstagramLink";
+import FacebookLink from "@components/FacebookLink";
 import { Link } from "react-router-dom";
 
 function Footer(props) {
@@ -22,29 +24,67 @@ function Footer(props) {
       minH='360px'
       color={colors.white}
       {...props}>
-      <Hours />
-
-      <Grid minW='300px' h='240px' gap='8' p='4' w='100%' maxW='400px'>
-        <Heading variant='footerHeading'>CONTACT</Heading>
-        <Flex flexDirection='column' letterSpacing='2px'>
-          <ChakraLink to='tel:7809890997' name='(780) 989 0997' />
-          <ChakraLink to='mailto:jahn@nongbu.ca' name='jahn@nongbu.ca' />
-          <Flex fontSize='32px' mt='2' gap='2'>
-            <Link to='https://www.instagram.com/nongbu_korean/' target='_blank'>
-              <FaInstagram />
-            </Link>
-            <Link to='https://www.facebook.com/nongbukorean' target='_blank'>
-              <FaFacebook />
-            </Link>
+      <Grid
+        templateColumns={[
+          "repeat(1, 1fr)",
+          "repeat(1, 1fr)",
+          "repeat(3, 1fr)",
+        ]}>
+        <Box
+          gap='4'
+          p='1rem'
+          w='100%'
+          maxW='300px'
+          opacity='0.9'
+          zIndex='9'
+          {...props}>
+          <Heading variant='footerHeading'>HOURS</Heading>
+          <Flex flexDirection='column' gap='1'>
+            <Flex justifyContent={"space-between"} letterSpacing='2px'>
+              <Text as='span'>Tue - Thu</Text> <Text as='span'>4pm - 9pm</Text>
+            </Flex>
+            <Flex justifyContent={"space-between"} letterSpacing='2px'>
+              <Text as='span'>Fri & Sat</Text> <Text as='span'>4pm - 10pm</Text>
+            </Flex>
+            <Flex justifyContent={"space-between"} letterSpacing='2px'>
+              <Text as='span'>Sun & Mon</Text> <Text as='span'>Closed</Text>
+            </Flex>
           </Flex>
-        </Flex>
-      </Grid>
+        </Box>
 
-      <Grid minW='300px' h='240px' gap='8' p='4' w='100%' maxW='400px'>
-        <Heading variant='footerHeading'>LOCATION</Heading>
-        <Flex flexDirection='column' letterSpacing='2px'>
-          <Text letterSpacing='2px'>8115 104 St NW.</Text>
-          <Text letterSpacing='2px'>Edmonton, AB T6E 4E4</Text>
+        <Box
+          gap='4'
+          p='1rem'
+          w='100%'
+          maxW='300px'
+          opacity='0.9'
+          zIndex='9'
+          {...props}>
+          <Heading variant='footerHeading'>CONTACT</Heading>
+          <Text>
+            <ChakraLink to='tel:7809890997' name='(780) 989 0997' />
+            <ChakraLink to='mailto:jahn@nongbu.ca' name='jahn@nongbu.ca' />
+          </Text>
+          <Flex mt='1rem' gap='2rem'>
+            <FacebookLink fontSize='2rem' />
+            <InstagramLink fontSize='2rem' />
+          </Flex>
+        </Box>
+
+        <Box
+          gap='4'
+          p='1rem'
+          w='100%'
+          maxW='300px'
+          opacity='0.9'
+          zIndex='9'
+          {...props}>
+          <Heading variant='footerHeading'>LOCATION</Heading>
+          <Text letterSpacing='2px'>
+            8115 104 St NW.
+            <br />
+            Edmonton, AB T6E 4E4
+          </Text>
           <Button
             color={colors.dark}
             borderRadius='0'
@@ -52,13 +92,12 @@ function Footer(props) {
             bg='backgroundLight'
             fontStyle={"italic"}
             letterSpacing='2px'
-            mt='2'
             fontWeight='700'>
             <Link to='https://goo.gl/maps/YtM2K31WNjdT84tU9' target='_blank'>
               Directions
             </Link>
           </Button>
-        </Flex>
+        </Box>
       </Grid>
     </Flex>
   );

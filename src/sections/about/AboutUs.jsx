@@ -11,7 +11,6 @@ export default function AboutUs() {
     <SectionFlexContainer
       overflow='hidden'
       flexDirection='column'
-      px={["5%", "5%", "10%", "25%"]}
       py={["10%", "10%", "5%", "5%"]}
       gap='5vh'
       zIndex='8'

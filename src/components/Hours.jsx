@@ -3,19 +3,17 @@ import { Heading, Flex, Grid, Text } from "@chakra-ui/react";
 
 export default function Hours(props) {
   return (
-    <Grid {...props} gap='8' p='4' w='100%' maxW='400px'>
+    <Flex flexDirection='column' gap='1' w='100%'>
       <Heading variant='footerHeading'>HOURS</Heading>
-      <Flex flexDirection='column' gap='1'>
-        <Flex justifyContent={"space-between"} letterSpacing='2px'>
-          <Text as='span'>Tue - Thu</Text> <Text as='span'>4pm - 9pm</Text>
-        </Flex>
-        <Flex justifyContent={"space-between"} letterSpacing='2px'>
-          <Text as='span'>Fri & Sat</Text> <Text as='span'>4pm - 10pm</Text>
-        </Flex>
-        <Flex justifyContent={"space-between"} letterSpacing='2px'>
-          <Text as='span'>Sun & Mon</Text> <Text as='span'>Closed</Text>
-        </Flex>
+      <Flex justifyContent={"space-between"} letterSpacing='2px'>
+        <strong> Tue - Thu </strong> 4pm - 9pm
       </Flex>
-    </Grid>
+      <Flex justifyContent={"space-between"} letterSpacing='2px'>
+        <strong> Fri & Sat </strong> 4pm - 10pm
+      </Flex>
+      <Flex justifyContent={"space-between"} letterSpacing='2px'>
+        <strong> Sun & Mon Closed</strong>
+      </Flex>
+    </Flex>
   );
 }

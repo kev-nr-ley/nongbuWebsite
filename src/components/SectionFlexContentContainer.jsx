@@ -11,13 +11,17 @@ export default function SectionFlexContentContainer(props) {
       flexDirection={"column"}
       h='fit-content'
       minW='300px'
-      // alignItems={"center"}
-      // justifyContent={"center"}
       w={["100%", "50vw", "50vw", "50vw"]}
       maxW={["auto", "300px", "300px"]}
-      pb={["10vw", "0"]}
+      pb={["10vw", "5vw"]}
       {...props}>
-      <Flex flexDirection='column' h='100%' justifyContent={"center"} gap='8'>
+      <Flex
+        flexDirection='column'
+        h='100%'
+        justifyContent={"center"}
+        gap='8'
+        px='1rem'
+        w='100%'>
         {props.headingtext ? (
           <Heading variant='mediumHeading'>{props.headingtext}</Heading>
         ) : null}
@@ -29,7 +33,11 @@ export default function SectionFlexContentContainer(props) {
         {props.children}
 
         {props.linktext ? (
-          <ChakraLinkArrow to={props.linkto || "/"} name={props.linktext} />
+          <ChakraLinkArrow
+            variant='sectionLink'
+            to={props.linkto || "/"}
+            name={props.linktext}
+          />
         ) : null}
       </Flex>
     </Flex>

@@ -25,6 +25,7 @@ export default function MenuMain(props) {
       px='10vw'
       flexDirection={["column"]}
       py='100px'
+      bg={colors.backgroundDark}
       {...props}>
       <Text
         color={colors.light}

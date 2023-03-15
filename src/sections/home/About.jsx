@@ -11,12 +11,13 @@ export default function About(props) {
     <SectionFlexContainer
       bg={colors.backgroundLight}
       color={colors.dark}
-            p={["0", "5vw", "5vw", "5vw"]}
       {...props}>
+
       <NongbuImageContainer
         position='relative'
         w={["100vw", "35vw"]}
         h={["30vh", "80vh"]}
+        py='5vh'
         name='table with korean dishes and makgeolli'
         filename='nongbu-2'
       />

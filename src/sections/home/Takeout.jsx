@@ -19,6 +19,8 @@ function Takeout(props) {
       <NongbuImageContainer
         w={["100vw", "60vw", "50vw", "50vw"]}
         h={["30vh", "auto", "auto", "auto"]}
+        minW='240px'
+        maxW='600px'
         filename='nongbu-4'
         name='plate of ddeokbbokki'
       />

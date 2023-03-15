@@ -21,9 +21,9 @@ function Events(props) {
       overflow='hidden'
       alignItems='center'
       justifyContent='space-between'
+      
       {...props}>
       <NongbuImageContainer
-        bg='red'
         overflow='hidden'
         filename='nongbu-3'
         alignSelf='flex-end'
@@ -39,9 +39,11 @@ function Events(props) {
         headingtext='Use our space and services.'
         linktext='Get in touch'
         linkto='/events'
-        px='1rem'
+        justifySelf='flex-end'
+        
         color={colors.light}>
-        <Text>
+        <Text 
+        >
           Are you looking for a private and modern space for your event? Do you
           have guests to feed? We might be able to help with your venue and
           catering needs.

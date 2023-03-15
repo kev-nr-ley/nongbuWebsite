@@ -14,6 +14,7 @@ export default function Hero(props) {
       h='100vh'
       w='100vw'
       maxW='100%'
+      px={["1rem", "1rem", "10vw", "20vw"]}
       bg={colors.backgroundDark}
       color={colors.light}
       overflow='hidden'
@@ -21,19 +22,19 @@ export default function Hero(props) {
       justifyContent='center'
       gap='20vh'
       {...props}>
-      <Box
+      <SectionFlexContentContainer
         flexDirection='column'
-        position='relative'
-        w={["100%", "90%", "90%", "70%"]}
-        left={["0%", "-5%", "-5%", "-10%"]}
-        px='5vw'
         h='fit-content'
-        zIndex='8'>
-        <Heading variant='largeHeading' >
+        py=''
+        w='100%'
+        maxW='100vw'
+        mt={["4rem", "4rem", "4rem", "2rem"]}
+        {...props}>
+        <Heading variant='largeHeading' mt={["4rem", "4rem", "2rem", "0rem"]}>
           It is our desire to have our guests leave every NongBu experience
           happy, full, and a little more knowledgeable about our little country.
         </Heading>
-      </Box>
+      </SectionFlexContentContainer>
 
       <Flex
         position='relative'
@@ -48,7 +49,7 @@ export default function Hero(props) {
         />
 
         <NongbuImageContainer
-          w={["100%", "100%", "30vw", "30vw"]}
+          w={["100%", "100%", "40vw", "40vw"]}
           h={["100%", "100%", "30vw", "30vw"]}
           filename='nongbu-about-2'
           name='Owner John Ahn'

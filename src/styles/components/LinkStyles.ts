@@ -6,11 +6,10 @@ export const LinkStyles: ComponentStyleConfig = {
   // style object for base or default style
   baseStyle: {
     letterSpacing: "1.25px",
-    h: "100%",
     w: "fit-content",
+    fontWeight: "500",
     _hover: {
       textDecoration: "none",
-      // color: "primary",
     },
   },
   // styles for different sizes ("sm", "md", "lg")
@@ -24,7 +23,7 @@ export const LinkStyles: ComponentStyleConfig = {
       position: "relative",
       transition: "all 0.2s ease-in-out",
       _hover: {
-        color:'primary',
+        color: "primary",
         // letterSpacing: "0.2rem",
       },
 
@@ -36,6 +35,29 @@ export const LinkStyles: ComponentStyleConfig = {
         height: "2px",
         backgroundColor: "brand.highlight",
         transition: "width 0.3s",
+      },
+    },
+
+    sectionLink: {
+      bg: "transparent",
+      color: "primary",
+      fontSize: "20px",
+      fontWeight: "700",
+      pr: "2",
+      w: "fit-content",
+      _after: {
+        content: '" "',
+        display: "block",
+        width: "0%",
+        mt: "2px",
+        height: "2px",
+        backgroundColor: "brand.highlight",
+        transition: "width 0.3s",
+      },
+      _hover: {
+        _after: {
+          width: "100%",
+        },
       },
     },
 
