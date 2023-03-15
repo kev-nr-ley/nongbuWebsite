@@ -20,25 +20,26 @@ function Events(props) {
       maxW='100%'
       overflow='hidden'
       alignItems='center'
+      justifyContent='space-between'
       {...props}>
       <NongbuImageContainer
+        bg='red'
         overflow='hidden'
         filename='nongbu-3'
         alignSelf='flex-end'
         justifySelf='flex-end'
-        w={["100vw", "auto", "70vw", "70vw"]}
-        h={["30vh", "80vh", "80vh", "80vh"]}
+        w={["100vw", "auto", "auto", "auto"]}
+        h={["30vh", "100%", "100%", "100%"]}
         objectPosition={["0% 50%", "20% 50%", "0% 0%", "0% 0%"]}
         objectFit='cover'
       />
-
-  
 
       <SectionFlexContentContainer
         flexDirection={"column"}
         headingtext='Use our space and services.'
         linktext='Get in touch'
         linkto='/events'
+        px='1rem'
         color={colors.light}>
         <Text>
           Are you looking for a private and modern space for your event? Do you

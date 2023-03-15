@@ -2,16 +2,13 @@ import React from "react";
 import { Flex, Heading, Text } from "@chakra-ui/react";
 import ChakraLinkArrow from "@components/ChakraLinkArrow";
 import { useTheme } from "@chakra-ui/react";
-
+import SectionFlexContentContainer from "@components/SectionFlexContentContainer";
+import SectionFlexContainer from "@components/SectionFlexContainer";
+import NongbuImageContainer from "@components/NongbuImageContainer";
 export default function AboutUs() {
   const { colors } = useTheme();
   return (
-    <Flex
-      bg={colors.backgroundLight}
-      color={colors.dark}
-      minH='100vh'
-      w='100vw'
-      maxW='100%'
+    <SectionFlexContainer
       overflow='hidden'
       flexDirection='column'
       px={["5%", "5%", "10%", "25%"]}
@@ -19,10 +16,15 @@ export default function AboutUs() {
       gap='5vh'
       zIndex='8'
       h='fit-content'>
-      <Flex flexDirection={"column"} gap='8' w='100%' minW='240px'>
-        <Heading as='h3' variant='mediumHeading'>
-          Food
-        </Heading>
+      <SectionFlexContentContainer
+        headingtext='Food'
+        linktext='View Menu'
+        linkto='/menu'
+        flexDirection={"column"}
+        gap='8'
+        minW='240px'
+        w='800px'
+        maxW='100%'>
         <Text>
           NongBu Korean Eatery opened with the mission to re-introduce
           traditional Korean food to Edmontonians. From its conception, NongBu
@@ -32,9 +34,7 @@ export default function AboutUs() {
           Korean staples. Korean street food, Korean comfort food and Korean
           Anju (Food served with liquor) all have a place in our small but
           focused menu.
-        </Text>
-
-        <Text>
+          <br /> <br />
           At NongBu, we prepare all our dishes using only the best and freshest
           ingredients available to us. We do not add flavour additives or MSG
           into any of our food. We believe traditional Korean cooking should be
@@ -45,14 +45,16 @@ export default function AboutUs() {
           thought out and recipes are created to achieve a balance of the
           diverse flavours and textures found in Korean cuisine.
         </Text>
-
-        <ChakraLinkArrow to='/menu' name='View Menu' />
-      </Flex>
-
-      <Flex flexDirection={"column"} gap='8' w='100%' minW='240px'>
-        <Heading as='h3' variant='mediumHeading'>
-          Culture
-        </Heading>
+      </SectionFlexContentContainer>
+      <SectionFlexContentContainer
+        headingtext='Culture'
+        linktext='Contact Us'
+        linkto='/contact'
+        flexDirection={"column"}
+        gap='8'
+        minW='240px'
+        w='800px'
+        maxW='100%'>
         <Text>
           NongBu wants to expand on what people already know about Korean
           culture. It is not just a traditional dining experience but a complete
@@ -63,9 +65,7 @@ export default function AboutUs() {
           K-pop. Vintage movies are projected onto a large wall to showcase
           Korea’s long history in film. Interested in using our space?
         </Text>
-
-        <ChakraLinkArrow to='/contact' name='Contact Us' />
-      </Flex>
-    </Flex>
+      </SectionFlexContentContainer>
+    </SectionFlexContainer>
   );
 }

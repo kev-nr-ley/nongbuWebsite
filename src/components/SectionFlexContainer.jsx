@@ -14,11 +14,9 @@ export default function SectionFlexContainer(props) {
       position='relative'
       justifyContent={"center"}
       h={["100%", "auto", "auto", "auto"]}
-      
       w='100vw'
       maxW='100%'
       gap='8'
-      px='0.5rem'
       bg={props.bg || colors.backgroundLight}
       color={props.color || colors.dark}
       {...props}></Flex>

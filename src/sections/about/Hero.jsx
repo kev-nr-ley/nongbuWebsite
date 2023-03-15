@@ -2,11 +2,13 @@ import React from "react";
 import { Box, Flex, Heading } from "@chakra-ui/react";
 import { useTheme } from "@chakra-ui/react";
 import ImageContainer from "@components/ImageContainer";
-
+import SectionFlexContentContainer from "@components/SectionFlexContentContainer";
+import SectionFlexContainer from "@components/SectionFlexContainer";
+import NongbuImageContainer from "@components/NongbuImageContainer";
 export default function Hero(props) {
   const { colors } = useTheme();
   return (
-    <Flex
+    <SectionFlexContainer
       flexDirection='column'
       position='relative'
       h='100vh'
@@ -25,14 +27,9 @@ export default function Hero(props) {
         w={["100%", "90%", "90%", "70%"]}
         left={["0%", "-5%", "-5%", "-10%"]}
         px='5vw'
-        h={["fit-content", "fit-content", "fit-content"]}
+        h='fit-content'
         zIndex='8'>
-        <Heading
-          as='h3'
-          fontWeight='700'
-          fontSize={["24px", "28px", "32px", "36px"]}
-          lineHeight={["30px", "36px", "40px", "40px"]}
-          letterSpacing='4px'>
+        <Heading variant='largeHeading' >
           It is our desire to have our guests leave every NongBu experience
           happy, full, and a little more knowledgeable about our little country.
         </Heading>
@@ -40,33 +37,33 @@ export default function Hero(props) {
 
       <Flex
         position='relative'
-        // bottom={["10%", "10%", "10%", "10%"]}
         left={["0", "0", "10%", "10%"]}
-        h='30vh'
-        // bg='red'
-
         gap={["0", "0", "4", "4"]}>
-        <ImageContainer
+        <NongbuImageContainer
           w={["100%", "100%", "30vw", "30vw"]}
           h={["100%", "100%", "30vw", "30vw"]}
-          image='nongbu-about-1.webp'
+          filename='nongbu-about-1'
+          name='nongbu entrance'
           flexShrink='1'
         />
-        <ImageContainer
-          position='relative'
-          top={["0", "-2vh", "-5vh", "-5vh"]}
-          w={["240px", "400px", "35vw", "35vw"]}
-          h={["100%", "100%", "30vw", "30vw"]}
-          image='nongbu-about-2.webp'
-          flexShrink='0'
-        />
-        <ImageContainer
+
+        <NongbuImageContainer
           w={["100%", "100%", "30vw", "30vw"]}
           h={["100%", "100%", "30vw", "30vw"]}
-          image='nongbu-about-3.webp'
+          filename='nongbu-about-2'
+          name='Owner John Ahn'
+          flexShrink='0'
+          top='-6vh'
+        />
+
+        <NongbuImageContainer
+          w={["100%", "100%", "30vw", "30vw"]}
+          h={["100%", "100%", "30vw", "30vw"]}
+          filename='nongbu-about-3'
+          name='John Ahn with facial hair'
           flexShrink='1'
         />
       </Flex>
-    </Flex>
+    </SectionFlexContainer>
   );
 }

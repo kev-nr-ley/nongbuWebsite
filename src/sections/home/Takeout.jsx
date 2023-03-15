@@ -22,44 +22,30 @@ function Takeout(props) {
         filename='nongbu-4'
         name='plate of ddeokbbokki'
       />
-
-    
-
-      <Flex //section content
-        flexDirection={["column", "column", "column", "column"]}
-        gap='8'
-        px={["5vw", "0vw", "0vw", "0vw"]}
-        w={["100%", "30%", "30%", "25%"]}
-        justifyContent='flex-start'
-        alignItems={"flex-start"}
-        h='100%'>
-        <Flex flexDirection='column' h='100%' justifyContent={"center"} gap='8'>
-          <Heading variant='smallHeading'>
-            Get NongBu to-go or delivered right to your door.
-          </Heading>
-
-          <Flex gap='8' flexDirection='column' alignItems={"center"}>
-            <LogoLink
-              to='https://www.skipthedishes.com/nongbu-korean-eatery'
-              name='Skip The Dishes'
-              src='skipthedishes.webp'
-              width={["200px", "200px", "240px", "260px"]}
-            />
-            <LogoLink
-              to='https://www.ubereats.com/ca/store/nongbu-korean-eatery-104-st/1Y-WFnTDTZ2yh5xB01bLaw'
-              name='Uber Eats'
-              src='ubereats.webp'
-              width={["200px", "200px", "240px", "260px"]}
-            />
-            <LogoLink
-              to='https://www.fantuanorder.com/store/nongbu-korean-eatery/ca-9090'
-              name='Fantuan'
-              src='fantuan.webp'
-              width={["200px", "200px", "240px", "260px"]}
-            />
-          </Flex>
+      <SectionFlexContentContainer
+        headingtext='Get NongBu to-go or delivered right to your door.'
+        w={["100%", "30%", "30%", "25%"]}>
+        <Flex gap='8' flexDirection='column' alignItems={"center"}>
+          <LogoLink
+            to='https://www.skipthedishes.com/nongbu-korean-eatery'
+            name='Skip The Dishes'
+            src='skipthedishes.webp'
+            width={["200px", "200px", "240px", "260px"]}
+          />
+          <LogoLink
+            to='https://www.ubereats.com/ca/store/nongbu-korean-eatery-104-st/1Y-WFnTDTZ2yh5xB01bLaw'
+            name='Uber Eats'
+            src='ubereats.webp'
+            width={["200px", "200px", "240px", "260px"]}
+          />
+          <LogoLink
+            to='https://www.fantuanorder.com/store/nongbu-korean-eatery/ca-9090'
+            name='Fantuan'
+            src='fantuan.webp'
+            width={["200px", "200px", "240px", "260px"]}
+          />
         </Flex>
-      </Flex>
+      </SectionFlexContentContainer>
     </SectionFlexContainer>
   );
 }
