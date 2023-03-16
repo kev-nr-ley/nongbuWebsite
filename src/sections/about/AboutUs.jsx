@@ -21,7 +21,7 @@ export default function AboutUs() {
         linkto='/menu'
         flexDirection={"column"}
         minW='240px'
-        w='80%'
+        w={['100%', '100%', '80%', '80%']}
         maxW='100%'>
         <Text variant='bodyText'>
           NongBu Korean Eatery opened with the mission to re-introduce
@@ -50,7 +50,7 @@ export default function AboutUs() {
         linkto='/contact'
         flexDirection={"column"}
         minW='240px'
-        w='80%'
+        w={['100%', '100%', '80%', '80%']}
         maxW='100%'>
         <Text variant='bodyText'>
           NongBu wants to expand on what people already know about Korean
