@@ -16,9 +16,7 @@ export const ButtonStyles: ComponentStyleConfig = {
 
       _hover: {
         color: "primary",
-        _after: {
-          width: "100%",
-        },
+     
       },
       _active: {
         color: "primary",
@@ -44,6 +42,20 @@ export const ButtonStyles: ComponentStyleConfig = {
       fontSize: "1.2rem",
       w: "100%",
 
+      _hover: {
+        color: "white",
+      },
+      _active: {
+        color: "white",
+      },
+    },
+
+    
+    underline: {
+      // bg: "transparent",
+      color: "primary",
+      w: "100%",
+      fontWeight:'500',
       _hover: {
         color: "white",
       },

@@ -91,7 +91,7 @@ export default function Hero(props) {
         {/* Move this more to the center, try to overlap iamge on desktop */}
         <SectionFlexContentContainer
           flexDirection={"column"}
-          headingtext='Use our space and services.'
+          headingtext='We host all kinds of events.'
           linktext='Get in touch'
           linkto='/events'
           w={["100%", "100%", "100%", "60%"]}
@@ -105,9 +105,10 @@ export default function Hero(props) {
             // w={["100%", "80%", "80%", "20rem"]}
             maxW='36rem'
             zIndex='2'>
-            Are you looking for a private and modern space for your event? Do
-            you have guests to feed? We might be able to help with your venue
-            and catering needs.
+            From birthday parties to low-key weddings. Our minimalist and modern
+            space allow you and your guests to be the focus. Get in touch with
+            some details about your event if you are interested in our space or
+            services.
           </Text>
         </SectionFlexContentContainer>
       </SectionFlexContainer>
