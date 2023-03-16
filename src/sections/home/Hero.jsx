@@ -11,11 +11,10 @@ export default function Hero(props) {
     <SectionHeroContainer h={["100vh", "100vh", "80vh", "80vh"]} {...props}>
       <Flex
         flexDirection='column'
-        w='100%'
         bg={colors.backgroundDark}
         zIndex='1'
-        px='5vw'
-        py='10vh'>
+        w={['20rem', '20rem', '30rem', '48rem']}
+        >
         <Heading variant='heroHeading' color='light'>
           Welcome To NongBu Korean Eatery.
         </Heading>
@@ -33,23 +32,29 @@ export default function Hero(props) {
         </VStack>
       </Flex>
 
-      <Hours
+      {/* <Hours
         zIndex='9'
         w='18rem'
         position='absolute'
         bottom={["5vh"]}
         right={["5vw", "5vw", "5vw", "5vw"]}
-        transform = {["translateX(0%)", "translateX(0%)", "translateX(0)", "translateX(0)"]}
+        transform={[
+          "translateX(0%)",
+          "translateX(0%)",
+          "translateX(0)",
+          "translateX(0)",
+        ]}
         opacity='0.95'
         bg='backgroundLight'
         p='1rem'
-      />
+        showheading='true'
+      /> */}
 
       <NongbuImageContainer
         bottom='0'
         left='0'
         position='absolute'
-        h='100vw'
+        h='100%'
         zIndex='0'
         filename='nongbu-1'
         name='table with korean dishes'
