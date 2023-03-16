@@ -17,7 +17,6 @@ export default function OrderMain(props) {
       position='relative'
       justifyContent={"center"}
       alignItems='center'
-      gap='12'
       minH='90vh'
       {...props}>
       <NongbuImageContainer
@@ -32,8 +31,7 @@ export default function OrderMain(props) {
       <SectionFlexContentContainer
         headingtext='Get NongBu to-go or delivered'
         flexDirection={["column", "column", "column", "column"]}
-        maxW='32rem'
-        >
+        maxW='32rem'>
         <Flex
           flexWrap='wrap'
           alignItems='center'

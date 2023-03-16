@@ -37,6 +37,7 @@ export default function Hero(props) {
         bg={colors.backgroundDark} //for desktop
         zIndex='5'
         px='5vw'
+        py='5vw'
         gap='2rem'
         minW={["100vw", "60vw", "30vw", "30vw"]}
         h={["100%", "100vh", "100vh", "100vh"]}>
@@ -53,7 +54,7 @@ export default function Hero(props) {
 
         {/* add padding to phone and email text to line up */}
         <Hours border='2px solid white' p='1rem' showheading='false' />
-    
+
         <ContactInfo showheading='false' />
         <LocationInfo showheading='true' />
       </Flex>
