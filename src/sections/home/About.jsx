@@ -25,7 +25,9 @@ export default function About(props) {
       <SectionFlexContentContainer
         headingtext='Welcome to NongBu.'
         linktext='View Menu'
-        linkto='/menu'>
+        linkto='/menu'
+        alignItems='center'
+        >
         <Text>
           NongBu resurrects Korean cuisine from bygone generations and
           reintroduces it to the Canadian and Korean palate alike.

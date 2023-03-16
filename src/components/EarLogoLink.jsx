@@ -8,7 +8,7 @@ export default function EarLogoLink(props) {
   const { colors, fonts } = useTheme();
   return (
     <NewLink
-      to='https://www.instagram.com/ear_yeg'
+      href='https://www.instagram.com/ear_yeg'
       name='ear'
       variant='fancyLink'
       target='_blank'

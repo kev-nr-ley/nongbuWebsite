@@ -66,23 +66,29 @@ export default function MenuItem(props) {
           {props.english} {props.korean}
         </Text>
 
-{/* disable until we get prices */}
+        {/* disable until we get prices */}
         {/* <Text className='menu-item-price' variant='menuCaps'>
           ${props.price ? props.price : "Market Price"}
         </Text> */}
-
       </Flex>
-      <Text className='menu-item-description' variant='menuBody'>
-        {props.description} <br />
-      </Text>
 
-      <Text className='menu-item-notes' variant='menuBody'>
-        {props.notes === "...notes" ? "" : props.notes}
-      </Text>
+      {props.description ? (
+        <Text className='menu-item-description' variant='menuBody'>
+          {props.description} <br />
+        </Text>
+      ) : null}
 
-      <Text className='menu-item-modifiers' variant='menuBody'>
-        {props.modifiers === "...modifiers" ? "" : props.modifiers}
-      </Text>
+      {props.notes ? (
+        <Text className='menu-item-notes' variant='menuBody'>
+          {props.notes === "...notes" ? "" : props.notes}
+        </Text>
+      ) : null}
+
+      {props.modifiers ? (
+        <Text className='menu-item-modifiers' variant='menuBody'>
+          {props.modifiers === "...modifiers" ? "" : props.modifiers}
+        </Text>
+      ) : null}
     </Box>
   );
 }

@@ -25,6 +25,7 @@ export const TextStyles: ComponentStyleConfig = {
     },
     
     menuBody: {
+      mt:'0.25rem'
     },
 
     mediumText: {

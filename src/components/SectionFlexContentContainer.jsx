@@ -7,39 +7,32 @@ export default function SectionFlexContentContainer(props) {
   const { colors } = useTheme();
 
   return (
-    <Flex //section content
-      flexDirection={"column"}
+    <Flex
+      flexDirection='column'
       h='fit-content'
       minW='300px'
-      w={["100%", "50vw", "50vw", "50vw"]}
-      maxW={["auto", "300px", "300px"]}
-      pb={["10vw", "5vw"]}
+      justifyContent={"center"}
+      gap='8'
+      px='1rem'
+      w='100%'
       {...props}>
-      <Flex
-        flexDirection='column'
-        h='100%'
-        justifyContent={"center"}
-        gap='8'
-        px='1rem'
-        w='100%'>
-        {props.headingtext ? (
-          <Heading variant='mediumHeading'>{props.headingtext}</Heading>
-        ) : null}
+      {props.headingtext ? (
+        <Heading variant='mediumHeading'>{props.headingtext}</Heading>
+      ) : null}
 
-        {props.headingsubtext ? (
-          <Heading variant='smallHeading'>{props.headingsubtext}</Heading>
-        ) : null}
+      {props.headingsubtext ? (
+        <Heading variant='smallHeading'>{props.headingsubtext}</Heading>
+      ) : null}
 
-        {props.children}
+      {props.children}
 
-        {props.linktext ? (
-          <ChakraLinkArrow
-            variant='sectionLink'
-            to={props.linkto || "/"}
-            name={props.linktext}
-          />
-        ) : null}
-      </Flex>
+      {props.linktext ? (
+        <ChakraLinkArrow
+          variant='sectionLink'
+          to={props.linkto || "/"}
+          name={props.linktext}
+        />
+      ) : null}
     </Flex>
   );
 }

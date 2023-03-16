@@ -57,7 +57,7 @@ export default function MobileNav(props) {
         justifyContent='center'
         gap='8'
         px='5vw'>
-        <HStack gap='4' mb={'10vh'}>
+        <HStack gap='4' mb={"10vh"}>
           <NongbuLogoLink
             position={["static"]}
             zIndex='999999999'
@@ -83,9 +83,9 @@ export default function MobileNav(props) {
         <Flex flexDirection='column' gap='4'>
           <ChakraLink name='Home' to='/' onClick={handleLink} />
           <ChakraLink to='/About' name='About' onClick={handleLink} />
-          <ChakraLink to='/Contact' name='Contact' onClick={handleLink} />
           <ChakraLink to='/Events' name='Events' onClick={handleLink} />
           <ChakraLink to='/Order' name='Order' onClick={handleLink} />
+          <ChakraLink to='/Contact' name='Contact' onClick={handleLink} />
         </Flex>
 
         <Flex gap='4'>

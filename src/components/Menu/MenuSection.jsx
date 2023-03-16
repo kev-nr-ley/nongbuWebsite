@@ -8,15 +8,16 @@ export default function MenuSection(props) {
   const { colors, fonts } = theme;
 
   function renderMenuItems(items) {
-
     function objectToArray(object) {
       return Object.keys(object).map((key) => {
         return object[key];
       });
     }
-  
+
     return objectToArray(items).map((item, index) => {
-      return <MenuItem {...item} objectToArray={props.objectToArray} key={index} />;
+      return (
+        <MenuItem {...item} objectToArray={props.objectToArray} key={index} />
+      );
     });
   }
 
@@ -31,15 +32,20 @@ export default function MenuSection(props) {
         {props.name}
       </Heading>
 
-      <Text className='menu-section-description' variant='menuItalic' my='1'>
-        {props.description}
-      </Text>
+      {props.description ? (
+        <Text className='menu-section-description' variant='menuItalic' my='1'>
+          {props.description}
+        </Text>
+      ) : null}
 
       <Grid className='menu-section-items' w='100%' gap='4'>
         {renderMenuItems(props.items)}
-        <Text variant='menuItalic' color={colors.primary}>
-          {props.footer}
-        </Text>
+
+        {props.footer ? (
+          <Text variant='menuItalic' color={colors.primary}>
+            {props.footer}
+          </Text>
+        ) : null}
       </Grid>
     </Flex>
   );

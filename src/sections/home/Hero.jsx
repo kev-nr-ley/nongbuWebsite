@@ -1,6 +1,15 @@
 import React from "react";
 import { useTheme } from "@chakra-ui/react";
-import { Box, Flex, Image, Heading, Text, Grid } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Image,
+  Heading,
+  Text,
+  Grid,
+  VStack,
+  HStack,
+} from "@chakra-ui/react";
 import ChakraLinkArrow from "@components/ChakraLinkArrow";
 import NongbuImageContainer from "@components/NongbuImageContainer";
 import Hours from "@components/Hours";
@@ -11,12 +20,12 @@ function Hero(props) {
     <SectionHeroContainer h={["100vh", "100vh", "90vh", "90vh"]} {...props}>
       <Flex
         flexDirection='column'
+        alignItems='flex-end'
         bg={colors.backgroundDark}
         h='auto'
         zIndex='2'
         px={["1rem", "1rem", "10vw", "20vw"]}
-        py='2rem'
-        >
+        py='2rem'>
         <Heading
           variant='heroHeading'
           mt={["4rem", "4rem", "2rem", "0rem"]}
@@ -28,12 +37,11 @@ function Hero(props) {
           full and a little more knowledgeable about our little country.{" "}
         </Text>
         <Flex
-          w='100%'
           flexDirection='column'
-          justifyContent='flex-end'
           alignItems={"flex-end"}
           gap='1rem'
-          my='1rem'>
+          my='1rem'
+          w='fit-content'>
           <ChakraLinkArrow to='/menu' name='View Menu' variant='heroLink' />
           <ChakraLinkArrow
             to='/contact'
@@ -45,11 +53,13 @@ function Hero(props) {
 
       <Grid
         position='absolute'
-        bottom={["5vw", "5vw"]}
+        bottom={["0vw", "5vw"]}
         right={["50%", "5vw"]}
         transform={["translateX(50%)", "translateX(0%)"]}
-        gap='4'
+        gap='0.5rem'
         p='1rem'
+        mb='1rem'
+        mx='1rem'
         w='100%'
         maxW='300px'
         bg={colors.backgroundLight}
@@ -58,9 +68,9 @@ function Hero(props) {
         zIndex='9'
         {...props}>
         <Heading variant='footerHeading'>HOURS</Heading>
-        <Flex flexDirection='column' gap='1'>
+        <Flex  flexDirection='column'  spacing='0.5rem'>
           <Flex justifyContent={"space-between"} letterSpacing='2px'>
-            <Text as='span'>Tue - Thu</Text> <Text as='span'>4pm - 9pm</Text>
+            <Text as='span'>Tue - Thu</Text> <Text as='span'>4pm - 10pm</Text>
           </Flex>
           <Flex justifyContent={"space-between"} letterSpacing='2px'>
             <Text as='span'>Fri & Sat</Text> <Text as='span'>4pm - 10pm</Text>
@@ -72,10 +82,10 @@ function Hero(props) {
       </Grid>
 
       <NongbuImageContainer
-        top='0'
+        bottom='0'
         left='0'
-        // w='100vw'
-        h='auto'
+        position='absolute'
+        h='100vw'
         zIndex='0'
         filename='nongbu-1'
         name='table with korean dishes'

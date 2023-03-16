@@ -8,9 +8,7 @@ export const LinkStyles: ComponentStyleConfig = {
     letterSpacing: "1.25px",
     w: "fit-content",
     fontWeight: "500",
-    _hover: {
-      textDecoration: "none",
-    },
+    _hover: {},
   },
   // styles for different sizes ("sm", "md", "lg")
   sizes: {},
@@ -40,7 +38,7 @@ export const LinkStyles: ComponentStyleConfig = {
 
     sectionLink: {
       bg: "transparent",
-      color: "primary",
+      color: "green",
       fontSize: "20px",
       fontWeight: "700",
       pr: "2",
@@ -55,6 +53,7 @@ export const LinkStyles: ComponentStyleConfig = {
         transition: "width 0.3s",
       },
       _hover: {
+        textDecoration: "none",
         _after: {
           width: "100%",
         },

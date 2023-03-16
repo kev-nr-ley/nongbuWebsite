@@ -5,8 +5,8 @@ const streetEats = {
   sections: {
     Kimbap: {
       name: "Kimbap (Korean Rice Rolls)",
-      description:
-        "Kimbap is a popular Korean dish made of cooked rice, vegetables, and meat, rolled in gim (dried seaweed).",
+      // description:
+      // "Kimbap is a popular Korean dish made of cooked rice, vegetables, and meat, rolled in gim (dried seaweed).",
       footer: "",
       items: [
         {
@@ -22,10 +22,10 @@ const streetEats = {
     },
     Jeon: {
       name: "Jeon (Korean Pancakes)",
-      description:
-        "Jeon is a Korean pancake made with a variety of ingredients, including vegetables, seafood, and meats.",
-      footer:
-        "Don’t forget to order a bottle of Makguli with your pancake. Makguli (a light Korean rice wine) is the traditional pairing for Jeon.",
+      // description:
+        // "Jeon is a Korean pancake made with a variety of ingredients, including vegetables, seafood, and meats.",
+      // footer:
+        // "Don’t forget to order a bottle of Makguli with your pancake. Makguli (a light Korean rice wine) is the traditional pairing for Jeon.",
       items: [
         {
           english: "Cheese Ramyun Jeon",
