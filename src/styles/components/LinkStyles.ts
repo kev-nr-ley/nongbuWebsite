@@ -67,6 +67,7 @@ export const LinkStyles: ComponentStyleConfig = {
       fontSize: "1.25rem",
       fontWeight: "500",
 
+
       _after: {
         content: '" "',
         display: "block",
@@ -112,6 +113,9 @@ export const LinkStyles: ComponentStyleConfig = {
       fontSize: "1.25rem",
       color: "primary",
       fontWeight: "500",
+      ml: "1rem",
+
+
       _after: {
         content: '" "',
         display: "block",

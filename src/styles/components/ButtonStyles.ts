@@ -7,47 +7,44 @@ export const ButtonStyles: ComponentStyleConfig = {
   sizes: {},
   // styles for different visual variants ("outline", "solid")
   variants: {
-
-    fancyLink:{
+    fancyLink: {
       bg: "blue",
       color: "white",
       letterSpacing: "0.2em",
       fontSize: "1.2rem",
-      w:'auto',
-      
+      w: "auto",
+
       _hover: {
         color: "primary",
-        _after:{
-          width:'100%',
-        }
+        _after: {
+          width: "100%",
+        },
       },
       _active: {
         color: "primary",
       },
-      _after:{
-        content:'""',
-        display:'block',
-        width:'0',
-        position:'absolute',
-        bottom:'-10px',
-        height:'2px',
-        background:'primary',
-        transition:'width 0.3s',
+      _after: {
+        content: '""',
+        display: "block",
+        width: "0",
+        position: "absolute",
+        bottom: "-10px",
+        height: "2px",
+        background: "primary",
+        transition: "width 0.3s",
       },
     },
-    
-      fancyNav:{
- 
-    
-      },
+
+    fancyNav: {},
 
     heroLink: {
-      bg: "transparent",
+      // bg: "transparent",
       color: "primary",
       letterSpacing: "0.2em",
       fontSize: "1.2rem",
-      w:'100%',
-      
+      w: "100%",
+      ml: "1rem",
+      bg: "green",
       _hover: {
         color: "white",
       },
