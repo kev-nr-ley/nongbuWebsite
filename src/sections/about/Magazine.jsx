@@ -24,12 +24,12 @@ function Magazine(props) {
       w='100vw'
       maxW='100%'
       overflow='hidden'
-      justifyContent={["flex-start", "center"]}
-      alignItems={["flex-start", "center"]}
+      justifyContent={["center"]}
+      alignItems={["center"]}
       gap='5vw'
       p='5vw'
       {...props}>
-      <VStack color={colors.light}>
+      <VStack color={colors.light} my='1rem'>
         <Heading variant='mediumHeading' borderBottom='2px solid white'>
           Awards
         </Heading>
