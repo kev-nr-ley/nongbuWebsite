@@ -34,9 +34,9 @@ function Magazine(props) {
           Awards
         </Heading>
 
-        <VStack pt='1rem'>
+        <VStack pt='1rem' textAlign='center'>
           <Heading variant='smallHeading'>
-            Edify Edmonton (Avenue Magazine)
+            Edify Edmonton <br /> (Avenue Magazine)
           </Heading>
           <Text>1st, Best New Restaurant, 2016</Text>
           <Text>1st, Best Korean Restaurant, 2016</Text>
