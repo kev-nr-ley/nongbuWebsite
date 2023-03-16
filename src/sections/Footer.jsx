@@ -24,20 +24,20 @@ export default function Footer(props) {
   const { colors } = useTheme();
   return (
     <Flex
-      flexDirection='row'
-      flexWrap='wrap'
+      flexDirection={["column", "column", "row"]}
       justifyContent='space-between'
-      alignItems='flex-start'
+      alignItems={["center", "center", "flex-start"]}
       bg={colors.backgroundDarker}
       color={colors.light}
       w='100%'
       px='5vw'
       py='5vh'
+      gap='1rem'
       h='fit-content'
       {...props}>
-      <Hours maxW='16rem' />
-      <ContactInfo maxW='16rem' />
-      <LocationInfo maxW='16rem' />
+      <Hours maxW='16rem' showheading='true' />
+      <ContactInfo maxW='16rem' showheading='true' />
+      <LocationInfo maxW='16rem' showheading='true' />
     </Flex>
   );
 }

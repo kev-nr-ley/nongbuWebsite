@@ -52,8 +52,9 @@ export default function Hero(props) {
         </Box>
 
         {/* add padding to phone and email text to line up */}
-        <ContactInfo showheading='true' />
-        <Hours border='2px solid white' p='1rem' showheading='true' />
+        <Hours border='2px solid white' p='1rem' showheading='false' />
+    
+        <ContactInfo showheading='false' />
         <LocationInfo showheading='true' />
       </Flex>
     </Flex>

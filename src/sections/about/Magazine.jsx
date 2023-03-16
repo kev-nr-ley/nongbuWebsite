@@ -60,7 +60,7 @@ function Magazine(props) {
 
       <Image
         src='/images/nongbu-magazine.webp'
-        w={["100%", "320px", "440px", "480px"]}
+        w={["100%", "100%", "24rem", "32rem"]}
         h={["auto"]}
       />
     </SectionFlexContainer>
