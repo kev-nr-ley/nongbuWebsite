@@ -26,7 +26,8 @@ export default function MobileNav(props) {
       top='0'
       right='0'
       zIndex='99999999999'
-      alignItems='center'
+      // alignItems='center'
+      pt='1rem'
       color={colors.light}
       bg={isMenuOpen ? "gray.700" : colors.backgroundDark50}
       w={isMenuOpen ? "70vw" : "0"}
@@ -41,7 +42,13 @@ export default function MobileNav(props) {
         zIndex='999999999'>
         <IconButton
           fontSize='2.5rem'
-          icon={isMenuOpen ? <CloseIcon fontSize='2rem' /> : <FaBars fontSize='2.5rem' />}
+          icon={
+            isMenuOpen ? (
+              <CloseIcon fontSize='2rem' />
+            ) : (
+              <FaBars fontSize='2.5rem' />
+            )
+          }
           bg='transparent'
           _hover={{
             bg: "transparent",
@@ -54,14 +61,15 @@ export default function MobileNav(props) {
       <Flex
         display={isMenuOpen ? "flex" : "none"}
         flexDirection='column'
-        justifyContent='center'
         gap='8'
+        alignItems='flex-start'
+        justifyContent='flex-start'
         px='5vw'>
-          <NongbuLogoLink
-            position={["static"]}
-            zIndex='999999999'
-            onClick={handleLink}
-          />
+        <NongbuLogoLink
+          position={["static"]}
+          zIndex='999999999'
+          onClick={handleLink}
+        />
         <ChakraLink
           variant='bigNavLink'
           to='/Menu'

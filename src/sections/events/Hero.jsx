@@ -98,6 +98,7 @@ export default function Hero(props) {
           justifyContent='flex-start'
           alignItems='flex-start'
           pb='4rem'
+       
           color={colors.dark}>
           <Text
             variant='bodyText'

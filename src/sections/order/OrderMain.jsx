@@ -10,14 +10,14 @@ import NongbuImageContainer from "@components/NongbuImageContainer";
 export default function OrderMain(props) {
   const { colors } = useTheme();
   return (
-    <>
-      {" "}
+
+    
       <SectionFlexContainer //section container
         flexDirection={["column", "column", "column", "row"]}
         bg={colors.backgroundDark} //section container,
         color={colors.light}
         position='relative'
-        justifyContent={"space-between"}
+        justifyContent={"center"}
         alignItems='center'
         p='5vw'
         gap='5vw'
@@ -40,48 +40,49 @@ export default function OrderMain(props) {
           gap='1rem'
           alignItems='flex-start'
           // headingvariant='heroHeading'
+          maxW='36rem'
           pb='4rem'
-          // bg='red'
           color={colors.light}>
           <Text
             variant='bodyText'
             // maxW='32rem'
             // w={["100%", "80%", "80%", "20rem"]}
+            maxW='36rem'
             zIndex='2'>
             Look at our menu and give us a call to pick up your order, or get
             NongBu delivered right to your door.
           </Text>
 
           <Flex
-            flexDirection={["column", "column", "row"]}
+            flexDirection={["column", "column", "column", "column"]}
             gap='2rem'
             bg={colors.backgroundDark}
             mt='1rem'
             pb='5vw'
-            alignItems='flex-start'
+            alignItems='center'
             justifyContent='flex-start'
             px='1rem'>
             <LogoLink
               to='https://www.skipthedishes.com/nongbu-korean-eatery'
               name='Skip The Dishes'
               src='skipthedishes.webp'
-              w={["8rem", "12rem", "12rem", "14rem"]}
+              w={["8rem", "12rem", "12rem", "12rem"]}
             />
             <LogoLink
               to='https://www.ubereats.com/ca/store/nongbu-korean-eatery-104-st/1Y-WFnTDTZ2yh5xB01bLaw'
               name='Uber Eats'
               src='ubereats.webp'
-              w={["8rem", "12rem", "12rem", "14rem"]}
+              w={["8rem", "12rem", "12rem", "12rem"]}
             />
             <LogoLink
               to='https://www.fantuanorder.com/store/nongbu-korean-eatery/ca-9090'
               name='Fantuan'
               src='fantuan.webp'
-              w={["8rem", "12rem", "12rem", "14rem"]}
+              w={["8rem", "12rem", "12rem", "12rem"]}
             />
           </Flex>
         </SectionFlexContentContainer>
       </SectionFlexContainer>
-    </>
+ 
   );
 }

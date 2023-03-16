@@ -7,6 +7,9 @@ import ChakraLink from "@components/ChakraLink";
 import ContactInfo from "@components/ContactInfo";
 import LocationInfo from "@components/LocationInfo";
 import NongbuImageContainer from "../../components/NongbuImageContainer";
+import SectionFlexContainer from "../../components/SectionFlexContainer";
+import SectionFlexContentContainer from "../../components/SectionFlexContentContainer";
+
 export default function Hero(props) {
   const { colors } = useTheme();
 
@@ -16,14 +19,14 @@ export default function Hero(props) {
       alignItems='center'
       position='relative'
       flexDirection={["column", "row"]}
-      minH='100vh'
+      minH='50vh'
       color={colors.light}
       overflow='hidden'
       {...props}>
       <NongbuImageContainer
-        objectPosition='100% 100%'
+        objectPosition='-50% 0%'
         position={["static", "absolute", "absolute"]}
-        w={["100%", "100%", "80vw", "70vw"]}
+        w={["100%", "100%", "70vw", "60vw"]}
         h={["30vh", "100%", "100%", "100vh"]}
         right={["none", "0", "0"]}
         top={["none", "0", "0"]}
@@ -52,11 +55,11 @@ export default function Hero(props) {
           </Text>
         </Box>
 
-        {/* add padding to phone and email text to line up */}
+
+        <ContactInfo showheading={false} />
         <Hours border='2px solid white' p='1rem' showheading='false' />
 
-        <ContactInfo showheading='false' />
-        <LocationInfo showheading='true' />
+        {/* <LocationInfo showheading='true' /> */}
       </Flex>
     </Flex>
   );
