@@ -38,7 +38,7 @@ export default function MenuMain(props) {
         subject to change without notice.
       </Text>
 
-      <Grid gap='5vw' w='100%' gridTemplateColumns={["1fr", "1fr", "1fr 1fr"]}>
+      <Grid gap='5vw' w='100%' gridTemplateColumns={["1fr", "1fr", '1fr', "1fr 1fr"]}>
         <MenuPage
           {...streetEats}
           objectToArray={props.objectToArray}

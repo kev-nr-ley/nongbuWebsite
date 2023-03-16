@@ -11,18 +11,20 @@ export default function Hero(props) {
     <SectionHeroContainer h={["100vh", "100vh", "80vh", "80vh"]} {...props}>
       <Flex
         flexDirection='column'
-        // bg={colors.backgroundDark}
-        bg='red.700'
+        bg={colors.backgroundDark}
+        // bg='red.700'
+        pt={["5rem", "5rem"]}
         zIndex='2'
-        w={["20rem", "20rem", "30rem", "100%"]}
-        h='30vh'
+        w={["100%"]}
         alignItems='center'
-        justifyContent={"center"}
-        >
+        justifyContent={"center"}>
         <VStack
           zIndex='2'
           w={["20rem", "20rem", "30rem", "48rem"]}
-          bg='red.300'>
+          // bg={colors.backgroundDark}
+
+          // bg='red.300'
+        >
           <Heading variant='heroHeading' color='light'>
             Welcome To NongBu Korean Eatery.
           </Heading>
@@ -30,12 +32,24 @@ export default function Hero(props) {
             It is our desire to have our guests leaver NongBu experience happy,
             full and a little more knowledgeable about our little country.{" "}
           </Text>
-          <VStack alignSelf='flex-end' w='fit-content'>
-            <ChakraLinkArrow to='/menu' name='View Menu' variant='heroLink' />
+          <VStack
+            pt='2rem'
+            gap='1rem'
+            alignSelf='flex-end'
+            w='fit-content'
+            alignItems='flex-end'>
+            <ChakraLinkArrow
+              to='/menu'
+              name='View Menu'
+              variant='heroLink'
+              arrowSize='1.75rem'
+            />
             <ChakraLinkArrow
               to='/contact'
+              b
               name='Book a table'
               variant='heroLink'
+              arrowSize='1.75rem'
             />
           </VStack>
         </VStack>

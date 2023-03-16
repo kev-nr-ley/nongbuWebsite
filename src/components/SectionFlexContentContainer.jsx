@@ -20,7 +20,7 @@ export default function SectionFlexContentContainer(props) {
 
       {...props}>
       {props.headingtext ? (
-        <Heading variant='mediumHeading'>{props.headingtext}</Heading>
+        <Heading variant={props.headingvariant || 'mediumHeading' }>{props.headingtext}</Heading>
       ) : null}
 
       {props.headingsubtext ? (

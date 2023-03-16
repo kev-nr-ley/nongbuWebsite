@@ -35,7 +35,6 @@ export const HeadingStyles: ComponentStyleConfig = {
     largeHeading: {
       fontSize: '2rem',
       fontWeight: "700",
-      letterSpacing: "0.15rem",
     },
 
     heroHeading: {

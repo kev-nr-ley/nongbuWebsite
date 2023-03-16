@@ -16,7 +16,7 @@ export default function NongbuImageContainer(props) {
       <Image
         w='100%'
         h='100%'
-        objectFit='cover'
+        objectFit={props.objectFit || "cover"}
         name={props.name}
         src={path + props.filename + type}
         alt={`Image of ${props.name}`}

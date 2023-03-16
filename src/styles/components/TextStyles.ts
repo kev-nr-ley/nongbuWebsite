@@ -33,7 +33,8 @@ export const TextStyles: ComponentStyleConfig = {
     mediumText: {
       fontSize: "1.25rem",
       fontWeight: "500",
-      px:'1rem'
+      px:'1rem',
+      letterSpacing: "0.125rem",
     },
 
     bigText: {

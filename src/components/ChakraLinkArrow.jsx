@@ -12,9 +12,10 @@ function ChakraLinkArrow(props, children) {
       to={props.to || "/"}
       name={props.name}
       onClick={props.onClick || null}
-      aria-label={`link to ${props.name || props.children} page`}>
+      aria-label={`link to ${props.name || props.children} page`}
+      {...props}>
       {props.name}
-      <ArrowForwardIcon />
+      <ArrowForwardIcon fontSize={props.arrowSize || "1.75rem"} />
     </NewLink>
   );
 }

@@ -7,7 +7,7 @@ export const LinkStyles: ComponentStyleConfig = {
   baseStyle: {
     letterSpacing: "1.25px",
     w: "fit-content",
-    fontWeight: "500",
+    // fontWeight: "500",
     // border: "1px solid primary",
     _hover: {},
   },
@@ -27,8 +27,6 @@ export const LinkStyles: ComponentStyleConfig = {
         // letterSpacing: "0.2rem",
       },
 
-
-
       _after: {
         content: '" "',
         display: "block",
@@ -44,7 +42,6 @@ export const LinkStyles: ComponentStyleConfig = {
       fontSize: "1rem",
       fontWeight: "500",
     },
-
 
     mediumText: {
       fontSize: "1.25rem",
@@ -62,24 +59,22 @@ export const LinkStyles: ComponentStyleConfig = {
     },
 
     heroLink: {
-      color: "primary",
-      width: "fit-content",
       fontSize: "1.25rem",
-      fontWeight: "500",
-
-
+      color: "primary",
+      fontWeight: "700",
       _after: {
         content: '" "',
         display: "block",
         width: "0%",
         mt: "2px",
         height: "2px",
-        backgroundColor: "brand.highlight",
+        backgroundColor: "primary",
         transition: "width 0.3s",
       },
-      _hover: {
-        color: "white",
 
+      _hover: {
+        textDecoration: "none",
+        // color: "primary",
         _after: {
           width: "100%",
         },
@@ -114,7 +109,6 @@ export const LinkStyles: ComponentStyleConfig = {
       color: "primary",
       fontWeight: "500",
       ml: "1rem",
-
 
       _after: {
         content: '" "',

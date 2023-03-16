@@ -43,10 +43,10 @@ export default function Hero(props) {
         h={["100%", "100vh", "100vh", "100vh"]}>
         <Box>
           {" "}
-          <Heading as='h3' variant='mediumHeading'>
+          <Heading as='h3' px='0' variant='mediumHeading'>
             Contact us
           </Heading>
-          <Text variant='bodyText' maxW='24rem'>
+          <Text variant='bodyText' px='0' maxW='24rem' lineHeight='40px'>
             Book a table, order takeout, inquire about private events and
             catering, ask about our menu... etc.
           </Text>

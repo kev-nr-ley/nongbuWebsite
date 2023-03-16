@@ -18,28 +18,32 @@ function Takeout(props) {
       <NongbuImageContainer
         filename='nongbu-4'
         name='plate of ddeokbbokki'
-        p={['0', '0', '5vw']}
+        p={["0", "0", "5vw"]}
         maxW='44rem'
       />
       <SectionFlexContentContainer headingtext='Get NongBu to-go or delivered right to your door.'>
-        <Flex flexDirection='column' gap='2rem' mt='1rem' alignItems={"center"}>
+        <Flex
+          flexDirection='column'
+          gap='2rem'
+          mt='2rem'
+          alignItems={"flex-start"}>
           <LogoLink
             to='https://www.skipthedishes.com/nongbu-korean-eatery'
             name='Skip The Dishes'
             src='skipthedishes.webp'
-            width={["200px", "200px", "240px", "260px"]}
+            w={["8rem", "12rem", "12rem", "14rem"]}
           />
           <LogoLink
             to='https://www.ubereats.com/ca/store/nongbu-korean-eatery-104-st/1Y-WFnTDTZ2yh5xB01bLaw'
             name='Uber Eats'
             src='ubereats.webp'
-            width={["200px", "200px", "240px", "260px"]}
+            w={["8rem", "12rem", "12rem", "14rem"]}
           />
           <LogoLink
             to='https://www.fantuanorder.com/store/nongbu-korean-eatery/ca-9090'
             name='Fantuan'
             src='fantuan.webp'
-            width={["200px", "200px", "240px", "260px"]}
+            w={["8rem", "12rem", "12rem", "14rem"]}
           />
         </Flex>
       </SectionFlexContentContainer>

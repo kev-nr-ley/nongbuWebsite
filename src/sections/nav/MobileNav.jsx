@@ -29,7 +29,7 @@ export default function MobileNav(props) {
       alignItems='center'
       color={colors.light}
       bg={isMenuOpen ? "gray.700" : colors.backgroundDark50}
-      w={isMenuOpen ? "70vw" : "100vw"}
+      w={isMenuOpen ? "70vw" : "0"}
       h={isMenuOpen ? "100vh" : "80px"}
       {...props}>
       <Box //menu icon container
@@ -40,14 +40,14 @@ export default function MobileNav(props) {
         py='2vw'
         zIndex='999999999'>
         <IconButton
-          icon={isMenuOpen ? <CloseIcon /> : <FaBars />}
+          fontSize='2.5rem'
+          icon={isMenuOpen ? <CloseIcon fontSize='2rem' /> : <FaBars fontSize='2.5rem' />}
           bg='transparent'
           _hover={{
             bg: "transparent",
             color: "primary",
           }}
           onClick={handleLink}
-          fontSize='48px'
         />
       </Box>
 
