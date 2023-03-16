@@ -8,13 +8,16 @@ export default function SectionFlexContentContainer(props) {
 
   return (
     <Flex
+      className='SectionFlexContentContainer'
       flexDirection='column'
-      h='fit-content'
-      minW='300px'
-      justifyContent={"center"}
-      gap='8'
+      minW='18rem'
+      maxW='100%'
+      // border='1px solid purple'
+      // bg='#ff00ff30'
       px='1rem'
-      w='100%'
+      py='2rem'
+
+
       {...props}>
       {props.headingtext ? (
         <Heading variant='mediumHeading'>{props.headingtext}</Heading>
@@ -28,7 +31,7 @@ export default function SectionFlexContentContainer(props) {
 
       {props.linktext ? (
         <ChakraLinkArrow
-          variant='sectionLink'
+          color={colors.primary}
           to={props.linkto || "/"}
           name={props.linktext}
         />

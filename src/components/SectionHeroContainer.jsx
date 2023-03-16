@@ -8,6 +8,7 @@ export default function SectionHeroContainer(props) {
       flexDirection='column'
       position='relative'
       h={props.h || "100vh"}
+      minW='20rem'
       w='100vw'
       maxW='100%'
       alignItems='center'

@@ -1,6 +1,6 @@
 import React from "react";
-
 import { Box, Image } from "@chakra-ui/react";
+
 export default function NongbuImageContainer(props) {
   const path = "/images/";
   const type = ".webp";
@@ -10,6 +10,7 @@ export default function NongbuImageContainer(props) {
       position={props.position || "relative"}
       w={props.w || "100%"}
       h={props.h || "100%"}
+      minW={props.minW}
       zIndex={props.zIndex || "1"}
       {...props}>
       <Image
@@ -19,10 +20,8 @@ export default function NongbuImageContainer(props) {
         name={props.name}
         src={path + props.filename + type}
         alt={`Image of ${props.name}`}
-        objectPosition = {props.objectPosition || "center"}
+        objectPosition={props.objectPosition || "center"}
         aria-label={`Image of ${props.name}`}></Image>
     </Box>
   );
 }
-
-

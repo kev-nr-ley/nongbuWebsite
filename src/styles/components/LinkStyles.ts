@@ -8,6 +8,7 @@ export const LinkStyles: ComponentStyleConfig = {
     letterSpacing: "1.25px",
     w: "fit-content",
     fontWeight: "500",
+    // border: "1px solid primary",
     _hover: {},
   },
   // styles for different sizes ("sm", "md", "lg")
@@ -21,10 +22,13 @@ export const LinkStyles: ComponentStyleConfig = {
       position: "relative",
       transition: "all 0.2s ease-in-out",
       _hover: {
+        textDecoration: "none",
         color: "primary",
         // letterSpacing: "0.2rem",
       },
 
+
+
       _after: {
         content: '" "',
         display: "block",
@@ -36,29 +40,11 @@ export const LinkStyles: ComponentStyleConfig = {
       },
     },
 
-    sectionLink: {
-      bg: "transparent",
-      color: "green",
-      fontSize: "20px",
-      fontWeight: "700",
-      pr: "2",
-      w: "fit-content",
-      _after: {
-        content: '" "',
-        display: "block",
-        width: "0%",
-        mt: "2px",
-        height: "2px",
-        backgroundColor: "brand.highlight",
-        transition: "width 0.3s",
-      },
-      _hover: {
-        textDecoration: "none",
-        _after: {
-          width: "100%",
-        },
-      },
+    smallText: {
+      fontSize: "1rem",
+      fontWeight: "500",
     },
+
 
     mediumText: {
       fontSize: "1.25rem",
@@ -92,6 +78,7 @@ export const LinkStyles: ComponentStyleConfig = {
       },
       _hover: {
         color: "white",
+
         _after: {
           width: "100%",
         },
@@ -113,6 +100,7 @@ export const LinkStyles: ComponentStyleConfig = {
       },
 
       _hover: {
+        textDecoration: "none",
         // color: "primary",
         _after: {
           width: "100%",
@@ -121,31 +109,24 @@ export const LinkStyles: ComponentStyleConfig = {
     },
 
     sectionLink: {
-      bg: "transparent",
+      fontSize: "1.25rem",
       color: "primary",
-      fontSize: "20px",
-      fontWeight: "700",
-      pr: "2",
-      w: "fit-content",
-
-      _hover: {
-        color: "primary",
-        _after: {
-          width: "100%",
-        },
-      },
-      _active: {
-        color: "primary",
-      },
-
+      fontWeight: "500",
       _after: {
         content: '" "',
         display: "block",
         width: "0%",
-        mt: "2px",
+        mt: "1px",
         height: "2px",
-        backgroundColor: "brand.highlight",
+        backgroundColor: "primary",
         transition: "width 0.3s",
+      },
+
+      _hover: {
+        textDecoration: "none",
+        _after: {
+          width: "100%",
+        },
       },
     },
   },

@@ -72,6 +72,8 @@ export default function MenuItem(props) {
         </Text> */}
       </Flex>
 
+      
+
       {props.description ? (
         <Text className='menu-item-description' variant='menuBody'>
           {props.description} <br />

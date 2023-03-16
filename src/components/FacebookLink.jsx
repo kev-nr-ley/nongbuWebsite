@@ -6,7 +6,7 @@ import {FaFacebook} from "react-icons/fa";
 import ChakraLink from "./ChakraLink.jsx";
 export default function FacebookLink(props) {
   return (
-    <ChakraLink to='facebook.com' name='facebook' fontSize='52px' {...props}>
+    <ChakraLink to='facebook.com' name='facebook' fontSize='3rem' {...props}>
       <FaFacebook />
     </ChakraLink>
   );

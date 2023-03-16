@@ -4,7 +4,9 @@ import { Flex, Text, Heading, Grid, Box } from "@chakra-ui/react";
 import Hours from "@components/Hours";
 import ImageContainer from "@components/ImageContainer";
 import ChakraLink from "@components/ChakraLink";
-
+import ContactInfo from "@components/ContactInfo";
+import LocationInfo from "@components/LocationInfo";
+import NongbuImageContainer from "../../components/NongbuImageContainer";
 export default function Hero(props) {
   const { colors } = useTheme();
 
@@ -18,15 +20,15 @@ export default function Hero(props) {
       color={colors.light}
       overflow='hidden'
       {...props}>
-      <ImageContainer
+      <NongbuImageContainer
         objectPosition='100% 100%'
         position={["static", "absolute", "absolute"]}
-        w={["100vw", "100%", "80vw", "70vw"]}
+        w={["100%", "100%", "80vw", "70vw"]}
         h={["30vh", "100%", "100%", "100vh"]}
         right={["none", "0", "0"]}
         top={["none", "0", "0"]}
         zIndex='4'
-        image='nongbu-contact-1.webp'
+        filename='nongbu-contact-1'
       />
 
       <Flex //Text block
@@ -34,64 +36,25 @@ export default function Hero(props) {
         justifyContent='center'
         bg={colors.backgroundDark} //for desktop
         zIndex='5'
-        gap='8'
         px='5vw'
-        py='5vh'
+        gap='2rem'
         minW={["100vw", "60vw", "30vw", "30vw"]}
         h={["100%", "100vh", "100vh", "100vh"]}>
-        <Heading as='h3' variant='mediumHeading'>
-          Contact us
-        </Heading>
+        <Box>
+          {" "}
+          <Heading as='h3' variant='mediumHeading'>
+            Contact us
+          </Heading>
+          <Text variant='bodyText' maxW='24rem'>
+            Book a table, order takeout, inquire about private events and
+            catering, ask about our menu... etc.
+          </Text>
+        </Box>
 
-        <Text maxW='400px'>
-          Book a table, order takeout, inquire about private events and
-          catering, ask about our menu... etc.
-        </Text>
-
-        <Grid gap='8' p='4' w='100%' maxW='400px'>
-          <Flex
-            flexDirection={["column", "row"]}
-            justifyContent={"space-between"}>
-            <Text as='span' variant='mediumText' letterSpacing='2px'>
-              Call
-            </Text>
-            <ChakraLink
-              variant='heroLink'
-              to='tel:7809890997'
-              name='(780) 989 0997'
-              color={colors.primary}
-            />
-          </Flex>
-
-          <Flex
-            flexDirection={["column", "row"]}
-            justifyContent={"space-between"}>
-            <Text as='span' variant='mediumText' letterSpacing='2px'>
-              Email
-            </Text>
-            <ChakraLink
-              variant='heroLink'
-              to='mailto:jahn@nongbu.ca'
-              name='jahn@nongbu.ca'
-              color={colors.primary}
-            />
-          </Flex>
-
-          {/* <Flex
-            flexDirection={["column", "row"]}
-            justifyContent={"space-between"}>
-            <Text as='span' variant='mediumText' letterSpacing='2px'>
-              Reservations
-            </Text>
-            <ChakraLink
-              variant='heroLink'
-              to='/contact'
-              name='Book a table'
-              color={colors.primary}
-            />
-          </Flex> */}
-        </Grid>
-        <Hours border='2px' gap='8' p='4' w='100%' maxW='400px' />
+        {/* add padding to phone and email text to line up */}
+        <ContactInfo showheading='true' />
+        <Hours border='2px solid white' p='1rem' showheading='true' />
+        <LocationInfo showheading='true' />
       </Flex>
     </Flex>
   );

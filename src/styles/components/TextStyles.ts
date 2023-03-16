@@ -3,11 +3,12 @@ import { ComponentStyleConfig } from "@chakra-ui/react";
 export const TextStyles: ComponentStyleConfig = {
   // style object for base or default style
   baseStyle: {
-    mt: "1rem",
     fontSize: "1rem",
     fontWeight: "400",
     lineHeight: "1.5rem",
     letterSpacing: "0.1rem",
+    // border:'1px solid limegreen',
+    // bg:'#00ff0030'
   },
   // styles for different sizes ("sm", "md", "lg")
   sizes: {},
@@ -15,8 +16,10 @@ export const TextStyles: ComponentStyleConfig = {
   // styles for different visual variants ("outline", "solid")
   variants: {
     bodyText: {
-      lineHeight: "2rem",
-      fontWeight: "500",
+      lineHeight: "1.5rem",
+      fontWeight: "400",
+      px:'1rem',
+      my:'1rem'
     },
 
     menuCaps: {
@@ -25,17 +28,18 @@ export const TextStyles: ComponentStyleConfig = {
     },
     
     menuBody: {
-      mt:'0.25rem'
     },
 
     mediumText: {
       fontSize: "1.25rem",
       fontWeight: "500",
+      px:'1rem'
     },
 
     bigText: {
       fontSize: "1.5rem",
       fontWeight: "700",
+      px:'1rem'
     },
 
     largeText: {

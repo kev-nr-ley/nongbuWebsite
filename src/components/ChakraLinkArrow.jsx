@@ -8,7 +8,7 @@ function ChakraLinkArrow(props, children) {
   return (
     <NewLink
       as={Link}
-      variant={props.variant || "fancyLink"}
+      variant={"sectionLink"}
       to={props.to || "/"}
       name={props.name}
       onClick={props.onClick || null}

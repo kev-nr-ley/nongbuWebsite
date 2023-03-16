@@ -1,7 +1,6 @@
 import React from "react";
 import { useTheme } from "@chakra-ui/react";
 import { Flex, Image, Box, Text, Heading } from "@chakra-ui/react";
-import ChakraLinkArrow from "@components/ChakraLinkArrow";
 import SectionFlexContentContainer from "@components/SectionFlexContentContainer";
 import SectionFlexContainer from "@components/SectionFlexContainer";
 import NongbuImageContainer from "@components/NongbuImageContainer";
@@ -14,23 +13,18 @@ function Events(props) {
       flexDirection={["column", "row-reverse", "row-reverse", "row-reverse"]}
       bg={colors.backgroundDark}
       color={colors.light}
-      gap={["0", "12", "12", "12"]}
       h={["auto", "80vh", "80vh", "80vh"]}
-      w='100vw'
-      maxW='100%'
-      overflow='hidden'
+      justifyContent='center'
       alignItems='center'
-      justifyContent='space-between'
       
       {...props}>
       <NongbuImageContainer
         overflow='hidden'
-        filename='nongbu-3'
-        alignSelf='flex-end'
-        justifySelf='flex-end'
-        w={["100vw", "auto", "auto", "auto"]}
+      p={['0', '0', '5vw']}
+          filename='nongbu-3'
+        w={["100%", "auto", "auto", "65vw"]}
         h={["30vh", "100%", "100%", "100%"]}
-        objectPosition={["0% 50%", "20% 50%", "0% 0%", "0% 0%"]}
+        objectPosition={["0% 50%", "20% 50%", "0% 0%", "50% 100%"]}
         objectFit='cover'
       />
 
@@ -39,11 +33,10 @@ function Events(props) {
         headingtext='Use our space and services.'
         linktext='Get in touch'
         linkto='/events'
-        justifySelf='flex-end'
-        
+        w={["100%", "60%", "30%"]}
+        alignItems='flex-start'
         color={colors.light}>
-        <Text 
-        >
+        <Text variant='bodyText'>
           Are you looking for a private and modern space for your event? Do you
           have guests to feed? We might be able to help with your venue and
           catering needs.

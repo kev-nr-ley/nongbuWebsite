@@ -57,15 +57,11 @@ export default function MobileNav(props) {
         justifyContent='center'
         gap='8'
         px='5vw'>
-        <HStack gap='4' mb={"10vh"}>
           <NongbuLogoLink
             position={["static"]}
             zIndex='999999999'
             onClick={handleLink}
           />
-
-          <NongbuBannerLink />
-        </HStack>
         <ChakraLink
           variant='bigNavLink'
           to='/Menu'

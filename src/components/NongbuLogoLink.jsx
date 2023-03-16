@@ -5,12 +5,8 @@ export default function NongbuLogoLink(props) {
   return (
       <Link to='/' w='60px' h='60px'>
         <Image
-        w='60px'
-        h='60px'
-        minW='60px'
-        minH='60px'
-        maxW='60px'
-        maxH='60px'
+          w='5rem'
+          h='5rem'
           objectFit='contain'
           objectPosition='center'
           src={`/logos/nongbu-logo.webp`}

@@ -11,58 +11,69 @@ export default function Hero(props) {
     <SectionFlexContainer
       flexDirection='column'
       position='relative'
-      h='100vh'
+      h='fit-content'
       w='100vw'
       maxW='100%'
-      px={["1rem", "1rem", "10vw", "20vw"]}
       bg={colors.backgroundDark}
       color={colors.light}
       overflow='hidden'
       alignItems='center'
       justifyContent='center'
-      gap='20vh'
+      gap='10vh'
       {...props}>
+      {/* Align text to left, inline with left edge of image */}
       <SectionFlexContentContainer
         flexDirection='column'
         h='fit-content'
-        py=''
-        w='100%'
+        w={["100%", "100%", "80%", "60%"]}
         maxW='100vw'
-        mt={["4rem", "4rem", "4rem", "2rem"]}
+        mt='5vh' //need for mobile banner
         {...props}>
-        <Heading variant='largeHeading' mt={["4rem", "4rem", "2rem", "0rem"]}>
+        <Heading
+          variant={[
+            "medLargeHeading",
+            "largeHeading",
+            "largeHeading",
+            "largeHeading",
+          ]}>
           It is our desire to have our guests leave every NongBu experience
           happy, full, and a little more knowledgeable about our little country.
         </Heading>
       </SectionFlexContentContainer>
 
+      {/* One picture for mobile and tablet1 */}
+      {/* fix resizing on small screen */}
       <Flex
         position='relative'
-        left={["0", "0", "10%", "10%"]}
-        gap={["0", "0", "4", "4"]}>
+        // left={["0", "0", "10%", "10%"]}
+        gap={["0", "0", "4", "4"]}
+        >
         <NongbuImageContainer
+          minW='30vw'
           w={["100%", "100%", "30vw", "30vw"]}
           h={["100%", "100%", "30vw", "30vw"]}
           filename='nongbu-about-1'
           name='nongbu entrance'
-          flexShrink='1'
+          // flexShrink='1'
         />
 
         <NongbuImageContainer
+          minW='30vw'
           w={["100%", "100%", "40vw", "40vw"]}
           h={["100%", "100%", "30vw", "30vw"]}
           filename='nongbu-about-2'
           name='Owner John Ahn'
-          flexShrink='0'
-          top='-6vh'
+          // flexShrink='0'
+          // top='-6vh'
         />
 
         <NongbuImageContainer
+          minW='30vw'
           w={["100%", "100%", "30vw", "30vw"]}
           h={["100%", "100%", "30vw", "30vw"]}
           filename='nongbu-about-3'
           name='John Ahn with facial hair'
-          flexShrink='1'
+          // flexShrink='1'
         />
       </Flex>
     </SectionFlexContainer>

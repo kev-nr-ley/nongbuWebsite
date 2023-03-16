@@ -6,6 +6,9 @@ export const HeadingStyles: ComponentStyleConfig = {
     // letterSpacing: "20px",
     fontSize: "1.25rem",
     fontWeight: "500",
+    // border:'1px solid yellow',
+    px:'1rem',
+    // bg:'#ffff0030'
   },
   // styles for different sizes ("sm", "md", "lg")
   sizes: {},
@@ -21,12 +24,26 @@ export const HeadingStyles: ComponentStyleConfig = {
       fontWeight: "700",
     },
 
+
+    medLargeHeading: {
+      fontSize: "1.75rem",
+      fontWeight: "700",
+    },
+
+
+    // make heading size smaller on mobile
     largeHeading: {
-      fontSize: "2em",
+      fontSize: '2rem',
       fontWeight: "700",
       letterSpacing: "0.15rem",
     },
 
+    heroHeading: {
+      fontSize: "2.25rem",
+      fontWeight: "700",
+      letterSpacing: "0.225rem",
+    },
+    
     sectionHeading: {
       fontWeight: "700",
     },
@@ -35,13 +52,15 @@ export const HeadingStyles: ComponentStyleConfig = {
 
     menuSection: {
       fontWeight: "700",
+      px:'0px',
     },
 
-    heroHeading: {
-      fontSize: "2.25rem",
-      fontWeight: "700",
-      letterSpacing: "0.225rem",
+    menuHeading: {
+      fontWeight: "500",
+      px:'0px',
     },
+
+  
   },
 
   // default values for 'size', 'variant' and 'colorScheme'

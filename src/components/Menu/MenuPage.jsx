@@ -105,7 +105,6 @@ export default function MenuPage(props) {
         </Heading>
         <Text
           mt='2'
-          variant='menuBody'
           color={colors.primary}
           fontStyle='italic'>
           {props.description}

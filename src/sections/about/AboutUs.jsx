@@ -20,11 +20,10 @@ export default function AboutUs() {
         linktext='View Menu'
         linkto='/menu'
         flexDirection={"column"}
-        gap='8'
         minW='240px'
-        w='800px'
+        w='80%'
         maxW='100%'>
-        <Text>
+        <Text variant='bodyText'>
           NongBu Korean Eatery opened with the mission to re-introduce
           traditional Korean food to Edmontonians. From its conception, NongBu
           wanted to fill a void in the Korean food offerings in our city. Our
@@ -50,11 +49,10 @@ export default function AboutUs() {
         linktext='Contact Us'
         linkto='/contact'
         flexDirection={"column"}
-        gap='8'
         minW='240px'
-        w='800px'
+        w='80%'
         maxW='100%'>
-        <Text>
+        <Text variant='bodyText'>
           NongBu wants to expand on what people already know about Korean
           culture. It is not just a traditional dining experience but a complete
           cultural experience. The space we designed is minimalist and

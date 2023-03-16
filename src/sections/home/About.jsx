@@ -12,33 +12,29 @@ export default function About(props) {
       bg={colors.backgroundLight}
       color={colors.dark}
       {...props}>
-
       <NongbuImageContainer
         position='relative'
-        w={["100vw", "35vw"]}
         h={["30vh", "80vh"]}
-        py='5vh'
         name='table with korean dishes and makgeolli'
         filename='nongbu-2'
+        p='5vw'
+        maxW='44rem'
+
       />
 
       <SectionFlexContentContainer
         headingtext='Welcome to NongBu.'
         linktext='View Menu'
-        linkto='/menu'
-        alignItems='center'
-        >
-        <Text>
+        linkto='/menu'>
+
+
+        <Text variant='bodyText' maxW='20rem' >
           NongBu resurrects Korean cuisine from bygone generations and
           reintroduces it to the Canadian and Korean palate alike.
-        </Text>
-
-        <Text>
+          <br /> <br />
           At NongBu, the menu is always evolving, always reaching back into
           childhood memory and rustic, rural Korean dishes.
-        </Text>
-
-        <Text>
+          <br /> <br />
           The result is a menu as nourishing and comforting as it is pioneering
           and imaginative.
         </Text>

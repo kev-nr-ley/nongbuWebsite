@@ -1,0 +1,28 @@
+import React from "react";
+import { Heading, Flex, Grid, Text, Button } from "@chakra-ui/react";
+import ChakraLink from "@components/ChakraLink";
+import { useTheme } from "@chakra-ui/react";
+export default function ContactInfo(props) {
+  const { colors } = useTheme();
+  return (
+    <Flex flexDirection='column' gap='1' w='100%' {...props}>
+  {props.showheading ? (
+
+      <Heading variant='footerHeading'>LOCATION</Heading>
+  ) : null}
+      <Flex justifyContent={"space-between"} letterSpacing='2px' px='1rem'>
+        <Text mt='1rem'>
+          8125 104st NW <br /> Edmonton, AB
+        </Text>
+      </Flex>
+      <Button w='fit-content' color={colors.dark} borderRadius='0' mt='1rem' mx='1rem'>
+        <ChakraLink
+          variant='heroLink'
+          to='https://goo.gl/maps/yjVFxw69rWZYhbN18'
+          name='DIRECTIONS'
+          color='dark'
+        />
+      </Button>
+    </Flex>
+  );
+}

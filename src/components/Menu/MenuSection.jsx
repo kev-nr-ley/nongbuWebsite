@@ -27,7 +27,7 @@ export default function MenuSection(props) {
         as='h2'
         mt='4'
         className='menu-section-heading'
-        variant='menuBody'
+        variant='menuHeading'
         color={colors.primary}>
         {props.name}
       </Heading>

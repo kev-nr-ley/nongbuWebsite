@@ -15,7 +15,7 @@ const ChakraBox = chakra(motion.div, {
 export default function About(props) {
   return (
     <Suspense fallback={<LoadingScreen />}>
-      <Box {...props}>
+      <Box className='Page' minW='20rem' {...props}>
         <ChakraBox
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

@@ -1,6 +1,14 @@
 import React from "react";
 
-import { Flex, VStack, Heading, Text, Grid, Image } from "@chakra-ui/react";
+import {
+  Flex,
+  VStack,
+  Heading,
+  Text,
+  Grid,
+  Image,
+  Box,
+} from "@chakra-ui/react";
 
 import { useTheme } from "@chakra-ui/react";
 import SectionFlexContentContainer from "@components/SectionFlexContentContainer";
@@ -26,26 +34,28 @@ function Magazine(props) {
           Awards
         </Heading>
 
-        <Heading variant='smallHeading' mt='4' mb='2'>
-          Edify Edmonton (Avenue Magazine)
-        </Heading>
-        <Text>1st, Best New Restaurant, 2016</Text>
-        <Text>1st, Best Korean Restaurant, 2016</Text>
-        <Text>1st, Best Korean Restaurant, 2017</Text>
-        <Text>Honourable Mention,</Text>
-        <Text>Best Overall Restaurant, 2018</Text>
+        <VStack pt='1rem'>
+          <Heading variant='smallHeading'>
+            Edify Edmonton (Avenue Magazine)
+          </Heading>
+          <Text>1st, Best New Restaurant, 2016</Text>
+          <Text>1st, Best Korean Restaurant, 2016</Text>
+          <Text>1st, Best Korean Restaurant, 2017</Text>
+          <Text>Honourable Mention,</Text>
+          <Text>Best Overall Restaurant, 2018</Text>
+        </VStack>
 
-        <Heading variant='smallHeading' mt='4' mb='2'>
-          Vue Weekly
-        </Heading>
-        <Text> 1st, Best Korean Restaurant, 2016</Text>
-        <Text>1st, Best Korean Restaurant, 2017</Text>
-        <Text>1st, Best Korean Restaurant, 2018</Text>
+        <VStack pt='1rem'>
+          <Heading variant='smallHeading'>Vue Weekly</Heading>
+          <Text> 1st, Best Korean Restaurant, 2016</Text>
+          <Text>1st, Best Korean Restaurant, 2017</Text>
+          <Text>1st, Best Korean Restaurant, 2018</Text>
+        </VStack>
 
-        <Heading variant='smallHeading' mt='4' mb='2'>
-          Where Magazine
-        </Heading>
-        <Text> 2nd, Best New Restaurant, 2016</Text>
+        <VStack pt='1rem'>
+          <Heading variant='smallHeading'>Where Magazine</Heading>
+          <Text> 2nd, Best New Restaurant, 2016</Text>
+        </VStack>
       </VStack>
 
       <Image

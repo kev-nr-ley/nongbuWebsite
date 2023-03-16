@@ -14,20 +14,15 @@ function Takeout(props) {
     <SectionFlexContainer
       bg={colors.backgroundLight} //section container,
       color={colors.dark}
-      p={["0", "5vw", "5vw", "5vw"]}
       {...props}>
       <NongbuImageContainer
-        w={["100vw", "60vw", "50vw", "50vw"]}
-        h={["30vh", "auto", "auto", "auto"]}
-        minW='240px'
-        maxW='600px'
         filename='nongbu-4'
         name='plate of ddeokbbokki'
+        p={['0', '0', '5vw']}
+        maxW='44rem'
       />
-      <SectionFlexContentContainer
-        headingtext='Get NongBu to-go or delivered right to your door.'
-        w={["100%", "30%", "30%", "25%"]}>
-        <Flex gap='8' flexDirection='column' alignItems={"center"}>
+      <SectionFlexContentContainer headingtext='Get NongBu to-go or delivered right to your door.'>
+        <Flex flexDirection='column' gap='2rem' mt='1rem' alignItems={"center"}>
           <LogoLink
             to='https://www.skipthedishes.com/nongbu-korean-eatery'
             name='Skip The Dishes'

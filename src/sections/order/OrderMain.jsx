@@ -11,38 +11,35 @@ export default function OrderMain(props) {
   const { colors } = useTheme();
   return (
     <SectionFlexContainer //section container
-      flexDirection={["column", "column", "row", "row"]}
+      flexDirection={["column", "column", "column", "row"]}
       bg={colors.backgroundDark} //section container,
       color={colors.light}
       position='relative'
       justifyContent={"center"}
       alignItems='center'
-      px={["1rem", "1rem", "10vw", "20vw"]}
       gap='12'
+      minH='90vh'
       {...props}>
       <NongbuImageContainer
-        // zIndex={1}
-        w={["100vw", "100vw", "60vw", "50vw"]}
+        w={["100vw", "100vw", "100vw", "50vw"]}
         h={["30vh", "40vh", "auto", "auto"]}
         filename='nongbu-4'
         name='plate of ddeokkbokki'
-        minW='400px'
+        minW='20rem'
         maxW='800px'
       />
 
       <SectionFlexContentContainer
         headingtext='Get NongBu to-go or delivered'
         flexDirection={["column", "column", "column", "column"]}
-        gap='8'
-        mt={["4rem", "4rem", "4rem", "2rem"]}
-        w={["100%", "100%", "100%", "100%"]}
-        maxW='600px'>
+        maxW='32rem'
+        >
         <Flex
           flexWrap='wrap'
           alignItems='center'
           justifyContent='center'
           gap='1rem'>
-          <Text minW='240px' w='100%' max='400px'>
+          <Text variant='bodyText'>
             Look at our menu and give us a call to pick up your order, or get
             NongBu delivered right to your door using one of these apps:
           </Text>
