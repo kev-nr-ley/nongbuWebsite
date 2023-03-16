@@ -11,27 +11,45 @@ export default function Hero(props) {
     <SectionHeroContainer h={["100vh", "100vh", "80vh", "80vh"]} {...props}>
       <Flex
         flexDirection='column'
-        bg={colors.backgroundDark}
-        zIndex='1'
-        w={['20rem', '20rem', '30rem', '48rem']}
+        // bg={colors.backgroundDark}
+        bg='red.700'
+        zIndex='2'
+        w={["20rem", "20rem", "30rem", "100%"]}
+        h='30vh'
+        alignItems='center'
+        justifyContent={"center"}
         >
-        <Heading variant='heroHeading' color='light'>
-          Welcome To NongBu Korean Eatery.
-        </Heading>
-        <Text variant='mediumText' color='light'>
-          It is our desire to have our guests leaver NongBu experience happy,
-          full and a little more knowledgeable about our little country.{" "}
-        </Text>
-        <VStack alignSelf='flex-end' w='fit-content'>
-          <ChakraLinkArrow to='/menu' name='View Menu' variant='heroLink' />
-          <ChakraLinkArrow
-            to='/contact'
-            name='Book a table'
-            variant='heroLink'
-          />
+        <VStack
+          zIndex='2'
+          w={["20rem", "20rem", "30rem", "48rem"]}
+          bg='red.300'>
+          <Heading variant='heroHeading' color='light'>
+            Welcome To NongBu Korean Eatery.
+          </Heading>
+          <Text variant='mediumText' color='light'>
+            It is our desire to have our guests leaver NongBu experience happy,
+            full and a little more knowledgeable about our little country.{" "}
+          </Text>
+          <VStack alignSelf='flex-end' w='fit-content'>
+            <ChakraLinkArrow to='/menu' name='View Menu' variant='heroLink' />
+            <ChakraLinkArrow
+              to='/contact'
+              name='Book a table'
+              variant='heroLink'
+            />
+          </VStack>
         </VStack>
       </Flex>
-
+      <NongbuImageContainer
+        bottom='0'
+        left='0'
+        position='absolute'
+        h='100%'
+        zIndex='0'
+        filename='nongbu-1'
+        name='table with korean dishes'
+        // p='5vw'
+      />
       {/* <Hours
         zIndex='9'
         w='18rem'
@@ -49,17 +67,6 @@ export default function Hero(props) {
         p='1rem'
         showheading='true'
       /> */}
-
-      <NongbuImageContainer
-        bottom='0'
-        left='0'
-        position='absolute'
-        h='100%'
-        zIndex='0'
-        filename='nongbu-1'
-        name='table with korean dishes'
-        p='5vw'
-      />
     </SectionHeroContainer>
   );
 }

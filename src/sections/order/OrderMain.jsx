@@ -36,8 +36,10 @@ export default function OrderMain(props) {
           flexWrap='wrap'
           alignItems='center'
           justifyContent='center'
-          gap='1rem'>
-          <Text variant='bodyText'>
+          gap='1rem'
+          
+          >
+          <Text variant='bodyText' bg='red'>
             Look at our menu and give us a call to pick up your order, or get
             NongBu delivered right to your door using one of these apps:
           </Text>

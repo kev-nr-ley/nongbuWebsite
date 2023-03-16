@@ -43,8 +43,7 @@ export const ButtonStyles: ComponentStyleConfig = {
       letterSpacing: "0.2em",
       fontSize: "1.2rem",
       w: "100%",
-      ml: "1rem",
-      bg: "green",
+
       _hover: {
         color: "white",
       },
