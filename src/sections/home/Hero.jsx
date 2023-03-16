@@ -20,7 +20,9 @@ export default function Hero(props) {
         justifyContent={"center"}>
         <VStack
           zIndex='2'
-          w={["20rem", "20rem", "30rem", "48rem"]}
+          w={["100%", "100%", "30rem", "48rem"]}
+          px='5vw'
+          pb='5vw'
           // bg={colors.backgroundDark}
 
           // bg='red.300'
