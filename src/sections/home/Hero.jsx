@@ -20,17 +20,17 @@ export default function Hero(props) {
         justifyContent={"center"}>
         <VStack
           zIndex='2'
-          w={["100%", "100%", "30rem", "48rem"]}
+          w={["100%", "100%", "48rem", "48rem"]}
           px='5vw'
           pb='5vw'
           // bg={colors.backgroundDark}
 
           // bg='red.300'
         >
-          <Heading variant='heroHeading' color='light'>
+          <Heading variant={['mediumHeading','mediumHeading', 'heroHeading']} color='light'>
             Welcome To NongBu Korean Eatery.
           </Heading>
-          <Text variant='mediumText' color='light'>
+          <Text variant={['smallText', 'smallText', 'mediumText']} color='light'>
             It is our desire to have our guests leaver NongBu experience happy,
             full and a little more knowledgeable about our little country.{" "}
           </Text>
@@ -66,7 +66,7 @@ export default function Hero(props) {
         name='table with korean dishes'
         // p='5vw'
       />
-      {/* <Hours
+      <Hours
         zIndex='9'
         w='18rem'
         position='absolute'
@@ -82,7 +82,7 @@ export default function Hero(props) {
         bg='backgroundLight'
         p='1rem'
         showheading='true'
-      /> */}
+      />
     </SectionHeroContainer>
   );
 }
