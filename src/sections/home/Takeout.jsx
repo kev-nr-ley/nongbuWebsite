@@ -12,8 +12,11 @@ function Takeout(props) {
 
   return (
     <SectionFlexContainer
+      flexDirection={["column", "column", "column", "row"]}
       bg={colors.backgroundLight} //section container,
       color={colors.dark}
+      px='5vw'
+py='5vw'
       {...props}>
       <NongbuImageContainer
         filename='nongbu-4'

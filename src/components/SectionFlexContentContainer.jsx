@@ -34,6 +34,7 @@ export default function SectionFlexContentContainer(props) {
           color={colors.primary}
           to={props.linkto || "/"}
           name={props.linktext}
+          alignSelf={props.linkalign || "flex-start"}
         />
       ) : null}
     </Flex>
