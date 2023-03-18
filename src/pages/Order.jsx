@@ -1,10 +1,10 @@
 import React from "react";
-import OrderMain from "@sections/order/OrderMain";
-import Page from "@components/Page";
+import OrderHero from "@sections/order/OrderHero";
+import Page from "@components/layout/Page";
 export default function Order(props) {
   return (
     <Page {...props}>
-      <OrderMain />
+      <OrderHero />
     </Page>
   );
 }

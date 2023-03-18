@@ -18,36 +18,41 @@ export const TextStyles: ComponentStyleConfig = {
     bodyText: {
       lineHeight: "1.5rem",
       fontWeight: "400",
-      px:'1rem',
-      my:'1rem'
+      px: "1rem",
+      my: "1rem",
     },
 
     menuCaps: {
       fontWeight: "700",
       textTransform: "uppercase",
     },
-    
-    menuBody: {
+
+    menuBody: {},
+
+    smallText: {
+      fontSize: "1rem",
+      fontWeight: "500",
+      // px: "1rem",
+      letterSpacing: "0.125rem",
     },
 
     mediumText: {
       fontSize: "1.25rem",
       fontWeight: "500",
-      px:'1rem',
-      letterSpacing: "0.125rem",
+      // px: "1rem",
+      letterSpacing: "0.15rem",
     },
 
     bigText: {
       fontSize: "1.5rem",
       fontWeight: "700",
-      px:'1rem'
+      px: "1rem",
     },
 
     largeText: {
       fontSize: "2rem",
       fontWeight: "700",
     },
-
 
     menuItalic: {
       fontStyle: "italic",

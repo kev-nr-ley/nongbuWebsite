@@ -2,7 +2,9 @@ import React from "react";
 import { useTheme } from "@chakra-ui/react";
 import { Flex, Image, Box, Text, Heading } from "@chakra-ui/react";
 import ChakraLinkArrow from "@components/ChakraLinkArrow";
-import NongbuImageContainer from "@components/NongbuImageContainer";
+import NongbuImageContainer from "@components/layout/NongbuImageContainer";
+
+
 export default function SectionFlexContentContainer(props) {
   const { colors } = useTheme();
 
@@ -16,11 +18,11 @@ export default function SectionFlexContentContainer(props) {
       // bg='#ff00ff30'
       px='1rem'
       py='2rem'
-
-
       {...props}>
       {props.headingtext ? (
-        <Heading variant={props.headingvariant || 'mediumHeading' }>{props.headingtext}</Heading>
+        <Heading variant={props.headingvariant || "mediumHeading"}>
+          {props.headingtext}
+        </Heading>
       ) : null}
 
       {props.headingsubtext ? (

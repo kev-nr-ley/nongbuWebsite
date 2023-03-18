@@ -7,14 +7,12 @@ export default function ContactInfo(props) {
   return (
     <Flex flexDirection='column' gap='1' w='100%' {...props}>
       {props.showheading ? (
-        <Heading variant='footerHeading' px='0'>CONTACT</Heading>
+        <Heading variant='footerHeading' px='0'>
+          CONTACT
+        </Heading>
       ) : null}
 
-      <Flex
-        justifyContent={"space-between"}
-        letterSpacing='2px'
-        mt='1rem'
-        >
+      <Flex justifyContent={"space-between"} letterSpacing='2px' mt='1rem'>
         <Text>Phone </Text>{" "}
         <ChakraLink
           variant='smallText'
@@ -23,8 +21,7 @@ export default function ContactInfo(props) {
           color={colors.primary}
         />
       </Flex>
-      <Flex justifyContent={"space-between"} letterSpacing='2px' 
-      >
+      <Flex justifyContent={"space-between"} letterSpacing='2px'>
         <Text> Email </Text>{" "}
         <ChakraLink
           variant='smallText'

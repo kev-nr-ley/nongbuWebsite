@@ -2,8 +2,10 @@ import React from "react";
 import { useTheme } from "@chakra-ui/react";
 import { Flex, Image, Box, Text, Heading } from "@chakra-ui/react";
 import ChakraLinkArrow from "@components/ChakraLinkArrow";
-import SectionFlexContentContainer from "@components/SectionFlexContentContainer";
-import NongbuImageContainer from "@components/NongbuImageContainer";
+import SectionFlexContentContainer from "@components/layout/SectionFlexContentContainer";
+import NongbuImageContainer from "@components/layout/NongbuImageContainer";
+
+
 export default function SectionFlexContainer(props) {
   const { colors } = useTheme();
 

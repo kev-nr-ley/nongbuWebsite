@@ -8,11 +8,10 @@ import {
 import {
   Box,
   Image,
-  Container,
   chakra,
   shouldForwardProp,
 } from "@chakra-ui/react";
-import Page from "@components/Page";
+import Page from "@components/layout/Page";
 import { useTheme } from "@chakra-ui/react";
 
 const ChakraBox = chakra(motion.div, {

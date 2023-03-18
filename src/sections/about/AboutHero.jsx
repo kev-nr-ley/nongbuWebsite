@@ -1,11 +1,14 @@
+
 import React from "react";
 import { Box, Flex, Heading } from "@chakra-ui/react";
 import { useTheme } from "@chakra-ui/react";
-import ImageContainer from "@components/ImageContainer";
-import SectionFlexContentContainer from "@components/SectionFlexContentContainer";
-import SectionFlexContainer from "@components/SectionFlexContainer";
-import NongbuImageContainer from "@components/NongbuImageContainer";
-export default function Hero(props) {
+import SectionFlexContentContainer from "@components/layout/SectionFlexContentContainer";
+import SectionFlexContainer from "@components/layout/SectionFlexContainer";
+
+import NongbuImageContainer from "@components/layout/NongbuImageContainer";
+
+
+export default function AboutHero(props) {
   const { colors } = useTheme();
   return (
     <SectionFlexContainer
@@ -19,7 +22,7 @@ export default function Hero(props) {
       overflow='hidden'
       alignItems='center'
       justifyContent='center'
-      gap='10vh'
+      gap='5vh'
       {...props}>
       {/* Align text to left, inline with left edge of image */}
       <SectionFlexContentContainer
@@ -31,7 +34,7 @@ export default function Hero(props) {
         {...props}>
         <Heading
           variant={[
-            "medLargeHeading",
+            "mediumHeading",
             "largeHeading",
             "largeHeading",
             "largeHeading",
@@ -58,7 +61,7 @@ export default function Hero(props) {
         />
 
         <NongbuImageContainer
-          minW='30vw'
+          minW={['100vw', '100vw', '40vw', '40vw']}
           w={["100%", "100%", "40vw", "40vw"]}
           h={["100%", "100%", "30vw", "30vw"]}
           filename='nongbu-about-2'

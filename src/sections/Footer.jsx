@@ -1,25 +1,10 @@
 import React from "react";
 import { useTheme } from "@chakra-ui/react";
-import {
-  Flex,
-  Text,
-  Heading,
-  Grid,
-  GridItem,
-  Button,
-  Box,
-} from "@chakra-ui/react";
-import ChakraLink from "@components/ChakraLink";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
-import InstagramLink from "@components/InstagramLink";
-import FacebookLink from "@components/FacebookLink";
-import { Link } from "react-router-dom";
-import FooterContent from "@components/FooterContent";
+import { Flex } from "@chakra-ui/react";
 
-import Hours from "@components/Hours";
-
-import ContactInfo from "@components/ContactInfo";
-import LocationInfo from "@components/LocationInfo";
+import Hours from "@components/smallblocks/Hours";
+import ContactInfo from "@components/smallblocks/ContactInfo";
+import LocationInfo from "@components/smallblocks/LocationInfo";
 export default function Footer(props) {
   const { colors } = useTheme();
   return (
@@ -32,7 +17,7 @@ export default function Footer(props) {
       w='100%'
       px='5vw'
       py='5vh'
-      gap='1rem'
+      gap='2rem'
       h='fit-content'
       {...props}>
       <Hours maxW='16rem' showheading='true' />

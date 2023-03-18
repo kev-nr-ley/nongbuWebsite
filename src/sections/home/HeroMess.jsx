@@ -7,7 +7,7 @@ import CanvasCurve from "@components/CanvasCurve";
 import CanvasCurveOfCircle from "../../components/CanvasCurveOfCircle";
 import backgroundCurve from "/svgs/backgroundCurve.svg";
 import BackgroundEllipse from "../../components/BackgroundEllipse";
-import Hours from "@components/Hours";
+import Hours from "@components/smallblocks/Hours";
 function Hero(props) {
   const { colors } = useTheme();
   const [screenWidth, setScreenWidth] = useState(0);

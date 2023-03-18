@@ -1,15 +1,16 @@
 import React from "react";
-import Magazine from "@sections/about/Magazine";
-import AboutUs from "@sections/about/AboutUs";
-import Hero from "@sections/about/Hero";
-import Page from "@components/Page";
+import Page from "@components/layout/Page";
+
+import AboutHero from "@sections/about/AboutHero";
+import AboutIntroduction from "@sections/about/AboutIntroduction";
+import AboutAwards from "@sections/about/AboutAwards";
 
 export default function About(props) {
   return (
     <Page {...props}>
-      <Hero />
-      <AboutUs />
-      <Magazine />
+      <AboutHero />
+      <AboutIntroduction />
+      <AboutAwards />
     </Page>
   );
 }

@@ -1,16 +1,12 @@
 import React from "react";
 import { useTheme } from "@chakra-ui/react";
-import { Flex, Text, Heading, Grid, Box } from "@chakra-ui/react";
-import Hours from "@components/Hours";
-import ImageContainer from "@components/ImageContainer";
-import ChakraLink from "@components/ChakraLink";
-import ContactInfo from "@components/ContactInfo";
-import LocationInfo from "@components/LocationInfo";
-import NongbuImageContainer from "../../components/NongbuImageContainer";
-import SectionFlexContainer from "../../components/SectionFlexContainer";
-import SectionFlexContentContainer from "../../components/SectionFlexContentContainer";
+import { Flex, Text, Heading, Box } from "@chakra-ui/react";
+import Hours from "@components/smallblocks/Hours";
+import ContactInfo from "@components/smallblocks/ContactInfo";
+import LocationInfo from "@components/smallblocks/LocationInfo";
+import SectionFlexContentContainer from "@components/layout/SectionFlexContentContainer";
 
-export default function Hero(props) {
+export default function ContactHero(props) {
   const { colors } = useTheme();
 
   return (
@@ -55,11 +51,10 @@ export default function Hero(props) {
           </Text>
         </Box>
 
-
         <ContactInfo showheading={false} />
         <Hours border='2px solid white' p='1rem' showheading='false' />
 
-        {/* <LocationInfo showheading='true' /> */}
+        <LocationInfo showheading='true' />
       </Flex>
     </Flex>
   );

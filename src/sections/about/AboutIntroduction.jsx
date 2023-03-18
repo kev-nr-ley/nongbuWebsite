@@ -2,10 +2,13 @@ import React from "react";
 import { Flex, Heading, Text } from "@chakra-ui/react";
 import ChakraLinkArrow from "@components/ChakraLinkArrow";
 import { useTheme } from "@chakra-ui/react";
-import SectionFlexContentContainer from "@components/SectionFlexContentContainer";
-import SectionFlexContainer from "@components/SectionFlexContainer";
-import NongbuImageContainer from "@components/NongbuImageContainer";
-export default function AboutUs() {
+import SectionFlexContentContainer from "@components/layout/SectionFlexContentContainer";
+import SectionFlexContainer from "@components/layout/SectionFlexContainer";
+
+import NongbuImageContainer from "@components/layout/NongbuImageContainer";
+
+
+export default function AboutIntroduction() {
   const { colors } = useTheme();
   return (
     <SectionFlexContainer

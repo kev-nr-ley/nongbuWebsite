@@ -1,20 +1,21 @@
 import React from "react";
-import { Box, Flex, IconButton, Text, HStack } from "@chakra-ui/react";
-import EarLogoLink from "@components/EarLogoLink";
+import { Box, Flex, IconButton } from "@chakra-ui/react";
 import ChakraLink from "@components/ChakraLink";
-import NongbuLogoLink from "@components/NongbuLogoLink";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { CloseIcon } from "@chakra-ui/icons";
 import { useTheme } from "@chakra-ui/react";
-import InstagramLink from "../../components/InstagramLink";
-import FacebookLink from "../../components/FacebookLink";
-import NongbuBannerLink from "../../components/NongbuBannerLink";
+
+import {
+  InstagramLink,
+  FacebookLink,
+  NongbuLogoLink,
+  EarLogoLink,
+} from "@components/LogoLinks";
 export default function MobileNav(props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { colors } = useTheme();
+
   const handleLink = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -26,7 +27,6 @@ export default function MobileNav(props) {
       top='0'
       right='0'
       zIndex='99999999999'
-      // alignItems='center'
       pt='1rem'
       color={colors.light}
       bg={isMenuOpen ? "gray.700" : colors.backgroundDark50}
@@ -35,16 +35,24 @@ export default function MobileNav(props) {
       {...props}>
       <Box //menu icon container
         position='absolute'
-        top='0'
-        right='0'
-        px='2vw'
-        py='2vw'
+        top='1rem'
+        right='1rem'
+        // px='2vw'
+        // py='2vw'
         zIndex='999999999'>
+        <NongbuLogoLink
+          position={["fixed"]}
+          top='1rem'
+          left='1rem'
+          zIndex='999999999'
+          iconsize={["2.5rem", "2.5rem", "4rem"]}
+        />
+
         <IconButton
           fontSize='2.5rem'
           icon={
             isMenuOpen ? (
-              <CloseIcon fontSize='2rem' />
+              <CloseIcon fontSize={["1.25rem", "1.5rem", "2rem"]} />
             ) : (
               <FaBars fontSize='2.5rem' />
             )
@@ -61,40 +69,67 @@ export default function MobileNav(props) {
       <Flex
         display={isMenuOpen ? "flex" : "none"}
         flexDirection='column'
-        gap='8'
+        gap={["2", "4", "6"]}
+        // bg='red'
         alignItems='flex-start'
-        justifyContent='flex-start'
+        justifyContent='space-evenly'
         px='5vw'>
-        <NongbuLogoLink
+        {/* <NongbuLogoLink
           position={["static"]}
           zIndex='999999999'
           onClick={handleLink}
-        />
-        <ChakraLink
-          variant='bigNavLink'
-          to='/Menu'
-          name='Menu'
-          onClick={handleLink}
-        />
-        <ChakraLink
-          variant='bigNavLink'
-          to='/contact'
-          name='Reservations'
-          onClick={handleLink}
-        />
+        /> */}
 
-        <EarLogoLink />
         <Flex flexDirection='column' gap='4'>
-          <ChakraLink name='Home' to='/' onClick={handleLink} />
-          <ChakraLink to='/About' name='About' onClick={handleLink} />
-          <ChakraLink to='/Events' name='Events' onClick={handleLink} />
-          <ChakraLink to='/Order' name='Order' onClick={handleLink} />
-          <ChakraLink to='/Contact' name='Contact' onClick={handleLink} />
+          <ChakraLink
+            variant='bigNavLink'
+            to='/Menu'
+            name='Menu'
+            fontSize={["1.5rem", "2rem", "3rem"]}
+            onClick={handleLink}
+          />
+          <ChakraLink
+            variant='bigNavLink'
+            to='/contact'
+            name='Reservations'
+            fontSize={["1.6rem", "2rem", "3rem"]}
+            onClick={handleLink}
+          />
+          <ChakraLink
+            name='Home'
+            to='/'
+            fontSize={["1.5rem", "1.5rem", "2.5rem"]}
+            onClick={handleLink}
+          />
+          <ChakraLink
+            to='/About'
+            fontSize={["1.5rem", "1.5rem", "2.5rem"]}
+            name='About'
+            onClick={handleLink}
+          />
+          <ChakraLink
+            to='/Events'
+            fontSize={["1.5rem", "1.5rem", "2.5rem"]}
+            name='Events'
+            onClick={handleLink}
+          />
+          <ChakraLink
+            to='/Order'
+            fontSize={["1.5rem", "1.5rem", "2.5rem"]}
+            name='Order'
+            onClick={handleLink}
+          />
+          <ChakraLink
+            to='/Contact'
+            fontSize={["1.5rem", "1.5rem", "2.5rem"]}
+            name='Contact'
+            onClick={handleLink}
+          />
         </Flex>
-
-        <Flex gap='4'>
-          <FacebookLink />
-          <InstagramLink />
+        <Flex gap='4' alignItems='center'>
+          <FacebookLink fontSize='2.5rem' />
+          <InstagramLink fontSize='2.5rem' />
+          <EarLogoLink fontSize='3rem' />
         </Flex>
       </Flex>
     </Flex>

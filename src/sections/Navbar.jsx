@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import MobileNav from "@sections/nav/MobileNav";
 import DesktopNav from "@sections/nav/DesktopNav";
 import { useTheme } from "@chakra-ui/react";
-import NongbuLogoLink from "../components/NongbuLogoLink";
+import {NongbuLogoLink} from "@components/LogoLinks";
 export default function Navbar(props) {
   const [isMobile, setIsMobile] = useState(false);
   const { colors } = useTheme();

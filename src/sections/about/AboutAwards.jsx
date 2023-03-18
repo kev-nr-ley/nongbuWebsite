@@ -1,26 +1,22 @@
 import React from "react";
-
-import {
-  Flex,
-  VStack,
-  Heading,
-  Text,
-  Grid,
-  Image,
-  Box,
-} from "@chakra-ui/react";
-
+import { VStack, Heading, Text, Image } from "@chakra-ui/react";
 import { useTheme } from "@chakra-ui/react";
-import SectionFlexContentContainer from "@components/SectionFlexContentContainer";
-import SectionFlexContainer from "@components/SectionFlexContainer";
-import NongbuImageContainer from "@components/NongbuImageContainer";
-function Magazine(props) {
+import SectionFlexContentContainer from "@components/layout/SectionFlexContentContainer";
+import SectionFlexContainer from "@components/layout/SectionFlexContainer";
+import NongbuImageContainer from "@components/layout/NongbuImageContainer";
+
+export default function AboutAwards(props) {
   const { colors } = useTheme();
   return (
     <SectionFlexContainer
-      flexDirection={["column-reverse", "column-reverse", "row"]}
+      flexDirection={[
+        "column-reverse",
+        "column-reverse",
+        "column-reverse",
+        "row",
+      ]}
       bg={colors.backgroundDark}
-      h={["auto", "auto", "80vh", "80vh"]}
+      h={["auto", "auto", "auto", "80vh"]}
       w='100vw'
       maxW='100%'
       overflow='hidden'
@@ -66,5 +62,3 @@ function Magazine(props) {
     </SectionFlexContainer>
   );
 }
-
-export default Magazine;

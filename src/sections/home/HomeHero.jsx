@@ -1,57 +1,66 @@
 import React from "react";
 import { useTheme } from "@chakra-ui/react";
-import { Flex, Heading, Text, Grid, VStack } from "@chakra-ui/react";
+import { Flex, Heading, Text, VStack } from "@chakra-ui/react";
 import ChakraLinkArrow from "@components/ChakraLinkArrow";
-import Hours from "@components/Hours";
-import NongbuImageContainer from "@components/NongbuImageContainer";
-import SectionHeroContainer from "@components/SectionHeroContainer";
+import Hours from "@components/smallblocks/Hours";
+import NongbuImageContainer from "@components/layout/NongbuImageContainer";
+
+import SectionHeroContainer from "@components/layout/SectionHeroContainer";
+
 export default function Hero(props) {
   const { colors } = useTheme();
   return (
-    <SectionHeroContainer h={["100vh", "100vh", "80vh", "80vh"]} {...props}>
+    <SectionHeroContainer h={["100vh", "100vh", "100vh", "90vh"]} {...props}>
       <Flex
         flexDirection='column'
         bg={colors.backgroundDark}
-        // bg='red.700'
-        pt={["5rem", "5rem"]}
+        pt={["5rem", "5rem", "5rem", "2rem"]}
         zIndex='2'
         w={["100%"]}
         alignItems='center'
         justifyContent={"center"}>
         <VStack
           zIndex='2'
-          w={["100%", "100%", "48rem", "48rem"]}
+          w={["100%", "100%", "80%", "80%"]}
           px='5vw'
-          pb='5vw'
-          // bg={colors.backgroundDark}
-
-          // bg='red.300'
-        >
-          <Heading variant={['mediumHeading','mediumHeading', 'heroHeading']} color='light'>
+          alignItems='flex-start'
+          pb='1rem'
+          // bg='blue.600'
+          >
+          <Heading
+            variant={["mediumHeading", "mediumHeading", "heroHeading"]}
+            // bg='red.600'
+            px='0'
+            // whiteSpace='nowrap' //uncentered
+            color='light'>
             Welcome To NongBu Korean Eatery.
           </Heading>
-          <Text variant={['smallText', 'smallText', 'mediumText']} color='light'>
+
+          <Text
+            variant={["smallText", "smallText", "mediumText"]}
+            w={["100%", "100%", "100%", "100%"]}
+            // bg='green.600'
+            px='0'
+            color='light'>
             It is our desire to have our guests leaver NongBu experience happy,
             full and a little more knowledgeable about our little country.{" "}
           </Text>
           <VStack
-            pt='2rem'
-            gap='1rem'
+            pt='1rem'
+            gap='0rem'
             alignSelf='flex-end'
-            w='fit-content'
             alignItems='flex-end'>
             <ChakraLinkArrow
               to='/menu'
               name='View Menu'
               variant='heroLink'
-              arrowSize='1.75rem'
+              arrowsize='1.75rem'
             />
             <ChakraLinkArrow
               to='/contact'
-              b
               name='Book a table'
               variant='heroLink'
-              arrowSize='1.75rem'
+              arrowsize='1.75rem'
             />
           </VStack>
         </VStack>
@@ -64,13 +73,13 @@ export default function Hero(props) {
         zIndex='0'
         filename='nongbu-1'
         name='table with korean dishes'
-        // p='5vw'
       />
       <Hours
         zIndex='9'
         w='18rem'
         position='absolute'
         bottom={["5vh"]}
+        display={['none', 'none', 'flex']}
         right={["5vw", "5vw", "5vw", "5vw"]}
         transform={[
           "translateX(0%)",
