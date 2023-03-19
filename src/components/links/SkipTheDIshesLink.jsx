@@ -14,6 +14,7 @@ export default function SkipTheDishesLink(...props) {
         w={["8rem", "12rem", "12rem", "12rem"]}
 
       />
+      {/* test */}
     </ChakraLink>
   );
 }
