@@ -6,7 +6,6 @@ import SectionFlexContainer from "@components/layout/SectionFlexContainer";
 import NongbuImageContainer from "@components/layout/NongbuImageContainer";
 
 import UberEatsLink from "@components/links/UberEatsLink";
-import SkipTheDishesLink from "@components/links/SkipTheDishesLink";
 import FantuanLink from "@components/links/FantuanLink";
 
 // import {
@@ -36,7 +35,6 @@ export default function HomeTakeout(props) {
         <Flex flexDirection='column' gap='2rem' mt='2rem' alignItems={"center"}>
           {/* These links are causing an error */}
           <UberEatsLink />
-          <SkipTheDishesLink />
           <FantuanLink />
         </Flex>
       </SectionFlexContentContainer>
