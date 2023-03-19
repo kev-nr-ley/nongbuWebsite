@@ -7,7 +7,7 @@ import NongbuImageContainer from "@components/layout/NongbuImageContainer";
 
 import {
   UberEatsLink,
-  SkipTheDishesLink,
+  // SkipTheDishesLink,
   FantuanLink,
 } from "@components/LogoLinks";
 
@@ -37,7 +37,7 @@ export default function HomeTakeout(props) {
 
             {/* These links are causing an error */}
           <UberEatsLink />
-          <SkipTheDishesLink />
+          {/* <SkipTheDishesLink /> */}
           <FantuanLink />
         </Flex>
       </SectionFlexContentContainer>
