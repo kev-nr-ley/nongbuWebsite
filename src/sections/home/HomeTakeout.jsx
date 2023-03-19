@@ -9,10 +9,8 @@ import UberEatsLink from "@components/links/UberEatsLink";
 import SkipTheDishesLink from "@components/links/SkipTheDishesLink";
 import FantuanLink from "@components/links/FantuanLink";
 
-
 // import {
 //   UberEatsLink,
-//   
 // SkipTheDishesLink,
 //   FantuanLink,
 // } from "@components/LogoLinks";
@@ -31,20 +29,14 @@ export default function HomeTakeout(props) {
       <NongbuImageContainer
         filename='nongbu-4'
         name='plate of ddeokbbokki'
-        p={["0", "0", '0', "2.5vw"]}
+        p={["0", "0", "0", "2.5vw"]}
         maxW='44rem'
       />
       <SectionFlexContentContainer headingtext='Get NongBu to-go or delivered right to your door.'>
-        <Flex
-          flexDirection='column'
-          gap='2rem'
-          mt='2rem'
-          alignItems={"center"}>
-
-            {/* These links are causing an error */}
+        <Flex flexDirection='column' gap='2rem' mt='2rem' alignItems={"center"}>
+          {/* These links are causing an error */}
           <UberEatsLink />
-          <
-SkipTheDishesLink />
+          <SkipTheDishesLink />
           <FantuanLink />
         </Flex>
       </SectionFlexContentContainer>

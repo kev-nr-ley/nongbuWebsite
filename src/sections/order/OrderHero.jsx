@@ -6,13 +6,12 @@ import SectionFlexContainer from "@components/layout/SectionFlexContainer";
 import NongbuImageContainer from "@components/layout/NongbuImageContainer";
 
 import UberEatsLink from "@components/links/UberEatsLink";
-import 
-SkipTheDishesLink from "@components/links/SkipTheDishesLink";
+import SkipTheDishesLink from "@components/links/SkipTheDishesLink";
 import FantuanLink from "@components/links/FantuanLink";
 
 // import {
 //   UberEatsLink,
-//   
+//
 // SkipTheDishesLink,
 //   FantuanLink,
 // } from "@components/LogoLinks";
@@ -64,8 +63,7 @@ export default function OrdrHero(props) {
           justifyContent='flex-start'
           px='1rem'>
           <UberEatsLink />
-          <
-SkipTheDishesLink />
+          <SkipTheDishesLink />
           <FantuanLink />
         </Flex>
       </SectionFlexContentContainer>

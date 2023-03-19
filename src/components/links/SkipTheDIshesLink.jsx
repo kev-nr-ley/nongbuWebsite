@@ -12,7 +12,6 @@ export default function SkipTheDishesLink(...props) {
         filename='skipthedishes-logo'
         name='Skip the dishes logo'
         w={["8rem", "12rem", "12rem", "12rem"]}
-
       />
       {/* test */}
     </ChakraLink>
