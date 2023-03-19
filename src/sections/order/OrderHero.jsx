@@ -5,15 +5,14 @@ import SectionFlexContentContainer from "@components/layout/SectionFlexContentCo
 import SectionFlexContainer from "@components/layout/SectionFlexContainer";
 import NongbuImageContainer from "@components/layout/NongbuImageContainer";
 
-import UberEatsLink from "@components/links/UberEatsLink";
-import FantuanLink from "@components/links/FantuanLink";
+// import UberEatsLink from "@components/links/UberEatsLink";
+// import FantuanLink from "@components/links/FantuanLink";
 
-// import {
-//   UberEatsLink,
-//
-// SkipTheDishesLink,
-//   FantuanLink,
-// } from "@components/LogoLinks";
+import {
+  UberEatsLink,
+  SkipTheDishesLink,
+  FantuanLink,
+} from "@components/LogoLinks";
 
 export default function OrdrHero(props) {
   const { colors } = useTheme();
@@ -62,6 +61,7 @@ export default function OrdrHero(props) {
           justifyContent='flex-start'
           px='1rem'>
           <UberEatsLink />
+          <SkipTheDishesLink />
           <FantuanLink />
         </Flex>
       </SectionFlexContentContainer>
