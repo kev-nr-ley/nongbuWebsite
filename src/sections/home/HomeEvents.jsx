@@ -1,6 +1,6 @@
 import React from "react";
 import { useTheme } from "@chakra-ui/react";
-import { Flex, Image, Box, Text, Heading } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 import SectionFlexContentContainer from "@components/layout/SectionFlexContentContainer";
 import SectionFlexContainer from "@components/layout/SectionFlexContainer";
 
