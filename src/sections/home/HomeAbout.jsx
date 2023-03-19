@@ -14,6 +14,8 @@ export default function HomeAbout(props) {
       flexDirection={["column", "column", "column", "row"]}
       bg={colors.backgroundLight}
       color={colors.dark}
+      alignItems='center'
+      justifyContent='center'
       px='5vw'
       gap={["0", "0", "0", "5vw"]}
       {...props}>
@@ -24,26 +26,25 @@ export default function HomeAbout(props) {
         filename='nongbu-1'
         // p='5vw'
         pt='5vw'
-        pb={["0", "0", "0", "5vw"]}  
-
+        pb={["0", "0", "0", "5vw"]}
         // border='4px'
         objectFit='cover'
-        maxW='44rem'
+        maxW={["100%", "100%", "100%", "50%"]}
       />
 
       <SectionFlexContentContainer
         headingtext='Welcome to NongBu.'
         linktext='View Menu'
         linkto='/menu'
-        w={["100%", "100%", "100%", "60%"]}
+        w={["100%", "100%", "100%", "auto"]}
         justifyContent='flex-start'
         alignItems='flex-start'
         pb='4rem'
-        px='0'
-        >
-        <Text variant='bodyText' 
-        maxW={["100%", "100%", "80%", "20rem"]}
-        // maxW='36rem'
+        px='0'>
+        <Text
+          variant='bodyText'
+          maxW={["100%", "100%", "80%", "20rem"]}
+          // maxW='36rem'
         >
           NongBu resurrects Korean cuisine from bygone generations and
           reintroduces it to the Canadian and Korean palate alike.

@@ -11,9 +11,7 @@ export default function UberEatsLink(...props) {
         filename='ubereats-logo'
         name='Uber Eats Logo'
         w={["8rem", "12rem", "12rem", "12rem"]}
-
       />
     </ChakraLink>
   );
 }
-

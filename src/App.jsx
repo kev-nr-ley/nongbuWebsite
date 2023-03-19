@@ -11,6 +11,7 @@ import { Box } from "@chakra-ui/react";
 import { useTheme } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import { Route, Routes, useLoadingContext } from "react-router-loading";
+import { ParallaxProvider } from "react-scroll-parallax";
 import LoadingScreen from "@components/LoadingScreen";
 import AnimatedRoutes from "@components/AnimatedRoutes";
 
@@ -43,7 +44,10 @@ function App() {
   return (
     <Box bg={colors.backgroundLight}>
       <Navbar />
-      <AnimatedRoutes />
+
+      <ParallaxProvider>
+        <AnimatedRoutes />
+      </ParallaxProvider>
 
       <Footer />
     </Box>

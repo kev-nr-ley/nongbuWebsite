@@ -12,15 +12,16 @@ const ChakraBox = chakra(motion.div, {
     isValidMotionProp(prop) || shouldForwardProp(prop),
 });
 
-export default function About(props) {
+export default function Page(props) {
   return (
     <Suspense fallback={<LoadingScreen />}>
-      <Box className='Page' minW='20rem' {...props}>
+      <Box className='Page' minW='18rem'  {...props}>
         <ChakraBox
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.3 }}>
+          transition={{ duration: 0.3 }}
+        >
           {props.children}
           <ScrollToTop />
         </ChakraBox>

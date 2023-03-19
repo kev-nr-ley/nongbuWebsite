@@ -4,7 +4,6 @@ import { Flex, Heading, Text, VStack } from "@chakra-ui/react";
 import ChakraLinkArrow from "@components/ChakraLinkArrow";
 import Hours from "@components/smallblocks/Hours";
 import NongbuImageContainer from "@components/layout/NongbuImageContainer";
-
 import SectionHeroContainer from "@components/layout/SectionHeroContainer";
 
 export default function HomeHero(props) {
@@ -14,16 +13,18 @@ export default function HomeHero(props) {
 
       <Flex  //text on top
         flexDirection='column'
-        bg={colors.backgroundDark}
+        bg={'transparent'}
         pt={["5rem", "5rem", "5rem", "2rem"]}
         zIndex='2'
         w={["100%"]}
+        bg='purple.600'
         alignItems='center'
         justifyContent={"center"}>
         <VStack
           zIndex='2'
           w={["100%", "100%", "80%", "80%"]}
           px='5vw'
+          bg='transparent'
           alignItems='flex-start'
           pb='1rem'
           // bg='blue.600'
@@ -66,30 +67,6 @@ export default function HomeHero(props) {
           </VStack>
         </VStack>
       </Flex>
-
-
-{/* parallax background */}
-
-      <NongbuImageContainer
-        bottom='0'
-        left='0'
-        position='absolute'
-        h='100%'
-        zIndex='0'
-        filename='nongbu-2'
-        name='table with korean dishes'
-      />
-
-
-
-
-
-
-
-
-
-
-
 
 
 

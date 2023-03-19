@@ -24,6 +24,7 @@ export default function HomeTakeout(props) {
       color={colors.dark}
       px='5vw'
       py='5vw'
+      position='relative'
       {...props}>
       <NongbuImageContainer
         filename='nongbu-4'
@@ -35,7 +36,7 @@ export default function HomeTakeout(props) {
         <Flex flexDirection='column' gap='2rem' mt='2rem' alignItems={"center"}>
           {/* These links are causing an error */}
           <UberEatsLink />
-            <SkipTheDishesLink />
+          <SkipTheDishesLink />
           <FantuanLink />
         </Flex>
       </SectionFlexContentContainer>
