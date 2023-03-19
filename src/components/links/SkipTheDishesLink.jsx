@@ -1,8 +1,7 @@
 import React from "react";
 import NongbuImageContainer from "@components/layout/NongbuImageContainer";
 import ChakraLink from "@components/ChakraLink";
-
-export default function NongbuLogoLink(props) {
+export default function SkipTheDishesLink(props) {
   return (
     <ChakraLink
       to='https://www.skipthedishes.com/nongbu-korean-eatery'
@@ -10,7 +9,7 @@ export default function NongbuLogoLink(props) {
       {...props}>
       <NongbuImageContainer
         filename='skipthedishes-logo'
-        name='Skip The Dishes Logo Logo'
+        name='Skip The Dishes Logo'
         w={["8rem", "12rem", "12rem", "12rem"]}
       />
     </ChakraLink>
