@@ -21,7 +21,7 @@ export default function HomeAbout(props) {
         position='relative'
         h={["auto", "auto", "auto", "80vh"]}
         name='table with korean dishes and makgeolli'
-        filename='nongbu-2'
+        filename='nongbu-1'
         // p='5vw'
         pt='5vw'
         pb={["0", "0", "0", "5vw"]}  

@@ -71,7 +71,7 @@ export default function Hero(props) {
         position='absolute'
         h='100%'
         zIndex='0'
-        filename='nongbu-1'
+        filename='nongbu-2'
         name='table with korean dishes'
       />
       <Hours
