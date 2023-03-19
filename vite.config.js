@@ -5,12 +5,12 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   resolve: {
-    alias: [
-      { find: "@assets", replacement: "/src/assets" },
-      { find: "@components", replacement: "/src/components" },
-      { find: "@pages", replacement: "/src/pages" },
-      { find: "@styles", replacement: "/src/styles" },
-      { find: "@sections", replacement: "/src/sections" },
-    ],
+    alias: {
+      "@components": "/src/components",
+      "@assets": "/src/assets",
+      "@pages": "/src/pages",
+      "@sections": "/src/sections",
+      "@styles": "/src/styles",
+    },
   },
 });

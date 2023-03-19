@@ -6,12 +6,16 @@ import { FaBars } from "react-icons/fa";
 import { CloseIcon } from "@chakra-ui/icons";
 import { useTheme } from "@chakra-ui/react";
 
-import {
-  InstagramLink,
-  FacebookLink,
-  NongbuLogoLink,
-  EarLogoLink,
-} from "@components/LogoLinks";
+import InstagramLink from "@components/links/InstagramLink.jsx";
+import FacebookLink from "@components/links/FacebookLink.jsx";
+import EarLogoLink from "@components/links/EarLogoLink.jsx";
+import NongbuLogoLink from "@components/links/NongbuLogoLink.jsx";
+// import {
+//   InstagramLink,
+//   FacebookLink,
+//   NongbuLogoLink,
+//   EarLogoLink,
+// } from "@components/LogoLinks";
 export default function MobileNav(props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { colors } = useTheme();

@@ -1,8 +1,14 @@
 import React from "react";
 import { Flex } from "@chakra-ui/react";
 import ChakraLink from "@components/ChakraLink";
-import { NongbuLogoLink, EarLogoLink } from "@components/LogoLinks";
-
+import EarLogoLink from "@components/links/EarLogoLink.jsx";
+import NongbuLogoLink from "@components/links/NongbuLogoLink.jsx";
+// import {
+//   InstagramLink,
+//   FacebookLink,
+//   NongbuLogoLink,
+//   EarLogoLink,
+// } from "@components/LogoLinks";
 export default function DesktopNav(props) {
   return (
     <Flex {...props}>
