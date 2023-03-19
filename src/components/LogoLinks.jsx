@@ -5,7 +5,7 @@ import InstagramLink from "@components/links/InstagramLink.jsx";
 import FacebookLink from "@components/links/FacebookLink.jsx";
 import FantuanLink from "@components/links/FantuanLink.jsx";
 import UberEatsLink from "@components/links/UberEatsLink.jsx";
-import SkipTheDishesLink from "@components/links/SkipTheDishesLink.jsx";
+// import SkipTheDishesLink from "@components/links/SkipTheDishesLink.jsx";
 export {
   EarLogoLink,
   NongbuLogoLink,
@@ -14,5 +14,5 @@ export {
   FacebookLink,
   FantuanLink,
   UberEatsLink,
-  SkipTheDishesLink,
+  // SkipTheDishesLink,
 };
