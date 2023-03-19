@@ -12,7 +12,7 @@ import {
   UberEatsLink,
   SkipTheDishesLink,
   FantuanLink,
-} from "@components/LogoLinks";
+} from "@components/LogoLinksQuarantine";
 
 export default function OrdrHero(props) {
   const { colors } = useTheme();
