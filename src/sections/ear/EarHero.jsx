@@ -5,16 +5,6 @@ import SectionFlexContentContainer from "@components/layout/SectionFlexContentCo
 import SectionFlexContainer from "@components/layout/SectionFlexContainer";
 import NongbuImageContainer from "@components/layout/NongbuImageContainer";
 
-import UberEatsLink from "@components/links/UberEatsLink";
-import FantuanLink from "@components/links/FantuanLink";
-import SkipTheDishesLink from "@components/links/SkipTheDishesLink";
-
-// import {
-//   UberEatsLink,
-//   SkipTheDishesLink,
-//   FantuanLink,
-// } from "@components/LogoLinksQuarantine";
-
 export default function EarHero(props) {
   const { colors } = useTheme();
   return (
@@ -25,12 +15,16 @@ export default function EarHero(props) {
       position='relative'
       justifyContent={"center"}
       alignItems='center'
+
       p='5vw'
       gap='5vw'
       {...props}>
-        
-      <Grid>
-        <NongbuImageContainer w='100%' filename='ear-1' />
+      <Grid
+        gap='2rem'
+        border='4px solid red'
+        gridTemplateColumns='repeat(auto-fit, minmax(20rem, 1fr))'
+        >
+        <NongbuImageContainer w='100%' filename='ear-1' border='4px solid red' />
         <NongbuImageContainer w='100%' filename='ear-2' />
         <NongbuImageContainer w='100%' filename='ear-3' />
         <NongbuImageContainer w='100%' filename='ear-4' />
@@ -46,24 +40,7 @@ export default function EarHero(props) {
         maxW='36rem'
         pb='4rem'
         color={colors.light}>
-        <Text variant='bodyText' maxW='36rem' zIndex='2'>
-          Look at our menu and give us a call to pick up your order, or get
-          NongBu delivered right to your door.
-        </Text>
-
-        <Flex
-          flexDirection={["column", "column", "column", "column"]}
-          gap='2rem'
-          bg={colors.backgroundDark}
-          mt='1rem'
-          pb='5vw'
-          alignItems='center'
-          justifyContent='flex-start'
-          px='1rem'>
-          <UberEatsLink />
-          <SkipTheDishesLink />
-          <FantuanLink />
-        </Flex>
+        <Text variant='bodyText' maxW='36rem' zIndex='2'></Text>
       </SectionFlexContentContainer>
     </SectionFlexContainer>
   );
