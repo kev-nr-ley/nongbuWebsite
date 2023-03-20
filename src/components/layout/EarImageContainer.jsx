@@ -44,7 +44,7 @@ export default function NongbuImageContainer(props) {
         bg={mouseIsOver ? "transparents" : "#00000030"}
         alignItems='center'
         justifyContent='center'>
-        <Image
+        {/* <Image
           src='/images/ear-big.webp'
           transition = 'all 200ms'
           w={mouseIsOver ? "0" : "33%"}
@@ -52,7 +52,7 @@ export default function NongbuImageContainer(props) {
           _hover={{
             transform: "scale(1.3) rotate(12deg)",
           }}
-          objectFit='contain'></Image>
+          objectFit='contain'></Image> */}
       </Flex>
     </Box>
   );

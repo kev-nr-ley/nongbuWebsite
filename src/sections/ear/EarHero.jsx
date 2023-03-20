@@ -6,6 +6,8 @@ import SectionFlexContainer from "@components/layout/SectionFlexContainer";
 import EarImageContainer from "@components/layout/EarImageContainer";
 import { InstagramEmbed } from "react-social-media-embed";
 import { useState, useEffect } from "react";
+import ChakraLink from "@components/ChakraLink";
+import { FaInstagram } from "react-icons/fa";
 import EarLogoLink from "@components/links/EarLogoLink";
 import {
   FormLabel,
@@ -21,35 +23,39 @@ export default function EarHero(props) {
 
   return (
     <Flex
-      p='1rem'
       gap='1rem'
-      border='2px solid limegreen'
-      h='200vh'
-      position='relative'>
-
+      // border='2px solid limegreen'
+      bg={colors.backgroundDark}
+      position='relative'
+      minH='100vh'
+      h='fit-content'
+      alignItems='center'
+      justifyContent='space-between'>
       {/* Text */}
-      <Box border='2px solid red' p='1rem'
-      w='400px'
+      <Box
+        pl='5vw'
       >
-        <EarLogoLink />
-        <Heading fontSize='4rem' bg='blue.200'>
-          Ear We Are
+
+        <Heading color='light' px='0'>
+          ear.
         </Heading>
-        <Text fontFamily='serif' useRef='ref' px='1rem' bg='green.200' h='auto'>
-          We are ear. Me and my bakery, baking it up. The thing about good
-          baking is that it comes not from the oven, but from the ❤. Baking is
-          more than a choice, its a lifestyle. Complete, organic, ever changing,
-          never moving. Forward we go! Flour in hand, pushing the envelope of
-          culinary flakiness to its zenith. Lark! Ho! Avast ye friends! Take
-          sail on the high custard sea!
+        <Text color={colors.light} mt='1rem' lineHeight='30px'>
+          Ear YEG is Joy Park’s small batch bakery with a home at Nongbu Korean
+          Eatery. Check out the Instagram page and DM Joy for inquiries.
         </Text>
 
-        <Text>Open Monthly! you can email or call or something.</Text>
+        <ChakraLink
+          href='https://www.instagram.com/ear_yeg/'
+          target='_blank'
+          rel='noopener noreferrer'
+          fontSize='1.5rem'
+          lineHeight='30px'
+          color='primary'>
+          @ear_yeg
+        </ChakraLink>
 
-        <Text>-JYP, out</Text>
-
-{/* Form */}
-        <Flex
+        {/* Form */}
+        {/* <Flex
           as='form'
           w='100%'
           flexDirection='column'
@@ -90,20 +96,17 @@ export default function EarHero(props) {
           <Button type='submit' my='1rem' bg={colors.primary}>
             Submit
           </Button>
-        </Flex>
+        </Flex> */}
       </Box>
 
-{/* Image gallery */}
+      {/* Image gallery */}
       <Grid
-        border='2px solid red'
-        gridTemplateColumns='repeat(2, 50%)'
-        gridTemplateRows='repeat(2, auto)'
-        w='100%'
-        gap='1rem'
-        h='40vh'
-        position='sticky'
-        top='10vh'
-        right='0'>
+        // border='2px solid red'
+        bg='light'
+        p='1rem'
+        gridTemplateColumns='repeat(2,  25vw)'
+        gridTemplateRows='repeat(2, 25vw)'
+        gap='1rem'>
         <EarImageContainer
           filename='ear-1'
           w='100%'
