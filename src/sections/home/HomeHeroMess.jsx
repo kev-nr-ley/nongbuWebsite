@@ -17,7 +17,7 @@ export default function HomeHero(props) {
         pt={["5rem", "5rem", "5rem", "2rem"]}
         zIndex='2'
         w={["100%"]}
-        bg='purple.600'
+        bg='purple.600' 
         alignItems='center'
         justifyContent={"center"}>
         <VStack

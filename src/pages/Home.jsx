@@ -12,7 +12,7 @@ function Home(props) {
   const { colors } = useTheme();
   return (
     <Page position='relative' {...props}>
-      <HomeHero h='90vh' />
+      <HomeHero h='90vh' />``
       <HomeAbout />
       <HomeEventsMess />
 

@@ -17,6 +17,7 @@ export default function HomeEventsMess(props) {
       justifyContent='sapce-between'
       alignItems='center'
       gap={["0", "0", "0", "5vw"]}
+      h='fit-content'
       position='relative'
       {...props}>
       <NongbuImageContainer
@@ -28,8 +29,10 @@ export default function HomeEventsMess(props) {
         right='0'
         filename='nongbu-3'
         minW='20rem'
-        h='80vh'
-        maxW={["100%", "100%", "100%", "100%"]}
+        // h='80vh'
+      w='70vw'
+      h='80vh'
+        // maxW={["100%", "100%", "100%", "100%"]}
         objectPosition={["100%, 100%", "50%, 100%"]}
         objectFit='cover'
         zIndex='9'
@@ -43,7 +46,8 @@ export default function HomeEventsMess(props) {
         linktext='Get in touch'
         linkto='/events'
         w={["100%", "100%", "100%", "40%"]}
-        bg='linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4) 80%, rgba(0,0,0, 0) 100%)'
+        //make black the bg color instead
+        bg='linear-gradient(90deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0.7) 75%,  rgba(0,0,0, 0) 100%)'
         // bg='#00000090'
         h='80vh'
         justifyContent='center'

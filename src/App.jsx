@@ -44,11 +44,9 @@ function App() {
   return (
     <Box bg={colors.backgroundLight}>
       <Navbar />
-
       <ParallaxProvider>
         <AnimatedRoutes />
       </ParallaxProvider>
-
       <Footer />
     </Box>
   );
