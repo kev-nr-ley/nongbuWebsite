@@ -6,14 +6,33 @@ import SectionFlexContainer from "@components/layout/SectionFlexContainer";
 import EarImageContainer from "@components/layout/EarImageContainer";
 import { InstagramEmbed } from "react-social-media-embed";
 import { useState, useEffect } from "react";
+import EarLogoLink from "@components/links/EarLogoLink";
+import {
+  FormLabel,
+  Input,
+  Button,
+  FormControl,
+  FormErrorMessage,
+} from "@chakra-ui/react";
+import FormInputContainer from "@components/FormInputContainer";
+
 export default function EarHero(props) {
   const { colors } = useTheme();
 
   return (
-    <Flex p='1rem' gap='1rem' border='2px solid limegreen'>
-      <Box border='2px solid red' p='1rem'>
+    <Flex
+      p='1rem'
+      gap='1rem'
+      border='2px solid limegreen'
+      h='200vh'
+      position='relative'>
+
+      {/* Text */}
+      <Box border='2px solid red' p='1rem'
+      w='400px'
+      >
+        <EarLogoLink />
         <Heading fontSize='4rem' bg='blue.200'>
-          {" "}
           Ear We Are
         </Heading>
         <Text fontFamily='serif' useRef='ref' px='1rem' bg='green.200' h='auto'>
@@ -28,13 +47,63 @@ export default function EarHero(props) {
         <Text>Open Monthly! you can email or call or something.</Text>
 
         <Text>-JYP, out</Text>
+
+{/* Form */}
+        <Flex
+          as='form'
+          w='100%'
+          flexDirection='column'
+          justifyContent='flex-start'>
+          <FormInputContainer
+            id='name'
+            label='Name'
+            inputtype='text'
+            inputbg='white'
+            isRequired
+            placeholder='Jahn Doe'
+          />
+          <FormInputContainer
+            id='email'
+            label='Email'
+            inputtype='email'
+            inputbg='white'
+            isRequired
+            placeholder='Joy@Park.ca'
+          />
+          <FormInputContainer
+            id='phone'
+            label='Phone'
+            inputtype='tel'
+            inputbg='white'
+            isRequired
+            placeholder='780 802 2777'
+          />
+          <FormInputContainer
+            id='message'
+            label='Message'
+            inputtype='textarea'
+            inputbg='white'
+            isRequired
+            placeholder='One million cakes please'
+          />
+
+          <Button type='submit' my='1rem' bg={colors.primary}>
+            Submit
+          </Button>
+        </Flex>
       </Box>
+
+{/* Image gallery */}
       <Grid
         border='2px solid red'
-        p='1rem'
-        gridTemplateColumns='repeat(2, 500px)'
-        gridTemplateRows='repeat(2, 500px)'
-        gap='1rem'>
+        gridTemplateColumns='repeat(2, 50%)'
+        gridTemplateRows='repeat(2, auto)'
+        w='100%'
+        gap='1rem'
+        h='40vh'
+        position='sticky'
+        top='10vh'
+        right='0'>
         <EarImageContainer
           filename='ear-1'
           w='100%'
