@@ -12,7 +12,11 @@ export default function ContactInfo(props) {
         </Heading>
       ) : null}
 
-      <Flex justifyContent={"space-between"} letterSpacing='2px' mt='1rem'>
+      <Flex
+        letterSpacing='2px'
+        mt='1rem'
+        gap='1rem'
+        >
         <Text>Phone </Text>{" "}
         <ChakraLink
           variant='smallText'
@@ -21,7 +25,9 @@ export default function ContactInfo(props) {
           color={colors.primary}
         />
       </Flex>
-      <Flex justifyContent={"space-between"} letterSpacing='2px'>
+      <Flex
+        gap='1rem'
+        letterSpacing='2px'>
         <Text> Email </Text>{" "}
         <ChakraLink
           variant='smallText'

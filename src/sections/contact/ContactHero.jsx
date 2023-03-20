@@ -35,28 +35,26 @@ export default function ContactHero(props) {
       <Flex //Text block
         flexDirection='column'
         justifyContent='center'
+        alignItems='center'
         bg={colors.backgroundDark} //for desktop
         zIndex='5'
         px='5vw'
-        py='5vw'
-        gap='2rem'
         minW={["100vw", "60vw", "30vw", "30vw"]}
         h={["100%", "100vh", "100vh", "100vh"]}>
         <Box>
-          {" "}
           <Heading as='h3' px='0' variant='mediumHeading'>
             Contact us
           </Heading>
-          <Text variant='bodyText' px='0' maxW='24rem' lineHeight='40px'>
+          <Text variant='bodyText' px='0' maxW='24rem' >
             Book a table, order takeout, inquire about private events and
             catering, ask about our menu... etc.
           </Text>
         </Box>
 
-        <ContactInfo showheading={false} />
-        <Hours border='2px solid white' p='1rem' showheading='false' />
+        <ContactInfo showheading={false}/>
+        <Hours border='2px solid white' p='1rem' mt='2rem' showheading='false' />
 
-        <LocationInfo showheading='true' />
+        {/* <LocationInfo showheading='true' /> */}
       </Flex>
     </Flex>
   );

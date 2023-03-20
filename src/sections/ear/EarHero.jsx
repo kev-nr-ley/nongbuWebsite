@@ -6,7 +6,7 @@ import SectionFlexContainer from "@components/layout/SectionFlexContainer";
 import NongbuImageContainer from "@components/layout/NongbuImageContainer";
 
 import UberEatsLink from "@components/links/UberEatsLink";
-import FantuanLink from "@components/links/FantuanLink"
+import FantuanLink from "@components/links/FantuanLink";
 import SkipTheDishesLink from "@components/links/SkipTheDishesLink";
 
 // import {
@@ -28,27 +28,14 @@ export default function EarHero(props) {
       p='5vw'
       gap='5vw'
       {...props}>
+        
+      <Grid>
+        <NongbuImageContainer w='100%' filename='ear-1' />
+        <NongbuImageContainer w='100%' filename='ear-2' />
+        <NongbuImageContainer w='100%' filename='ear-3' />
+        <NongbuImageContainer w='100%' filename='ear-4' />
+      </Grid>
 
-        <Grid>
-      <NongbuImageContainer
-        w='100%'
-        filename='ear-1'
-      />
-            <NongbuImageContainer
-        w='100%'
-        filename='ear-2'
-      />
-            <NongbuImageContainer
-        w='100%'
-        filename='ear-3'
-      />
-            <NongbuImageContainer
-        w='100%'
-        filename='ear-4'
-      />
-
-
-</Grid>
       <SectionFlexContentContainer
         flexDirection={"column"}
         headingtext='Get NongBu to-go or delivered.'
