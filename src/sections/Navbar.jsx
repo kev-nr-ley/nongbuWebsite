@@ -9,7 +9,7 @@ export default function Navbar(props) {
 
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth < 1079) {
+      if (window.innerWidth < 1000) {
         setIsMobile(true);
       } else {
         setIsMobile(false);

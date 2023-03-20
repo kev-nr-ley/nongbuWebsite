@@ -1,6 +1,6 @@
 import React from "react";
 import { useTheme } from "@chakra-ui/react";
-import { Flex, Heading, Text, VStack } from "@chakra-ui/react";
+import { Flex, Heading, Text, VStack, Box } from "@chakra-ui/react";
 import ChakraLinkArrow from "@components/ChakraLinkArrow";
 import Hours from "@components/smallblocks/Hours";
 import NongbuImageContainer from "@components/layout/NongbuImageContainer";
@@ -10,27 +10,37 @@ import SectionHeroContainer from "@components/layout/SectionHeroContainer";
 export default function HomeHero(props) {
   const { colors } = useTheme();
   return (
-    <SectionHeroContainer h={["100vh", "100vh", "100vh", "90vh"]} {...props}>
-
-      <Flex  //text on top
+    <SectionHeroContainer
+      h={["100vh", "100vh", "100vh", "90vh"]}
+      maxW='100vw'
+      overflow='hidden'
+      {...props}>
+      <Flex //text on top
+        position='absolute'
         flexDirection='column'
         bg={colors.backgroundDark}
         pt={["5rem", "5rem", "5rem", "2rem"]}
-        zIndex='2'
-        w={["100%"]}
+        zIndex='1'
+        w={["250vw", "150vw", "130vw", "120vw"]}
+        left={["-75vw", "-25vw", "-15vw", "-10vw"]}
+        h={["auto", "auto", "auto", "auto"]}
         alignItems='center'
-        justifyContent={"center"}>
+        justifyContent='flex-start'
+        overflow='hidden'
+        borderRadius='0 0 100% 100%'>
+        {/* BACKGROUND CIRCLE */}
+
+        {/* ------------------------------- */}
+
         <VStack
           zIndex='2'
-          w={["100%", "100%", "80%", "80%"]}
-          px='5vw'
+          w={["100vw", "100vw", "80vw", "80vw"]}
+          px='10vw'
           alignItems='flex-start'
-          pb='1rem'
-          // bg='blue.600'
+          pb='5rem'
         >
           <Heading
             variant={["mediumHeading", "mediumHeading", "heroHeading"]}
-            // bg='red.600'
             px='0'
             // whiteSpace='nowrap' //uncentered
             color='light'>
@@ -55,44 +65,34 @@ export default function HomeHero(props) {
               to='/menu'
               name='View Menu'
               variant='heroLink'
-              arrowsize='1.75rem'
+              pr='1rem'
+              arrowsize={["1.25rem", "1.25rem", "1.5rem", "1.5rem"]}
+              fontSize={["1rem", "1rem", "1.25rem", "1.25rem"]}
             />
             <ChakraLinkArrow
               to='/contact'
               name='Book a table'
               variant='heroLink'
-              arrowsize='1.75rem'
+              pr='1rem'
+              arrowsize={["1.25rem", "1.25rem", "1.5rem", "1.5rem"]}
+              fontSize={["1rem", "1rem", "1.25rem", "1.25rem"]}
             />
           </VStack>
         </VStack>
       </Flex>
 
-
-{/* parallax background */}
+      {/* parallax background */}
 
       <NongbuImageContainer
         bottom='0'
         left='0'
         position='absolute'
         h='100%'
+        maxW='100vw'
         zIndex='0'
         filename='nongbu-2'
         name='table with korean dishes'
       />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       <Hours
         zIndex='9'

@@ -14,51 +14,57 @@ export default function HomeEventsMess(props) {
       flexDirection={["column", "column", "column", "row-reverse"]}
       bg={colors.backgroundDark}
       color={colors.light}
-      justifyContent='sapce-between'
-      alignItems='center'
-      gap={["0", "0", "0", "5vw"]}
+      justifyContent='space-between'
       h='fit-content'
       position='relative'
+      bg='green'
       {...props}>
       <NongbuImageContainer
+        bg={colors.backgroundDark}
         overflow='hidden'
-        // pt='5vw'
-        // pb={["0", "0", "0", "5vw"]}
         position='relative'
         top='0'
         right='0'
         filename='nongbu-3'
-        minW='20rem'
-        // h='80vh'
-      w='70vw'
-      h='80vh'
-        // maxW={["100%", "100%", "100%", "100%"]}
-        objectPosition={["100%, 100%", "50%, 100%"]}
+        h='90vh'
         objectFit='cover'
+        objectPosition={["100%, 100%", "50%, 100%", "50%, 100%", "50%, 100%"]}
         zIndex='9'
       />
 
       {/* Move this more to the center, try to overlap iamge on desktop */}
       <SectionFlexContentContainer
         flexDirection={"column"}
-
         headingtext='Use our space and services.'
         linktext='Get in touch'
         linkto='/events'
-        w={["100%", "100%", "100%", "40%"]}
-        //make black the bg color instead
-        bg='linear-gradient(90deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0.7) 75%,  rgba(0,0,0, 0) 100%)'
-        // bg='#00000090'
-        h='80vh'
+        bg={[
+          `linear-gradient(90deg, 
+          #12212b 00%,  
+          #12212b80 99%, 
+          #00000000 100%)`,
+          `linear-gradient(90deg, 
+            #12212b 00%,  
+            #12212b80 99%, 
+            #00000000 100%)`,
+          `linear-gradient(90deg, 
+              #12212b 10%,  
+              #12212b80 60%, 
+              #00000000 100%)`,
+          `linear-gradient(90deg, 
+                #12212b 10%,  
+                #12212b80 50%, 
+                #00000000 100%)`,
+        ]}
+        w='100%'
+        h='100%'
         justifyContent='center'
         alignItems='flex-start'
-        pl={["5vw", "5vw", "5vw", "5vw"]}
-
+        // pl={["5vw", "5vw", "5vw", "5vw"]}
         position='absolute'
         top='0'
         left='0'
         zIndex='9'
-
         color={colors.light}>
         <Text
           variant='bodyText'

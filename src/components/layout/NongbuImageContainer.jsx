@@ -18,6 +18,7 @@ export default function NongbuImageContainer(props) {
         name={props.name}
         src={props.src || path + props.filename + type}
         alt={`Image of ${props.name}`}
+     
         objectPosition={props.objectPosition || "center"}
         aria-label={`Image of ${props.name}`}
       />
