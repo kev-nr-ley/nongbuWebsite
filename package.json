@@ -28,7 +28,9 @@
     "react-router-dom": "^6.8.2",
     "react-router-loading": "^1.0.0",
     "react-scroll-parallax": "^3.3.2",
-    "react-uuid": "^2.0.0"
+    "react-social-media-embed": "^2.3.4",
+    "react-uuid": "^2.0.0",
+    "use-fit-text": "^2.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

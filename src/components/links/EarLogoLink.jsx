@@ -6,10 +6,9 @@ export default function EarLogoLink(props) {
   const { colors, fonts } = useTheme();
   return (
     <ChakraLink
-      to='https://www.instagram.com/ear_yeg'
+      to='/ear'
       name='ear'
       variant='fancyLink'
-      target='_blank'
       h='fit-content'
       fontFamily={fonts.ear}
       fontWeight='200'

@@ -1,47 +1,66 @@
 import React from "react";
-import { Flex, Text, Grid } from "@chakra-ui/react";
+import { Flex, Text, Grid, Box, Heading } from "@chakra-ui/react";
 import { useTheme } from "@chakra-ui/react";
 import SectionFlexContentContainer from "@components/layout/SectionFlexContentContainer";
 import SectionFlexContainer from "@components/layout/SectionFlexContainer";
-import NongbuImageContainer from "@components/layout/NongbuImageContainer";
-
+import EarImageContainer from "@components/layout/EarImageContainer";
+import { InstagramEmbed } from "react-social-media-embed";
+import { useState, useEffect } from "react";
 export default function EarHero(props) {
   const { colors } = useTheme();
+
   return (
-    <SectionFlexContainer
-      flexDirection={["column", "column", "column", "row"]}
-      bg={colors.backgroundDark}
-      color={colors.light}
-      position='relative'
-      justifyContent={"center"}
-      alignItems='center'
+    <Flex p='1rem' gap='1rem' border='2px solid limegreen'>
+      <Box border='2px solid red' p='1rem'>
+        <Heading fontSize='4rem' bg='blue.200'>
+          {" "}
+          Ear We Are
+        </Heading>
+        <Text fontFamily='serif' useRef='ref' px='1rem' bg='green.200' h='auto'>
+          We are ear. Me and my bakery, baking it up. The thing about good
+          baking is that it comes not from the oven, but from the ❤. Baking is
+          more than a choice, its a lifestyle. Complete, organic, ever changing,
+          never moving. Forward we go! Flour in hand, pushing the envelope of
+          culinary flakiness to its zenith. Lark! Ho! Avast ye friends! Take
+          sail on the high custard sea!
+        </Text>
 
-      p='5vw'
-      gap='5vw'
-      {...props}>
+        <Text>Open Monthly! you can email or call or something.</Text>
+
+        <Text>-JYP, out</Text>
+      </Box>
       <Grid
-        gap='2rem'
-        border='4px solid red'
-        gridTemplateColumns='repeat(auto-fit, minmax(20rem, 1fr))'
-        >
-        <NongbuImageContainer w='100%' filename='ear-1' border='4px solid red' />
-        <NongbuImageContainer w='100%' filename='ear-2' />
-        <NongbuImageContainer w='100%' filename='ear-3' />
-        <NongbuImageContainer w='100%' filename='ear-4' />
-      </Grid>
+        border='2px solid red'
+        p='1rem'
+        gridTemplateColumns='repeat(2, 500px)'
+        gridTemplateRows='repeat(2, 500px)'
+        gap='1rem'>
+        <EarImageContainer
+          filename='ear-1'
+          w='100%'
+          h='100%'
+          objectFit='cover'
+        />
 
-      <SectionFlexContentContainer
-        flexDirection={"column"}
-        headingtext='Get NongBu to-go or delivered.'
-        w={["100%", "100%", "100%", "60%"]}
-        justifyContent='flex-start'
-        gap='1rem'
-        alignItems='flex-start'
-        maxW='36rem'
-        pb='4rem'
-        color={colors.light}>
-        <Text variant='bodyText' maxW='36rem' zIndex='2'></Text>
-      </SectionFlexContentContainer>
-    </SectionFlexContainer>
+        <EarImageContainer
+          filename='ear-2'
+          w='100%'
+          h='100%'
+          objectFit='cover'
+        />
+        <EarImageContainer
+          filename='ear-3'
+          w='100%'
+          h='100%'
+          objectFit='cover'
+        />
+        <EarImageContainer
+          filename='ear-4'
+          w='100%'
+          h='100%'
+          objectFit='cover'
+        />
+      </Grid>
+    </Flex>
   );
 }

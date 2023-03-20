@@ -31,7 +31,7 @@ export default function DesktopNav(props) {
         <ChakraLink variant='bigNavLink' to='/contact' name='Reservations' />
       </Flex>
       <EarLogoLink px='8' />
-      <ChakraLink variant='bigNavLink' to='/ear' name='Ear' />
+      {/* <ChakraLink variant='bigNavLink' to='/ear' name='Ear' /> */}
     </Flex>
   );
 }

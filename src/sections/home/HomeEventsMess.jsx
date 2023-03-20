@@ -17,7 +17,6 @@ export default function HomeEventsMess(props) {
       justifyContent='space-between'
       h='fit-content'
       position='relative'
-      bg='green'
       {...props}>
       <NongbuImageContainer
         bg={colors.backgroundDark}
