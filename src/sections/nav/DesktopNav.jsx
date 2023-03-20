@@ -19,6 +19,7 @@ export default function DesktopNav(props) {
         <ChakraLink name='Events' to='/Events' />
         <ChakraLink name='Order' to='/Order' />
         <ChakraLink name='Contact' to='/Contact' />
+        
       </Flex>
       <Flex
         gap='12'
@@ -30,6 +31,7 @@ export default function DesktopNav(props) {
         <ChakraLink variant='bigNavLink' to='/contact' name='Reservations' />
       </Flex>
       <EarLogoLink px='8' />
+      <ChakraLink variant='bigNavLink' to='/ear' name='Ear' />
     </Flex>
   );
 }

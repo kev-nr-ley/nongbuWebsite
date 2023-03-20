@@ -5,6 +5,7 @@ import About from "@pages/About";
 import Order from "@pages/Order";
 import Contact from "@pages/Contact";
 import Reservations from "@pages/Reservations";
+import Ear from "@pages/Ear";
 import Events from "@pages/Events";
 
 import { Route, Routes, useLocation } from "react-router-dom";
@@ -20,6 +21,8 @@ export default function AnimatedRoutes() {
       <Route path='/Order' element={<Order />} />
       <Route path='/Menu' element={<Menu />} />
       <Route path='/Contact' element={<Contact />} />
+      {/* <Route path='/Reservations' element={<Reservations />} /> */}
+      <Route path='/Ear' element={<Ear />} />
     </Routes>
   );
 }

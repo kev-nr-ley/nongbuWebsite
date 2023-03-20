@@ -37,6 +37,7 @@ export default function HomeEventsMess(props) {
         flexDirection={"column"}
         headingtext='Use our space and services.'
         linktext='Get in touch'
+        px='10vw'
         linkto='/events'
         bg={[
           `linear-gradient(90deg, 
