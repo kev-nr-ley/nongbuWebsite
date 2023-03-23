@@ -45,7 +45,7 @@ export default function EarHero(props) {
         </Text>
 
         <ChakraLink
-          href='https://www.instagram.com/ear_yeg/'
+          to='https://www.instagram.com/ear_yeg/'
           target='_blank'
           rel='noopener noreferrer'
           fontSize='1.5rem'
