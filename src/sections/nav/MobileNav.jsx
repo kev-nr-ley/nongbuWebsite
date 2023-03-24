@@ -126,9 +126,9 @@ export default function MobileNav(props) {
           />
         </Flex>
         <Flex gap='4' alignItems='center'>
-          <FacebookLink fontSize='2.5rem' />
-          <InstagramLink fontSize='2.5rem' />
-          <EarLogoLink fontSize='3rem' />
+          <FacebookLink fontSize='2.5rem'   onClick={handleLink} />
+          <InstagramLink fontSize='2.5rem'   onClick={handleLink} />
+          <EarLogoLink fontSize='3rem'   onClick={handleLink} />
         </Flex>
       </Flex>
     </Flex>

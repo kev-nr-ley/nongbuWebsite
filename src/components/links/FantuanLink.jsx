@@ -7,6 +7,7 @@ export default function FantuanLink(...props) {
     <ChakraLink
       to='https://www.fantuanorder.com/store/nongbu-korean-eatery/ca-9090'
       name='Fantuan'
+      target='_blank'
       {...props}>
       <NongbuImageContainer
         filename='fantuan-logo'

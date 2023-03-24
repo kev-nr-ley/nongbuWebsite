@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Text, Grid, Box, Heading } from "@chakra-ui/react";
+import { Flex, Text, Grid, Box, Heading, VStack } from "@chakra-ui/react";
 import { useTheme } from "@chakra-ui/react";
 import SectionFlexContentContainer from "@components/layout/SectionFlexContentContainer";
 import SectionFlexContainer from "@components/layout/SectionFlexContainer";
@@ -7,8 +7,8 @@ import EarImageContainer from "@components/layout/EarImageContainer";
 import { InstagramEmbed } from "react-social-media-embed";
 import { useState, useEffect } from "react";
 import ChakraLink from "@components/ChakraLink";
-import { FaInstagram } from "react-icons/fa";
 import EarLogoLink from "@components/links/EarLogoLink";
+import { FaInstagram } from "react-icons/fa";
 import {
   FormLabel,
   Input,
@@ -27,19 +27,22 @@ export default function EarHero(props) {
       // border='2px solid limegreen'
       bg={colors.backgroundDark}
       position='relative'
-      minH='100vh'
-      h='fit-content'
+      w='100vw'
+      maxW='100%'
+      minH='80vh'
+      px='5vw'
       alignItems='center'
-      justifyContent='space-between'>
+      justifyContent='center'
+      flexDirection={["column", "column", "column", "row"]}>
       {/* Text */}
-      <Box
-        pl='5vw'
-      >
-
-        <Heading color='light' px='0'>
-          ear.
-        </Heading>
-        <Text color={colors.light} mt='1rem' lineHeight='30px'>
+      <VStack
+        p='1rem'
+        w='100%'
+        h='100%'
+        alignItems='center'
+        justifyContent='center'>
+        <EarLogoLink color='light' fontSize='48px'  mt='2rem'/>
+        <Text color={colors.light} my='2rem' w={['100%', '100%', '400px', '350px']} textAlign='center' ineHeight='30px'>
           Ear YEG is Joy Park’s small batch bakery with a home at Nongbu Korean
           Eatery. Check out the Instagram page and DM Joy for inquiries.
         </Text>
@@ -53,65 +56,40 @@ export default function EarHero(props) {
           color='primary'>
           @ear_yeg
         </ChakraLink>
-
-        {/* Form */}
-        {/* <Flex
-          as='form'
-          w='100%'
-          flexDirection='column'
-          justifyContent='flex-start'>
-          <FormInputContainer
-            id='name'
-            label='Name'
-            inputtype='text'
-            inputbg='white'
-            isRequired
-            placeholder='Jahn Doe'
-          />
-          <FormInputContainer
-            id='email'
-            label='Email'
-            inputtype='email'
-            inputbg='white'
-            isRequired
-            placeholder='Joy@Park.ca'
-          />
-          <FormInputContainer
-            id='phone'
-            label='Phone'
-            inputtype='tel'
-            inputbg='white'
-            isRequired
-            placeholder='780 802 2777'
-          />
-          <FormInputContainer
-            id='message'
-            label='Message'
-            inputtype='textarea'
-            inputbg='white'
-            isRequired
-            placeholder='One million cakes please'
-          />
-
-          <Button type='submit' my='1rem' bg={colors.primary}>
-            Submit
-          </Button>
-        </Flex> */}
-      </Box>
-
+      </VStack>
       {/* Image gallery */}
       <Grid
-        // border='2px solid red'
+        w='auto'
+        h='auto'
         bg='light'
-        p='1rem'
-        gridTemplateColumns='repeat(2,  25vw)'
-        gridTemplateRows='repeat(2, 25vw)'
-        gap='1rem'>
+        px='5vw'
+        alignItems='center'
+        justifyItems='center'
+        gridTemplateColumns={[
+          "repeat(1,  90vw)",
+          "repeat(1,  90vw)",
+          "repeat(2,  30vw)",
+          "repeat(2,  20vw)",
+        ]}
+        gridTemplateRows={[
+          "repeat(4,  20vw)",
+          "repeat(4,  20vw)",
+          "repeat(2,  30vw)",
+          "repeat(2,  20vw)",
+        ]}
+        gap='1rem'
+        p='1rem'>
         <EarImageContainer
           filename='ear-1'
           w='100%'
           h='100%'
           objectFit='cover'
+          _active={{
+            h: "50vh",
+            w: "50vh",
+            border: "1rem solid black",
+            zIndex: "999",
+          }}
         />
 
         <EarImageContainer
@@ -119,18 +97,36 @@ export default function EarHero(props) {
           w='100%'
           h='100%'
           objectFit='cover'
+          _active={{
+            h: "50vh",
+            w: "50vh",
+            border: "1rem solid black",
+            zIndex: "999",
+          }}
         />
         <EarImageContainer
           filename='ear-3'
           w='100%'
           h='100%'
           objectFit='cover'
+          _active={{
+            h: "50vh",
+            w: "50vh",
+            border: "1rem solid black",
+            zIndex: "999",
+          }}
         />
         <EarImageContainer
           filename='ear-4'
           w='100%'
           h='100%'
           objectFit='cover'
+          _active={{
+            h: "50vh",
+            w: "50vh",
+            border: "1rem solid black",
+            zIndex: "999",
+          }}
         />
       </Grid>
     </Flex>

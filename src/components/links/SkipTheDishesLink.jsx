@@ -6,6 +6,7 @@ export default function SkipTheDishesLink(props) {
     <ChakraLink
       to='https://www.skipthedishes.com/nongbu-korean-eatery'
       name='Skip The Dishes'
+      target='_blank'
       {...props}>
       <NongbuImageContainer
         filename='skipthedishes-logo'

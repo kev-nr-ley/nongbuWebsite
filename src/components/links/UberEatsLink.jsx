@@ -6,6 +6,7 @@ export default function UberEatsLink(...props) {
     <ChakraLink
       to='https://www.ubereats.com/ca/store/nongbu-korean-eatery-104-st/1Y-WFnTDTZ2yh5xB01bLaw'
       name='Uber Eats'
+      target='_blank'
       {...props}>
       <NongbuImageContainer
         filename='ubereats-logo'

@@ -39,6 +39,7 @@ export default function ContactHero(props) {
         bg={colors.backgroundDark} //for desktop
         zIndex='5'
         px='5vw'
+        py='5vh'
         minW={["100vw", "60vw", "30vw", "30vw"]}
         h={["100%", "100vh", "100vh", "100vh"]}>
         <Box>
