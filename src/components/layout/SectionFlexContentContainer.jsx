@@ -4,7 +4,6 @@ import { Flex, Image, Box, Text, Heading } from "@chakra-ui/react";
 import ChakraLinkArrow from "@components/ChakraLinkArrow";
 import NongbuImageContainer from "@components/layout/NongbuImageContainer";
 
-
 export default function SectionFlexContentContainer(props) {
   const { colors } = useTheme();
 
@@ -19,26 +18,27 @@ export default function SectionFlexContentContainer(props) {
       px='1rem'
       py='2rem'
       {...props}>
-      {props.headingtext ? (
+      {props.headingtext && (
         <Heading variant={props.headingvariant || "mediumHeading"}>
           {props.headingtext}
         </Heading>
-      ) : null}
+      )}
 
-      {props.headingsubtext ? (
+      {props.headingsubtext && (
         <Heading variant='smallHeading'>{props.headingsubtext}</Heading>
-      ) : null}
+      )}
 
       {props.children}
 
-      {props.linktext ? (
+      {props.linktext && (
         <ChakraLinkArrow
-          color={colors.primary}
+          ml='0'
+          color='primary'
           to={props.linkto || "/"}
           name={props.linktext}
           alignSelf={props.linkalign || "flex-start"}
         />
-      ) : null}
+      )}
     </Flex>
   );
 }

@@ -3,9 +3,14 @@ import { ComponentStyleConfig } from "@chakra-ui/react";
 export const TextStyles: ComponentStyleConfig = {
   // style object for base or default style
   baseStyle: {
-    fontSize: "1rem",
+    fontSize: [
+      "calc(1rem + 0.25vw)",
+      "calc(1rem + 0.25vw)",
+      "calc(1rem + 0.25vw)",
+      "calc(1rem + 0.25vw)",
+    ],
     fontWeight: "400",
-    lineHeight: "1.5rem",
+    lineHeight: "150%",
     letterSpacing: "0.1rem",
     // border:'1px solid limegreen',
     // bg:'#00ff0030'
@@ -30,27 +35,44 @@ export const TextStyles: ComponentStyleConfig = {
     menuBody: {},
 
     smallText: {
-      fontSize: "1rem",
+      fontSize: "calc(1rem + 0.5vw)",
+
       fontWeight: "500",
       // px: "1rem",
       letterSpacing: "0.125rem",
     },
 
     mediumText: {
-      fontSize: "1.25rem",
+      fontSize: [
+        "calc(1.25rem + 0.25vw)",
+        "calc(1.25rem + 0.25vw)",
+        "calc(1.25rem + 0.25vw)",
+        "calc(1.25rem + 0.25vw)",
+      ],
+
       fontWeight: "500",
       // px: "1rem",
       letterSpacing: "0.15rem",
     },
 
     bigText: {
-      fontSize: "1.5rem",
+      fontSize: [
+        "calc(1.25rem + 0.5vw)",
+        "calc(1.25rem + 0.5vw)",
+        "calc(1.25rem + 0.5vw)",
+        "calc(1.25rem + 0.5vw)",
+      ],
       fontWeight: "700",
       px: "1rem",
     },
 
     largeText: {
-      fontSize: "2rem",
+      fontSize: [
+        "calc(1.5rem + 0.5vw)",
+        "calc(1.5rem + 0.5vw)",
+        "calc(1.5rem + 0.5vw)",
+        "calc(1.5rem + 0.5vw)",
+      ],
       fontWeight: "700",
     },
 

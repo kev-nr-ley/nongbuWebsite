@@ -1,12 +1,17 @@
 import React from "react";
-import { streetEats, meatSsam, bowls, sharing } from "@assets/data/Menu";
+import {
+  streetEats,
+  meatSsam,
+  bowls,
+  sharing,
+  drinks,
+  defaultMenu,
+} from "@assets/data/Menu";
 import { Flex, Text, Grid } from "@chakra-ui/react";
-import { theme } from "@styles/theme";
-
 import MenuPage from "@components/Menu/MenuPage";
 
 export default function MenuMain(props) {
-  const { colors } = theme;
+  const menuPages = [streetEats, bowls, meatSsam, sharing, drinks];
   function renderMenuPage(menuPage) {
     return (
       <MenuPage
@@ -25,28 +30,32 @@ export default function MenuMain(props) {
       px='10vw'
       flexDirection={["column"]}
       py='100px'
-      bg={colors.backgroundDark}
+      bg='backgroundDark'
       {...props}>
       <Text
-        color={colors.light}
+        color='light'
         variant='bodyText'
         textAlign={["left", "right"]}
-        w='100%'
-        minW='240px'>
+        w='clamp(240px, 100%, 100%)'>
         *Please note, our food and drink menus involve ingredients and beverages
         that are both seasonal and hard to reliably procure. Menus are therefore
         subject to change without notice.
       </Text>
 
-      <Grid gap='5vw' w='100%' gridTemplateColumns={["1fr", "1fr", '1fr', "1fr 1fr"]}>
-        <MenuPage
-          {...streetEats}
-          objectToArray={props.objectToArray}
-          name={"streetEats"}
-        />
-        {renderMenuPage(bowls)}
-        {renderMenuPage(meatSsam)}
-        {renderMenuPage(sharing)}
+      <Grid
+        gap='5vw'
+        w='100%'
+        gridTemplateColumns={["1fr", "1fr", "1fr", "1fr 1fr"]}>
+        {menuPages.map((menuPage, index) => {
+          return (
+            <MenuPage
+              {...menuPage}
+              key={index}
+              objectToArray={props.objectToArray}
+              name={props.name}
+            />
+          );
+        })}
       </Grid>
     </Flex>
   );

@@ -5,7 +5,7 @@ import SectionFlexContentContainer from "@components/layout/SectionFlexContentCo
 import SectionFlexContainer from "@components/layout/SectionFlexContainer";
 
 import NongbuImageContainer from "@components/layout/NongbuImageContainer";
-
+import ChakraLinkArrow from "@components/ChakraLinkArrow";
 export default function HomeEventsMess(props) {
   const { colors } = useTheme();
 
@@ -36,7 +36,7 @@ export default function HomeEventsMess(props) {
         flexDirection={"column"}
         headingtext='Use our space and services.'
         linktext='Get in touch'
-        px='10vw'
+        px='5vw'
         linkto='/events'
         bg={[
           `linear-gradient(90deg, 
@@ -64,13 +64,14 @@ export default function HomeEventsMess(props) {
         position='absolute'
         top='0'
         left='0'
-        zIndex='9'
-        color={colors.light}>
+        gap='1rem'
+        zIndex='9'>
         <Text
-          variant='bodyText'
+          variant='smallText'
           maxW='34rem'
           textShadow='2px 2px 2px rgba(0,0,0,0.5)'
-          zIndex='2'>
+          zIndex='2'
+          color='light'>
           Are you looking for a private and modern space for your event? Do you
           have guests to feed? We might be able to help with your venue and
           catering needs.

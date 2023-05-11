@@ -7,6 +7,12 @@ export const LinkStyles: ComponentStyleConfig = {
   baseStyle: {
     letterSpacing: "1.25px",
     w: "fit-content",
+    fontSize: [
+      "calc(1rem + 0.25vw)",
+      "calc(1rem + 0.25vw)",
+      "calc(1rem + 0.25vw)",
+      "calc(1rem + 0.25vw)",
+    ],
     // fontWeight: "500",
     // border: "1px solid primary",
     _hover: {},
@@ -17,7 +23,12 @@ export const LinkStyles: ComponentStyleConfig = {
   variants: {
     // fancy link does the underline effect and changes color to primary
     fancyLink: {
-      fontSize: "1.25rem",
+      fontSize: [
+        "calc(1rem + 0.25vw)",
+        "calc(1rem + 0.25vw)",
+        "calc(1rem + 0.25vw)",
+        "calc(1rem + 0.25vw)",
+      ],
       fontWeight: "500",
       position: "relative",
       transition: "all 0.2s ease-in-out",
@@ -39,27 +50,52 @@ export const LinkStyles: ComponentStyleConfig = {
     },
 
     smallText: {
-      fontSize: "1rem",
+      fontSize: [
+        "calc(1rem + 0.25vw)",
+        "calc(1rem + 0.25vw)",
+        "calc(1rem + 0.25vw)",
+        "calc(1rem + 0.25vw)",
+      ],
       fontWeight: "500",
     },
 
     mediumText: {
-      fontSize: "1.25rem",
+      fontSize: [
+        "calc(1rem + 0.25vw)",
+        "calc(1rem + 0.25vw)",
+        "calc(1rem + 0.25vw)",
+        "calc(1rem + 0.25vw)",
+      ],
       fontWeight: "500",
     },
 
     bigText: {
-      fontSize: "1.5rem",
+      fontSize: [
+        "calc(1rem + 0.25vw)",
+        "calc(1rem + 0.25vw)",
+        "calc(1rem + 0.25vw)",
+        "calc(1rem + 0.25vw)",
+      ],
       fontWeight: "700",
     },
 
     largeText: {
-      fontSize: "2rem",
+      fontSize: [
+        "calc(1rem + 0.25vw)",
+        "calc(1rem + 0.25vw)",
+        "calc(1rem + 0.25vw)",
+        "calc(1rem + 0.25vw)",
+      ],
       fontWeight: "700",
     },
 
     heroLink: {
-      fontSize: "1.25rem",
+      fontSize: [
+        "calc(1.25rem + 0.25vw)",
+        "calc(1.25rem + 0.25vw)",
+        "calc(1.25rem + 0.25vw)",
+        "calc(1.25rem + 0.25vw)",
+      ],
       color: "primary",
       fontWeight: "700",
       _after: {
@@ -82,7 +118,12 @@ export const LinkStyles: ComponentStyleConfig = {
     },
 
     bigNavLink: {
-      fontSize: "1.5rem",
+      fontSize: [
+        "calc(1.25rem + 0.25vw)",
+        "calc(1.25rem + 0.25vw)",
+        "calc(1.25rem + 0.25vw)",
+        "calc(1.25rem + 0.25vw)",
+      ],
       color: "white",
       fontWeight: "700",
       _after: {
@@ -105,7 +146,12 @@ export const LinkStyles: ComponentStyleConfig = {
     },
 
     sectionLink: {
-      fontSize: "1.25rem",
+      fontSize: [
+        "calc(1.25rem + 0.25vw)",
+        "calc(1.25rem + 0.25vw)",
+        "calc(1.25rem + 0.25vw)",
+        "calc(1.25rem + 0.25vw)",
+      ],
       color: "primary",
       fontWeight: "500",
       ml: "1rem",

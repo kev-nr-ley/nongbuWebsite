@@ -1,19 +1,16 @@
 import React from "react";
-import { useTheme } from "@chakra-ui/react";
-import { Text, Image } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 import SectionFlexContentContainer from "@components/layout/SectionFlexContentContainer";
 import SectionFlexContainer from "@components/layout/SectionFlexContainer";
 
 import NongbuImageContainer from "@components/layout/NongbuImageContainer";
 
 export default function HomeAbout(props) {
-  const { colors } = useTheme();
-
   return (
     <SectionFlexContainer
       flexDirection={["column", "column", "column", "row"]}
-      bg={colors.backgroundLight}
-      color={colors.dark}
+      bg='backgroundLight'
+      color='dark'
       alignItems='center'
       justifyContent='center'
       px='5vw'
@@ -39,13 +36,11 @@ export default function HomeAbout(props) {
         w={["100%", "100%", "100%", "auto"]}
         justifyContent='flex-start'
         alignItems='flex-start'
-        pb='4rem'
-        px='0'>
+        pb='4rem'>
         <Text
           variant='bodyText'
-          maxW={["100%", "100%", "80%", "20rem"]}
-          // maxW='36rem'
-        >
+          maxW={["100%", "100%", "80%", "24rem"]}
+          alignSelf='flex-start'>
           NongBu resurrects Korean cuisine from bygone generations and
           reintroduces it to the Canadian and Korean palate alike.
           <br /> <br />

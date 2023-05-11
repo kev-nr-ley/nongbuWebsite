@@ -5,14 +5,14 @@ import { useTheme } from "@chakra-ui/react";
 export default function ContactInfo(props) {
   const { colors } = useTheme();
   return (
-    <Flex flexDirection='column' gap='1' w='100%' {...props}>
-      {props.showheading ? (
-        <Heading variant='footerHeading' px='0'>
+    <Flex flexDirection='column' gap='0.25rem' {...props}>
+      {props.showheading && (
+        <Heading variant='footerHeading' px='0' mb='1rem'>
           LOCATION
         </Heading>
-      ) : null}
+      )}
       <Flex justifyContent={"space-between"} letterSpacing='2px'>
-        <Text mt='1rem'>
+        <Text fontWeight='700'>
           8125 104st NW <br /> Edmonton, AB
         </Text>
       </Flex>

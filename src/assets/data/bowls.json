@@ -11,80 +11,80 @@
             "korean": "김치볶음밥",
             "description": "Kimchi and pork belly fried with rice and topped with a fried egg.",
             "price": 5.99,
-            "notes": "...notes",
-            "modifiers": "...modifiers"
+            "notes": [],
+            "modifiers": []
           },
           {
             "english": "Bibimbap",
             "korean": "비빔밥",
             "description": "Seasoned vegetables, beef and egg on rice. Served with gochujang sauce.",
             "price": 5.99,
-            "notes": "...notes",
-            "modifiers": "...modifiers"
+            "notes": [],
+            "modifiers": []
           },
           {
             "english": "Vegetarian Bibimbap",
             "korean": "비빔밥",
             "description": "Vegetables & mushrooms on rice. Served with gochujang sauce.",
             "price": 5.99,
-            "notes": "...notes",
-            "modifiers": "...modifiers"
+            "notes": [],
+            "modifiers": []
           },
           {
             "english": "Butter Bulgogi Deopbap",
             "korean": "불고기덮밥",
             "description": "Thinly shaved beef with shiitake and onions in buttery bulgogi sauce. Served on rice and topped with an egg.",
             "price": 5.99,
-            "notes": "...notes",
-            "modifiers": "...modifiers"
+            "notes": [],
+            "modifiers": []
           },
           {
             "english": "3 Mushroom Japchae",
             "korean": "버섯잡채",
             "description": "Seasoned vegetables, beef and egg on rice. Served with gochujang sauce.",
             "price": 5.99,
-            "notes": "...notes",
-            "modifiers": "...modifiers"
+            "notes": [],
+            "modifiers": []
           },
           {
             "english": "Beef Japchae",
             "korean": "버섯잡채",
             "description": "Beef & vegetables with sweet potato noodles.",
             "price": 5.99,
-            "notes": "...notes",
-            "modifiers": "...modifiers"
+            "notes": [],
+            "modifiers": []
           },
           {
             "english": "Jjimdak",
             "korean": "찜닭",
             "description": "Chicken and vegetables with sweet potato noodles in a sweet and savoury soy sauce.",
             "price": 5.99,
-            "notes": "...notes",
-            "modifiers": "...modifiers"
+            "notes": [],
+            "modifiers": []
           },
           {
             "english": "O-Sam Noodles",
             "korean": "오삼볶음면",
             "description": "Squid and porkbelly with ramyum noodles in a sweet soy sauce. ",
             "price": 5.99,
-            "notes": "...notes",
-            "modifiers": "...modifiers"
+            "notes": [],
+            "modifiers": []
           },
           {
             "english": "Korean Doshirak",
             "korean": "도시락",
             "description": "Korean egg, fried kimchi and eggs on rice.",
             "price": 5.99,
-            "notes": "...notes",
-            "modifiers": "...modifiers"
+            "notes": [],
+            "modifiers": []
           },
           {
             "english": "Oden Tang",
             "korean": "오뎅탕",
             "description": "Fishcakes in a light broth.",
             "price": 5.99,
-            "notes": "...notes",
-            "modifiers": "...modifiers"
+            "notes": [],
+            "modifiers": []
           }
         ]
       }

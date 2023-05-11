@@ -42,7 +42,7 @@ export default function HomeEvents(props) {
         pb='4rem'
         px='0'
         color={colors.light}>
-        <Text variant='bodyText' maxW='36rem' zIndex='2'>
+        <Text variant='mediumText'  maxW='36rem' zIndex='2'>
           Are you looking for a private and modern space for your event? Do you
           have guests to feed? We might be able to help with your venue and
           catering needs.

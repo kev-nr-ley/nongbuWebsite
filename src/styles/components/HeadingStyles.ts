@@ -4,10 +4,16 @@ export const HeadingStyles: ComponentStyleConfig = {
   // style object for base or default style
   baseStyle: {
     // letterSpacing: "20px",
-    fontSize: "1.25rem",
+    fontSize: [
+      "calc(1.25rem + 0.5vw)",
+      "calc(1.25rem + 0.5vw)",
+      "calc(1.25rem + 0.5vw)",
+      "calc(1.25rem + 0.5vw)",
+    ],
     fontWeight: "500",
+
     // border:'1px solid yellow',
-    px:'1rem',
+    // px:'1rem',
     // bg:'#ffff0030'
   },
   // styles for different sizes ("sm", "md", "lg")
@@ -15,30 +21,49 @@ export const HeadingStyles: ComponentStyleConfig = {
   // styles for different visual variants ("outline", "solid")
   variants: {
     smallHeading: {
-      fontSize: "1.25rem",
       fontWeight: "700",
     },
 
     mediumHeading: {
-      fontSize: "1.5rem",
+      fontSize: [
+        "calc(1.5rem + 0.5vw)",
+        "calc(1.5rem + 0.5vw)",
+        "calc(1.5rem + 0.5vw)",
+        "calc(1.5rem + 0.5vw)",
+      ],
       fontWeight: "700",
     },
 
 
     medLargeHeading: {
-      fontSize: "1.75rem",
+      fontSize: [
+        "calc(1.75rem + 0.5vw)",
+        "calc(1.75rem + 0.5vw)",
+        "calc(1.75rem + 0.5vw)",
+        "calc(1.75rem + 0.5vw)",
+      ],
       fontWeight: "700",
     },
 
 
     // make heading size smaller on mobile
     largeHeading: {
-      fontSize: '2rem',
+      fontSize: [
+        "calc(2rem + 0.5vw)",
+        "calc(2rem + 0.5vw)",
+        "calc(2rem + 0.5vw)",
+        "calc(2rem + 0.5vw)",
+      ],
       fontWeight: "700",
     },
 
     heroHeading: {
-      fontSize: "2.25rem",
+      fontSize: [
+        "calc(2.25rem + 0.5vw)",
+        "calc(2.25rem + 0.5vw)",
+        "calc(2.25rem + 0.5vw)",
+        "calc(2.25rem + 0.5vw)",
+      ],
       fontWeight: "700",
       letterSpacing: "0.225rem",
     },

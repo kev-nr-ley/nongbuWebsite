@@ -10,7 +10,7 @@ export default function Footer(props) {
   return (
     <Flex
       flexDirection={["column", "column", "row"]}
-      justifyContent='space-between'
+      justifyContent='space-evenly'
       alignItems={["center", "center", "flex-start"]}
       bg={colors.backgroundDarker}
       color={colors.light}
@@ -18,11 +18,10 @@ export default function Footer(props) {
       px='5vw'
       py='5vh'
       gap='2rem'
-      h='fit-content'
       {...props}>
-      <Hours maxW='16rem' showheading='true' />
-      <ContactInfo maxW='16rem' showheading='true' />
-      <LocationInfo maxW='16rem' showheading='true' />
+      <Hours showheading='true' />
+      <ContactInfo showheading='true' />
+      <LocationInfo showheading='true' />
     </Flex>
   );
 }
