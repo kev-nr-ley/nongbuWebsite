@@ -40,7 +40,7 @@ export default function HomeHero(props) {
           </Heading>
 
           <Text variant='mediumText' color='light'>
-            It is our desire to have our guests leaver NongBu experience happy,
+            It is our desire to have our guests leave every NongBu experience happy,
             full and a little more knowledgeable about our little country.
           </Text>
           <VStack alignSelf='flex-end' alignItems='flex-end'>

@@ -19,32 +19,33 @@ export default function MenuSection(props) {
   }
 
   return (
-    <Flex flexDirection='column' w='100%' alignItems='flex-start'>
+    <Flex flexDirection="column" w="100%" alignItems="flex-start">
       <Heading
-        as='h2'
-        mt='1rem'
-        className='menu-section-heading'
-        variant='menuHeading'
-        color='primary'>
+        as="h2"
+        mt="1rem"
+        className="menu-section-heading"
+        variant="menuHeading"
+        color="primary"
+      >
         {props.name}
       </Heading>
 
       {props.description && (
         <Text
-          className='menu-section-description'
-          variant='menuItalic'
-          my='0.5rem'
-          textAlign='left'
-          >
+          className="menu-section-description"
+          variant="menuItalic"
+          my="0.5rem"
+          textAlign="left"
+        >
           {props.description}
         </Text>
       )}
 
-      <Grid className='menu-section-items' w='100%' gap='1rem'>
+      <Grid className="menu-section-items" w="100%" gap="1rem">
         {renderMenuItems(props.items)}
 
         {props.footer && (
-          <Text variant='menuItalic' color='red'>
+          <Text variant="menuItalic" color="red">
             {props.footer}
           </Text>
         )}

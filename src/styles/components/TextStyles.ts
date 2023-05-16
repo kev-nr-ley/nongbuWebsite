@@ -27,18 +27,25 @@ export const TextStyles: ComponentStyleConfig = {
       my: "1rem",
     },
 
-    menuCaps: {
+    menuFood: {
+      className: "menu-food",
       fontWeight: "700",
       textTransform: "uppercase",
     },
 
-    menuBody: {},
+    menuBody: {
+      className: "menu-body",
+    },
+
+    menuDrink: {
+      fontSize: "calc(1rem + 0.5vw)",
+      fontWeight: "700",
+      letterSpacing: "0.125rem",
+    },
 
     smallText: {
       fontSize: "calc(1rem + 0.5vw)",
-
       fontWeight: "500",
-      // px: "1rem",
       letterSpacing: "0.125rem",
     },
 

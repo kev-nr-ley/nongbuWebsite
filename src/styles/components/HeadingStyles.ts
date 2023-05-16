@@ -80,8 +80,9 @@ export const HeadingStyles: ComponentStyleConfig = {
     },
 
     menuHeading: {
-      fontWeight: "500",
+      fontWeight: "700",
       px:'0px',
+
     },
 
   

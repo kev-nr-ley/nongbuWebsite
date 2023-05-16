@@ -5,7 +5,6 @@ function ImageContainer(props) {
   return (
     <Box //image container
     >
-      poophere
     </Box>
   );
 }

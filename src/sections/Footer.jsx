@@ -10,18 +10,23 @@ export default function Footer(props) {
   return (
     <Flex
       flexDirection={["column", "column", "row"]}
-      justifyContent='space-evenly'
+      justifyContent="space-evenly"
       alignItems={["center", "center", "flex-start"]}
-      bg={colors.backgroundDarker}
-      color={colors.light}
-      w='100%'
-      px='5vw'
-      py='5vh'
-      gap='2rem'
-      {...props}>
-      <Hours showheading='true' />
-      <ContactInfo showheading='true' />
-      <LocationInfo showheading='true' />
+      bg="backgroundDarker"
+      color="light"
+      w="100%"
+      px="5vw"
+      py="5vh"
+      gap="2rem"
+      {...props}
+    >
+      <Hours showheading="true" w="30%" alignItems='center' />
+      <ContactInfo showheading="true" w="30%" alignItems='center' />
+      <LocationInfo
+        showheading="true"
+        w="30%"
+        alignItems=" center"
+      />
     </Flex>
   );
 }

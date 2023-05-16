@@ -17,7 +17,9 @@ export default function AboutIntroduction() {
       py={["10%", "10%", "5%", "5%"]}
       gap='5vh'
       zIndex='8'
-      h='fit-content'>
+      h='fit-content'
+      bg='backgroundLight'
+      >
       <SectionFlexContentContainer
         headingtext='Food'
         linktext='View Menu'

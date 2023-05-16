@@ -35,7 +35,7 @@ export default function EventSpace(props) {
         flexDirection={"column"}
         headingtext='We host all kinds of events.'
         linktext='Get in touch'
-        linkto='/events'
+        linkto='/contact'
         w={["100%", "100%", "100%", "60%"]}
         justifyContent='flex-start'
         alignItems='flex-start'

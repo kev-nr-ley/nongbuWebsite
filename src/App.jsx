@@ -22,6 +22,7 @@ function App() {
     });
   }
 
+  const [isMobile, setIsMobile] = useState(false); 
   const [isLoading, setIsLoading] = useState(true);
   const { colors, fonts } = useTheme();
   const loadingContext = useLoadingContext();
@@ -37,12 +38,20 @@ function App() {
     }, 1500);
   }, []);
 
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsMobile(true);
+    }
+  }, []);
+
+  
+
   if (isLoading) {
     return <LoadingScreen />;
   }
 
   return (
-    <Box bg={colors.backgroundLight}>
+    <Box bg={colors.backgroundDark}>
       <Navbar />
       <ParallaxProvider>
         <AnimatedRoutes />
