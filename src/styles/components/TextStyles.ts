@@ -23,7 +23,6 @@ export const TextStyles: ComponentStyleConfig = {
     bodyText: {
       lineHeight: "1.5rem",
       fontWeight: "400",
-      px: "1rem",
       my: "1rem",
     },
 

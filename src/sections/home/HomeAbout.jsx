@@ -9,38 +9,41 @@ export default function HomeAbout(props) {
   return (
     <SectionFlexContainer
       flexDirection={["column", "column", "column", "row"]}
-      bg='backgroundLight'
-      color='dark'
-      alignItems='center'
-      justifyContent='center'
-      px='5vw'
+      bg="backgroundLight"
+      color="dark"
+      alignItems="center"
+      justifyContent="center"
+      px="5vw"
       gap={["0", "0", "0", "5vw"]}
-      {...props}>
+      {...props}
+    >
       <NongbuImageContainer
-        position='relative'
+        position="relative"
         h={["auto", "auto", "auto", "80vh"]}
-        name='table with korean dishes and makgeolli'
-        filename='nongbu-1'
+        name="table with korean dishes and makgeolli"
+        filename="nongbu-1"
         // p='5vw'
-        pt='5vw'
+        pt="5vw"
         pb={["0", "0", "0", "5vw"]}
         // border='4px'
-        objectFit='cover'
+        objectFit="cover"
         maxW={["100%", "100%", "100%", "50%"]}
       />
 
       <SectionFlexContentContainer
-        headingtext='Welcome to NongBu.'
-        linktext='View Menu'
-        linkto='/menu'
+        headingtext="Welcome to NongBu."
+        linktext="View Menu"
+        linkto="/menu"
         w={["100%", "100%", "100%", "auto"]}
-        justifyContent='flex-start'
-        alignItems='flex-start'
-        pb='4rem'>
+        justifyContent="flex-start"
+        alignItems="flex-start"
+        pb="4rem"
+      >
         <Text
-          variant='bodyText'
+          variant="bodyText"
           maxW={["100%", "100%", "80%", "24rem"]}
-          alignSelf='flex-start'>
+          alignSelf="flex-start"
+        >
           NongBu resurrects Korean cuisine from bygone generations and
           reintroduces it to the Canadian and Korean palate alike.
           <br /> <br />

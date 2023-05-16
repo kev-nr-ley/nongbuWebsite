@@ -19,7 +19,7 @@ export default function MenuMain(props) {
       w="100%"
       justifyContent="space-between"
       gap="8"
-      px="0rem"
+      px={['0', '0', '5vw', '5vw']}
       flexDirection={["column"]}
       py="100px"
       bg="backgroundDark"

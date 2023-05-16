@@ -59,7 +59,7 @@ export default function MenuPage(props) {
             </Heading>
             <AccordionIcon />
           </AccordionButton>
-          <AccordionPanel pb={4} position={"relative"}>
+          <AccordionPanel position={"relative"}>
             <Image
               src={"public/images/nongbu-logo.webp"}
               alt={props.title}
@@ -67,7 +67,6 @@ export default function MenuPage(props) {
               bottom="0%"
               right="0%"
               zIndex="0"
-              // transform={"translate(50%, -50%)"}
               w="200px"
               h="200px"
             />
@@ -100,7 +99,19 @@ export default function MenuPage(props) {
       px={["2rem"]}
       py={["2rem"]}
       justifyContent={"flex-start"}
+      position="relative"
     >
+      <Image
+        src={"public/images/nongbu-logo.webp"}
+        alt={props.title}
+        position="absolute"
+        bottom="1rem"
+        right="1rem"
+        zIndex="0"
+        // transform={"translate(50%, -50%)"}
+        w="200px"
+        h="200px"
+      />
       <Heading as="h2" variant="menuSection" color="primary">
         {props.title}
       </Heading>
