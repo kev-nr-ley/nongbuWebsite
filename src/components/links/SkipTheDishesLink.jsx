@@ -12,6 +12,8 @@ export default function SkipTheDishesLink(props) {
         filename='skipthedishes-logo'
         name='Skip The Dishes Logo'
         w={["8rem", "12rem", "12rem", "12rem"]}
+        transition="all 0.2s ease-in-out"
+        _hover={{ transform: "scale(1.1)" }}
       />
     </ChakraLink>
   );

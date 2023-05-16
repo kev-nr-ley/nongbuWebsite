@@ -48,7 +48,7 @@ export default function HomeHero(props) {
               to='/menu'
               name='View Menu'
               variant='heroLink'
-              arrowSize={[
+              arrowsize={[
                 "calc(1.5rem + 0.25vw)",
                 "calc(1.5rem + 0.25vw)",
                 "calc(1.5rem + 0.25vw)",
@@ -60,7 +60,7 @@ export default function HomeHero(props) {
               to='/contact'
               name='Book a table'
               variant='heroLink'
-              arrowSize={[
+              arrowsize={[
                 "calc(1.5rem + 0.25vw)",
                 "calc(1.5rem + 0.25vw)",
                 "calc(1.5rem + 0.25vw)",

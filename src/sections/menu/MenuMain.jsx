@@ -5,13 +5,14 @@ import {
   bowls,
   sharing,
   drinks,
+  drinks2,
   defaultMenu,
 } from "@assets/data/Menu";
 import { Flex, Text, Grid } from "@chakra-ui/react";
 import MenuPage from "@components/Menu/MenuPage";
 
 export default function MenuMain(props) {
-  const menuPages = [streetEats, bowls, meatSsam, sharing, drinks];
+  const menuPages = [streetEats, bowls, meatSsam, sharing, drinks, drinks2];
 
 
   return (

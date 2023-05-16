@@ -8,6 +8,8 @@ import NongbuImageContainer from "@components/layout/NongbuImageContainer";
 import UberEatsLink from "@components/links/UberEatsLink";
 import FantuanLink from "@components/links/FantuanLink"
 import SkipTheDishesLink from "@components/links/SkipTheDishesLink";
+import NongbuLogoLink from "@components/links/NongbuLogoLink";
+import ContactInfo from "@components/smallblocks/ContactInfo";
 
 // import {
 //   UberEatsLink,
@@ -20,8 +22,7 @@ export default function OrdrHero(props) {
   return (
     <SectionFlexContainer
       flexDirection={["column", "column", "column", "row"]}
-      bg={colors.backgroundDark}
-      color={colors.light}
+      bg='backgroundLight'
       position='relative'
       justifyContent={"center"}
       alignItems='center'
@@ -46,20 +47,21 @@ export default function OrdrHero(props) {
         alignItems='flex-start'
         maxW='36rem'
         pb='4rem'
-        color={colors.light}>
+        >
         <Text variant='bodyText' maxW='36rem' zIndex='2'>
           Look at our menu and give us a call to pick up your order, or get
           NongBu delivered right to your door.
         </Text>
 
         <Flex
-          flexDirection={["column", "column", "column", "column"]}
+          flexDirection={["row", "row", "row", "row"]}
+          flexWrap='wrap'
+
           gap='2rem'
-          bg={colors.backgroundDark}
           mt='1rem'
           pb='5vw'
           alignItems='center'
-          justifyContent='flex-start'
+          justifyContent='center'
           px='1rem'>
           <UberEatsLink />
           <SkipTheDishesLink />

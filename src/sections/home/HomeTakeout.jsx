@@ -15,13 +15,12 @@ import SkipTheDishesLink from "@components/links/SkipTheDishesLink";
 // } from "@components/LogoLinks";
 
 export default function HomeTakeout(props) {
-  const { colors } = useTheme();
 
   return (
     <SectionFlexContainer
       flexDirection={["column", "column", "column", "row"]}
-      bg={colors.backgroundLight} //section container,
-      color={colors.dark}
+      bg='backgroundLight'
+      color='dark'
       px='5vw'
       py='5vw'
       position='relative'
@@ -33,8 +32,7 @@ export default function HomeTakeout(props) {
         maxW='44rem'
       />
       <SectionFlexContentContainer headingtext='Get NongBu to-go or delivered right to your door.'>
-        <Flex flexDirection='column' gap='2rem' mt='2rem' alignItems={"center"}>
-          {/* These links are causing an error */}
+        <Flex flexDirection='row' gap='2rem' mt='2rem' alignItems={"center"} justifyContent='center'>
           <UberEatsLink />
           <SkipTheDishesLink />
           <FantuanLink />

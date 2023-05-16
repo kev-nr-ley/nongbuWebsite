@@ -23,10 +23,8 @@ export default function MenuPage(props) {
   useEffect(() => {
     if (window.innerWidth < 900) {
       setUseAccordion(true);
-      console.log("useAccordion is true");
     } else {
       setUseAccordion(false);
-      console.log("useAccordion is false");
     }
   }, [windowResize]);
 

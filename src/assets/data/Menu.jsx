@@ -381,7 +381,7 @@ const sharing = {
 };
 
 const drinks = {
-  title: "Drinks",
+  title: "Beer & Soju",
   description: "Soju is Korea's national drink and it pairs well with Korean food.",
   // footer: "tip your waiter!",
   sections: {
@@ -503,6 +503,192 @@ const drinks = {
       ],
     },
 
+    // spirits: {
+    //   name: "Spirits",
+    //   description: "By the bottle.",
+    //   items: [
+    //     {
+    //       textVariant: "menuDrink",
+    //       showItem: true,
+    //       english: "Bekseju",
+    //       korean: "백세주",
+    //       description:
+    //         "Herbal wine. Mildly sweet with ginseng notes. Pairs well with spicy food.",
+    //       price: 19,
+    //       notes: "13% 375ml",
+    //       modifiers: [],
+    //     },
+    //     {
+    //       textVariant: "menuDrink",
+    //       showItem: true,
+    //       english: "Bokbunja Um",
+    //       korean: "복분자음",
+    //       description: "Sweet black raspberry wine.",
+    //       price: 20,
+    //       notes: "20% 375ml",
+    //     },
+    //     {
+    //       textVariant: "menuDrink",
+    //       showItem: true,
+    //       english: "Kook Son Dang Makgoli",
+    //       korean: "막걸리",
+    //       description: "Traditional Korean rice liquor. Pairs well with korean snacks.",
+    //       price: 17,
+    //       notes: "6% 750ml",
+    //     },
+    //   ],
+    // },
+    // pop: {
+    //   name: "Soft Drinks",
+    //   items: [
+    //     {
+    //       textVariant: "menuDrink",
+    //       showItem: true,
+    //       english: "Pop",
+    //       korean: "",
+    //       description: "Coke, Coke Zero, Sprite, Ginger Ale, Iced Tea",
+    //       price: 3,
+    //       notes: "",
+    //       modifiers: [],
+    //     },
+    //     {
+    //       textVariant: "menuDrink",
+    //       showItem: true,
+    //       english: "K-Pop",
+    //       korean: "",
+    //       description: "Korean sodas.",
+    //       price: 4,
+    //       notes: "Milkis Original",
+    //       modifiers: [],
+    //     },
+    //   ],
+    // },
+  },
+};
+
+const drinks2 = {
+  title: "Spirits & Beverages",
+  description: "Korean spirits and beverages.",
+  // footer: "tip your waiter!",
+  sections: {
+    // beer: {
+    //   name: "Beer  맥주",
+    //   // english: "Beer",
+    //   // korean: "MekJu",
+    //   // description: "Maekju 맥주",
+    //   items: [
+    //     {
+    //       textVariant: "menuDrink",
+    //       showItem: true,
+    //       english: "Sapporo",
+    //       korean: "(Japan)",
+    //       description: "",
+    //       price: 6.5,
+    //       notes: "5% 355ml",
+    //       modifiers: [],
+    //     },
+
+    //     {
+    //       textVariant: "menuDrink",
+    //       showItem: true,
+    //       english: "Asahi",
+    //       korean: "(Japan)",
+    //       description: "",
+    //       price: 6.5,
+    //       notes: "5.2% 355ml",
+    //       modifiers: [],
+    //     },
+
+    //     {
+    //       textVariant: "menuDrink",
+    //       showItem: true,
+    //       english: "Beer Bucket",
+    //       // korean: "맥주 버킷",
+    //       description: "Any 4 beers.",
+    //       price: 24,
+    //       notes: "",
+    //       modifiers: [],
+    //     },
+    //   ],
+    // },
+    // soju: {
+    //   name: "Soju 소주",
+    //   // description: "Soju is not sake, get outta here.",
+    //   items: [
+    //     {
+    //       textVariant: "menuDrink",
+    //       showItem: true,
+    //       english: "Jinro Chamisul",
+    //       // korean: "진로 참이슬",
+    //       description: "Worlds # selling spirit.",
+    //       price: "Bottle $18",
+    //       price2: "2oz $3.50",
+    //       notes: "17% ",
+    //       modifiers: [],
+    //     },
+
+    //     {
+    //       textVariant: "menuDrink",
+    //       showItem: true,
+    //       english: "Good Day",
+    //       // korean: "굿데이",
+    //       description: "Rice soju.",
+    //       price: "Bottle $18",
+    //       price2: "2oz $3.50",
+    //       notes: "16.9%",
+    //       modifiers: [],
+    //     },
+
+    //     {
+    //       textVariant: "menuDrink",
+    //       showItem: true,
+    //       english: "Flavoured Soju",
+    //       // korean: "플레이버",
+    //       description: "Apple, Peach, Citrus, Grape, Yogurt, Plum, Mango",
+    //       price: "Bottle $18",
+    //       price2: "2oz $3.50",
+    //       notes: "13 - 14%",
+    //       modifiers: [],
+    //     },
+    //   ],
+    // },
+    // somek: {
+    //   name: "So-Mek 소맥",
+    //   description: "Mixing Soju & Beer is called So-Mek (SOju + MEKju).",
+    //   items: [
+    //     {
+    //       textVariant: "menuDrink",
+    //       showItem: true,
+    //       english: "So-Mek",
+    //       korean: "소맥",
+    //       description: "2oz Soju + any beer.",
+    //       price: 8.5,
+    //       notes: "",
+    //       modifiers: [],
+    //     },
+    //     {
+    //       textVariant: "menuDrink",
+    //       showItem: true,
+    //       english: "So-Mek 'Love Shot'",
+    //       korean: "",
+    //       description: "Two 2oz Soju + 2 beers",
+    //       price: 16,
+    //       notes: "",
+    //       modifiers: [],
+    //     },
+    //     {
+    //       textVariant: "menuDrink",
+    //       showItem: true,
+    //       english: "So-Mek Combo",
+    //       korean: "",
+    //       description: "1 bottle of Soju + 2 beers. $24 on Thursdays.",
+    //       price: 28,
+    //       notes: "",
+    //       modifiers: [],
+    //     },
+    //   ],
+    // },
+
     spirits: {
       name: "Spirits",
       description: "By the bottle.",
@@ -590,4 +776,4 @@ const defaultMenu = {
   },
 };
 
-export { streetEats, meatSsam, bowls, sharing, drinks, defaultMenu };
+export { streetEats, meatSsam, bowls, sharing, drinks, drinks2, defaultMenu };
