@@ -30,6 +30,7 @@ export default function MenuMain(props) {
         variant="bodyText"
         textAlign={["left", "right"]}
         w="clamp(240px, 100%, 100%)"
+        px='1rem'
       >
         *Please note, our food and drink menus involve ingredients and beverages
         that are both seasonal and hard to reliably procure. Menus are therefore

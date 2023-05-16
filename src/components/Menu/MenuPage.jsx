@@ -61,7 +61,7 @@ export default function MenuPage(props) {
           </AccordionButton>
           <AccordionPanel position={"relative"}>
             <Image
-              src={"public/images/nongbu-logo.webp"}
+              src={"images/nongbu-logo.webp"}
               alt={props.title}
               position="absolute"
               bottom="0%"
@@ -102,7 +102,7 @@ export default function MenuPage(props) {
       position="relative"
     >
       <Image
-        src={"public/images/nongbu-logo.webp"}
+        src={"images/nongbu-logo.webp"}
         alt={props.title}
         position="absolute"
         bottom="1rem"
