@@ -11,26 +11,26 @@ import {
   Button,
   MenuGroup,
 } from "@chakra-ui/react";
-import { ChevronDownIcon } from "@chakra-ui/icons";
+import { ChevronDownIcon, AddIcon } from "@chakra-ui/icons";
 export default function DesktopNav(props) {
   return (
     <Flex {...props}>
       <NongbuLogoLink iconsize="3rem" />
-      <Flex gap="8" px="8">
+      <Flex gap="8" px="8" alignItems="flex-start" justifyContent="">
         <ChakraLink name="Home" to="/" />
         <ChakraLink name="About" to="/About" />
         <ChakraLink name="Events" to="/Events" />
-
+        <ChakraLink name="Contact" to="/Contact" />
         <Menu>
           <MenuButton
             as={Button}
-            variant="navLink"
-            fontWeight="600"
-            borderRadius="0"
-            px="0"
+            color="primary"
+            bg="backgroundDarker"
             rightIcon={<ChevronDownIcon fontSize="2rem" />}
+            _hover={{ bg: "backgroundDark" }}
+            _active={{ bg: "backgroundDark" }}
           >
-            <ChakraLink name="Order" to="/Order" />
+            <ChakraLink name="Order Now" to="/Order" fontWeight="800" />
           </MenuButton>
           <MenuList bg="backgroundDark">
             {/* <MenuGroup
@@ -44,7 +44,7 @@ export default function DesktopNav(props) {
             > */}
 
             <MenuItem bg="transparent">
-              <ChakraLink name="Pickup" to="/order" />
+              <ChakraLink name="Pickup" to="/contact" />
             </MenuItem>
             {/* </MenuGroup> */}
             {/* <MenuGroup
@@ -56,29 +56,27 @@ export default function DesktopNav(props) {
               px="0"
               mx="0"
             > */}
-              <MenuItem bg="transparent">
-                <ChakraLink
-                  name="SkipTheDishes"
-                  to="https://www.skipthedishes.com/nongbu-korean-eatery"
-                />
-              </MenuItem>
-              <MenuItem bg="transparent">
-                <ChakraLink
-                  name="UberEats"
-                  to="https://www.ubereats.com/ca/store/nongbu-korean-eatery-104-st/1Y-WFnTDTZ2yh5xB01bLaw"
-                />
-              </MenuItem>
-              <MenuItem bg="transparent">
-                <ChakraLink
-                  name="Fantuan"
-                  to="https://www.fantuanorder.com/store/nongbu-korean-eatery/ca-9090"
-                />
-              </MenuItem>
+            <MenuItem bg="transparent">
+              <ChakraLink
+                name="SkipTheDishes"
+                to="https://www.skipthedishes.com/nongbu-korean-eatery"
+              />
+            </MenuItem>
+            <MenuItem bg="transparent">
+              <ChakraLink
+                name="UberEats"
+                to="https://www.ubereats.com/ca/store/nongbu-korean-eatery-104-st/1Y-WFnTDTZ2yh5xB01bLaw"
+              />
+            </MenuItem>
+            <MenuItem bg="transparent">
+              <ChakraLink
+                name="Fantuan"
+                to="https://www.fantuanorder.com/store/nongbu-korean-eatery/ca-9090"
+              />
+            </MenuItem>
             {/* </MenuGroup> */}
           </MenuList>
         </Menu>
-
-        <ChakraLink name="Contact" to="/Contact" />
       </Flex>
       <Flex
         gap="12"
