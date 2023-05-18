@@ -21,13 +21,16 @@ export default function HomeAbout(props) {
         position="relative"
         h={["auto", "auto", "auto", "80vh"]}
         name="table with korean dishes and makgeolli"
-        filename="nongbu-1"
+        filename="nongbu-entrance"
+        overflow='hidden'
         // p='5vw'
         pt="5vw"
         pb={["0", "0", "0", "5vw"]}
         // border='4px'
         objectFit="cover"
         maxW={["100%", "100%", "100%", "50%"]}
+        filter="blur(0px)"
+        
       />
 
       <SectionFlexContentContainer

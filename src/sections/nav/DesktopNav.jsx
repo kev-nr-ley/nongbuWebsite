@@ -11,51 +11,63 @@ import {
   Button,
   MenuGroup,
 } from "@chakra-ui/react";
-import { ChevronDownIcon, AddIcon } from "@chakra-ui/icons";
+import {
+  ChevronDownIcon,
+  AddIcon,
+  ExternalLinkIcon,
+  PhoneIcon,
+} from "@chakra-ui/icons";
 export default function DesktopNav(props) {
   return (
     <Flex {...props}>
       <NongbuLogoLink iconsize="3rem" />
-      <Flex gap="8" px="8" alignItems="flex-start" justifyContent="">
+      <Flex gap="2rem" px="2rem" alignItems="flex-start" justifyContent="">
         <ChakraLink name="Home" to="/" />
         <ChakraLink name="About" to="/About" />
         <ChakraLink name="Events" to="/Events" />
         <ChakraLink name="Contact" to="/Contact" />
+      </Flex>
+      <Flex
+        gap="12"
+        w="100%"
+        mx="4"
+        alignItems={"center"}
+        justifyContent={"right"}
+      >
+ 
+        <ChakraLink variant="bigNavLink" to="/Menu" name="Menu" />
+        <ChakraLink variant="bigNavLink" to="/contact" name="Reservations" />
         <Menu>
           <MenuButton
             as={Button}
             color="primary"
             bg="backgroundDarker"
             rightIcon={<ChevronDownIcon fontSize="2rem" />}
-            _hover={{ bg: "backgroundDark" }}
-            _active={{ bg: "backgroundDark" }}
+            _hover={{ bg: "light"
+          }}
+            _active={{ bg: "light" }}
           >
-            <ChakraLink name="Order Now" to="/Order" fontWeight="800" />
+            <ChakraLink
+              name="Order"
+              to="/Order"
+              fontWeight="700"
+              variant="bigNavLink"
+             color='primary'
+
+            />
           </MenuButton>
           <MenuList bg="backgroundDark">
-            {/* <MenuGroup
-              title="Pickup"
-              fontSize="1.5rem"
-              fontWeight="400"
-              bg="backgroundDarker"
-              w="100%"
-              px="0"
-              mx="0"
-            > */}
-
             <MenuItem bg="transparent">
-              <ChakraLink name="Pickup" to="/contact" />
+              <ChakraLink
+                name="Pickup"
+                to="/contact"
+                iconleft={<PhoneIcon />}
+                display="flex"
+                alignItems="center"
+                gap="1rem"
+              />
             </MenuItem>
-            {/* </MenuGroup> */}
-            {/* <MenuGroup
-              title="Delivery"
-              fontSize="1.5rem"
-              fontWeight="400"
-              bg="backgroundDarker"
-              w="100%"
-              px="0"
-              mx="0"
-            > */}
+
             <MenuItem bg="transparent">
               <ChakraLink
                 name="SkipTheDishes"
@@ -78,17 +90,7 @@ export default function DesktopNav(props) {
           </MenuList>
         </Menu>
       </Flex>
-      <Flex
-        gap="12"
-        w="100%"
-        mx="4"
-        alignItems={"center"}
-        justifyContent={"right"}
-      >
-        <ChakraLink variant="bigNavLink" to="/Menu" name="Menu" />
-        <ChakraLink variant="bigNavLink" to="/contact" name="Reservations" />
-      </Flex>
-      <EarLogoLink px="8" />
+      <EarLogoLink px="1rem" pb="0.25rem" />
       {/* <ChakraLink variant='bigNavLink' to='/ear' name='Ear' /> */}
     </Flex>
   );

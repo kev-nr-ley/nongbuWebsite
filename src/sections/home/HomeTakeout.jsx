@@ -15,24 +15,31 @@ import SkipTheDishesLink from "@components/links/SkipTheDishesLink";
 // } from "@components/LogoLinks";
 
 export default function HomeTakeout(props) {
-
   return (
     <SectionFlexContainer
       flexDirection={["column", "column", "column", "row"]}
-      bg='backgroundLight'
-      color='dark'
-      px='5vw'
-      py='5vw'
-      position='relative'
-      {...props}>
+      bg="backgroundLight"
+      color="dark"
+      px="5vw"
+      py="5vw"
+      position="relative"
+      {...props}
+    >
       <NongbuImageContainer
-        filename='nongbu-4'
-        name='plate of ddeokbbokki'
+        filename="newfood-11"
+        name="plate of ddeokbbokki"
         p={["0", "0", "0", "2.5vw"]}
-        maxW='44rem'
+        maxW="60rem"
       />
-      <SectionFlexContentContainer headingtext='Get NongBu to-go or delivered right to your door.'>
-        <Flex flexDirection='row' gap='2rem' mt='2rem' alignItems={"center"} justifyContent='center'>
+      <SectionFlexContentContainer headingtext="Get NongBu to-go or delivered right to your door.">
+        <Flex
+          flexDirection="row"
+          gap="2rem"
+          mt="2rem"
+          alignItems={"center"}
+          justifyContent="center"
+          flexWrap="wrap"
+        >
           <UberEatsLink />
           <SkipTheDishesLink />
           <FantuanLink />

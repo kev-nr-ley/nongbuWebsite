@@ -22,19 +22,19 @@ export default function ContactHero(props) {
       {...props}
     >
       <NongbuImageContainer
-        objectPosition="-20% 0%"
+        objectPosition="0% 20%"
         position={["static", "absolute", "absolute"]}
         w={["100%", "100%", "70vw", "60vw"]}
-        h={["30vh", "100%", "100%", "100vh"]}
+        h={["30vh", "100%", "100%", "100%"]}
         right={["none", "0", "0"]}
         top={["none", "0", "0"]}
         zIndex="4"
-        filename="nongbu-contact-1"
+        filename="kimchi-friedrice"
       />
 
       <Flex //Text block
         flexDirection="column"
-        justifyContent="center"
+        justifyContent="center" 
         alignItems="flex-start"
         bg="backgroundDark" //for desktop
         zIndex="5"
@@ -42,7 +42,7 @@ export default function ContactHero(props) {
         py="5vh"
         gap="1rem"
         minW={["100vw", "60vw", "30vw", "30vw"]}
-        h={["100%", "100vh", "100vh", "100vh"]}
+        h={["100%", "100vh", "100vh", "80vh"]}
       >
         <Box>
           <Heading px="0" variant="mediumHeading">
