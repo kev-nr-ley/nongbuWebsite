@@ -11,6 +11,7 @@ export default defineConfig({
       "@pages": "/src/pages",
       "@sections": "/src/sections",
       "@styles": "/src/styles",
+      "src": "/src",
     },
   },
 });

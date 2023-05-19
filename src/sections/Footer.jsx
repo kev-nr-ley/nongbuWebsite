@@ -1,13 +1,15 @@
 import React from "react";
 import { useTheme } from "@chakra-ui/react";
-import { Flex } from "@chakra-ui/react";
+import { Flex, VStack } from "@chakra-ui/react";
 
 import Hours from "@components/smallblocks/Hours";
 import ContactInfo from "@components/smallblocks/ContactInfo";
 import LocationInfo from "@components/smallblocks/LocationInfo";
+import FooterCopyright from "@components/smallblocks/FooterCopyright";
 export default function Footer(props) {
   const { colors } = useTheme();
   return (
+   <VStack>
     <Flex
       flexDirection={["column", "column", "row"]}
       justifyContent="space-evenly"
@@ -27,6 +29,9 @@ export default function Footer(props) {
         w="30%"
         alignItems=" center"
       />
+
     </Flex>
+<FooterCopyright color='light' mt='2rem'/>
+    </VStack>
   );
 }
