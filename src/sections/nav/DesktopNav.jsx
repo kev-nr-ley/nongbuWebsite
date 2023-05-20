@@ -3,20 +3,8 @@ import { Flex } from "@chakra-ui/react";
 import ChakraLink from "@components/ChakraLink";
 import EarLogoLink from "@components/links/EarLogoLink.jsx";
 import NongbuLogoLink from "@components/links/NongbuLogoLink.jsx";
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  Button,
-  MenuGroup,
-} from "@chakra-ui/react";
-import {
-  ChevronDownIcon,
-  AddIcon,
-  ExternalLinkIcon,
-  PhoneIcon,
-} from "@chakra-ui/icons";
+import { Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
+import { ChevronDownIcon, PhoneIcon } from "@chakra-ui/icons";
 export default function DesktopNav(props) {
   return (
     <Flex {...props}>
@@ -34,7 +22,6 @@ export default function DesktopNav(props) {
         alignItems={"center"}
         justifyContent={"right"}
       >
- 
         <ChakraLink variant="bigNavLink" to="/Menu" name="Menu" />
         <ChakraLink variant="bigNavLink" to="/contact" name="Reservations" />
         <Menu>
@@ -43,8 +30,7 @@ export default function DesktopNav(props) {
             color="primary"
             bg="backgroundDarker"
             rightIcon={<ChevronDownIcon fontSize="2rem" />}
-            _hover={{ bg: "light"
-          }}
+            _hover={{ bg: "light" }}
             _active={{ bg: "light" }}
           >
             <ChakraLink
@@ -52,8 +38,7 @@ export default function DesktopNav(props) {
               to="/Order"
               fontWeight="700"
               variant="bigNavLink"
-             color='primary'
-
+              color="primary"
             />
           </MenuButton>
           <MenuList bg="backgroundDark">
@@ -86,12 +71,10 @@ export default function DesktopNav(props) {
                 to="https://www.fantuanorder.com/store/nongbu-korean-eatery/ca-9090"
               />
             </MenuItem>
-            {/* </MenuGroup> */}
           </MenuList>
         </Menu>
       </Flex>
       <EarLogoLink px="1rem" pb="0.25rem" />
-      {/* <ChakraLink variant='bigNavLink' to='/ear' name='Ear' /> */}
     </Flex>
   );
 }

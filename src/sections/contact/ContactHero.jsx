@@ -1,16 +1,8 @@
 import React from "react";
-import { useTheme } from "@chakra-ui/react";
-import { Flex, Text, Heading, Box } from "@chakra-ui/react";
-import Hours from "@components/smallblocks/Hours";
+import { Flex, Text, Heading, Box, VStack } from "@chakra-ui/react";
 import ContactInfo from "@components/smallblocks/ContactInfo";
-import LocationInfo from "@components/smallblocks/LocationInfo";
-import SectionFlexContentContainer from "@components/layout/SectionFlexContentContainer";
-import SectionFlexContainer from "@components/layout/SectionFlexContainer";
 import NongbuImageContainer from "@components/layout/NongbuImageContainer";
-
 export default function ContactHero(props) {
-  const { colors } = useTheme();
-
   return (
     <Flex //body
       bg="backgroundDark"
@@ -34,7 +26,7 @@ export default function ContactHero(props) {
 
       <Flex //Text block
         flexDirection="column"
-        justifyContent="center" 
+        justifyContent="center"
         alignItems="flex-start"
         bg="backgroundDark" //for desktop
         zIndex="5"
@@ -44,23 +36,16 @@ export default function ContactHero(props) {
         minW={["100vw", "60vw", "30vw", "30vw"]}
         h={["100%", "100vh", "100vh", "80vh"]}
       >
-        <Box>
-          <Heading px="0" variant="mediumHeading">
+        <VStack gap="1rem">
+          <Heading variant="mediumHeading" alignSelf="flex-start">
             Contact us
           </Heading>
-          <Text variant="bodyText" px="0" maxW="24rem">
+          <Text variant="bodyText" maxW="24rem">
             Book a table, order takeout, inquire about private events and
             catering, ask about our menu, etc.. We're here to help!
           </Text>
-        <ContactInfo />
-
-        </Box>
-
-
-
-      
-
-        {/* <LocationInfo showheading='true' /> */}
+          <ContactInfo alignItems="flex-start" w="100%" />
+        </VStack>
       </Flex>
     </Flex>
   );

@@ -1,34 +1,29 @@
 import React from "react";
-import { Flex, Heading, Text } from "@chakra-ui/react";
-import ChakraLinkArrow from "@components/ChakraLinkArrow";
-import { useTheme } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 import SectionFlexContentContainer from "@components/layout/SectionFlexContentContainer";
 import SectionFlexContainer from "@components/layout/SectionFlexContainer";
 
-import NongbuImageContainer from "@components/layout/NongbuImageContainer";
-
-
 export default function AboutIntroduction() {
-  const { colors } = useTheme();
   return (
     <SectionFlexContainer
-      overflow='hidden'
-      flexDirection='column'
+      overflow="hidden"
+      flexDirection="column"
       py={["10%", "10%", "5%", "5%"]}
-      gap='5vh'
-      zIndex='8'
-      h='fit-content'
-      bg='backgroundLight'
-      >
+      gap="5vh"
+      zIndex="8"
+      h="fit-content"
+      bg="backgroundLight"
+    >
       <SectionFlexContentContainer
-        headingtext='Food'
-        linktext='View Menu'
-        linkto='/menu'
+        headingtext="Food"
+        linktext="View Menu"
+        linkto="/menu"
         flexDirection={"column"}
-        minW='240px'
-        w={['100%', '100%', '80%', '80%']}
-        maxW='100%'>
-        <Text variant='bodyText'>
+        minW="240px"
+        w={["100%", "100%", "80%", "80%"]}
+        maxW="100%"
+      >
+        <Text variant="bodyText">
           NongBu Korean Eatery opened with the mission to re-introduce
           traditional Korean food to Edmontonians. From its conception, NongBu
           wanted to fill a void in the Korean food offerings in our city. Our
@@ -50,14 +45,15 @@ export default function AboutIntroduction() {
         </Text>
       </SectionFlexContentContainer>
       <SectionFlexContentContainer
-        headingtext='Culture'
-        linktext='Contact Us'
-        linkto='/contact'
-        flexDirection={"column"}
-        minW='240px'
-        w={['100%', '100%', '80%', '80%']}
-        maxW='100%'>
-        <Text variant='bodyText'>
+        headingtext="Culture"
+        linktext="Contact Us"
+        linkto="/contact"
+        flexDirection="column"
+        minW="240px"
+        w={["100%", "100%", "80%", "80%"]}
+        maxW="100%"
+      >
+        <Text variant="bodyText">
           NongBu wants to expand on what people already know about Korean
           culture. It is not just a traditional dining experience but a complete
           cultural experience. The space we designed is minimalist and

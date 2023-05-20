@@ -9,6 +9,8 @@ import {
 } from "@chakra-ui/react";
 
 import MenuSection from "@components/Menu/MenuSection";
+
+
 import { useState, useEffect } from "react";
 export default function MenuPage(props) {
   function objectToArray(object) {

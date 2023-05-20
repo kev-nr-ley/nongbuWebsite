@@ -1,18 +1,11 @@
 import React from "react";
-import { useTheme } from "@chakra-ui/react";
-import { Flex } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
 import SectionFlexContentContainer from "@components/layout/SectionFlexContentContainer";
 import SectionFlexContainer from "@components/layout/SectionFlexContainer";
 import NongbuImageContainer from "@components/layout/NongbuImageContainer";
-
 import UberEatsLink from "@components/links/UberEatsLink";
 import FantuanLink from "@components/links/FantuanLink";
 import SkipTheDishesLink from "@components/links/SkipTheDishesLink";
-// import {
-//   UberEatsLink,
-// SkipTheDishesLink,
-//   FantuanLink,
-// } from "@components/LogoLinks";
 
 export default function HomeTakeout(props) {
   return (
@@ -31,13 +24,15 @@ export default function HomeTakeout(props) {
         p={["0", "0", "0", "2.5vw"]}
         maxW="60rem"
       />
-      <SectionFlexContentContainer headingtext="Get NongBu to-go or delivered right to your door.">
+      <SectionFlexContentContainer alignItems="center">
+        <Heading variant="mediumHeading" w="fit-content">
+          Get NongBu to-go or delivered right to your door.
+        </Heading>
         <Flex
           flexDirection="row"
-          gap="2rem"
           mt="2rem"
-          alignItems={"center"}
-          justifyContent="center"
+          gap="5vw"
+          alignItems="center"
           flexWrap="wrap"
         >
           <UberEatsLink />

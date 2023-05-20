@@ -20,17 +20,14 @@ export default function HomeAbout(props) {
       <NongbuImageContainer
         position="relative"
         h={["auto", "auto", "auto", "80vh"]}
-        name="table with korean dishes and makgeolli"
+        name="nongbu entrance"
         filename="nongbu-entrance"
-        overflow='hidden'
-        // p='5vw'
+        overflow="hidden"
         pt="5vw"
         pb={["0", "0", "0", "5vw"]}
-        // border='4px'
         objectFit="cover"
         maxW={["100%", "100%", "100%", "50%"]}
-        filter="blur(0px)"
-        
+        filter="blur(1px)"
       />
 
       <SectionFlexContentContainer
@@ -42,11 +39,7 @@ export default function HomeAbout(props) {
         alignItems="flex-start"
         pb="4rem"
       >
-        <Text
-          variant="bodyText"
-          maxW={["100%", "100%", "80%", "24rem"]}
-          alignSelf="flex-start"
-        >
+        <Text maxW={["100%", "100%", "80%", "24rem"]} alignSelf="flex-start">
           NongBu resurrects Korean cuisine from bygone generations and
           reintroduces it to the Canadian and Korean palate alike.
           <br /> <br />

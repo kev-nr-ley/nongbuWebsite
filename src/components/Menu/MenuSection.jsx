@@ -43,7 +43,6 @@ export default function MenuSection(props) {
 
       <Grid className="menu-section-items" w="100%" gap="1rem">
         {renderMenuItems(props.items)}
-
         {props.footer && (
           <Text variant="menuItalic" color="red">
             {props.footer}

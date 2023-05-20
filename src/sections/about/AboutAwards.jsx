@@ -1,12 +1,8 @@
 import React from "react";
 import { VStack, Heading, Text, Image } from "@chakra-ui/react";
-import { useTheme } from "@chakra-ui/react";
-import SectionFlexContentContainer from "@components/layout/SectionFlexContentContainer";
 import SectionFlexContainer from "@components/layout/SectionFlexContainer";
-import NongbuImageContainer from "@components/layout/NongbuImageContainer";
 
 export default function AboutAwards(props) {
-  const { colors } = useTheme();
   return (
     <SectionFlexContainer
       flexDirection={[
@@ -20,8 +16,8 @@ export default function AboutAwards(props) {
       w="100vw"
       maxW="100%"
       overflow="hidden"
-      justifyContent={["center"]}
-      alignItems={["center"]}
+      justifyContent="center"
+      alignItems="center"
       gap="5vw"
       p="5vw"
       {...props}
@@ -42,14 +38,14 @@ export default function AboutAwards(props) {
           <Text>Best Overall Restaurant, 2018</Text>
         </VStack>
 
-        <VStack pt="1rem" textAlign='center'>
+        <VStack pt="1rem" textAlign="center">
           <Heading variant="smallHeading">Vue Weekly</Heading>
           <Text> 1st, Best Korean Restaurant, 2016</Text>
           <Text>1st, Best Korean Restaurant, 2017</Text>
           <Text>1st, Best Korean Restaurant, 2018</Text>
         </VStack>
 
-        <VStack pt="1rem" textAlign='center'>
+        <VStack pt="1rem" textAlign="center">
           <Heading variant="smallHeading">Where Magazine</Heading>
           <Text> 2nd, Best New Restaurant, 2016</Text>
         </VStack>
@@ -58,7 +54,7 @@ export default function AboutAwards(props) {
       <Image
         src="/images/nongbu-magazine.webp"
         w={["100%", "100%", "24rem", "32rem"]}
-        h={["auto"]}
+        h="auto"
       />
     </SectionFlexContainer>
   );

@@ -1,8 +1,0 @@
-    <svg
-      width={100}
-      height={100}
-      viewBox='0 0 1440 609'
-      fill='#ff22ff'
-      xmlns='http://www.w3.org/2000/svg'>
-      <ellipse cx='719.5' cy='12' rx='1256.5' ry='597' fill='#12212B' />
-    </svg>
