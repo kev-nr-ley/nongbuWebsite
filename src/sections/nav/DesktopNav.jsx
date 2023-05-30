@@ -7,23 +7,21 @@ import { Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
 import { ChevronDownIcon, PhoneIcon } from "@chakra-ui/icons";
 export default function DesktopNav(props) {
   return (
-    <Flex alignItems='center' {...props}>
-      <NongbuLogoLink iconsize="3rem" />
-      <Flex   alignItems="flex-start" justifyContent="space-evenly" w='100%'>
+    <Flex justifyContent="space-between" {...props}>
+      <Flex
+        justifySelf="flex-start"
+        justifyContent="space-evenly"
+        gap="2vw"
+        alignItems="center"
+      >
+        <NongbuLogoLink iconsize="calc(2rem + 1vw)" />
+
         <ChakraLink name="Home" to="/" />
         <ChakraLink name="About" to="/About" />
         <ChakraLink name="Events" to="/Events" />
         <ChakraLink name="Contact" to="/Contact" />
       </Flex>
-      <Flex
-        // gap="12"
-        // w="100%"
-        // mx="4"
-        // alignItems={"center"}
-        // justifyContent={"right"}
-
-        alignItems="flex-start" justifyContent="space-evenly" w='100%'
-      >
+      <Flex alignItems="center" gap="2vw">
         <ChakraLink variant="bigNavLink" to="/Menu" name="Menu" />
         <ChakraLink variant="bigNavLink" to="/contact" name="Reservations" />
         <Menu>
@@ -75,8 +73,8 @@ export default function DesktopNav(props) {
             </MenuItem>
           </MenuList>
         </Menu>
+        <EarLogoLink px="1rem" pb="0.25rem" />
       </Flex>
-      <EarLogoLink px="1rem" pb="0.25rem" />
     </Flex>
   );
 }
