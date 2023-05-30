@@ -22,7 +22,8 @@ export default function HomeEventsMess(props) {
         top="0"
         right="0"
         filename="nongbu-3"
-        h="90vh"
+        // h="90vh"
+        h={["80vh", "80vh", "80vh", "80vh"]}
         objectFit="cover"
         objectPosition={["100%, 100%", "50%, 100%", "50%, 100%", "50%, 100%"]}
         zIndex="9"

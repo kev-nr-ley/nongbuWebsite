@@ -19,7 +19,7 @@ export default function HomeTakeout(props) {
       {...props}
     >
       <NongbuImageContainer
-        filename="newfood-11"
+        filename="honeybutter-ddeokbokki"
         name="plate of ddeokbbokki"
         p={["0", "0", "0", "2.5vw"]}
         maxW="60rem"
@@ -33,7 +33,9 @@ export default function HomeTakeout(props) {
           mt="2rem"
           gap="5vw"
           alignItems="center"
+          justifyContent="center"
           flexWrap="wrap"
+          w="100%"
         >
           <UberEatsLink />
           <SkipTheDishesLink />

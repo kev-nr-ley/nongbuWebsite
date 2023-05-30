@@ -27,6 +27,8 @@ export default function HomeAbout(props) {
         pb={["0", "0", "0", "5vw"]}
         objectFit="cover"
         maxW={["100%", "100%", "100%", "50%"]}
+        // aspectRatio=''
+        h='auto'
         filter="blur(1px)"
       />
 

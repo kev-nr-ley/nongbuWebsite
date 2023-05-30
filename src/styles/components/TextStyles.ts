@@ -42,6 +42,12 @@ export const TextStyles: ComponentStyleConfig = {
       letterSpacing: "0.125rem",
     },
 
+    tinyText: {
+      fontSize: "calc(0.75rem + 0.5vw)",
+      fontWeight: "500",
+      letterSpacing: "0.125rem",
+    },
+
     smallText: {
       fontSize: "calc(1rem + 0.5vw)",
       fontWeight: "500",

@@ -7,8 +7,8 @@ export default function SectionFlexContentContainer(props) {
     <Flex
       className="section-flex-content-container"
       flexDirection="column"
-      minW="18rem"
-      w="clamp(18rem, 100%, 100%)"
+      minW="20rem"
+      w="clamp(20rem, 100%, 100%)"
       // border="1px solid purple"
       // bg="#ff00ff30"
       px="1rem"

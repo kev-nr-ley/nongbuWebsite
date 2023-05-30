@@ -12,14 +12,15 @@ export default function AboutAwards(props) {
         "row",
       ]}
       bg="backgroundDark"
-      h={["auto", "auto", "auto", "80vh"]}
+      // h={["auto", "auto", "auto", "auto"]}
       w="100vw"
       maxW="100%"
       overflow="hidden"
       justifyContent="center"
       alignItems="center"
       gap="5vw"
-      p="5vw"
+      pt='5vw'
+      pb='5vw'
       {...props}
     >
       <VStack color="light" my="1rem">

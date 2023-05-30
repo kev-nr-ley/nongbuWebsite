@@ -21,42 +21,44 @@ export default function MobileNav(props) {
 
   return (
     <Flex
-      className='mobile-nav'
-      position='fixed'
-      top='0'
-      right='0'
-      zIndex='99999999999'
-      pt='1rem'
+      className="mobile-nav"
+      position="fixed"
+      top="0"
+      right="0"
+      zIndex="99999999999"
+      pt="1rem"
       color={colors.light}
       bg={isMenuOpen ? "gray.700" : colors.backgroundDark50}
       w={isMenuOpen ? "70vw" : "0"}
       h={isMenuOpen ? "100vh" : "80px"}
-      {...props}>
+      {...props}
+    >
       <Box //menu icon container
-        position='absolute'
-        top='1rem'
-        right='1rem'
+        position="absolute"
+        top="1rem"
+        right="1rem"
         // px='2vw'
         // py='2vw'
-        zIndex='999999999'>
+        zIndex="999999999"
+      >
         <NongbuLogoLink
           position={["fixed"]}
-          top='1rem'
-          left='1rem'
-          zIndex='999999999'
+          top="1rem"
+          left="1rem"
+          zIndex="999999999"
           iconsize={["2.5rem", "2.5rem", "4rem"]}
         />
 
         <IconButton
-          fontSize='2.5rem'
+          fontSize="2.5rem"
           icon={
             isMenuOpen ? (
               <CloseIcon fontSize={["1.25rem", "1.5rem", "2rem"]} />
             ) : (
-              <FaBars fontSize='2.5rem' />
+              <FaBars fontSize="2.5rem" />
             )
           }
-          bg='transparent'
+          bg="transparent"
           _hover={{
             bg: "transparent",
             color: "primary",
@@ -67,68 +69,69 @@ export default function MobileNav(props) {
 
       <Flex
         display={isMenuOpen ? "flex" : "none"}
-        flexDirection='column'
+        flexDirection="column"
         gap={["2", "4", "6"]}
         // bg='red'
-        alignItems='flex-start'
-        justifyContent='space-evenly'
-        px='5vw'>
+        alignItems="flex-start"
+        justifyContent="space-evenly"
+        px="5vw"
+      >
         {/* <NongbuLogoLink
           position={["static"]}
           zIndex='999999999'
           onClick={handleLink}
         /> */}
 
-        <Flex flexDirection='column' gap='4'>
+        <Flex flexDirection="column" gap="4">
           <ChakraLink
-            variant='bigNavLink'
-            to='/Menu'
-            name='Menu'
+            variant="bigNavLink"
+            to="/Menu"
+            name="Menu"
             fontSize={["1.5rem", "2rem", "3rem"]}
             onClick={handleLink}
           />
           <ChakraLink
-            variant='bigNavLink'
-            to='/contact'
-            name='Reservations'
+            variant="bigNavLink"
+            to="/contact"
+            name="Reservations"
             fontSize={["1.6rem", "2rem", "3rem"]}
             onClick={handleLink}
           />
           <ChakraLink
-            name='Home'
-            to='/'
+            name="Home"
+            to="/"
             fontSize={["1.5rem", "1.5rem", "2.5rem"]}
             onClick={handleLink}
           />
           <ChakraLink
-            to='/About'
+            to="/About"
             fontSize={["1.5rem", "1.5rem", "2.5rem"]}
-            name='About'
+            name="About"
             onClick={handleLink}
           />
           <ChakraLink
-            to='/Events'
+            to="/Events"
             fontSize={["1.5rem", "1.5rem", "2.5rem"]}
-            name='Events'
+            name="Events"
             onClick={handleLink}
           />
           <ChakraLink
-            to='/Order'
+            to="/Order"
             fontSize={["1.5rem", "1.5rem", "2.5rem"]}
-            name='Order'
+            name="Order"
             onClick={handleLink}
           />
           <ChakraLink
-            to='/Contact'
+            to="/Contact"
             fontSize={["1.5rem", "1.5rem", "2.5rem"]}
-            name='Contact'
+            name="Contact"
             onClick={handleLink}
           />
         </Flex>
-        <Flex gap='4' alignItems='center'>
-          <FacebookLink fontSize='2.5rem'   onClick={handleLink} />
-          <InstagramLink fontSize='2.5rem'   onClick={handleLink} />
-          <EarLogoLink fontSize='3rem'   onClick={handleLink} />
+        <Flex gap="4" alignItems="center">
+          <FacebookLink fontSize="2.5rem" onClick={handleLink} />
+          <InstagramLink fontSize="2.5rem" onClick={handleLink} />
+          <EarLogoLink fontSize="3rem" onClick={handleLink} />
         </Flex>
       </Flex>
     </Flex>

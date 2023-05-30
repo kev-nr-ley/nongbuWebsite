@@ -11,7 +11,6 @@ export default function HomeHero(props) {
   const { colors } = useTheme();
   return (
     <SectionHeroContainer
-      h={["100vh", "100vh", "100vh", "100vh"]}
       maxW="100%"
       overflow="hidden"
       {...props}
@@ -68,6 +67,7 @@ export default function HomeHero(props) {
         left="0"
         position="absolute"
         h="100%"
+        minW='20rem'
         maxW="100vw"
         zIndex="0"
         filename="nongbu-2"

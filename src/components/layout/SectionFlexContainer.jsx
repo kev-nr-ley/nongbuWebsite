@@ -10,7 +10,7 @@ export default function SectionFlexContainer(props) {
       position="relative"
       justifyContent={"center"}
       h={["100%", "auto", "auto", "auto"]}
-      w="clamp(18rem, 100%, 100%)"
+      w="clamp(20rem, 100%, 100%)"
       // border="1px solid red"
       color="dark"
       {...props}
