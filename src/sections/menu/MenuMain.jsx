@@ -52,7 +52,7 @@ export default function MenuMain(props) {
           );
         })}
       </Grid>
-
+        
       {/* <MenuPage {...defaultMenu} objectToArray={props.objectToArray} /> */}
     </Flex>
   );
