@@ -19,7 +19,7 @@ export default function HomeTakeout(props) {
       {...props}
     >
       <NongbuImageContainer
-        filename="honeybutter-ddeokbokki"
+        filename="pork-bulgogi"
         name="plate of ddeokbbokki"
         p={["0", "0", "0", "2.5vw"]}
         maxW="60rem"
