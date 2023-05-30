@@ -23,7 +23,6 @@ const ChakraBox = chakra(motion.div, {
 });
 
 export default function LoadingScreen() {
-  const { colors, fonts } = useTheme();
   return (
     <Page>
       <Box
@@ -44,7 +43,7 @@ export default function LoadingScreen() {
             w='20vw'
             minW='300px'
             h='auto'
-            src='/images/nongbu-loading-logo.png'
+            src='/images/nongbu-logo.webp'
             alt='loading'
             position='relative'
             top={"-20vh"}
