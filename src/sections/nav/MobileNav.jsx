@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Flex, IconButton } from "@chakra-ui/react";
 import ChakraLink from "@components/ChakraLink";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { CloseIcon } from "@chakra-ui/icons";
 import { useTheme } from "@chakra-ui/react";
@@ -13,11 +13,29 @@ import NongbuLogoLink from "@components/links/NongbuLogoLink.jsx";
 
 export default function MobileNav(props) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showMenuButton, setShowMenuButton] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
   const { colors } = useTheme();
 
   const handleLink = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const controlNav = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY > lastScrollY) setShowMenuButton(false);
+      else setShowMenuButton(true);
+    }
+    setLastScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlNav);
+    return () => {
+      window.removeEventListener("scroll", controlNav);
+    };
+  }, [lastScrollY]);
 
   return (
     <Flex
@@ -51,27 +69,30 @@ export default function MobileNav(props) {
 
         <IconButton
           fontSize="2.5rem"
+          display={showMenuButton ? "flex" : "none"}
           icon={
             isMenuOpen ? (
               <CloseIcon fontSize={["1.25rem", "1.5rem", "2rem"]} />
             ) : (
-              <FaBars fontSize="2.5rem" />
+              <FaBars fontSize="2.5rem" color={colors.primary} />
             )
           }
           bg="transparent"
           _hover={{
             bg: "transparent",
-            color: "primary",
+            scale: "1.1",
           }}
           onClick={handleLink}
         />
       </Box>
 
       <Flex
-        display={isMenuOpen ? "flex" : "none"}
         flexDirection="column"
         gap={["2", "4", "6"]}
         // bg='red'
+        position="relative"
+        top={showMenuButton ? "0" : "-100vh"}
+        transition="top 0.2s ease-in-out"
         alignItems="flex-start"
         justifyContent="space-evenly"
         px="5vw"

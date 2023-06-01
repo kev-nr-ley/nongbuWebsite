@@ -56,7 +56,6 @@ export default function EarHero(props) {
         w="auto"
         h="auto"
         bg="light"
-        px="5vw"
         alignItems="center"
         justifyItems="center"
         gridTemplateColumns={[
@@ -71,58 +70,13 @@ export default function EarHero(props) {
           "repeat(2,  30vw)",
           "repeat(2,  20vw)",
         ]}
-        gap="1rem"
-        p="1rem"
+        gap="2vw"
+        p="2vw"
       >
-        <EarImageContainer
-          filename="ear-1"
-          w="100%"
-          h="100%"
-          objectFit="cover"
-          _active={{
-            h: "50vh",
-            w: "50vh",
-            border: "1rem solid black",
-            zIndex: "999",
-          }}
-        />
-
-        <EarImageContainer
-          filename="ear-2"
-          w="100%"
-          h="100%"
-          objectFit="cover"
-          _active={{
-            h: "50vh",
-            w: "50vh",
-            border: "1rem solid black",
-            zIndex: "999",
-          }}
-        />
-        <EarImageContainer
-          filename="ear-3"
-          w="100%"
-          h="100%"
-          objectFit="cover"
-          _active={{
-            h: "50vh",
-            w: "50vh",
-            border: "1rem solid black",
-            zIndex: "999",
-          }}
-        />
-        <EarImageContainer
-          filename="ear-4"
-          w="100%"
-          h="100%"
-          objectFit="cover"
-          _active={{
-            h: "50vh",
-            w: "50vh",
-            border: "1rem solid black",
-            zIndex: "999",
-          }}
-        />
+        <EarImageContainer filename="ear-1" />
+        <EarImageContainer filename="ear-2" />
+        <EarImageContainer filename="ear-3" />
+        <EarImageContainer filename="ear-4" />
       </Grid>
     </Flex>
   );

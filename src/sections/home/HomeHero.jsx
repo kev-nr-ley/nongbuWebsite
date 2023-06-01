@@ -80,6 +80,7 @@ export default function HomeHero(props) {
         w="fit-content"
         position="absolute"
         bottom="5vh"
+        color='dark'
         display={["none", "none", "flex"]}
         right={["5vw", "5vw", "5vw", "5vw"]}
         transform={["translateX(0%)"]}
