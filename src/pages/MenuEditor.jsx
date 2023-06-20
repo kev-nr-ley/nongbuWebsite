@@ -4,7 +4,7 @@ import MenuItemEdit from "@components/Menu/MenuItemEdit";
 import MenuItemEditModal from "@components/Menu/MenuItemEditModal";
 // import { menu } from "@assets/data/Menu";
 
-import menu from "@assets/data/jsonMinimized";
+// import menu from "@assets/data/jsonMinimized";
 import {
   Box,
   Button,
