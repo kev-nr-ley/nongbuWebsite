@@ -26,7 +26,7 @@ import {
 import { useState, useEffect } from "react";
 
 export default function MenuEditor(props) {
-  const [loadedMenu, setLoadedMenu] = useState(menu);
+  // const [loadedMenu, setLoadedMenu] = useState(menu);
   return (
     <Page
       color='white'
@@ -35,7 +35,7 @@ export default function MenuEditor(props) {
       w='100%'
       alignItems='left'
       textAlign='left'>
-      <VStack
+      {/* <VStack
         spacing={8}
         align='left'
         w='100%'>
@@ -47,7 +47,7 @@ export default function MenuEditor(props) {
         <Text fontSize='xl'>
           Edit the menu here. Click on an item to edit it.
         </Text>
-      </VStack>
+      </VStack> */}
 
       {/* <Accordion allowToggle>
 

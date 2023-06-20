@@ -38,16 +38,7 @@ function App() {
   const helmetContext = {};
   return (
     <HelmetProvider context={helmetContext}>
-      <meta
-        name='description'
-        content='
-        Nongbu Korean Eatery reintroduces traditional 
-        Korean cuisine to Edmontonians in a modern and 
-        welcoming atmosphere. Each dish is thoroughly 
-        thought out and recipes are created to achieve 
-        a balance of the diverse flavours and textures 
-        found in Korean cuisine. '
-      />
+  
 
       <Box bg={colors.backgroundDark}>
         <Navbar />
