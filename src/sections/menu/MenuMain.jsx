@@ -3,11 +3,8 @@ import { Flex, Text, Grid } from "@chakra-ui/react";
 import MenuPage from "@components/Menu/MenuPage";
 // import { menu } from "@assets/data/Menu";
 import menu from "@assets/data/jsonMenu";
-export default function MenuMain(props) {
-  Object.keys(menu).map((key) => {
-    // console.log(menu[key]);
-  });
 
+export default function MenuMain(props) {
   return (
     <Flex
       w='100%'
