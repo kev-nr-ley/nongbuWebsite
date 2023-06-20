@@ -2,7 +2,7 @@ import React from "react";
 import { Flex, Text, Grid } from "@chakra-ui/react";
 import MenuPage from "@components/Menu/MenuPage";
 // import { menu } from "@assets/data/Menu";
-import menu from "@assets/data/jsonMenu";
+import menu from "@assets/data/menu";
 
 export default function MenuMain(props) {
   return (
