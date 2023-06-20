@@ -1,0 +1,595 @@
+{
+  "menus": [
+    {
+      "id": "streeteats",
+      "title": "Street Eats & Small Plates",
+      "description": "Korean Street Food",
+      "footer": "Try some Makgoli with your Korean pancakes.",
+      "showMenu": true
+    },
+    {
+      "id": "meatssam",
+      "title": "Meat & Ssam",
+      "description": "Served with an assortment of BanChan (Free Refills).",
+      "footer": false,
+      "showMenu": true
+    },
+    {
+      "id": "ricenoodles",
+      "title": "Rice Bowls & Noodles",
+      "description": "Korean rice dishes like Bibimbap and Deopbap should be mixed well in the bowl before eating.",
+      "footer": false,
+      "showMenu": true
+    },
+
+    {
+      "id": "sharing",
+      "title": "Sharing",
+      "description": "Served with kimchi and pickled radish. All soups include a bowl of rice.",
+      "footer": "Soups pair best with regular soju.",
+      "showMenu": true
+    },
+    {
+      "id": "beersoju",
+      "title": "Beer & Soju",
+      "description": "Soju is Korea's national drink and it pairs well with Korean food.",
+      "footer": false,
+      "showMenu": true
+    },
+    {
+      "id": "spiritsbeverages",
+      "title": "Spirits & Beverages",
+      "description": "Korean spirits and beverages.",
+      "footer": false,
+      "showMenu": true
+    }
+  ],
+
+  "sections": [
+    {
+      "title": "Rice Bowls",
+      "id": "ricebowls",
+      "showTitle": true,
+      "menu": "ricenoodles"
+    },
+    {
+      "title": "Noodles",
+      "id": "noodles",
+      "showTitle": true,
+      "menu": "ricenoodles"
+    },
+    {
+      "title": "beer",
+      "id": "beer",
+      "showTitle": true,
+      "menu": "beersoju"
+    },
+    {
+      "title": "soju",
+      "id": "soju",
+      "showTitle": true,
+      "menu": "beersoju"
+    },
+    {
+      "title": "spirits",
+      "id": "spirits",
+      "showTitle": true,
+      "menu": "spiritsbeverages"
+    },
+    {
+      "title": "beverages",
+      "id": "beverages",
+      "showTitle": true,
+      "menu": "spiritsbeverages"
+    },
+    {
+      "title": "street",
+      "id": "street",
+      "showTitle": true,
+      "menu": "streeteats"
+    },
+    {
+      "title": "meatssam",
+      "id": "meatssam",
+      "showTitle": true,
+      "menu": "meatssam"
+    },
+
+    {
+      "title": "sharing",
+      "id": "sharing",
+      "showTitle": true,
+      "menu": "sharing"
+    }
+  ],
+
+  "items": [
+    {
+      "showItem": true,
+      "english": "Seafood Pajeon",
+      "id": "Seafood Pajeon",
+      "korean": "해물파전",
+      "description": "Korean pancake loaded with shrimp, squid, and green onions.",
+      "price": 17,
+      "notes": "",
+      "modifiers": [],
+      "section": "street"
+    },
+    {
+      "showItem": true,
+      "english": "Kimchi Jeon",
+      "id": "Kimchi Jeon",
+      "korean": "김치전",
+      "description": "Kimchi and chive pancakes.",
+      "price": 14,
+      "notes": "",
+      "modifiers": [],
+      "section": "street"
+    },
+    {
+      "showItem": true,
+      "english": "Cheese Ramyun Jeon",
+      "id": "Cheese Ramyun Jeon",
+      "korean": "치즈라면전",
+      "description": "Ramyun noodles and cheese pancake with spicy mayo.",
+      "price": 14,
+      "notes": "",
+      "modifiers": [],
+      "section": "street"
+    },
+    {
+      "showItem": true,
+      "english": "NongBu Kimbap",
+      "id": "NongBu Kimbap",
+      "korean": "꼬마김밥",
+      "description": "Pickled radish, carrots, asparagus, shiitake mushrooms and rice rolled in laver seaweed.",
+      "price": "Full $16",
+      "price2": "Half $8",
+      "notes": "Vegetarian and gluten free.",
+      "modifiers": [],
+      "section": "street"
+    },
+    {
+      "showItem": true,
+      "english": "Spicy Ddeokbokki",
+      "id": "Spicy Ddeokbokki",
+      "korean": "매운떡볶이",
+      "description": "Rice cakes and fishcakes in a spicy sauce.",
+      "notes": "",
+      "price": 15,
+      "modifiers": [],
+      "section": "street"
+    },
+    {
+      "showItem": true,
+      "english": "Fried Ddeokbokki",
+      "id": "Fried Ddeokbokki",
+      "korean": "기름떡볶이",
+      "description": "Lightly fried rice cakes in a sweet and spicy garlic sauce.",
+      "notes": "Vegetarian.",
+      "price": "Full $14",
+      "price2": "Half $7",
+      "modifiers": [],
+      "section": "street"
+    },
+    {
+      "showItem": true,
+      "english": "Honey Butter Ddeokbokki",
+      "id": "Honey Butter Ddeokbokki",
+      "korean": "허니버터떡볶이",
+      "description": "Lightly fried rice cakes smothered in honey & butter.",
+      "notes": "Vegetarian and gluten free.",
+      "price": "Full $14",
+      "price2": "Half $7",
+      "modifiers": [],
+      "section": "street"
+    },
+    {
+      "showItem": true,
+      "english": "Korean Doshirak (Lunch Box)",
+      "id": "Korean Doshirak (Lunch Box)",
+      "korean": "도시락",
+      "description": "Korean ham, fried kimchi, and egg on rice.",
+      "notes": "",
+      "price": 10,
+      "modifiers": [],
+      "section": "street"
+    },
+    {
+      "showItem": true,
+      "english": "Bulgogi",
+      "id": "Bulgogi",
+      "korean": "불고기",
+      "description": "Thinly sliced beef with oyster mushrooms and vegetables in sweet garlic soy.",
+      "price": 23,
+      "notes": "",
+      "modifiers": [],
+      "section": "meatssam"
+    },
+    {
+      "showItem": true,
+      "english": "Fire Chicken (Buldak)",
+      "id": "Fire Chicken (Buldak)",
+      "korean": "불닭",
+      "description": "Spicy chicken, vegetables, Korean sweet potato, rice cakes, and perilla.",
+      "price": 22,
+      "notes": "",
+      "modifiers": [],
+      "section": "meatssam"
+    },
+    {
+      "showItem": true,
+      "english": "Kimchi Jjim (Kimchi Pork Belly)",
+      "id": "Kimchi Jjim (Kimchi Pork Belly)",
+      "korean": "김치찜",
+      "description": "Pork belly stewed with Kimchi.",
+      "price": 23,
+      "notes": "Gluten Free",
+      "modifiers": [],
+      "section": "meatssam"
+    },
+    {
+      "showItem": true,
+      "english": "Pork Bulgogi (Pork Belly)",
+      "id": "Pork Bulgogi (Pork Belly)",
+      "korean": "돼지불고기",
+      "description": "Porkbelly pan fried in a sweet and spicy sauce.",
+      "price": 22,
+      "notes": "",
+      "modifiers": [],
+      "section": "meatssam"
+    },
+    {
+      "showItem": true,
+      "english": "Ojinguh Bukum (Spicy Squid)",
+      "id": "Ojinguh Bukum (Spicy Squid)",
+      "korean": "오징어볶음",
+      "description": "Spicy pan fried squid.",
+      "price": 24,
+      "notes": "",
+      "modifiers": [],
+      "section": "meatssam"
+    },
+    {
+      "showItem": true,
+      "english": "Spicy O-Sam",
+      "id": "Spicy O-Sam",
+      "korean": "오삼",
+      "description": "Pork bellly and squid in spicy sauce.",
+      "price": 24,
+      "notes": "",
+      "modifiers": [],
+      "section": "meatssam"
+    },
+    {
+      "showItem": true,
+      "english": "Add Ssam (Lettuce Wrap) Vegetables",
+      "id": "Add Ssam (Lettuce Wrap) Vegetables",
+      "korean": "쌈",
+      "description": "Green leaf lettuce, fresh garlic, serrano peppers, and ssamjang.",
+      "price": 6,
+      "notes": "",
+      "modifiers": [],
+      "section": "meatssam"
+    },
+    {
+      "showItem": true,
+      "english": "Add Bowl of Rice",
+      "id": "Add Bowl of Rice",
+      "korean": "",
+      "description": "",
+      "price": 4,
+      "notes": "",
+      "modifiers": [],
+      "section": "meatssam"
+    },
+    {
+      "showItem": true,
+      "english": "Kimchi BoKumBap",
+      "id": "Kimchi BoKumBap",
+      "korean": "김치볶음밥",
+      "description": "Kimchi and pork belly fried with rice and topped with a fried egg.",
+      "price": 19,
+      "notes": "",
+      "modifiers": [],
+      "section": "ricebowls"
+    },
+    {
+      "showItem": true,
+      "english": "Bibimbap",
+      "id": "Bibimbap",
+      "korean": "비빔밥",
+      "description": "Vegetables, beef, and egg on rice. Served with gochujang sauce.",
+      "price": 18,
+      "notes": "Add extra beef ($5) / Add extra egg ($2.50)",
+      "modifiers": [],
+      "section": "ricebowls"
+    },
+    {
+      "showItem": true,
+      "english": "Vegetarian Bibimbap",
+      "id": "Vegetarian Bibimbap",
+      "korean": "비빔밥",
+      "description": "Vegetables & mushrooms on rice. Served with gochujang sauce.",
+      "price": 17,
+      "notes": "Vegetarian and gluten free.",
+      "modifiers": [],
+      "section": "ricebowls"
+    },
+    {
+      "showItem": true,
+      "english": "Butter Bulgogi Deopbap",
+      "id": "Butter Bulgogi Deopbap",
+      "korean": "불고기덮밥",
+      "description": "Thinly shaved beef with shiitake and onions in buttery bulgogi sauce. Served on rice and topped with an egg.",
+      "price": 19,
+      "notes": "Add extra egg ($2.00)",
+      "modifiers": [],
+      "section": "ricebowls"
+    },
+    {
+      "showItem": true,
+      "english": "3 Mushroom Japchae",
+      "id": "3 Mushroom Japchae",
+      "korean": "버섯잡채",
+      "description": "3 varieties of mushrooms with vegetables and sweet potato noodles.",
+      "price": 19,
+      "notes": "Vegetarian and gluten free.",
+      "modifiers": [],
+      "section": "noodles"
+    },
+    {
+      "showItem": true,
+      "english": "Beef Japchae",
+      "id": "Beef Japchae",
+      "korean": "불고기잡채",
+      "description": "Beef and shiitake mushrooms with vegetables and sweet potato noodles.",
+      "price": 23,
+      "notes": "",
+      "modifiers": [],
+      "section": "noodles"
+    },
+    {
+      "showItem": true,
+      "english": "Jjimdak",
+      "id": "Jjimdak",
+      "korean": "찜닭",
+      "description": "Chicken, potatoes, carrots, zucchini, and onions with sweet potato noodles in sweet savoury soy.",
+      "price": 22,
+      "notes": "",
+      "modifiers": [],
+      "section": "noodles"
+    },
+    {
+      "showItem": true,
+      "english": "O-Sam Noodles",
+      "id": "O-Sam Noodles",
+      "korean": "오삼볶음면",
+      "description": "Squid and porkbelly with ramyum noodles in a sweet soy sauce. ",
+      "price": 23,
+      "notes": "",
+      "modifiers": [],
+      "section": "noodles"
+    },
+    {
+      "showItem": true,
+      "english": "Soon Tofu Jjigae",
+      "id": "Soon Tofu Jjigae",
+      "korean": "해물순두부찌개",
+      "description": "Squid, shrimp, and clams with silken tofu and egg in a spicy broth.",
+      "price": 17,
+      "notes": "Individual size.",
+      "modifiers": [],
+      "section": "sharing"
+    },
+    {
+      "showItem": true,
+      "english": "Budae Jjigae (Military Stew)",
+      "id": "Budae Jjigae (Military Stew)",
+      "korean": "부대찌개",
+      "description": "Spam, weiners, bacon, kimchi, baked beans, and ramyun noodles. A combination of American military rations and Korean ingredients.",
+      "price": 27,
+      "notes": "Serves 1-2.",
+      "modifiers": [],
+      "section": "sharing"
+    },
+    {
+      "showItem": true,
+      "english": "Bulgogi Jeongol (Beef Hotpot)",
+      "id": "Bulgogi Jeongol (Beef Hotpot)",
+      "korean": "불고기전골",
+      "description": "Beef with sweet potato noodles and mushrooms in light broth.",
+      "price": 35,
+      "notes": "Serves 2.",
+      "modifiers": [],
+      "section": "sharing"
+    },
+
+    {
+      "showItem": true,
+      "english": "Sapporo",
+      "id": "Sapporo",
+      "korean": "(Japan)",
+      "description": "",
+      "price": 6.5,
+      "notes": "5% 355ml",
+      "modifiers": [],
+      "section": "beer"
+    },
+    {
+      "showItem": true,
+      "english": "Asahi",
+      "id": "Asahi",
+      "korean": "(Japan)",
+      "description": "",
+      "price": 6.5,
+      "notes": "5.2% 355ml",
+      "modifiers": [],
+      "section": "beer"
+    },
+    {
+      "showItem": true,
+      "english": "Beer Bucket",
+      "id": "Beer Bucket",
+      "description": "Any 4 beers.",
+      "price": 24,
+      "notes": "",
+      "modifiers": [],
+      "section": "beer"
+    },
+    {
+      "showItem": true,
+      "english": "So-Mek",
+      "id": "So-Mek",
+      "korean": "소맥",
+      "description": "2oz Soju + any beer.",
+      "price": 8.5,
+      "notes": "",
+      "modifiers": [],
+      "section": "somek"
+    },
+    {
+      "showItem": true,
+      "english": "So-Mek 'Love Shot'",
+      "id": "So-Mek 'Love Shot'",
+      "korean": "",
+      "description": "Two 2oz Soju + 2 beers",
+      "price": 16,
+      "notes": "",
+      "modifiers": [],
+      "section": "somek"
+    },
+    {
+      "showItem": true,
+      "english": "So-Mek Combo",
+      "id": "So-Mek Combo",
+      "korean": "",
+      "description": "1 bottle of Soju + 2 beers. $24 on Thursdays.",
+      "price": 28,
+      "notes": "",
+      "modifiers": [],
+      "section": "somek"
+    },
+    {
+      "showItem": true,
+      "english": "Jinro Chamisul",
+      "id": "Jinro Chamisul",
+      "description": "Worlds # selling spirit.",
+      "price": "Bottle $18",
+      "price2": "2oz $3.50",
+      "notes": "17% ",
+      "modifiers": [],
+      "section": "soju"
+    },
+    {
+      "showItem": true,
+      "english": "Good Day",
+      "id": "Good Day",
+      "description": "Rice soju.",
+      "price": "Bottle $18",
+      "price2": "2oz $3.50",
+      "notes": "16.9%",
+      "modifiers": [],
+      "section": "soju"
+    },
+    {
+      "showItem": true,
+      "english": "Flavoured Soju",
+      "id": "Flavoured Soju",
+      "description": "Apple, Peach, Citrus, Grape, Yogurt, Plum, Mango",
+      "price": "Bottle $18",
+      "price2": "2oz $3.50",
+      "notes": "13 - 14%",
+      "modifiers": [],
+      "section": "soju"
+    },
+    {
+      "showItem": true,
+      "english": "So-Mek",
+      "id": "So-Mek",
+      "korean": "소맥",
+      "description": "2oz Soju + any beer.",
+      "price": 8.5,
+      "notes": "",
+      "modifiers": [],
+      "section": "somek"
+    },
+    {
+      "showItem": true,
+      "english": "So-Mek 'Love Shot'",
+      "id": "So-Mek 'Love Shot'",
+      "korean": "",
+      "description": "Two 2oz Soju + 2 beers",
+      "price": 16,
+      "notes": "",
+      "modifiers": [],
+      "section": "somek"
+    },
+    {
+      "showItem": true,
+      "english": "So-Mek Combo",
+      "id": "So-Mek Combo",
+      "korean": "",
+      "description": "1 bottle of Soju + 2 beers. $24 on Thursdays.",
+      "price": 28,
+      "notes": "",
+      "modifiers": [],
+      "section": "somek"
+    },
+    {
+      "showItem": true,
+      "english": "Bekseju",
+      "id": "Bekseju",
+      "korean": "백세주",
+      "description": "Herbal wine. Mildly sweet with ginseng notes. Pairs well with spicy food.",
+      "price": 19,
+      "notes": "13% 375ml",
+      "modifiers": [],
+      "section": "spirits"
+    },
+    {
+      "showItem": true,
+      "english": "Bokbunja Um",
+      "id": "Bokbunja Um",
+      "korean": "복분자음",
+      "description": "Sweet black raspberry wine.",
+      "price": 20,
+      "notes": "20% 375ml",
+      "modifiers": [],
+      "section": "spirits"
+    },
+    {
+      "showItem": true,
+      "english": "Kook Son Dang Makgoli",
+      "id": "Kook Son Dang Makgoli",
+      "korean": "막걸리",
+      "description": "Traditional Korean rice liquor. Pairs well with korean snacks.",
+      "price": 17,
+      "notes": "6% 750ml",
+      "modifiers": [],
+      "section": "spirits"
+    },
+    {
+      "showItem": true,
+      "english": "Pop",
+      "id": "Pop",
+      "korean": "",
+      "description": "Coke, Coke Zero, Sprite, Ginger Ale, Iced Tea",
+      "price": 3,
+      "notes": "",
+      "modifiers": [],
+      "section": "beverages"
+    },
+    {
+      "showItem": true,
+      "english": "K-Pop",
+      "id": "K-Pop",
+      "korean": "",
+      "description": "Korean sodas.",
+      "price": 4,
+      "notes": "Milkis Original",
+      "modifiers": [],
+      "section": "beverages"
+    }
+  ]
+}

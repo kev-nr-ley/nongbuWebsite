@@ -1,7 +1,8 @@
 import React from "react";
 import { Flex, Box, Text, IconButton, VStack } from "@chakra-ui/react";
+import MenuItemEditModal from "@components/Menu/MenuItemEditModal";
 
-export default function MenuItem(props) {
+export default function MenuItemEdit(props) {
   const showColors = false;
   const {
     english,
@@ -13,6 +14,30 @@ export default function MenuItem(props) {
     price2,
     textVariant,
   } = props;
+
+  const stateMenu = props.stateMenu;
+  const setStateMenu = props.setStateMenu;
+
+  const onSubmit = (data) => {
+    console.log(data);
+    const prevArray = stateMenu;
+    const updatedArray = prevArray.map((item) => {
+      if (item.id === currentMenuItem.id) {
+        return {
+          ...item,
+          ...data,
+        };
+      } else {
+        return item;
+      }
+    });
+    setStateMenu(updatedArray);
+    // console.log(stateMenu);
+    console.log('00000000000000000')
+    onClose();
+  };
+
+
 
   // console.log(props.items)
   return (
@@ -41,16 +66,14 @@ export default function MenuItem(props) {
               <Text
                 as='span'
                 // whiteSpace="nowrap"
-                variant='menuFood'
-                color='dark'>
+                variant={textVariant}>
                 {english}&nbsp;
               </Text>
 
               <Text
                 as='span'
                 // whiteSpace="nowrap"
-                variant='menuFood'
-                color='dark'>
+                variant={textVariant}>
                 {korean}
               </Text>
             </Flex>
@@ -61,8 +84,7 @@ export default function MenuItem(props) {
               className='menu-item-description'
               variant='menuBody'
               textAlign='left'
-              bg={showColors ? "red.200" : null}
-              color='dark'>
+              bg={showColors ? "red.200" : null}>
               {description} <br />
             </Text>
           )}
@@ -73,8 +95,7 @@ export default function MenuItem(props) {
               variant='menuBody'
               fontStyle='italic'
               textAlign='left'
-              bg={showColors ? "green.200" : null}
-              color='dark'>
+              bg={showColors ? "green.200" : null}>
               {notes}
             </Text>
           )}
@@ -83,7 +104,6 @@ export default function MenuItem(props) {
             <Box
               className='menu-item-modifiers'
               variant='menuBody'
-              color='dark'
               bg={showColors ? "yellow.200" : null}>
               {modifiers.map((mod, index) => {
                 return (
@@ -102,7 +122,6 @@ export default function MenuItem(props) {
           className='menu-item-prices'
           flexDirection='column'
           bg={showColors ? "purple.200" : null}
-          color='dark'
           w='fit-content'
           alignItems='flex-end'>
           {price && (
@@ -124,6 +143,9 @@ export default function MenuItem(props) {
             </Text>
           )}
         </Flex>
+        <MenuItemEditModal setStateMenu={props.setStateMenu}
+        stateMenu={props.stateMenu}
+        {...props} />
       </Flex>
     )
   );

@@ -5,6 +5,7 @@ import About from "@pages/About";
 import Order from "@pages/Order";
 import Contact from "@pages/Contact";
 import Reservations from "@pages/Reservations";
+import MenuEditor from "@pages/MenuEditor";
 import Ear from "@pages/Ear";
 import Events from "@pages/Events";
 
@@ -21,6 +22,7 @@ export default function AnimatedRoutes() {
       <Route path='/Order' element={<Order />} />
       <Route path='/Menu' element={<Menu />} />
       <Route path='/Contact' element={<Contact />} />
+      {/* <Route path='/MenuEditor' element={<MenuEditor />} /> */}
       {/* <Route path='/Reservations' element={<Reservations />} /> */}
       <Route path='/Ear' element={<Ear />} />
     </Routes>

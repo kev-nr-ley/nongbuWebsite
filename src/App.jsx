@@ -1,28 +1,15 @@
 import Navbar from "@sections/Navbar";
-import Home from "@pages/Home";
-import Menu from "@pages/Menu";
-import About from "@pages/About";
-import Order from "@pages/Order";
-import Contact from "@pages/Contact";
-import Reservations from "@pages/Reservations";
 import Footer from "@sections/Footer";
-import Events from "@pages/Events";
 import { Box } from "@chakra-ui/react";
 import { useTheme } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
-import { Route, Routes, useLoadingContext } from "react-router-loading";
+import { useLoadingContext } from "react-router-loading";
 import { ParallaxProvider } from "react-scroll-parallax";
 import LoadingScreen from "@components/LoadingScreen";
 import AnimatedRoutes from "@components/AnimatedRoutes";
-
+import { HelmetProvider } from "react-helmet-async";
 function App() {
-  function objectToArray(object) {
-    return Object.keys(object).map((key) => {
-      return object[key];
-    });
-  }
-
-  const [isMobile, setIsMobile] = useState(false); 
+  const [isMobile, setIsMobile] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const { colors, fonts } = useTheme();
   const loadingContext = useLoadingContext();
@@ -44,20 +31,32 @@ function App() {
     }
   }, []);
 
-  
-
   if (isLoading) {
     return <LoadingScreen />;
   }
 
+  const helmetContext = {};
   return (
-    <Box bg={colors.backgroundDark}>
-      <Navbar />
-      <ParallaxProvider>
-        <AnimatedRoutes />
-      </ParallaxProvider>
-      <Footer />
-    </Box>
+    <HelmetProvider context={helmetContext}>
+      <meta
+        name='description'
+        content='
+        Nongbu Korean Eatery reintroduces traditional 
+        Korean cuisine to Edmontonians in a modern and 
+        welcoming atmosphere. Each dish is thoroughly 
+        thought out and recipes are created to achieve 
+        a balance of the diverse flavours and textures 
+        found in Korean cuisine. '
+      />
+
+      <Box bg={colors.backgroundDark}>
+        <Navbar />
+        <ParallaxProvider>
+          <AnimatedRoutes />
+        </ParallaxProvider>
+        <Footer />
+      </Box>
+    </HelmetProvider>
   );
 }
 
