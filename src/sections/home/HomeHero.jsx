@@ -72,7 +72,7 @@ export default function HomeHero(props) {
         zIndex="0"
         filename="nongbu-2"
         name="table with korean dishes"
-        filter="blur(1px)"
+        // filter="blur(1px)"
       />
 
       <Hours
