@@ -40,6 +40,7 @@ export default function Navbar(props) {
           position='sticky'
           top='0'
           zIndex='11'
+          {...props}
         />
       )}
     </>

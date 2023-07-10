@@ -115,7 +115,7 @@ export default function MobileNav(props) {
             variant="bigNavLink"
             to="/contact"
             name="Reservations"
-            fontSize={["1.6rem", "2rem", "3rem"]}
+            fontSize={["1.5rem", "2rem", "3rem"]}
             onClick={handleLink}
           />
           <ChakraLink
